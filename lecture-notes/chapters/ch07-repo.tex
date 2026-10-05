@@ -1,0 +1,358 @@
+% !TEX root = ../main.tex
+\chapter{Repos, Postponing Settlement}\label{ch:repo}
+\begin{paracol}{2}
+
+\begin{sources}
+\begin{tabularx}{\linewidth}{@{}l l L@{}}
+\toprule
+\textbf{Segment} & \textbf{Length} & \textbf{Content}\\
+\midrule
+\seg{7}{1}{L7.1 FT: The Impact of QE3} & 2:45 & Second thoughts on QE3: buying time, and hedge funds betting against it.\\
+\seg{7}{2}{L7.2 Money Market Interest Rate Patterns} & 3:34 & LIBOR, Fed funds, repo: the usual order, and its reversal.\\
+\seg{7}{3}{L7.3 What is Repo?} & 3:19 & A collateralized loan organised as a sale and repurchase.\\
+\seg{7}{4}{L7.4 Repo in Balance Sheets} & 7:34 & Repo and reverse repo around a security dealer; the confusing language.\\
+\seg{7}{5}{L7.5 Comparison with Fed Funds} & 5:09 & Repo as an open, dealer-made market.\\
+\seg{7}{6}{L7.6 Legal Construction of Repo} & 9:46 & Symmetry, margin, haircut, repo interest (Stigum's example).\\
+\seg{7}{7}{L7.7 Security Dealers Balance Sheet} & 11:07 & Primary dealer statistics; dealers as banks; haircuts and liquidity spirals.\\
+\seg{7}{8}{L7.8 Repo, Modern Finance, and the Fed} & 8:49 & Repo as money; Fed open market operations as repos with dealers.\\
+\seg{7}{9}{L7.9 Interest Rate Spreads: Before the Crisis} & 5:33 & Why repo $<$ Fed funds: Bagehot's market rate and bank rate.\\
+\seg{7}{10}{L7.10 Interest Rate Spreads: After the Crisis} & 8:07 & Repo $>$ Fed funds: stress in dollar funding; reading spreads as clues.\\
+\bottomrule
+\end{tabularx}
+
+\smallskip
+\textbf{Files.} Transcripts \file{materials/transcripts/L07-P*.txt}. Segment~5 has no YouTube captions: its transcript
+\file{L07-P05.txt} is extracted from the original \file{transcript-lecture-7to12.txt}, so its times may be off by a few seconds.
+\textbf{Reading.} Stigum, \emph{The Money Market}, chapter on repo (pages 533--534 are quoted in class).
+\end{sources}
+
+\section*{Motivation}
+The Fed funds market (lecture~6) lets banks meet at the end of the day and push settlement to tomorrow. The repo market does the same, but for
+almost everybody and against collateral: it is the core funding market of the security dealers, and through them of modern finance. The lecture
+explains what repo is (\cref{sec:rp-what}), how it appears in balance sheets (\cref{sec:rp-bs}), how it is priced (\cref{sec:rp-legal}), why
+dealers that fund themselves this way are banks (\cref{sec:rp-dealers}), how the Fed uses it (\cref{sec:rp-fed}), and what the spread between repo
+and Fed funds tells us about the system (\cref{sec:rp-spreads}).
+
+% ------------------------------------------------------------------
+\section{FT: the impact of QE3}\label{sec:rp-ft}
+
+\begin{casestudy}[FT, September 2012: second thoughts on QE3]
+John Plender, ``Central bank firepower risks creating false sense of security'': QE3 puts a floor under certain security prices but does nothing
+fundamental; if the problem is fiscal, central banks only buy time, and if nobody uses the time, nothing has been done. His last paragraph:
+``throughout history monetary experiments have shown a nasty tendency to blow up\dots\ this experiment is vast; it must not breed complacency''
+\ts{7}{1}{0:06}\ts{7}{1}{0:27}\ts{7}{1}{0:47}. On the same page, ``Hedge fund sceptics take on the bulls over QE infinity'': some funds argue that QE1
+worked well, QE2 less, QE3 may not even lift asset prices, and trade against those who expect a boom \ts{7}{1}{1:08}\ts{7}{1}{1:28}\ts{7}{1}{1:49}.
+\end{casestudy}
+If private investors trade against it, QE buys even less time \ts{7}{1}{2:09}. Central banks act not because they are optimistic, but because
+nobody else is doing anything; and in repo rates we can see symptoms of the stresses in the system \ts{7}{1}{2:09}\ts{7}{1}{2:30}.
+
+% ------------------------------------------------------------------
+\section{Money market interest rate patterns}\label{sec:rp-patterns}
+
+In the FT: US dollar LIBOR overnight 0.1509\%, US overnight repo 0.31\%, Fed funds effective 0.16\% \ts{7}{2}{0:07}\ts{7}{2}{0:28}. Before the crisis
+the typical order was
+\[
+  \text{repo} \;<\; \text{Fed funds} \;<\; \text{LIBOR (Eurodollar)} ,
+\]
+and Mehrling had a whole story for it, from a paper he wrote before the crisis \ts{7}{2}{0:56}\ts{7}{2}{1:17}. Now repo is \emph{above} Fed funds:
+odd, since repo is secured and Fed funds are not \ts{7}{2}{1:38}.
+
+\begin{nfigure}
+\begin{tikzpicture}[font=\scriptsize,x=1cm,y=1cm]
+  \draw[-{Stealth[length=3pt]}] (0,0) -- (8,0) node[right]{time (mid-2005 to mid-2006)};
+  \draw[-{Stealth[length=3pt]}] (0,-1.8) -- (0,1.6) node[above]{spread vs target};
+  \node[left] at (0,0) {0};
+  \draw[thick,intcol] plot[smooth] coordinates {(0,0.45) (1,0.5) (1.5,-0.6) (1.7,0.45) (3,0.5) (3.5,-0.5) (3.7,0.4) (5,0.45) (5.5,-0.7) (5.7,0.4) (7.5,0.5)};
+  \draw[thick,thmcol] plot[smooth] coordinates {(0,-0.4) (1,-0.35) (1.5,-1.5) (1.7,-0.4) (3,-0.35) (3.5,-1.3) (3.7,-0.4) (5,-0.35) (5.5,-1.6) (5.7,-0.4) (7.5,-0.35)};
+  \node[intcol,right] at (7.5,0.5) {target $-$ repo $>0$};
+  \node[thmcol,right] at (7.5,-0.35) {target $-$ Eurodollar $<0$};
+\end{tikzpicture}
+\caption{Schematic of the pre-crisis chart shown in class \ts{7}{2}{1:58}\ts{7}{2}{2:19}: Fed funds \emph{target} minus repo was typically positive, target
+minus Eurodollar typically negative. The downward spikes occur before each step of the 2005--2006 tightening, as market rates rise in anticipation
+\ts{7}{2}{2:39}\ts{7}{2}{3:00}. (Shape illustrative.)}\label{fig:rp-spreads}
+\end{nfigure}
+
+% ------------------------------------------------------------------
+\section{What is repo?}\label{sec:rp-what}
+
+\begin{definition}[New concepts: repurchase agreement]\label{def:rp}
+A \emph{repurchase agreement} (``repo'', ``RP'') is a loan, overnight or for a term, collateralized by a security, organised as a
+\emph{sale and repurchase}: the borrower of money sells a security today and promises to buy it back tomorrow at a fixed price; the securities go
+from the borrower to the lender and back, the money from the lender to the borrower and back \ts{7}{3}{0:08}\ts{7}{3}{0:28}\ts{7}{3}{0:49}\ts{7}{3}{1:14}.
+(Stigum draws the ``first leg'' and the ``second leg'' of the repo \ts{7}{3}{1:34}.)
+\end{definition}
+
+The securities are collateral in a strong sense: if the borrower does not repay, the lender \emph{already holds} the securities and can sell them;
+there is no need to depend on the borrower's credit \ts{7}{3}{1:55}\ts{7}{3}{2:16}. And symmetrically: if the lender does not return the securities, the
+borrower need not repay the money. Such a \emph{fail} turns into a free overnight continuation of the loan until the securities are delivered
+\ts{7}{3}{2:37}\ts{7}{3}{2:58}. The money collateralizes the loan of securities, and the securities collateralize the loan of money.
+
+\begin{nfigure}
+\begin{tikzpicture}[font=\small,
+  ag/.style={draw,rounded corners=2pt,minimum width=2.6cm,minimum height=0.8cm,align=center}]
+  \node[ag,fill=defcol!10] (b) at (0,0) {borrower of money\\(cash taker)};
+  \node[ag,fill=intcol!10] (l) at (6,0) {lender of money\\(cash provider)};
+  \draw[-{Stealth[length=4pt]},thick,keycol] ([yshift=4pt]b.east) -- node[above,font=\scriptsize]{today: securities} ([yshift=4pt]l.west);
+  \draw[-{Stealth[length=4pt]},thick,fincol] ([yshift=-4pt]l.west) -- node[below,font=\scriptsize]{today: money} ([yshift=-4pt]b.east);
+  \draw[-{Stealth[length=4pt]},dashed,keycol] (l.south) to[out=-110,in=-70] node[below,font=\scriptsize]{tomorrow: securities back} (b.south);
+  \draw[-{Stealth[length=4pt]},dashed,fincol] (b.north) to[out=70,in=110] node[above,font=\scriptsize]{tomorrow: money $+$ interest} (l.north);
+\end{tikzpicture}
+\caption{The two legs of a repo \ts{7}{3}{1:14}: a sale of securities today and their repurchase tomorrow at a slightly higher price.}\label{fig:rp-legs}
+\end{nfigure}
+
+% ------------------------------------------------------------------
+\section{Repo in balance sheets}\label{sec:rp-bs}
+
+There are trillions of these overnight loans \ts{7}{4}{0:07}. The language is not standardised: ``doing repo'', ``reversing in securities'', ``repoing
+securities''; and, Mehrling warns, the same phrase can mean opposite sides of the trade in New York and in London. Balance sheets keep you straight \ts{7}{4}{0:27}\ts{7}{4}{0:48}.
+Two rules:
+\begin{enumerate}
+  \item almost every repo has a \emph{security dealer} on one side \ts{7}{4}{0:48};
+  \item ``follow the money'': a repo booked as a liability means money borrowed, as an asset money lent; money is better than securities, so its side tells
+        you where to book \ts{7}{4}{1:54}.
+\end{enumerate}
+
+\begin{taccts}
+\tacct[2.0cm]{Pension fund}{Repo loan to dealer}{}\quad
+\tacct[2.0cm]{Security dealer}{Reverse repo (loan to bank)}{Repo (from pension fund)}\quad
+\tacct[2.0cm]{Bank}{Securities}{Repo (from dealer)}
+\end{taccts}
+
+\begin{itemize}
+  \item \textbf{Pension fund}: lends money overnight, against a Treasury, for interest. For it this is practically a deposit, a way to hold cash, and
+        better than a deposit, because large deposits are not insured: if the bank fails the cash is gone, while in repo it holds a Treasury
+        \ts{7}{4}{2:15}\ts{7}{4}{2:35}\ts{7}{4}{2:55}.
+  \item \textbf{Dealer lending money}: takes in securities; Stigum calls it a \emph{reverse} \ts{7}{4}{3:16}\ts{7}{4}{3:36}. Securities move one way across the
+        diagram, money the other \ts{7}{4}{3:57}.
+  \item \textbf{Bank}: holds securities and funds them by repoing them out overnight, instead of with deposits: repo as the liability that funds an asset
+        \ts{7}{4}{4:17}\ts{7}{4}{4:38}.
+\end{itemize}
+The dealer's ``repo'' and ``reverse'' are the same instrument seen from the two sides; they get different names because the dealer is in the middle,
+where one is a liability and the other an asset \ts{7}{4}{5:40}\ts{7}{4}{6:00}. To add to the confusion, the Fed uses the words the other way round: when it
+borrows from dealers it calls it a ``reverse repo'', when it lends (open market operations) a ``repo'' \ts{7}{4}{6:21}\ts{7}{4}{6:42}\ts{7}{4}{7:02}. Always translate
+into balance sheets: who is borrowing money? \ts{7}{4}{7:23}
+
+\begin{history}[Repo before the Fed]
+Repo is ``very ancient'': in the United States it existed before the Fed, as the way banks traded with each other before the Fed funds market. With a
+correspondent you could rely on the relationship; with a stranger you wanted collateral: lend against a bond, and you only need to check the bond, not the
+borrower. Mehrling links the rise of bond ratings (Moody's) to this need to know how much to lend against which bond \ts{7}{4}{4:38}\ts{7}{4}{4:59}\ts{7}{4}{5:20}.
+(John Moody published his first bond ratings in 1909.)\par
+\emph{References:} R.~Sylla, ``An historical primer on the business of credit rating'', in R.~Levich et al.\ (eds.), \emph{Ratings, Rating Agencies and the
+Global Financial System}, Kluwer, 2002.
+\end{history}
+
+\paragraph{Comparison with Fed funds.} The repo market is like the Fed funds market: it lets deficit and surplus agents meet and push their liabilities and
+assets to another day, with a dealer in the middle \ts{7}{5}{0:03}\ts{7}{5}{0:28}\ts{7}{5}{1:16}. Two differences \ts{7}{5}{1:25}\ts{7}{5}{0:52}:
+\begin{enumerate}
+  \item \textbf{Openness}: anyone with a Treasury bond can do repo, without being a bank or a member of the Federal Reserve System: it is ``much more
+        democratic'' \ts{7}{5}{1:33}\ts{7}{5}{1:47};
+  \item \textbf{Dealing versus brokering}: in Fed funds there is little dealing, it is mostly brokered; in repo it is almost all dealing, on the balance
+        sheets of security dealers \ts{7}{5}{0:52}\ts{7}{5}{1:01}.
+\end{enumerate}
+Why a dealer market? Repo is heterogeneous: any security can be repoed (corporate bonds, mortgage-backed securities, \dots) and anyone can participate.
+The \emph{name of the dealer}, a primary dealer, a big bank, on the other side of every trade, is what makes the market homogeneous: you only worry about
+the dealer \ts{7}{5}{2:12}\ts{7}{5}{2:26}\ts{7}{5}{2:43}\ts{7}{5}{3:46}. There is even \emph{general collateral} repo, in which the dealer may substitute one
+security for another of the same class, to keep things smooth; the dealer is a liability on both sides, to return securities and to return money
+\ts{7}{5}{3:53}\ts{7}{5}{4:08}\ts{7}{5}{4:17}. Repo defaults usually happen not because someone is insolvent but because the securities were sold on and not returned
+\ts{7}{5}{4:42}\ts{7}{5}{4:49}.
+
+% ------------------------------------------------------------------
+\section{The legal construction of repo: haircut and interest}\label{sec:rp-legal}
+
+Repo is like a collateralized loan, but much more symmetric \ts{7}{6}{0:07}. With a mortgage, the bank has a claim on the house, but foreclosure takes months
+and legal fees, and nobody intends to use it \ts{7}{6}{0:28}. A repo is an overnight loan of \$10 million: the lender \emph{owns} the security, can sell it or
+re-pledge it (\emph{rehypothecate}) and trade with it all day, and is only liable for returning it the next day; the borrower can spend the money as it likes
+\ts{7}{6}{0:48}\ts{7}{6}{1:09}\ts{7}{6}{1:29}.
+
+\paragraph{Who gives margin to whom?} The lender of money fears that the security falls below the value of the loan, which gives the borrower an incentive not
+to repay; the lender of securities fears the opposite \ts{7}{6}{1:51}\ts{7}{6}{2:11}. Stigum's answer: it is always the \emph{lender of money} who gets margin
+\ts{7}{6}{2:31}. ``This is part of the hierarchy of money and credit'': money is the better asset, and its holder can demand extra security; and the demand for
+liquidity is the short side of the market, people pay up to get money, not to get collateral \ts{7}{6}{2:31}\ts{7}{6}{9:09}\ts{7}{6}{9:29}. (In swaps, by contrast,
+typically both sides post margin \ts{7}{6}{9:09}.)
+
+\begin{definition}[New concepts: haircut, repo rate]
+The \emph{haircut} is the percentage by which the amount lent is smaller than the market value of the collateral; it protects the lender of money against a fall
+in the collateral's price. The \emph{repo rate} is the interest rate on the loan, quoted on a simple-interest, actual/360 basis.
+\end{definition}
+
+\paragraph{Stigum's example} \ts{7}{6}{2:52}--\ts{7}{6}{7:47}. A 10-year Treasury bond trades a bit above par (its coupon is higher than the current 10-year
+rate). It is offered as collateral for an overnight loan with a haircut of 2\%, so the amount lent per 100 of face value is 99.228. The repo rate is 4.92\%
+(annualised). The next day the borrower repays principal plus simple interest for one day on a 360-day year:
+\begin{keyformulas}
+\[
+  \text{repayment} = L\left(1 + r_{\text{repo}}\,\frac{d}{360}\right),\qquad L = (1-h)\,P ,
+\]
+with $P$ the market value of the collateral, $h$ the haircut, $d$ the number of days (1 overnight, 3 over a weekend, 7 for a week).
+\end{keyformulas}
+The conventions (simple, not compound interest; a 360-day year) date ``from time immemorial'': the market prices them in, and overnight they change the result
+only at the fourth decimal, but traders must get them right \ts{7}{6}{6:04}\ts{7}{6}{6:25}\ts{7}{6}{6:46}\ts{7}{6}{7:06}. On a \$1 million bond the overnight interest
+is about \$137: the cost of borrowing a million dollars overnight \ts{7}{6}{7:26}\ts{7}{6}{7:47}.
+
+\begin{coursenote}[Checking the numbers]
+The price of the bond is garbled in the captions (``129 30 seconds''); the other numbers are consistent with a price of about $101\tfrac{8}{32}=101.25$:
+$0.98\times101.253=99.228$. Interest on \$1 million for one day at 4.92\%/360 is \$136.67, the ``137'' of the lecture; on the amount actually lent,
+\$992{,}280, it is \$135.61. Bond prices were quoted in 32nds of a point (one point $=$ 1\% of face value).
+\end{coursenote}
+
+\paragraph{Haircuts make collateral homogeneous.} Different securities get different haircuts (2\% for a Treasury, 5, 10 or 50\% for a mortgage-backed
+security, which in a crisis may not be accepted at all) and then the same repo rate \ts{7}{6}{4:38}\ts{7}{6}{4:59}\ts{7}{6}{8:08}. The haircut is negotiated first,
+according to the volatility of the collateral's price, then the rate \ts{7}{6}{4:59}\ts{7}{6}{5:19}.
+
+% ------------------------------------------------------------------
+\section{The security dealer's balance sheet}\label{sec:rp-dealers}
+
+The New York Fed publishes weekly statistics on the primary dealers \ts{7}{7}{0:07}\ts{7}{7}{0:28}:
+\begin{itemize}
+  \item \textbf{Transactions} by type of security: Treasury coupon securities, agencies (Fannie Mae, Freddie Mac), mortgage-backed, corporate
+        \ts{7}{7}{0:48}.
+  \item \textbf{Net positions} (inventory, hence risk exposure): about \$26 billion of Treasury bills, \$68 billion of coupon securities due in three years or
+        less, negligible longer bonds \ts{7}{7}{1:08}\ts{7}{7}{1:29}. This is unusual: normally dealers are \emph{short} bills and \emph{long} bonds, picking up the term
+        spread. With Operation Twist the Fed buys bonds from the dealers and sells them bills, sucking out their bond inventory and wiping out their short in
+        bills; the dealers absorb the mismatch until they can distribute it \ts{7}{7}{1:49}\ts{7}{7}{2:10}\ts{7}{7}{2:50}\ts{7}{7}{3:11}\ts{7}{7}{3:32}. Analysts from
+        Barclays, in a Reuters article, explained the high repo rate this way; Mehrling wonders why it should affect the repo rate \ts{7}{7}{2:30}\ts{7}{7}{3:52}.
+        (Net positions say nothing about hedges with derivatives \ts{7}{7}{4:14}.)
+  \item \textbf{Financing} (gross): securities in, about \$1.9 trillion, financed overnight or at term, and securities out (short positions)
+        \ts{7}{7}{4:35}\ts{7}{7}{4:56}\ts{7}{7}{5:16}.
+\end{itemize}
+The memorandum items give the repo book, in billions \ts{7}{7}{5:38}\ts{7}{7}{5:58}\ts{7}{7}{6:19}:
+\begin{taccts}
+\tacct[3.0cm]{Primary dealers (\$ billion)}{Reverse repo, overnight\amt{878}\\Reverse repo, term\amt{1{,}316}}{Repo, overnight\amt{1{,}842}\\Repo, term\amt{931}}
+\end{taccts}
+Dealers fund their long positions in the repo market and their short positions in the reverse market \ts{7}{7}{6:44}. And look at the maturities: the big number
+on the asset side is \emph{term}, on the liability side \emph{overnight}. Dealers borrow short and lend long, ``just like a bank'' (term may be a week, but it is
+more than a day) \ts{7}{7}{7:25}\ts{7}{7}{7:45}.
+
+\begin{proposition}[Security dealers are banks]
+Overnight repo to dealers is, for institutional investors, a deposit, even better than one because secured; at \$1.8 trillion it is larger than M1. Dealers,
+trading securities for profit, create an enormous volume of monetary assets: the wholesale money supply \ts{7}{7}{7:04}\ts{7}{7}{7:25}\ts{7}{7}{8:05}\ts{7}{7}{8:27}.
+\end{proposition}
+
+\paragraph{Haircuts and liquidity spirals.} Repo must be rolled over, and everything is ``up for grabs'' at each renewal: haircut and rate
+\ts{7}{7}{9:28}\ts{7}{7}{9:48}. If the haircut on a security you finance with repo jumps overnight from 2\% to 10\%, you have a \emph{funding gap}: yesterday you
+could borrow 98 cents on the dollar, today 90; if you cannot find the other eight, you must sell the security at a fire-sale price, which pushes prices down
+further. In the crisis, haircuts on ``triple-A'' mortgage-backed securities went from 2\% to 10\% to 50\%, and the scramble for funding distorted every other price
+in the world \ts{7}{7}{9:48}\ts{7}{7}{10:09}\ts{7}{7}{10:29}\ts{7}{7}{10:49}.
+
+\begin{intuition}[Leverage and the haircut]
+With haircut $h$, a dealer with capital $E$ can hold securities worth at most $E/h$: leverage $1/h$ (50 at $h=2\%$, 10 at $10\%$, 2 at $50\%$). A rise of the
+haircut from 2\% to 10\% forces assets to fall by a factor of five for the same capital: a positive-feedback loop if the sales lower prices and raise haircuts
+further.
+\end{intuition}
+
+% ------------------------------------------------------------------
+\section{Repo, modern finance and the Fed}\label{sec:rp-fed}
+
+Most money and banking textbooks do not mention repo: they are about retail money and banks, and a security dealer ``is not part of our subject''. This is where
+modern finance changed the world: not being called a bank does not mean not operating like one, and producing liquid liabilities is producing money supply for
+someone \ts{7}{8}{0:07}\ts{7}{8}{0:28}. The lender in repo may be a money market mutual fund, which holds repo and issues shares that function as deposits, to
+corporations or even foreign central banks: money, directly or passed through a fund \ts{7}{8}{0:49}.
+
+\paragraph{Open market operations are repos with dealers.} The textbook says the Fed buys or sells Treasury securities to change the money supply; in reality it
+trades with the primary dealers, by auction: it asks them to bid \ts{7}{8}{1:10}\ts{7}{8}{1:30}\ts{7}{8}{1:50}. The New York Fed's web page lists the last temporary
+open market operations \ts{7}{8}{2:10}. Before the crisis the Fed was in the repo market almost every day; with excess reserves, rarely \ts{7}{8}{2:31}:
+\begin{itemize}
+  \item the latest is a \emph{reverse repo}: the Fed borrows money from dealers against Treasuries, agencies or MBS; dealers submitted \$4.3 billion, the Fed took
+        \$2.25 billion, from Thursday the 13th to Monday the 17th, ``part of an operational readiness program'': the Fed is practising a way to drain its excess
+        reserves \ts{7}{8}{2:51}\ts{7}{8}{3:12}\ts{7}{8}{3:33}\ts{7}{8}{3:53}\ts{7}{8}{4:14};
+  \item for an actual \emph{repo}, which adds reserves, one must go back to August \ts{7}{8}{5:37}\ts{7}{8}{5:57}.
+\end{itemize}
+For a long time the Fed refused to call its borrowing ``reverse repos'' and called them \emph{matched sale--purchases} (MSPs): ``I'm the Fed, I print this stuff,
+why do I need to provide collateral?'' Now it calls them reverses, acting like a bank \ts{7}{8}{4:56}\ts{7}{8}{5:17}.
+
+\paragraph{One more level.} A Fed repo lends reserves to a dealer against a Treasury bill; the dealer has no account at the Fed, so the reserves end up at the
+dealer's bank, credited to its deposit (or repaying a bank loan); if they are excess, the bank lends them in the Fed funds market. This is how open market
+operations influence the Fed funds rate \ts{7}{8}{6:42}\ts{7}{8}{7:03}\ts{7}{8}{7:24}\ts{7}{8}{7:44}\ts{7}{8}{8:05}\ts{7}{8}{8:25}:
+\begin{taccts}
+\tacct[2.0cm]{Fed}{$+$Repo loan to dealer}{$+$Reserves of bank}\quad
+\tacct[2.0cm]{Dealer}{$+$Deposit at bank}{$+$Repo from Fed}\quad
+\tacct[2.0cm]{Dealer's bank}{$+$Reserves}{$+$Deposit of dealer}
+\end{taccts}
+
+% ------------------------------------------------------------------
+\section{Interest rate spreads}\label{sec:rp-spreads}
+
+\subsection{Before the crisis: repo $<$ Fed funds}
+Stigum puzzles over why Fed funds traded above repo, and gives two reasons \ts{7}{9}{0:30}\ts{7}{9}{0:50}:
+\begin{enumerate}
+  \item \textbf{a credit spread}: repo is secured, Fed funds are not. Mehrling was never convinced, and the present reversal disproves it: nobody lends unsecured
+        with any thought of default; if you fear default you cut the credit line, you do not ask a higher rate. ``Who risks a million dollars to make 137 of
+        interest overnight?'' And the borrowers are banks with access to the Fed \ts{7}{9}{1:10}\ts{7}{9}{1:31}\ts{7}{9}{1:51}\ts{7}{9}{2:12};
+  \item \textbf{segmentation}: some must borrow Fed funds and have no access to repo. But many can arbitrage, certainly any bank, by borrowing in repo and lending
+        Fed funds \ts{7}{9}{2:32}\ts{7}{9}{2:53}.
+\end{enumerate}
+
+\paragraph{Mehrling's explanation: Bagehot's two rates.} In Bagehot's world (lecture~9) there was a \emph{market rate} of interest, made by bill brokers in the
+London money market, and the official \emph{bank rate}, the Bank of England's discount rate, normally above it; nobody came to the Bank until stress pushed the market
+rate up to bank rate, and then everybody flooded to it. That was monetary policy then \ts{7}{9}{2:53}\ts{7}{9}{3:17}\ts{7}{9}{3:37}\ts{7}{9}{3:58}. Before the crisis the US
+worked the same way: the analogue of bank rate was the Fed funds target, the analogue of the market rate was repo \ts{7}{9}{4:19}. Repo below Fed funds is
+\emph{discipline}: repo is the cheapest funding, so dealers repo out all their securities first; if they need more, they must go to more expensive money, borrowing
+from their bank not at the Fed funds rate but at Fed funds plus 50 basis points \ts{7}{9}{4:40}\ts{7}{9}{5:01}\ts{7}{9}{5:22}.
+
+\subsection{After the crisis: repo $>$ Fed funds}
+Since January repo has moved in a band of about 16 to 30 basis points, always above Fed funds effective, sometimes by a lot \ts{7}{10}{0:09}\ts{7}{10}{0:30}. With the
+same Bagehot logic: a market rate above the official rate means the Fed is trying to be very elastic, to pull the market rate down by pegging Fed funds below it. That
+offers an arbitrage: borrow Fed funds, lend in repo, pick up about 15 basis points, and only banks (mostly) can do it \ts{7}{10}{0:51}\ts{7}{10}{1:12}\ts{7}{10}{1:33}. That
+repo \emph{stays} above Fed funds despite the incentive is worrying: there are people who need liquidity and keep bidding for it, and the arbitrage is not enough to meet
+the needs of the dollar funding markets, which are under stress \ts{7}{10}{1:54}\ts{7}{10}{2:15}\ts{7}{10}{2:36}. This is what the Fed would have been watching when deciding
+on another QE: pegging Fed funds low was not enough, so now it buys MBS outright, \$40 billion a month, injecting reserves directly and not temporarily
+\ts{7}{10}{2:36}\ts{7}{10}{2:56}\ts{7}{10}{3:16}. Will it work? Keynes said monetary policy is better at slowing the economy than at speeding it up: ``pushing on a string''
+(\cref{sec:nh-managing}) \ts{7}{10}{3:37}\ts{7}{10}{3:57}\ts{7}{10}{4:17}.
+
+\begin{finance}[Reading spreads as clues]
+The method: look at patterns of interest rates and of quantities and balance sheets, and ask what must be happening behind the scenes; spreads are ``detective clues'' to
+where the strains are \ts{7}{10}{4:37}\ts{7}{10}{4:58}. In the fall of 2007 the spread of LIBOR over Fed funds reached 100 basis points, never seen in 15 years of teaching;
+knowing the two markets, it pointed to Europe \ts{7}{10}{4:58}\ts{7}{10}{5:19}. Prices are visible every day, balance sheets only later; ``the spreads are the key'', while the
+intermediate macro textbook has just one interest rate \ts{7}{10}{5:39}\ts{7}{10}{6:00}\ts{7}{10}{6:21}. A 15 basis point reversal looks tiny, but when spreads reverse the
+incentives and the flows reverse: big information in small numbers \ts{7}{10}{6:42}\ts{7}{10}{7:02}. Mehrling's hypothesis was formed in real time, from the FT alone, to be
+tested against what happens next \ts{7}{10}{7:23}\ts{7}{10}{7:44}\ts{7}{10}{8:04}.
+\end{finance}
+
+\begin{definition}[New concepts: LIBOR]
+\emph{LIBOR} (London Interbank Offered Rate) was the average rate at which a panel of banks said they could borrow unsecured from other banks in London, for each
+currency and maturity; US dollar LIBOR is the Eurodollar rate (lecture~8). (After the manipulation scandal that broke in 2012, LIBOR was phased out; US dollar LIBOR
+ceased in 2023, replaced by SOFR, a rate computed from overnight Treasury repo transactions.)
+\end{definition}
+
+% ------------------------------------------------------------------
+\flushside
+\section*{Key formulas and ideas}
+\begin{keyformulas}
+\begin{tabularx}{\linewidth}{@{}l L@{}}
+Repo & collateralized loan organised as sale and repurchase; fails continue the loan for free\\
+Balance sheets & follow the money; dealer: reverse repo (asset), repo (liability); the Fed's language is the reverse\\
+Margin & always to the lender of money (hierarchy): haircut $h$, amount lent $L=(1-h)P$\\
+Repo interest & $L\,r\,d/360$, simple interest, 360-day year\\
+Dealers & borrow overnight (repo), lend term (reverse): banks; overnight repo $\approx$ \$1.8 tn, larger than M1\\
+Liquidity spiral & haircuts up $\Rightarrow$ funding gap $\Rightarrow$ fire sales $\Rightarrow$ prices down, haircuts up\\
+Fed & open market operations = repos/reverse repos with primary dealers\\
+Spreads & normal: repo $<$ FF $<$ LIBOR (repo as Bagehot's market rate below bank rate); repo $>$ FF signals funding stress\\
+\end{tabularx}
+\end{keyformulas}
+
+\section*{Exercises}
+
+\begin{exercise}[Repo arithmetic]
+A Treasury note with market value 102.50 per 100 face is repoed for 3 days (a weekend), haircut 2\%, repo rate 0.30\%.
+\begin{enumerate}[(a)]
+  \item How much is lent on \$10 million face value, and how much is repaid?
+  \item What is the same interest with compound interest on a 365-day year? Compare.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}[Funding gap]
+A dealer has capital 5 and holds MBS worth 100, financed by repo with a 5\% haircut.
+\begin{enumerate}[(a)]
+  \item Write its balance sheet.
+  \item The haircut rises to 20\%. How much new funding does it need? If it must sell MBS at 90\% of value, what is its capital after selling enough to restore the
+        haircut constraint?
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}[Who is doing repo?]
+For each statement, write the T-account entry of every party: (a) ``the Fed did \$5 billion of reverse repos with primary dealers''; (b) ``the money fund reversed in
+\$1 billion of Treasuries from a dealer''; (c) ``the dealer repoed out its inventory of corporate bonds''.
+\end{exercise}
+
+\begin{exercise}[The arbitrage]
+Repo trades at 0.31\%, Fed funds at 0.16\%. Describe the arbitrage a bank could do, write its T-accounts, and give two reasons why it might not close the spread.
+\end{exercise}
