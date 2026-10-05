@@ -1,0 +1,96 @@
+\documentclass[11pt,oneside,openany]{book}
+\input{preamble}
+
+% Compile only some chapters while working on them, e.g.:
+% \includeonly{chapters/ch01-four-prices}
+
+\begin{document}
+
+\frontmatter
+\begin{titlepage}
+  \centering
+  \vspace*{3cm}
+  {\Huge\bfseries Economics of Money and Banking\par}
+  \vspace{1cm}
+  {\Large Lecture notes\par}
+  \vspace{0.5cm}
+  {\large based on the course by Perry G.~Mehrling\\(Barnard College, Columbia University;
+  Coursera and INET)\par}
+  \vspace{2cm}
+  {\large Personal study notes of Alessio Martini\par}
+  \vfill
+  \begin{minipage}{0.85\textwidth}\small
+    These notes are a personal, non-commercial study aid derived from the video lectures of
+    \emph{Economics of Money and Banking} by Perry G.~Mehrling, filmed at Barnard College
+    (Columbia University) and published by ColumbiaLearn on YouTube, on Coursera, and by the
+    Institute for New Economic Thinking. Lecture content is paraphrased and re-derived from the
+    (automatic) transcripts of the videos, not transcribed; any mistakes are mine. All rights on
+    the original lectures belong to their authors.
+  \end{minipage}
+  \vspace{1cm}
+\end{titlepage}
+
+\chapter*{How to use these notes}
+\addcontentsline{toc}{chapter}{How to use these notes}
+\begin{paracol}{2}
+
+Each chapter covers one \emph{lecture} of the course (22 in all), and its sections follow the short
+video segments into which every lecture was cut. Every chapter opens with a \textbf{Sources} box
+listing the segments (each one a link to its video), the reading and the newspaper article
+discussed in class. Part~\ref{part:intro} (lectures 1--12) is the ``Introduction'' of the course:
+the payment system and the money market. Part~II (lectures 13--22) extends the
+same ``money view'' to foreign exchange and capital markets.
+
+\paragraph{Boxes.}
+\begin{itemize}
+  \item \textcolor{defcol}{\textbf{Definitions}} (blue), \textcolor{thmcol}{\textbf{propositions}} (red),
+        \textcolor{exercol}{\textbf{exercises}} and \textcolor{srccol}{\textbf{remarks}} are marked with a
+        coloured bar on the left. A definition box titled \emph{New concepts} marks the first time a concept appears.
+  \item \textcolor{keycol}{\textbf{Key formulas}} boxes collect what to remember.
+  \item \textcolor{intucol}{\textbf{Intuition}} boxes give the reading of a mechanism in a physicist's language.
+  \item \textcolor{fincol}{\textbf{In the markets}} boxes say where a mechanism shows up in practice.
+  \item \textcolor{cscol}{\textbf{Case study}} boxes summarise the \emph{Financial Times} article that
+        opens most lectures, or a historical episode.
+  \item \textcolor{srccol}{\textbf{Reading}} boxes summarise the assigned reading of the week.
+  \item \textbf{Beyond the core} blocks (grey bar on the left, smaller type) hold material that can be
+        skipped on a first reading.
+\end{itemize}
+
+\paragraph{Balance sheets.} The basic tool of the course is the balance sheet, drawn as a ``T-account'':
+assets on the left, liabilities (and net worth) on the right. A transaction is written as the
+\emph{changes} it makes to the balance sheets of everyone involved:
+\begin{taccts}
+\tacct{Bank}{$+$Loan}{$+$Deposit}\qquad
+\tacct{Borrower}{$+$Deposit}{$+$Loan}
+\end{taccts}
+
+\paragraph{The right column.} The page is laid out for a screen: the text is always on the left and a
+column on the right holds \textcolor{intcol}{\textbf{examples}}, \textcolor{srccol}{\textbf{course notes}},
+\textcolor{histcol}{\textbf{history}} boxes and \textcolor{histcol}{\textbf{asides}} (curiosities), your
+\textcolor{notecol!80!black}{\textbf{notes}} with their \textcolor{anscol}{\textbf{answers}}, and
+\textcolor{exercol}{\textbf{feedback}} on your solutions.
+
+\paragraph{Video timestamps.} A tag such as \ts{2}{5}{3:10}\ means: lecture~2, video segment~5,
+at minute 3:10 of that segment. Every tag is a link to the video at that second.
+
+\paragraph{Your annotations.} While reading, write directly in the chapter files. The macro
+\verb|\note{...}| prints a comment in the right column next to the text where it is written: a doubt,
+an idea, a reminder. When a doubt is answered, the note and its answer become one box in the right
+column. Requests about the notes themselves are collected in the chapter \emph{Requests about these
+notes}, which also lists how read and unread notes are marked.
+
+\flushside
+\end{paracol}
+
+\include{chapters/ch00-requests}
+
+\tableofcontents
+
+\mainmatter
+\part{Introduction: payments and the money market}\label{part:intro}
+\include{chapters/ch01-four-prices}
+
+% Part II starts with chapter 13 (lectures 13--22 not written yet):
+% \part{Advanced: foreign exchange and capital markets}\label{part:advanced}
+
+\end{document}

@@ -1,0 +1,685 @@
+% !TEX root = ../main.tex
+\chapter{The Four Prices of Money}\label{ch:fourprices}
+\begin{paracol}{2}
+
+\begin{sources}
+\begin{tabularx}{\linewidth}{@{}l l L@{}}
+\toprule
+\textbf{Segment} & \textbf{Length} & \textbf{Content}\\
+\midrule
+\seg{1}{1}{L1.1 The Big Picture} & 19:26 & Where the course comes from: Stigum, the \emph{Financial Times}, the history of monetary and financial thought; the ``money view''; dialogue between central banking and modern finance.\\
+\seg{1}{2}{L1.2 Prerequisites?} & 7:22 & IS/LM and the Fisher diagram: the two textbook ways of teaching money and banking, and why this course starts elsewhere.\\
+\seg{1}{3}{L1.3 What is a Bank, a Shadow Bank, a Central Bank} & 12:10 & Balance sheets as the analytical tool; solvency versus liquidity; shadow banks; the Fed's balance sheet in 2012.\\
+\seg{1}{4}{L1.4 Central Themes} & 13:09 & Plan of the course; the four prices of money; Bagehot's \emph{Lombard Street}; ``all banking is a swap of IOUs''.\\
+\seg{1}{5}{L1.5 Reading: Allyn Young} & 3:10 & Presentation of the first reading.\\
+\bottomrule
+\end{tabularx}
+
+\smallskip
+\textbf{Files.} Mehrling's lecture notes \file{money-lecture_notes-Lec 01--The Four Prices of Money.pdf};
+captions \file{materials/week1/srt/1 - *.srt}; transcripts \file{materials/transcripts/L01-P0*.txt}.
+\textbf{Reading.} Allyn Young, four chapters from \emph{The Book of Popular Science} (1924), file
+\file{Allyn Young.pdf}, with the study questions \file{Allyn Young(study).pdf}; discussed in
+\cref{sec:fp-young} and again in lecture~3.
+\end{sources}
+
+\section*{Motivation}
+The first lecture is an orientation. It says where the course stands among the ways money and banking
+are usually taught, introduces the one analytical tool that will be used everywhere (the balance sheet),
+and names the four prices that the whole course tries to explain:
+\begin{itemize}
+  \item \textbf{par}, the price of one kind of money in terms of another kind today;
+  \item \textbf{interest}, the price of money today in terms of money tomorrow;
+  \item the \textbf{exchange rate}, the price of domestic money in terms of foreign money;
+  \item the \textbf{price level}, the price of money in terms of goods.
+\end{itemize}
+The thread of the lecture is that the standard textbooks describe the banking system of 1950, while
+the system of today is \emph{global} and \emph{market-based}, and the problems it runs into are
+problems of \emph{liquidity}, not only of solvency. For a physicist, the useful attitude is that of an
+experimentalist entering a new lab: the course does not start from a model and apply it, but starts
+from what practitioners actually do and tries to extract the regularities \ts{1}{2}{4:41}.
+
+% ------------------------------------------------------------------
+\section{The big picture}\label{sec:fp-bigpicture}
+
+\paragraph{Where the knowledge comes from.} Mehrling has never traded in the money markets: his
+knowledge is ``book learning'', but from practitioners' books, above all Marcia Stigum's
+\emph{The Money Market}, and from the \emph{Financial Times}, rather than from academic journals
+\ts{1}{1}{0:29}. His academic work is in the history of monetary and financial economics, in two
+books: \emph{The Money Interest and the Public Interest}, a history of American monetary thought, and
+\emph{Fischer Black and the Revolutionary Idea of Finance}, a history of the rise of modern finance
+\ts{1}{1}{0:50}. These are the intellectual foundations of the course, and they explain why the
+readings include authors such as Allyn Young, Walter Bagehot, Ralph Hawtrey and Edward Shaw
+\ts{1}{1}{1:10}.\begin{aside}[Mehrling's books]
+Perry Mehrling (Barnard College, Columbia University, at the time of the lectures; later Boston
+University) wrote \emph{The Money Interest and the Public Interest: American Monetary Thought,
+1920--1970} (Harvard University Press, 1997), \emph{Fischer Black and the Revolutionary Idea of
+Finance} (Wiley, 2005) and \emph{The New Lombard Street: How the Fed Became the Dealer of Last Resort}
+(Princeton University Press, 2011), the book that accompanies this course.
+\end{aside}
+
+\paragraph{A course about the present.} Although its foundations are historical, this is not a course
+in the history of economic thought: it uses that history as a frame to understand the world as it is
+now \ts{1}{1}{1:31}. The big fact to understand is \emph{financial globalization} (or ``global
+financialization''). The lesson of the history of monetary thought is that every generation has to
+work out for itself the world in front of it: some ideas carry over from the past, but the system is
+not constant, and today it is ``a strange new world'' \ts{1}{1}{1:51}. This is why Mehrling does not use
+the standard money and banking textbooks: they evolved from the textbooks of 1950, and a bank in 1950
+was a different thing from a bank today \ts{1}{1}{2:53}. Better to put them in the library and start
+again from the real world, accepting that the result is a little ``looser'' but attached to reality
+\ts{1}{1}{3:14}.
+
+\paragraph{Listening to the bankers.} Being attached to reality means listening to practitioners and
+trying to understand their world \ts{1}{1}{3:35}. Practitioners know their own piece very well (repo,
+Eurodollars, \dots) but have no picture of how the system as a whole works; an academic can add value
+by noticing the patterns and the connections between the pieces \ts{1}{1}{3:55}. This is not easy:
+there will be no ``take the first derivative and set it equal to zero'' in this course \ts{1}{1}{4:36}.
+
+\begin{intuition}[Reading Stigum as an anthropologist]
+Stigum's \emph{The Money Market} is the desk reference of people who trade the money markets, ``the
+bible'' of the field \ts{1}{1}{4:56}. Mehrling's advice is to read it as an anthropologist reads the
+sacred text of a foreign tribe \ts{1}{1}{5:58}: not to learn to trade, but to understand how the
+members of the tribe think about their world. Read for every detail, it ``can blow your mind''; read for
+the way of thinking, it is a window into a rather special world \ts{1}{1}{6:19}.
+\end{intuition}\begin{aside}[Stigum]
+Marcia Stigum (1934--2005) first published \emph{The Money Market: Myth, Reality, and Practice} in 1978;
+the fourth edition (with Anthony Crescenzi, McGraw-Hill, 2007) is the one mentioned in class, with a
+new chapter on Eurodollars \ts{1}{1}{5:16}. Mehrling recalls that when he started teaching the course,
+Stigum was the whole text, with no lecture notes.
+\end{aside}
+
+\paragraph{Reading the Financial Times.} In a sense the whole course is about learning to read the
+\emph{Financial Times} (FT) and to ``translate it into English'' \ts{1}{1}{7:21}; the final exam contains
+exactly that exercise, an article to be explained to one's roommate \ts{1}{1}{7:42}. Every lecture
+after this one starts with an article of the day. Three examples from the paper of that day show the
+kind of question the course is about \ts{1}{1}{8:23}:
+\begin{enumerate}[(a)]
+  \item German banks split over the role of the European Central Bank (ECB): should the ECB buy the
+        government debt of Spain or Italy to support its price? What does it even mean for a central
+        bank to buy the debt of a state \ts{1}{1}{8:43}?
+  \item Chinese steel mills brace for a slowdown in demand. The monetary angle: in China, inventories of
+        iron ore had been used as \emph{collateral} for borrowing; as the banks call in the loans, the
+        borrowers dump the collateral, the beginning of a financial crisis \ts{1}{1}{9:04}.
+  \item Foreign exchange brokers back plans of the trading platform EBS to rein in ``predatory'' traders:
+        a battle between algorithmic high-frequency traders (``cyborgs'') and human dealers, who lose
+        money to them \ts{1}{1}{9:45}.
+\end{enumerate}
+
+\subsection{The money view and its ancestors}
+Asked which school of economics he belongs to (saltwater or freshwater, Keynesian or monetarist),
+Mehrling answers that he identifies with the \emph{money view}, a name he invented himself
+\ts{1}{1}{10:47}. It has two lines of intellectual ancestors \ts{1}{1}{11:08}, shown in
+\cref{fig:fp-ancestors}.
+\begin{itemize}
+  \item \textbf{The American line.} It starts with Allyn Young, because central banking in the United
+        States starts in his time (the Fed was founded in 1913), when there was no tradition of central
+        banking thought to draw on \ts{1}{1}{11:49}. Then Alvin Hansen and Edward Shaw (the three
+        generations of Mehrling's first book), and Hyman Minsky, who would have been the missing last
+        chapter of that book \ts{1}{1}{12:09}.
+  \item \textbf{The British line.} Britain had a central bank for a long time and was the centre of the
+        world economy for a long time, so it has a long tradition of thinking about central banking
+        \ts{1}{1}{12:50}: Walter Bagehot, Ralph Hawtrey, Richard Sayers (who taught at the London School of
+        Economics, LSE) and Charles Goodhart \ts{1}{1}{13:10}. Almost all of them talked to bankers and
+        central bankers: Goodhart spent most of his career at the Bank of England \ts{1}{1}{13:30}, and to
+        teach at the LSE is to be a mile from the City of London, as teaching in Manhattan is to be a mile
+        from Wall Street \ts{1}{1}{13:51}.
+\end{itemize}
+Some of them called themselves Keynesians (Hansen, in a way Minsky), others leaned towards monetarism
+(Shaw, Hawtrey); Mehrling reads them as one continuous stream of thought that kept its eye on the real
+world of its own time \ts{1}{1}{14:11}.
+
+\begin{nfigure}
+\begin{tikzpicture}[x=1cm,y=1cm,font=\small,
+  p/.style={draw=defcol,fill=defcol!8,rounded corners=2pt,inner sep=3pt,align=center,minimum width=2.5cm},
+  q/.style={draw=thmcol,fill=thmcol!8,rounded corners=2pt,inner sep=3pt,align=center,minimum width=2.5cm},
+  arr/.style={-{Stealth[length=4pt]},semithick}]
+  \node[font=\bfseries\small,defcol] at (0,0.8) {American line};
+  \node[p] (y) at (0,0) {Allyn Young\\\scriptsize 1876--1929};
+  \node[p] (h) at (0,-1.2) {Alvin Hansen\\\scriptsize 1887--1975};
+  \node[p] (s) at (0,-2.4) {Edward Shaw\\\scriptsize 1908--1994};
+  \node[p] (m) at (0,-3.6) {Hyman Minsky\\\scriptsize 1919--1996};
+  \draw[arr] (y)--(h); \draw[arr] (h)--(s); \draw[arr] (s)--(m);
+  \node[font=\bfseries\small,thmcol] at (8,0.8) {British line};
+  \node[q] (b) at (8,0) {Walter Bagehot\\\scriptsize 1826--1877};
+  \node[q] (ha) at (8,-1.2) {Ralph Hawtrey\\\scriptsize 1879--1975};
+  \node[q] (sa) at (8,-2.4) {Richard Sayers\\\scriptsize 1908--1989};
+  \node[q] (g) at (8,-3.6) {Charles Goodhart\\\scriptsize b.~1936};
+  \draw[arr] (b)--(ha); \draw[arr] (ha)--(sa); \draw[arr] (sa)--(g);
+  \node[draw=intucol,fill=intucol!10,very thick,rounded corners=3pt,align=center,inner sep=5pt] (mv) at (4,-1.8)
+    {\textbf{the money view}\\\scriptsize (Mehrling)};
+  \draw[arr,intucol,dashed] (y.east) to[out=0,in=150] (mv);
+  \draw[arr,intucol,dashed] (m.east) to[out=0,in=-150] (mv);
+  \draw[arr,intucol,dashed] (b.west) to[out=180,in=30] (mv);
+  \draw[arr,intucol,dashed] (g.west) to[out=180,in=-30] (mv);
+  \node[draw=fincol,fill=fincol!10,rounded corners=2pt,align=center,inner sep=3pt] (fb) at (4,-4.4)
+    {Fischer Black, modern finance\\\scriptsize ``no separate theory of money''};
+  \draw[{Stealth[length=4pt]}-{Stealth[length=4pt]},semithick,fincol] (fb) -- node[right,font=\scriptsize]{dialogue} (mv);
+\end{tikzpicture}
+\caption{The intellectual ancestors of the money view \ts{1}{1}{11:28}, and its opponent in the
+dialogue that the course sets up \ts{1}{1}{16:14}.}\label{fig:fp-ancestors}
+\end{nfigure}
+
+\subsection{The challenge of modern finance}
+Mehrling also learned modern finance, through his biography of Fischer Black. Finance holds that there
+is no such field as monetary economics \ts{1}{1}{14:53}: in an efficient market every asset trades at its
+efficient price, so there is nothing for liquidity to distort. In ``straight-ahead'' finance there is no
+\emph{fire sale}: if a bank had to sell its loans, a price just a tiny bit below their true value would be
+enough for someone to snatch them up, so prices never move far from value and there are no runs on banks
+\ts{1}{1}{15:13}. The logical end of this view is that there is no reason for central banks to exist
+\ts{1}{1}{15:54}.
+
+The course is, in Mehrling's words, a \emph{dialogue} between the classical central banking perspective and
+the modern finance perspective, two ideas that seem contradictory, rubbed against each other to make
+sparks for new economic thinking \ts{1}{1}{16:14}. The opposition is not Keynesian versus monetarist
+\ts{1}{1}{16:55}.
+
+\paragraph{Where Mehrling stands.} Pressed by the student, he states the position he will defend for the
+rest of the course \ts{1}{1}{17:38}: there \emph{is} a role for central banks in setting bounds on the
+system, a modern version of the role that Bagehot had in mind in 1873 (``lend freely at a high rate against
+good security'') \ts{1}{1}{17:59}. That rule does not quite work in the modern world, and the subtitle of his
+book, \emph{How the Fed Became the Dealer of Last Resort}, signals the update. Financial markets do not work
+perfectly; they run into problems, and banking is all about these problems, which are \emph{liquidity}
+problems rather than problems of asymmetric information \ts{1}{1}{18:20}. The most compelling work on them
+comes not from academic journals, ``fighting old battles'', but from the Bank of England and the Bank for
+International Settlements (BIS), the central bankers' bank \ts{1}{1}{19:01}.\begin{history}[Bagehot's \emph{Lombard Street} (1873)]
+Walter Bagehot (1826--1877), editor of \emph{The Economist}, published \emph{Lombard Street: A Description of
+the Money Market} in 1873, after the panic that followed the failure of the discount house Overend, Gurney \&
+Co.\ in 1866. His prescription for the Bank of England in a panic is usually summarised as ``lend freely, at a
+high rate, against good collateral''; in his own words, loans ``should only be made at a very high rate of
+interest'' and ``on all good banking securities, and as largely as the public ask for them''. Lombard Street,
+in the City of London, takes its name from the Lombard (northern Italian) merchants and bankers who settled
+there in the Middle Ages.\par
+\emph{References:} W.~Bagehot, \emph{Lombard Street}, London: Henry S.~King, 1873, ch.~VII; Mehrling,
+\emph{The New Lombard Street}, 2011, ch.~1.
+\end{history}
+
+% ------------------------------------------------------------------
+\section{Prerequisites: two textbook approaches}\label{sec:fp-prereq}
+
+The formal prerequisites are intermediate macroeconomics and intermediate microeconomics
+\ts{1}{2}{0:08}. The course makes little use of them, but other money and banking courses start from them,
+and at the end of the course the money view will be connected to both \ts{1}{2}{0:29}. It is worth seeing what
+they are, because they are what the course is \emph{not} doing.
+
+\paragraph{Intermediate macro: IS/LM.} The macro story determines national income $Y$ and the
+\emph{nominal} interest rate $i$ at the crossing of two curves \ts{1}{2}{1:15}:
+\begin{itemize}
+  \item the IS curve (``investment = saving''): the pairs $(Y,i)$ at which the market for goods clears;
+        a higher rate depresses investment, so the curve slopes down;
+  \item the LM curve (``liquidity preference = money supply''): the pairs at which the demand for money
+        equals the supply; higher income raises the demand for money, so the rate must rise to keep it
+        equal to a given supply, and the curve slopes up.
+\end{itemize}
+Monetary policy is then a shift of the LM curve. A whole course can be built on the foundations of the LM
+curve, the Taylor rule, or the argument that with inflation targeting the LM curve should be horizontal
+\ts{1}{2}{1:35}. This course instead questions the very notion of a stable money demand curve and money supply
+curve, at a more fundamental level \ts{1}{2}{1:55}.
+
+\paragraph{Intermediate micro: the Fisher diagram.} The micro story determines the \emph{real} interest rate in a
+two-period general equilibrium \ts{1}{2}{2:16}, shown in \cref{fig:fp-prereq}. With wealth $W$ in units of
+today's goods, consumption $c_1$ today and $c_2$ tomorrow, and real rate $r$, the budget line is
+\begin{equation}\label{eq:fp-budget}
+  c_1 + \frac{c_2}{1+r} = W, \qquad \frac{\dd c_2}{\dd c_1} = -(1+r),
+\end{equation}
+so its slope is $-(1+r)$ in the $(c_1,c_2)$ plane (Mehrling's notes write $-1/(1+r)$, which is the slope with
+the axes exchanged). Maximising utility $u(c_1,c_2)$ on this line gives the first-order condition
+\[
+  \frac{\partial u/\partial c_1}{\partial u/\partial c_2} = 1+r,
+\]
+the tangency between an indifference curve and the budget line \ts{1}{2}{2:36}. Two people with the same
+wealth and the same production possibilities but different tastes choose different points: one consumes more
+than she produces today and borrows, the other consumes less and lends \ts{1}{2}{2:58}. Financial markets allow
+this inter-temporal trade, and the real interest rate is the price that clears it \ts{1}{2}{3:19}. The diagram
+is named after Irving Fisher \ts{1}{2}{3:39}. A money and banking course built on it treats banks as
+intermediaries between savers and investors, needed because of some imperfection such as asymmetric
+information \ts{1}{2}{4:00}.
+
+\begin{nfigure}
+\begin{tikzpicture}[font=\small]
+  \begin{scope}
+    \draw[-{Stealth[length=4pt]}] (0,0) -- (4.2,0) node[below left]{income $Y$};
+    \draw[-{Stealth[length=4pt]}] (0,0) -- (0,3.4) node[left]{$i$};
+    \draw[thick,defcol] (0.5,3.0) -- (3.8,0.5) node[right]{IS};
+    \draw[thick,thmcol] (0.6,0.6) -- (3.8,2.2) node[right]{LM};
+    \fill (2.16,1.39) circle (1.5pt);
+    \draw[dashed,thin] (2.16,0) -- (2.16,1.39) -- (0,1.39);
+    \node[font=\bfseries] at (2,3.5) {macro: nominal rate};
+  \end{scope}
+  \begin{scope}[xshift=6.2cm,scale=0.95]
+    % PPF: quarter circle of radius 3; production at angle 40 deg, P=(2.298,1.928), slope -cot 40 = -1.192
+    % budget line through P; indifference curves c1^a c2^(1-a) tangent to it (a=0.35 lender, a=0.75 borrower)
+    \draw[-{Stealth[length=4pt]}] (0,0) -- (4.6,0) node[below]{$c_1$};
+    \draw[-{Stealth[length=4pt]}] (0,0) -- (0,5.0) node[left]{$c_2$};
+    \draw[thick,intcol] (0,3) arc (90:0:3);
+    \node[intcol,font=\scriptsize] at (0.55,2.75) {PPF};
+    \draw[thick,fincol] (0,4.667) -- (3.916,0);
+    \node[fincol,font=\scriptsize,anchor=west] at (2.05,3.45) {slope $-(1+r)$};
+    \draw[fincol,thin] (2.0,3.42) -- (0.95,3.53);
+    \draw[defcol,domain=0.78:3.6,smooth,variable=\x] plot (\x,{3.031*(1.371/\x)^0.5385});
+    \draw[thmcol,domain=1.92:4.4,smooth,variable=\x] plot (\x,{1.166*(2.937/\x)^3});
+    \fill (2.298,1.928) circle (2pt);
+    \node[font=\scriptsize,anchor=east] at (2.25,1.75) {production};
+    \fill[defcol] (1.371,3.031) circle (2pt);
+    \fill[thmcol] (2.937,1.166) circle (2pt);
+    \draw[dashed,thin,defcol] (1.371,0) -- (1.371,3.031);
+    \draw[dashed,thin] (2.298,0) -- (2.298,1.928);
+    \draw[dashed,thin,thmcol] (2.937,0) -- (2.937,1.166);
+    \draw[decorate,decoration={brace,amplitude=3pt,mirror},defcol] (1.40,-0.08) -- (2.27,-0.08)
+      node[midway,below=3pt,font=\scriptsize]{lend};
+    \draw[decorate,decoration={brace,amplitude=3pt,mirror},thmcol] (2.33,-0.08) -- (2.91,-0.08)
+      node[midway,below=3pt,font=\scriptsize]{borrow};
+    \node[font=\bfseries\small] at (2.3,5.5) {micro: real rate};
+  \end{scope}
+\end{tikzpicture}
+\caption{The two textbook starting points \ts{1}{2}{1:15}\ts{1}{2}{2:16}. Left: IS/LM fixes income and the nominal
+interest rate. Right: the Fisher diagram; two agents produce at the same point of the production possibility
+frontier (PPF) and trade along the budget line to the tangency with their own indifference curve: the one who
+consumes less today lends, the other borrows.}\label{fig:fp-prereq}
+\end{nfigure}
+
+\paragraph{The strategy of this course.} The course does not start from an economic apparatus and ask how to
+apply it to banking: it starts from the concrete realities of banking and tries to draw from them, inductively,
+how the system works and what regularities it has \ts{1}{2}{4:41}. Mehrling warns that the first two weeks
+feel disorienting, because there is nothing familiar to grab onto; it comes together later \ts{1}{2}{5:02}. His own
+way of reading the FT is to ask what Bagehot, Minsky or Fischer Black, whose biographies he wrote, would make of
+it \ts{1}{2}{6:23}.\begin{aside}[The shelf in the library]
+Monetary economics is a field of big books: to get anywhere one has to write a treatise. Mehrling chose it after
+seeing the shelf of those books in the library and thinking that a life spent reading them from left to right
+would be the best life ever \ts{1}{2}{7:04}.
+\end{aside}
+
+% ------------------------------------------------------------------
+\section{What is a bank, a shadow bank, a central bank}\label{sec:fp-banks}
+
+The analytical apparatus of the course is, largely, the balance sheet \ts{1}{3}{0:07}. Not balance sheets as
+accounting law (what GAAP prescribes), but as a structure that forces rigorous thinking about the economy
+\ts{1}{3}{0:27}.\begin{aside}[GAAP]
+GAAP, \emph{Generally Accepted Accounting Principles}, are the accounting standards set in the United
+States by the Financial Accounting Standards Board. The course ignores them: its balance sheets are a tool of
+economic analysis, not of legal reporting.
+\end{aside} We introduce three new concepts.
+
+\begin{definition}[New concepts: balance sheet, solvency, liquidity]\label{def:fp-bs}
+\leavevmode
+\begin{enumerate}[(i)]
+  \item A \emph{balance sheet} lists what an agent owns, its \emph{assets} (left side), and what it owes, its
+        \emph{liabilities} (right side). \emph{Net worth} (equity) is the balancing item,
+        \[ \text{net worth} = \text{assets} - \text{liabilities}, \]
+        so that the two sides always have the same total. Drawn as a ``T-account'', the balance sheet has assets
+        on the left and liabilities on the right \ts{1}{3}{0:49}.
+  \item An agent is \emph{solvent} if the market value of its assets exceeds the market value of its
+        liabilities, i.e.\ net worth is positive \ts{1}{3}{2:37}. (From Latin \emph{solvere}, to loosen,
+        hence to pay off a debt.)
+  \item An agent is \emph{liquid} if it can make the payments it has to make when they come due: it has cash, or
+        can obtain it \ts{1}{3}{3:23}. (From Latin \emph{liquidus}, flowing: liquid assets flow easily into
+        means of payment.)
+\end{enumerate}
+\end{definition}
+
+\paragraph{A bank.} A generic bank holds loans, securities (for example Treasury bills) and cash reserves, and
+owes deposit accounts and other borrowing (bonds, short-term money market borrowing); net worth balances the two
+sides \ts{1}{3}{1:09}. ``Other borrowing'' will be a very big part of the course \ts{1}{3}{1:56}.
+\begin{taccts}
+\tacct[3cm]{Bank}{Loans\\Securities\\Cash reserves}{Deposits\\Other borrowing\\Net worth}
+\end{taccts}
+Two issues arise \ts{1}{3}{2:17}. The first is \emph{solvency}: are the assets worth more than the liabilities?
+Much of the discussion after 2008, and in the euro crisis, is about this; perhaps entire national banking systems
+are insolvent \ts{1}{3}{2:37}. The second, which is what makes banks different from other corporations and which
+the course puts first, is \emph{liquidity} \ts{1}{3}{2:58}. Deposits are payable on demand: when a depositor pays
+someone at another bank, the bank must deliver cash reserves. Does it have them? If not, can it acquire them, by
+borrowing in the money market, by borrowing from the central bank (the Fed's ``discount window''), by selling or
+\emph{repo}-ing a security \ts{1}{3}{3:44}? Or must it sell its loans at a \emph{fire-sale} price, below their
+value?
+
+\begin{intuition}[Liquidity can become solvency]
+A fire sale turns a liquidity problem into a solvency problem: assets sold below their value reduce net worth,
+and enough of them can make it negative \ts{1}{3}{4:04}. Most economists approach banking from solvency; the
+course approaches it from liquidity, because that is how bankers think: they face the liquidity constraint every
+day, when they have to clear their accounts \ts{1}{3}{4:25}. This is why the course starts with the payment system.
+A rough analogy: solvency is a statement about stocks (values at one instant), liquidity a statement about flows
+(cash in versus cash out, every day). A system can have enough ``energy'' in total and still fail because it
+cannot deliver it at the rate required.
+\end{intuition}\begin{example}[A fire sale]
+A bank has loans 100, reserves 5; deposits 95, net worth 10. Depositors withdraw 20. Reserves cover 5; the bank
+must raise 15 by selling loans, and in a panic buyers pay only 60\% of face value: it sells loans of face value
+25. Now loans 75, reserves 0, deposits 75, net worth 0. A run of 20 out of 95 wiped out all the capital, although
+before it the bank was solvent by 10.
+\end{example}
+
+\paragraph{A shadow bank.} Mehrling's research group had just finished a paper on shadow banking, discussed at the
+end of the course (lecture 21) \ts{1}{3}{4:45}. A shadow bank, in the sense of the course, is an entity that holds,
+for example, residential mortgage-backed securities (loans turned into a kind of bond), strips most of the risk
+out of them with an interest rate swap and a credit default swap, and uses what is left, a short-term and
+relatively risk-free asset, as collateral to borrow in the \emph{wholesale} money market \ts{1}{3}{5:06}. It
+borrows not from households but from money market mutual funds and large corporate investors, through repurchase
+agreements (repo), Eurodollar borrowing, asset-backed commercial paper \ts{1}{3}{6:15}.
+
+\begin{definition}[New concepts: shadow bank, wholesale money market]\label{def:fp-shadow}
+A \emph{shadow bank} is an entity that does what a bank does (holds long-term credit and finances it with
+short-term liabilities that its creditors regard as money-like) outside the regulated deposit-taking banking
+system. Its funding comes from the \emph{wholesale money market}, the market where institutions, not households,
+lend to each other for short terms, often against collateral. The term ``shadow banking'' was coined by the
+economist Paul McCulley (PIMCO) in 2007.
+\end{definition}
+
+\begin{taccts}
+\tacct[4.2cm]{``Shadow bank''}{Mortgage-backed security\\\quad tranche\\Interest rate swap\\Credit default swap}%
+{Money market borrowing:\\\quad repurchase agreements\\\quad asset-backed commercial paper\\\quad auction rate securities\\\quad Eurodollar borrowing}
+\end{taccts}
+The instruments on this balance sheet are only named here; each gets its own lecture (repo in lecture~7,
+Eurodollars in lecture~8, swaps in lectures 19--20). ``It's not rocket science'' \ts{1}{3}{6:36}. The point now is
+that this model of credit became dominant: the amount of credit in the US that ran through it became larger than
+the amount that ran through traditional banks; the textbooks are all about banks, reality increasingly about
+shadow banks \ts{1}{3}{6:56}. Again there is an issue of solvency and an issue of liquidity, but liquidity is
+harder: it means being able to \emph{roll over} the short-term funding. If the money market freezes, the shadow
+bank cannot roll over and has to liquidate its assets; much of the financial crisis of 2007--2009 was exactly
+this \ts{1}{3}{7:38}. The regulatory system was built for traditional banks; the Dodd--Frank Act of 2010 ``doesn't
+touch'' shadow banking \ts{1}{3}{8:20}.
+
+\paragraph{The central bank is a bank.} The central bank is also a bank, at a higher level \ts{1}{3}{8:40}. Its
+balance sheet is published every week (the Fed's release H.4.1, ``Factors Affecting Reserve Balances of
+Depository Institutions''). The release shown in class, of 30 August 2012, gives, in round numbers
+\ts{1}{3}{9:00}\ts{1}{3}{11:04}:
+\begin{taccts}
+\tacct[5.6cm]{Federal Reserve, 30 Aug 2012 (\$ billion)}{Treasuries (no bills)\amt{$\approx$1{,}600}\\Agency debt (Fannie Mae, Freddie Mac)\\Mortgage-backed securities\amt{852}\\Maiden Lane (AIG, Bear Stearns)\\Central bank liquidity swaps\\\textbf{Total}\amt{$\approx$2{,}800}}%
+{Currency in circulation\amt{$\approx$1{,}000}\\Reserve balances of banks\amt{$\approx$1{,}500}\\Other\\\\\\\textbf{Total}\amt{$\approx$2{,}800}}
+\end{taccts}
+\begin{itemize}
+  \item The Fed had sold all its short-term Treasury bills and held only notes and bonds: it was moving into
+        long-term debt \ts{1}{3}{9:00}.
+  \item It held mortgage-backed securities, \$852 billion of them, for the first time in its history: a legacy of
+        the crisis \ts{1}{3}{9:21}\ts{1}{3}{9:42}. The ``Maiden Lane'' entries are what was left of the rescues of
+        Bear Stearns and AIG.
+  \item \emph{Central bank liquidity swaps} are loans of dollars from the Fed to other central banks: the ECB, the
+        Swiss National Bank, the Bank of Japan \ts{1}{3}{10:03}.
+  \item The total was about \$2.8 trillion, against less than \$1 trillion before the crisis: the balance sheet
+        roughly tripled \ts{1}{3}{11:04}.
+  \item On the liability side, currency (``green pieces of paper'') was about \$1 trillion, and the reserve
+        balances that banks hold as deposits at the Fed were \$1.5 trillion, against about \$50 billion before the
+        crisis (as said in class), an order of magnitude change \ts{1}{3}{11:24}\ts{1}{3}{11:45}.
+\end{itemize}
+This transformation of the Fed's balance sheet is what ``QE1, QE2, QE3'' (quantitative easing) refer to.
+
+\begin{intuition}[The central bank does not ``print money'']
+Textbooks write money demand $=$ money supply, $M^d=M^s$, as if the central bank decided a quantity. Behind the
+symbols are balance sheets: the central bank is a bank with assets and liabilities, and when it ``expands the money
+supply'' it expands \emph{both sides} of its balance sheet at once, for example buying a security (asset) and paying
+for it by crediting a bank's reserve account (liability) \ts{1}{3}{10:23}\ts{1}{3}{10:44}. This is a classic banking
+operation, and it happens at every level of the system, not only at the top.
+\end{intuition}
+
+\begin{taccts}
+\tacct[3.2cm]{Fed}{$+$Security}{$+$Reserves of Bank A}\qquad
+\tacct{Bank A}{$-$Security\\$+$Reserves}{}
+\end{taccts}
+
+% ------------------------------------------------------------------
+\section{Central themes}\label{sec:fp-themes}
+
+\subsection{The plan of the course}
+The course is about banking \emph{phenomena}, not about banks as legally defined institutions (Mehrling's notes).
+It is organised around four functions of banking \ts{1}{4}{0:08}\ts{1}{4}{1:29}, summarised in
+\cref{fig:fp-map}:
+\begin{enumerate}
+  \item \textbf{Banking as a clearing system}: the payment system. Understanding payments is the best starting point
+        to understand \emph{liquid assets}.
+  \item \textbf{Banking as market making}: once liquid assets are understood, \emph{liquid markets}. These first two
+        functions are the subject of the first half of the course, up to the midterm.
+  \item \textbf{International money and banking}: the same two ideas extended to the global system \ts{1}{4}{0:28}.
+  \item \textbf{Banking as advance clearing}: how finance (forwards, futures, swaps and other derivatives) enters the
+        picture \ts{1}{4}{0:48}.
+\end{enumerate}
+At the end come regulation, what to do about shadow banking, and ``touching the elephant'', the connection of the
+money view with what one learns in economics and in finance \ts{1}{4}{1:09}. The fourth classical function,
+\emph{intermediation} (channelling savings to investment), is the one textbooks start from; here it comes last.
+
+\subsection{The four prices of money}
+In a sense the whole course is about understanding where four prices come from \ts{1}{4}{1:49}.
+
+\begin{definition}[New concepts: the four prices of money]\label{def:fp-four}
+\leavevmode
+\begin{enumerate}[(i)]
+  \item \emph{Par}: the price of one kind of money in terms of another kind of money, today, normally fixed at one
+        for one (a deposit of \$107 at a bank exchanges for \$107 of currency) \ts{1}{4}{2:34}\ts{1}{4}{3:16}.
+        (Latin \emph{par}, equal.)
+  \item \emph{Interest}: the price of money today in terms of money tomorrow; an interest rate $i$ means that $1$
+        today exchanges for $1+i$ in one period \ts{1}{4}{2:14}. Its markets: Fed funds, Eurodollars, repo.
+        (Medieval Latin \emph{interesse}, ``to be between, to matter'': the compensation due to a lender for the
+        loss of the use of the money.)
+  \item \emph{Exchange rate}: the price of domestic money in terms of foreign money, or in terms of the world reserve
+        money \ts{1}{4}{4:58}.
+  \item \emph{Price level}: the price of money in terms of commodities, i.e.\ the inverse of the purchasing power of
+        money \ts{1}{4}{5:59}.
+\end{enumerate}
+\end{definition}
+
+Economics focuses on one of them, the interest rate, the price of money in the sense of a deposit transforming money
+today into money tomorrow \ts{1}{4}{2:14}. The other three deserve more attention than they usually get.
+
+\paragraph{Par, the forgotten price.} Par is a more primitive price than interest, and it is neglected
+\ts{1}{4}{2:34}. In the bank balance sheet of \cref{sec:fp-banks} deposits (private money, a promise of the bank) sit
+on one side and cash reserves (central bank money) on the other, and we take for granted that they trade at par
+\ts{1}{4}{2:55}. In financial crises par is sometimes broken: bank money trades at a different rate from central bank
+money \ts{1}{4}{3:16}. The system is \emph{hybrid}, part private money and part state money, and par masks the
+hybridity: it makes the two look like the same thing \ts{1}{4}{3:36}. When the system works well they \emph{are} the
+same; but why does it work well, how do we make it work well, and what do we do in a crisis \ts{1}{4}{3:56}? Par is
+key to the payment system. If a Californian seller charged a buyer in New York an extra 5\% because there is no par
+clearing between the two states, we would be outraged; yet this is how it was in the United States before the Fed
+\ts{1}{4}{4:17}.
+
+\begin{intuition}[Par is a fixed price, and fixed prices are hard]
+Par clearing had to be created by institutions, and it is not easy: a price fixed at one for one, which must not
+budge whatever the pressure, is like rent control, and economists know how hard such prices are to hold
+\ts{1}{4}{4:37}. The rest of the course explains what holds it: the central bank, the clearing system, the
+dealers who stand ready to trade at that price.
+\end{intuition}\begin{history}[Exchange charges before the Fed]
+Before the Federal Reserve, checks drawn on distant banks were often paid at less than face value: the paying bank
+deducted an ``exchange charge'' to cover the cost of shipping currency. Universal par clearing was one of the aims of
+the Federal Reserve Act (1913); the Fed's campaign for it lasted into the 1920s, and some small banks kept charging
+non-par fees for decades.\par
+\emph{References:} J.~Jessup, ``The Federal Reserve and Par Clearing'', Federal Reserve Bank of St.~Louis; Young,
+``Mobilizing Banking Credits'' (the reading of this week).
+\end{history}
+
+\paragraph{The exchange rate.} It is particularly obscured for people living in the United States, because the dollar
+is the world's best money \ts{1}{4}{5:18}. Americans never worry that ``the dollar'' could fall below par with the
+\emph{international} dollar, the dollar actually used as world reserve \ts{1}{4}{5:39}. Yet there are two dollars, again
+a private one and a state one: the international dollar consists largely of dollar deposits at banks outside the US,
+mostly European, that have no account at the Fed. These are the \emph{Eurodollars} (lecture~8).
+
+\paragraph{The price level.} Economists usually treat it with the quantity theory of money, $MV=PY$ (or $MV=PT$),
+imagining that the price level moves one for one with the quantity of money \ts{1}{4}{5:59}. The course comes to this
+only at the end \ts{1}{4}{6:20}; most of the attention goes to par, interest and the exchange rate.
+
+\begin{finance}[The FT market data page]
+Two or three pages from the back of the FT there is a ``horrific'' page of tiny numbers \ts{1}{4}{6:40}: market
+interest rates (US dollar LIBOR, US dollar certificates of deposit, US overnight repo, Federal funds effective rate),
+LIBOR in pounds and Swiss francs, exchange rates, interest rate swap rates \ts{1}{4}{7:00}. By the end of the course
+every number on that page should be understandable, and explainable to a roommate: it is not an arcane world reserved
+to partners of investment banks, but something the average citizen can and should understand \ts{1}{4}{7:20}.
+\end{finance}
+
+\subsection{Lombard Street, then and now}
+The inspiration of the course is Bagehot's \emph{Lombard Street} (1873), and Mehrling's \emph{New Lombard Street} is an
+homage to it \ts{1}{4}{7:41}. Bagehot wrote a bestseller to explain the money market to his fellow citizens after a
+series of financial crises in which the Bank of England had done what it had promised not to do; he argued that it
+had done the right thing: lend freely, at a high rate, against good collateral \ts{1}{4}{8:01}. The 2007--2009 crisis was
+a crisis of the shadow banking system, and the Fed too did things it had sworn it would never do \ts{1}{4}{8:21}. To get
+out of a global crisis, citizens need to understand how the system works, so that every proposal does not get stuck in
+``pro-banker'' versus ``anti-banker'' politics; the course takes no side, and approaches the system as scientists and as
+citizens \ts{1}{4}{8:42}\ts{1}{4}{9:02}.
+
+\paragraph{Globalization: back to the 19th century.} The world has changed: it is a global financial world
+\ts{1}{4}{9:23}. The world of the 1950s textbooks had hardly any private capital markets, and was not global, because
+the global financial markets of the 19th century had broken down \ts{1}{4}{9:43}. In terms of globalization the
+present resembles the world before the First World War, when the pound sterling was king and the Bank of England
+acted as central bank of the whole world, more than the world after the Second (Mehrling's notes). Hence
+\begin{center}
+\emph{Bagehot is a better guide for today than Irving Fisher} \ts{1}{4}{10:03}:
+\end{center}
+Fisher lived in a simpler, closed world; Bagehot lived in a global financial system organised around the pound. He did
+not know derivatives or high-frequency trading, but he would know how to start thinking about them, because he
+understood how money markets work \ts{1}{4}{10:24}.
+
+\paragraph{Finance: all banking is a swap of IOUs.} The second novelty is the integration of finance. Connecting money
+and finance, the subjects of Mehrling's two books, which people regard as separate fields, occupied him for ten years
+\ts{1}{4}{10:44}. The motto of the course is the connection \ts{1}{4}{11:04}:
+
+\begin{keyformulas}
+\textbf{All banking is a swap of IOUs.} \ts{1}{4}{11:25}
+
+\smallskip
+\begin{taccts}
+\tacct[2.8cm]{Bank}{$+$Loan\\\quad(borrower's IOU)}{$+$Deposit\\\quad(bank's IOU)}\qquad
+\tacct[2.8cm]{Borrower}{$+$Deposit\\\quad(bank's IOU)}{$+$Loan\\\quad(borrower's IOU)}
+\end{taccts}
+A loan is an exchange of promises: the borrower's promise to pay later against the bank's promise to pay on demand.
+\end{keyformulas}
+
+By ``swap'' Mehrling means interest rate swaps and credit default swaps, but also ordinary loans \ts{1}{4}{11:25}.
+Finance believes it knows everything about swaps; the money view looks at them differently: every swap has a
+\emph{funding} piece and a \emph{liquidity} piece, and the liquidity piece drives the action \ts{1}{4}{11:45}. The
+course is about money markets and liquidity, connected to solvency, but starting from where Bagehot would start:
+the money market as a global system of clearing \ts{1}{4}{12:06}. The aim is monetary theory for the real world of
+financial globalization, using as guideposts the great texts of the past and the ``great texts of the present'', Stigum
+and the FT \ts{1}{4}{12:26}\ts{1}{4}{12:47}.\begin{aside}[IOU]
+\emph{IOU} is a phonetic abbreviation of ``I owe you'', used since the 17th century for an informal written
+acknowledgement of a debt. In the course it means any promise to pay, from a handwritten note to a Treasury bond or a
+deposit.
+\end{aside}
+
+\begin{nfigure}
+\begin{tikzpicture}[font=\small,
+  box/.style={draw,rounded corners=2pt,align=center,inner sep=3pt,text width=2.6cm,minimum height=1.2cm},
+  arr/.style={-{Stealth[length=4pt]},semithick}]
+  \node[box,draw=defcol,fill=defcol!8] (c) at (0,0) {\textbf{1. Clearing}\\\scriptsize payment system,\\liquid assets};
+  \node[box,draw=defcol,fill=defcol!8] (m) at (3.5,0) {\textbf{2. Market making}\\\scriptsize dealers,\\liquid markets};
+  \node[box,draw=intcol,fill=intcol!8] (i) at (7,0) {\textbf{3. International}\\\scriptsize the same, global:\\FX, key currencies};
+  \node[box,draw=fincol,fill=fincol!8] (a) at (10.5,0) {\textbf{4. Advance clearing}\\\scriptsize forwards, futures,\\swaps};
+  \draw[arr] (c)--(m); \draw[arr] (m)--(i); \draw[arr] (i)--(a);
+  \node[draw=srccol,fill=srccol!8,rounded corners=2pt,align=center,inner sep=3pt] (e) at (8.7,-2.1)
+    {\textbf{Shadow banking, regulation}\\\scriptsize ``touching the elephant'':\\\scriptsize money view vs economics vs finance};
+  \draw[arr] (a.south) -- (a.south |- e.north);
+  \draw[decorate,decoration={brace,amplitude=5pt,mirror},thick] (-1.4,-0.8) -- (4.9,-0.8)
+    node[midway,below=6pt,font=\scriptsize]{before the midterm (lectures 1--12)};
+  \node[draw=keycol,fill=keycol!8,rounded corners=2pt,align=center,inner sep=3pt] (p) at (3.5,1.9)
+    {\textbf{four prices of money}\\\scriptsize par $\cdot$ interest $\cdot$ exchange rate $\cdot$ price level};
+  \draw[arr,keycol,dashed] (p) -- (c.north); \draw[arr,keycol,dashed] (p) -- (m.north); \draw[arr,keycol,dashed] (p) -- (i.north);
+  \node[draw=intucol,fill=intucol!8,rounded corners=2pt,align=center,inner sep=3pt] (s) at (10.5,1.9)
+    {\textbf{all banking is}\\\textbf{a swap of IOUs}};
+  \draw[arr,intucol,dashed] (s) -- (a);
+\end{tikzpicture}
+\caption{Map of the course \ts{1}{4}{0:08}: the four functions of banking in the order in which they are treated,
+the four prices that the course explains, and the motto that connects money and finance.}\label{fig:fp-map}
+\end{nfigure}
+
+% ------------------------------------------------------------------
+\section{Reading: Allyn Young}\label{sec:fp-young}
+
+The first reading is by Allyn Young, one of the authors who started Mehrling on his path: the first three chapters of
+\emph{The Money Interest and the Public Interest} are a biography of Young \ts{1}{5}{0:00}.
+
+\begin{reading}[Allyn Young, four encyclopedia chapters (1924)]
+Young wrote the chapters, unsigned, for an encyclopedia, \emph{The Book of Popular Science}, in 1923--1924, just after
+the First World War \ts{1}{5}{0:00}: ``The Mystery of Money'', ``The Monetary System of the United States'',
+``Mobilizing Banking Credits'', ``Dear and Cheap Money''. The Fed had been founded in 1913, and the United States had
+no tradition of thinking about central banking; Americans were traditionally suspicious of it \ts{1}{5}{0:40}. Young
+writes about the Fed when it is a new institution whose role is unclear: he is a friend of the president of the
+Federal Reserve Bank of New York and advises him, while open market operations and stabilisation policy are being
+invented \ts{1}{5}{1:15}. He compares the Fed with the Bank of England and predicts that London will remain the centre
+of world finance; he was wrong: it was the end of sterling's hegemony, although the dollar became the world reserve
+currency only after the Second World War, after the Great Depression \ts{1}{5}{1:15}\ts{1}{5}{1:48}. The chapters are
+easy to read but deep: on a second reading one notices how carefully Young steers away from minefields
+\ts{1}{5}{2:19}. Their spirit is the spirit of the course: having lived through a crisis we do not fully understand,
+in a system that is changing, we have to figure it out, as he did in 1924 \ts{1}{5}{1:48}.
+
+\smallskip
+\emph{Study questions} (\file{Allyn Young(study).pdf}): where does Young draw the line between money and credit?
+Represent with T-accounts the three ways to obtain a bank deposit (\cref{ex:fp-deposits}). How is Young's hostility
+to government ``fiat'' money and his sympathy for bank ``credit money'' consistent with the hierarchy of money
+(lecture~2)? The reading is analysed in detail in lecture~3.
+\end{reading}\begin{history}[Allyn Young (1876--1929)]
+Allyn Abbott Young taught at Cornell, Stanford and Harvard; in 1927 he moved to the London School of Economics, where
+he died of pneumonia in March 1929, during an influenza epidemic, at 52. He is best known today for ``Increasing
+Returns and Economic Progress'' (\emph{Economic Journal}, 1928). The friend at the New York Fed was Benjamin Strong,
+its first governor (1914--1928), the dominant figure of the early Fed. Young's encyclopedia chapters are reprinted in
+P.~Mehrling and R.~Sandilands (eds.), \emph{Money and Growth: Selected Papers of Allyn Abbott Young}, Routledge, 1999,
+from which the course reading is taken.\par
+\emph{References:} Mehrling, \emph{The Money Interest and the Public Interest}, 1997, ch.~1--3; Mehrling and
+Sandilands, 1999.
+\end{history}
+
+% ------------------------------------------------------------------
+\flushside
+\section*{Key formulas and ideas}
+\begin{keyformulas}
+\begin{tabularx}{\linewidth}{@{}l L@{}}
+Balance sheet & assets $=$ liabilities $+$ net worth (always balances)\\
+Solvency & net worth $=$ market value of assets $-$ market value of liabilities $>0$ (a stock)\\
+Liquidity & cash available or obtainable $\ge$ payments due, every day (a flow)\\
+Four prices of money & par (money vs money, today); interest (money today vs money tomorrow, $1\mapsto 1+i$);
+exchange rate (domestic vs foreign money); price level (money vs goods)\\
+Fisher diagram & $c_1 + c_2/(1+r) = W$, slope $-(1+r)$; optimum: $u_1/u_2 = 1+r$ \eqref{eq:fp-budget}\\
+Central bank & expanding the money supply $=$ expanding both sides of its balance sheet\\
+Motto & all banking is a swap of IOUs\\
+\end{tabularx}
+\end{keyformulas}
+
+\section*{Exercises}
+
+\begin{exercise}[Three ways to get a deposit]\label{ex:fp-deposits}
+Using T-accounts for you, your bank and (where needed) a second person and a second bank, record:
+\begin{enumerate}[(a)]
+  \item you deposit \$100 of currency;
+  \item you deposit a check for \$100 written by someone with an account at another bank;
+  \item the bank grants you a loan of \$100 by crediting your deposit account.
+\end{enumerate}
+In which case does the total quantity of deposits in the economy increase? (From the study questions on Young.)
+\end{exercise}
+
+\begin{exercise}[Liquidity and solvency]
+A bank has loans 200, securities 50, reserves 10; deposits 230, net worth 30. Depositors withdraw 40.
+\begin{enumerate}[(a)]
+  \item The bank sells securities at their market value to pay. Write the new balance sheet. Is the bank solvent?
+        Liquid?
+  \item The securities can only be sold at 80\% of their value and the loans at 50\%. Which assets does the bank sell
+        first, and what is its net worth afterwards?
+  \item Name two ways the bank could meet the withdrawal without selling any asset.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}[Which price of money?]
+For each of the following, say which of the four prices of money is involved:
+\begin{enumerate}[(a)]
+  \item a money market fund announces that each share is now worth \$0.97 instead of \$1;
+  \item the Fed funds effective rate is 0.15\%;
+  \item a tourist pays 1.30 dollars for one euro;
+  \item the consumer price index rises by 2\% in a year;
+  \item before 1914 a New York bank paid a check drawn on a Chicago bank at \$99.85 per \$100.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}[The Fisher diagram]
+An agent has endowment $(y_1,y_2)=(100,0)$ and utility $u=\ln c_1+\beta\ln c_2$.
+\begin{enumerate}[(a)]
+  \item Find the optimal $(c_1,c_2)$ as a function of $r$ and $\beta$, and the amount lent.
+  \item A second agent has endowment $(0,110)$ and the same utility. For $\beta=1$, find the real rate $r$ that clears
+        the market for loans between the two.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}[Quantitative easing in T-accounts]
+The Fed buys \$100 billion of mortgage-backed securities from a primary dealer, which holds its account at Bank B.
+Write the changes on the balance sheets of the Fed, Bank B and the dealer. Which item of the Fed's liabilities
+grows? Relate your answer to the reserve balances of \cref{sec:fp-banks}.
+\end{exercise}
+
+\begin{exercise}[A shadow bank in a freeze]
+A shadow bank holds mortgage-backed securities worth 100, financed by overnight repo of 95 and capital of 5. One
+morning lenders agree to roll over only 80.
+\begin{enumerate}[(a)]
+  \item How much must the shadow bank raise, and from what?
+  \item If buyers pay only 90\% of value for the securities, is the shadow bank still solvent after the sale?
+  \item Compare with the bank of \cref{def:fp-bs}: which liability of a traditional bank plays the role of the repo?
+\end{enumerate}
+\end{exercise}

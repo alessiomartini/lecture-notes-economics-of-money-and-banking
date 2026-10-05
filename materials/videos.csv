@@ -1,0 +1,193 @@
+index,lecture,part,lecture_title,part_title,id,duration
+1,1,1,The Four Prices of Money,The Big Picture,KNEouYM5wRE,1166
+2,1,2,The Four Prices of Money,Prerequisites?,OZPvJa9_hWI,442
+3,1,3,The Four Prices of Money,"What is a Bank, a Shadow Bank, a Central Bank",zz7kk7s-v4k,730
+4,1,4,The Four Prices of Money,Central Themes,gPEnV3ZC708,789
+5,1,5,The Four Prices of Money,Readings: Allyn Young,1VstsTPHaB4,190
+6,2,1,The Natural Hierarchy of Money,"The Eurocrisis,  Liquidity vs. Solvency",w6FEujzITdc,605
+7,2,2,The Natural Hierarchy of Money,Hierarchy of Financial Instruments,XB2DFuAP8SY,579
+8,2,3,The Natural Hierarchy of Money,Hierarchy of Financial Institutions,TLMhtj1FYs8,397
+9,2,4,The Natural Hierarchy of Money,Dynamics of the Hierarchy,YXVaY-gIahw,368
+10,2,5,The Natural Hierarchy of Money,Discipline and Elasticity,Vuy2kh-_Pic,529
+11,2,6,The Natural Hierarchy of Money,Hierarchy of Market Makers,5NnlQIz2UOw,557
+12,2,7,The Natural Hierarchy of Money,Managing the Hierarchy,nVLB1dAIix0,1083
+13,3,1,Money and the State:  Domestic,Quantitative Easing and the Fed,2lYU2TejA4Q,467
+14,3,2,Money and the State: Domestic,Allyn Young:  Money and Economic Orthodoxy,qTgTTf-gHKQ,549
+15,3,3,Money and the State:  Domestic,National Banking System before the Fed,Ikdgs9latBU,202
+16,3,4,Money and the State: Domestic,"Civil War Finance, bonds and loans",AGkH0w9hpSQ,529
+17,3,5,Money and the State: Domestic,"Civil War Finance, legal tenders",ymZAkB8QI28,427
+18,3,6,Money and the State: Domestic,"National Banking System, origins",p09FurGoiM0,390
+19,3,7,Money and the State: Domestic,"National Banking System, instability",NB0FVBHzK3E,357
+20,3,8,Money and the State: Domestic,"Federal Reserve System, plan",QW0pB44FqaM,392
+21,3,9,Money and the State: Domestic,"Federal Reserve System, actual",yKtiYyM_8oQ,408
+22,4,1,"The Money View, Micro and Macro",FT: Dealer of Last Resort,2dIsnwMxXTM,323
+23,4,2,"The Money View, Micro and Macro",Reading: Hyman Minsky,f6qXHMUMfzQ,187
+24,4,3,"The Money View, Micro and Macro",Payments: Money and Credit,Kce8ST2g3aY,336
+25,4,4,"The Money View, Micro and Macro",Payments: Discipline and Elasticity,W0IGZW0QOr4,253
+26,4,5,"The Money View, Micro and Macro",The Survival Constraint,8fJAUlpixpY,215
+27,4,6,"The Money View, Micro and Macro",Sources and Uses Accounts,5Fa-9RTK8zc,415
+28,4,7,"The Money View, Micro and Macro",Payment Example: Money and Credit,80_z5IMo9mk,605
+29,4,8,"The Money View, Micro and Macro",Flow of Funds Accounts,zbRwRasqTuA,610
+30,4,9,"The Money View, Micro and Macro","The Survival Constraint, redux",1_QLYX-99gQ,160
+31,4,10,"The Money View, Micro and Macro","Liquidity, Long and Short",sdHLuC8fNfc,582
+32,4,11,"The Money View, Micro and Macro","Financial Fragility, Flows and Stocks",_XwuGgyYrGs,383
+33,5,1,The Central Bank as a Clearinghouse,Martin Wolf on QE3,iH0e1jmhQmw,196
+34,5,2,The Central Bank as a Clearinghouse,One Big Bank,PyTGohPHqy0,500
+35,5,3,The Central Bank as a Clearinghouse,"Multiple Banks, a challenge",BZiQD75mpN4,236
+36,5,4,The Central Bank as a Clearinghouse,Reading: Charles F. Dunbar,_FrU0BVeCJg,125
+37,5,5,The Central Bank as a Clearinghouse,Correspondent banking,ySeQT37belQ,624
+38,5,6,The Central Bank as a Clearinghouse,"Correspondent banking, system network",_BJEASfyXtc,235
+39,5,7,The Central Bank as a Clearinghouse,"Clearinghouse, normal operations",Uok9KslQdrA,508
+40,5,8,The CB as a Clearinghouse,"Clearinghouse, private lender of last resort",TKWrmleNog4,644
+41,5,9,The Central Bank as a Clearinghouse,Central Bank Clearing,6ocg8pO-hpc,294
+42,5,10,The Central Bank as a Clearinghouse,Central Bank Cooperation,LG9X5x78g8g,341
+43,6,1,"Federal Funds, Final Settlement",European Bank Deleveraging,3qD6VOUjbb4,343
+44,6,2,"Federal Funds, Final Settlement",What are Fed Funds?,DIZ8o0_PYcI,313
+45,6,3,"Federal Funds, Final Settlement",Payment settlement versus Required Reserves,mPd3pjmUxHM,71
+46,6,4,"Federal Funds, Final Settlement",Payment elasticity/discipline,j0tHZ_9LiWQ,543
+47,6,5,"Federal Funds, Final Settlement",The Function of the Fed Funds Market,9xE-QFUxZ88,555
+48,6,6,"Federal Funds, Final Settlement",Payment versus Funding:  an example,aS1MVEThBnU,684
+49,6,7,"Federal Funds, Final Settlement",Brokers versus Dealers,yG9WhU3aTWs,123
+50,6,8,"Federal Funds, Final Settlement",Payments Imbalances and the Fed Funds Rate,6XJQQk8K9Yc,426
+51,6,9,"Federal Funds, Final Settlement",Secured versus Unsecured Interbank Credit,V1TN_TcLp_E,305
+52,6,10,"Federal Funds, Final Settlement","Required Reserves, redux",Jq32n5K5B20,440
+53,7,1,"Repos, Postponing Settlement",The impact of QE3,MpIiGdYN174,165
+54,7,2,"Repos, Postponing Settlement",Money Market Interest Rate Patterns,NmlWNEONCNU,214
+55,7,3,"Repos, Postponing Settlement",What is repo?,7WXxQGfY4WI,199
+56,7,4,"Repos, Postponing Settlement",Repo in balance sheets,hF5WI1LoGoY,454
+57,7,5,"Repos, Postponing Settlement",Comparison with Fed Funds,_TgBBNLZ3e8,309
+58,7,6,"Repos, Postponing Settlement",Legal construction of repo,N2xCU-S6fRs,586
+59,7,7,"Repos, Postponing Settlement",Security dealers balance sheet,SdKS8AfX1-c,667
+60,7,8,"Repos, Postponing Settlement","Repo, modern finance, and the Fed",dI9jj1OPjWw,529
+61,7,9,"Repos, Postponing Settlement",Interest rate spreads: before the crisis,jIzc7XIrzZM,333
+62,7,10,"Repos, Postponing Settlement",Interest rate spreads:  after the crisis,_PlS_EOWPcE,487
+63,8,1,"Eurodollars, Parallel Settlement",FT:  Ring-fencing and the Volcker Rule,f5fuDRx3qc0,585
+64,8,2,"Eurodollars, Parallel Settlement",The Eurodollar Market in Crisis,C8J92oXhnU8,291
+65,8,3,"Eurodollars, Parallel Settlement",What are Eurodollars?,Pm7LBbAgX2w,431
+66,8,4,"Eurodollars, Parallel Settlement",Why is there a Eurodollar market?,G9Kz8VkJG4Y,283
+67,8,5,"Eurodollars, Parallel Settlement",Eurodollar as global funding market,gbr-8rSBP-Q,693
+68,8,6,"Eurodollars, Parallel Settlement",Liquidity challenge of Eurodollar banks,VmSH0JIxYuA,659
+69,8,7,"Eurodollars, Parallel Settlement",FRA as implicit swap of IOUs,8WBk34CHXKw,274
+70,8,8,"Eurodollars, Parallel Settlement","Forward Parity, Interest Rates, EH",7JXyFsCl4D8,538
+71,8,9,"Eurodollars, Parallel Settlement","Forward Parity, Exchange Rates, UIP",iLSolU5-CSY,168
+72,8,10,Central Banking for Shadow Banking,Forward rates aren't expected spot rates,2V0Y_TVbEuE,169
+73,9,1,The World that Bagehot Knew,FT:  Depreciation of Iran's currency,u7x5KMzwBks,217
+74,9,2,The World that Bagehot Knew,Reading: John Hicks,VOXNm8Iwj5w,218
+75,9,3,The World that Bagehot Knew,"Bagehot's World, wholesale money market",Ae98xdlw0l0,477
+76,9,4,The World that Bagehot Knew,"Economizing on notes:  deposits, acceptances",wEBqtutMGJ0,508
+77,9,5,The World that Bagehot Knew,"Managing cash flow:  discount, rediscount",o4m7B1GgWcI,449
+78,9,6,The World that Bagehot Knew,Market rate of interest,9AS-ABRspqM,164
+79,9,7,The World that Bagehot Knew,Central Bank and bank rate,CLLdBIWbom8,493
+80,9,8,The World that Bagehot Knew,"The Bagehot Rule, origin of monetary policy",NoQypZ3Mn8Q,278
+81,9,9,The World that Bagehot Knew,Limits on central banking,kA_zvcqRiBs,620
+82,10,1,Dealers and Liquid Security Markets,FT:  Asymmetric Credit Growth in Europe,CSIsOeWMGpc,393
+83,10,2,Dealers and Liquid Security Markets,"Liquidity, dealers, and inventories",d1VOy-cACgQ,430
+84,10,3,Dealers and Liquid Security Markets,Two-sided dealer basics,uS-upCmbYzc,391
+85,10,4,Dealers and Liquid Security Markets,Economics of the dealer function,GHK79gTisSo,703
+86,10,5,Dealers and Liquid Security Markets,Leveraged dealer basics,YshcXyGeszE,442
+87,10,6,Dealers and Liquid Security Markets,Real world dealers,vesU2BtPgsg,476
+88,10,7,Dealers and Liquid Security Markets,The assumption of perfect liquidity,aWvi6L5-xtA,581
+89,11,1,Banks and the Market for Liquidity,FT:  Money Market Mutual Funds,qwlh_Tx_eA8,406
+90,11,2,Banks and the Market for Liquidity,"Banks as money dealers, a puzzle",b_2PCNCSG_I,255
+91,11,3,Banks and the Market for Liquidity,Security dealers as money dealers,oEYxykCngTE,679
+92,11,4,Banks and the Market for Liquidity,Adapting Treynor to liquidity risk,r6swYplUcb0,393
+93,11,5,Banks and the Market for Liquidity,Evolution of American banking,1sJu8XNKMik,690
+94,11,6,Banks and the Market for Liquidity,The Fed in the Fed Funds market,GQSw9BSms5Q,768
+95,11,7,Banks and the Market for Liquidity,Return to the initial puzzle,ZAL0WPROmOQ,134
+96,12,1,Lender/Dealer of Last Resort,FT:  Citibank and the SIVs,reGRRtHWz80,310
+97,12,2,Lender/Dealer of Last Resort,The Art of Central Banking,5oriNHybOsc,222
+98,12,3,Lender/Dealer of Last Resort,Evolution of Monetary Policy:  1951-1987,PZStGPgCWKk,426
+99,12,4,Lender/Dealer of Last Resort,The Taylor Rule: 1987-2007,SJt4soq71HA,424
+100,12,5,Lender/Dealer of Last Resort,Monetary Transmission Mechanism,N8r9LGsysjE,600
+101,12,6,Lender/Dealer of Last Resort,Anatomy of a normal crisis,8qGW896JlHg,498
+102,12,7,Lender/Dealer of Last Resort,Anatomy of a serious crisis,808nhtHPTac,272
+103,12,8,Lender/Dealer of Last Resort,Should the Fed intervene or not?,L_2FGkdSzgE,520
+104,12,9,Lender/Dealer of Last Resort,The Fed as Dealer of Last Resort: 2007-2009,xQ0HUa7FQwE,950
+105,13,1,"Chartallism, Metallism, and Key Currencies",FT: Autonomy of Bank of Japan,qxRSkeY4R4U,134
+106,13,2,"Chartallism, Metallism, and Key Currencies",Key Currencies,z1cHjKdbbWc,518
+107,13,3,"Chartallism, Metallism",What is Money?  Chartalism versus Metallism,xvHm3VFwivY,517
+108,13,4,"Chartallism, Metallism",What is Money? Chartalism as a theory of money,jti2J0aCK0U,130
+109,13,5,"Chartallism, Metallism",What is Money? Quantity Theory of Money,AEMloDPuk60,279
+110,13,6,"Chartallism, Metallism",Purchasing Power Parity,n5c25B6Rns0,182
+111,13,7,"Chartallism, Metallism",Metallism as a theory of money,5-XCz1rxm0A,307
+112,13,8,"Chartallism, Metallism","A Money View of International Payments, FX Dealers",fB73U2syJzQ,696
+113,13,9,"Chartallism, Metallism","Chartallism, Metallism, and the Money View compared",i1_mHyCU98o,269
+114,13,10,"Chartallism, Metallism",Private and Public Money:  A Hybrid System,K11XZuuJX10,450
+115,13,11,"Chartallism, Metallism",Hybridity in FX Market-making,uwdP4RX5h5A,333
+116,14,1,Money and the State:  International,FT: Costs of Japan's Monetary Policy,_7MD7izX294,169
+117,14,2,Money and the State:  International,Reading:  Robert Mundell,8GCkSBgguKA,627
+118,14,3,Money and the State: International,Confrontation,3uizoDN3C-I,708
+119,14,4,Money and the State: International,Contradiction,b17LLX9FMHI,848
+120,14,5,Money and the State: International,The Dollar System,NpC0tGD0KzY,424
+121,14,6,Money and the State: International,Flexible exchange,Jk42hn5ms6U,508
+122,14,7,Money and the State: International,Global Financial Crisis,wyPdLvCehHE,1078
+123,15,1,Banks and Global Liquidity,FT: European money market funds,UuFPZnVORWQ,157
+124,15,2,Banks and Global Liquidity,International transactions,BHhrmhZ_Dic,702
+125,15,3,Banks and Global Liquidity,Dealer model for foreign exchange,u1tIaPGNHXg,605
+126,15,4,Banks and Global Liquidity,"Central banking, defense of domestic exchange",7zyTAA-Mqdw,523
+127,15,5,Banks and Global Liquidity,"Bank of England, defense against external drain",ysMHukKPGjI,728
+128,15,6,Banks and Global Liquidity,Toward a theory of exchange,PE6npYTbwaE,577
+129,16,1,Foreign Exchange,FT: High frequency trading,aHh4yoeGOQ4,281
+130,16,2,Foreign Exchange,Uncovered interest parity,wnQGKtSg0r8,142
+131,16,3,Foreign Exchange,"FX dealers under the gold standard, redux",yQf8Pey75b4,303
+132,16,4,Foreign Exchange,Private FX dealing system,lQh9I8LEm0w,641
+133,16,5,Foreign Exchange,"Economics of the dealer function, speculative dealer",1yNnLIFnbVw,357
+134,16,6,Foreign Exchange,"Economics of the dealer function, matched-book dealer",q6p_inIHGG8,375
+135,16,7,Foreign Exchange,Digression:  Why do UIP and EH fail?,tGWcH6wZljU,585
+136,16,8,Foreign Exchange,Central bank as FX dealer of last resort,PTptQUV-t2A,969
+137,16,9,Foreign Exchange,Reading:  McCauley on internationalization of renminbi,vIDHMEj49Rg,629
+138,17,1,Direct and Indirect Finance,FT: Shadow banking,VKMUAy9AIuA,255
+139,17,2,Direct and Indirect Finance,Bagehot's World,gk4G48jjCb4,531
+140,17,3,Direct and Indirect Finance,The New World,pf7uOvxBeak,655
+141,17,4,Direct and Indirect Finance,Funding liquidity versus market liquidity,Rt9ELlcFKQ4,153
+142,17,5,Direct and Indirect Finance,Digression:  Schumpeter on banking,hGTVBK-teK0,245
+143,17,6,Direct and Indirect Finance,Payment versus funding,sqqqk31z9mU,331
+144,17,7,Direct and Indirect Finance,Reading:  Gurley and Shaw,fJS_A8_wuJU,124
+145,17,8,Direct and Indirect Finance,Financial evolution,_g1FG8YVAUA,792
+146,17,9,Direct and Indirect Finance,Banking evolution,PsU7Y5O0-GU,672
+147,17,10,Direct and Indirect Finance,Preview:  Central banking and shadow banking,-iMW1R4Ds1w,508
+148,18,1,Forwards and Futures,Preview: FT: Argentina in court to fight debt ruling,hDsHi3wAirE,296
+149,18,2,Forwards and Futures,Banking as advance clearing,Zy4u9k7aw24,355
+150,18,3,Forwards and Futures,Forwards versus futures,4YVNeG8JHHM,821
+151,18,4,Forwards and Futures,"Futures contracts, fluctuations II",sS7idgU2IoY,847
+152,18,5,Forwards and Futures,"Futures contracts, fluctuations II",mFlb0CS2hIU,367
+153,18,6,Forwards and Futures,"Cash and carry arbitrage, defined",oo-kTCTcUEM,448
+154,18,7,Forwards and Futures,"Cash and carry arbitrage, explained as liquidity risk",Q-N1s8zcBWQ,326
+155,18,8,Forwards and Futures,Cash and carry arbitrage as counterparty risk,UBbbt6ZrW3Y,169
+156,18,9,Forwards and Futures,"Cash and carry arbitrage, as natural banking business",ySY8hRUF34k,202
+157,19,1,Interest Rate Swaps,FT: Sovereign debt crises,WXOw8n1YBZU,201
+158,19,2,Interest Rate Swaps,Reading:  FOMC Report (1952),dlaIO_35Vp8,460
+159,19,3,Interest Rate Swaps,"Treasury-swap spread, a puzzle",snG05OFavjU,664
+160,19,4,Interest Rate Swaps,What is a swap,nCrxDIuCZ2Y,635
+161,19,5,Interest Rate Swaps,Why swap? An example from Stigum,B57VC6qKmA0,637
+162,19,6,Interest Rate Swaps,Market making in swaps,HjeQRfq8WE4,522
+163,19,7,Interest Rate Swaps,"Money market swaps, example",T9TfVmhp3EY,357
+164,19,8,Interest Rate Swaps,Life in Arbitrage Land,0WiQpgTIvRo,304
+165,19,9,Interest Rate Swaps,Treasury-swap spread,RYsIpeGpQms,441
+166,20,1,Credit Default Swaps,FT: Internationalization of the Euro,mmgYLekyw3Y,307
+167,20,2,Credit Default Swaps,Credit indices,ypmwhTFWFfU,220
+168,20,3,Credit Default Swaps,"Fischer Black (1970), risk-free security",47gfinIdtFo,134
+169,20,4,Credit Default Swaps,What is a Credit Default Swap (CDS),UD2e2FgC-vs,312
+170,20,5,Credit Default Swaps,Corporate bonds,8I9IN6i0kOY,223
+171,20,6,Credit Default Swaps,CDS pricing,t2o_EuZv43U,684
+172,20,7,Credit Default Swaps,Market making in CDS,2TgKw3ulHYA,243
+173,20,8,Credit Default Swaps,Example: Negative basis trade and Liquidity Risk,qnC-_nLfSHE,620
+174,20,9,Credit Default Swaps,Example: Private backstop of marketmaking in CDS,ynwQ5-gJUcQ,915
+175,20,10,Credit Default Swaps,Example: Synthetic CDO as Collateral Prepayment,jIfYYYztlm4,403
+176,21,1,Central Banking for Shadow Banking,FT: Regulation of shadow banking,MkQ1Qb0d-pc,214
+177,21,2,Central Banking for Shadow Banking,Shadow banking vs traditional banking,UDkkRmqr2uc,415
+178,21,3,Central Banking for Shadow Banking,Liquidity and solvency backstops,saW6Xo1rrIA,438
+179,21,4,Central Banking for Shadow Banking,Global dimension,MsJ1GOM33OU,316
+180,21,5,Central Banking for Shadow Banking,Evolution of modern finance,1vIUlJM-uuY,199
+181,21,6,Central Banking for Shadow Banking,What is shadow banking?,KRYE7SvR8gQ,742
+182,21,7,Central Banking for Shadow Banking,Backstopping the market makers,T3iRxwBzwAM,466
+183,21,8,Central Banking for Shadow Banking,Regulation of systemic risk,L1bDEFGQrCQ,387
+184,21,9,Central Banking for Shadow Banking,Regulation of Collateral and Payment,dTIbBI9yn2Q,629
+185,21,10,Central Banking for Shadow Banking,"Private backstop, and public",UOM5uixfcsk,500
+186,22,1,Touching the Elephant: Three Views,FT: Future of banking,xhNA3VKGCYk,286
+187,22,2,Touching the Elephant: Three Views,Three world views,Wkq8PF0Zv1Q,914
+188,22,3,Touching the Elephant: Three Views,Economics View: Commodity Exchange,PiNVe1Lf7I4,534
+189,22,4,Touching the Elephant: Three Views,Finance View: Risk,HgUXoGWvq34,941
+190,22,5,Touching the Elephant: Three Views,The education of Fischer Black,B0TlLwf2Mz4,292
+191,22,6,Touching the Elephant: Three Views,Steps from finance view to money view,exdVFqH8tHM,465
+192,22,7,Touching the Elephant: Three Views,A money view of economics and finance,NQ0a1q5isuo,312
