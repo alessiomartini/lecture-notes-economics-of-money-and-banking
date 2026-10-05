@@ -1,0 +1,650 @@
+% !TEX root = ../main.tex
+\chapter{The Natural Hierarchy of Money}\label{ch:hierarchy}
+\begin{paracol}{2}
+
+\begin{sources}
+\begin{tabularx}{\linewidth}{@{}l l L@{}}
+\toprule
+\textbf{Segment} & \textbf{Length} & \textbf{Content}\\
+\midrule
+\seg{2}{1}{L2.1 FT: The Eurocrisis, Liquidity vs.\ Solvency} & 10:05 & Draghi's bond purchases (a liquidity operation) versus Soros's European Fiscal Authority (a solvency operation), in T-accounts.\\
+\seg{2}{2}{L2.2 Hierarchy of Financial Instruments} & 9:39 & Money versus credit; gold, currency, deposits, securities; where the line between money and credit is drawn depends on the point of view.\\
+\seg{2}{3}{L2.3 Hierarchy of Financial Institutions} & 6:37 & The same hierarchy in balance sheets; inside and outside money.\\
+\seg{2}{4}{L2.4 Dynamics of the Hierarchy} & 6:08 & The pyramid of credit; expansion and contraction at every time scale, in quantity and in quality.\\
+\seg{2}{5}{L2.5 Discipline and Elasticity} & 8:49 & Scarcity of ultimate money and elasticity of derivative credit; currency principle versus banking principle.\\
+\seg{2}{6}{L2.6 Hierarchy of Market Makers} & 9:17 & Central bank, banks and security dealers as market makers; the prices of money as the links between layers.\\
+\seg{2}{7}{L2.7 Managing the Hierarchy} & 18:03 & Lender of last resort, origin of monetary policy, the term structure and the ``artificial hierarchy''; Operation Twist.\\
+\bottomrule
+\end{tabularx}
+
+\smallskip
+\textbf{Files.} Mehrling's lecture notes \file{money-lecture_notes-Lec 02--The Natural Hierarchy of Money.pdf}
+(dated 14 Sept 2009); captions \file{materials/week1/srt/2 - *.srt}; transcripts \file{materials/transcripts/L02-P0*.txt}.
+\textbf{Reading.} Allyn Young (\cref{sec:fp-young}); the study questions ask to place Young's ``The Mystery of
+Money'' in the framework of this lecture.
+\end{sources}
+
+\section*{Motivation}
+Mehrling calls this lecture ``the whole course'': everything that follows hangs on its picture, like
+ornaments on a tree \ts{2}{2}{0:08}\ts{2}{4}{5:47}. Its first sentence is the thesis:
+\begin{center}
+\emph{Always and everywhere, monetary systems are hierarchical.}
+\end{center}
+The lecture builds the hierarchy in four steps, each adding a dimension to the previous one:
+\begin{enumerate}
+  \item a hierarchy of \emph{instruments} (gold, currency, deposits, securities), \cref{sec:nh-instruments};
+  \item a hierarchy of \emph{institutions} that issue and hold them, \cref{sec:nh-institutions};
+  \item the \emph{dynamics} of the hierarchy, which expands and contracts at every time scale, and the two
+        principles behind it, discipline and elasticity, \cref{sec:nh-dynamics,sec:nh-discipline};
+  \item a hierarchy of \emph{market makers} and of the \emph{prices of money} that connect the layers,
+        \cref{sec:nh-marketmakers}, and the central bank's attempt to \emph{manage} it, \cref{sec:nh-managing}.
+\end{enumerate}
+
+\paragraph{Four mental obstacles.} The lecture comes so early because of four habits of thought, partly from
+economics courses, that stand in the way \ts{2}{2}{0:48}:
+\begin{enumerate}[(a)]
+  \item banks expand both sides of the balance sheet at once, which looks like a free lunch, ``the alchemy of
+        banking, creating something from nothing'', and good economics students resist it \ts{2}{2}{1:09};
+  \item money is usually thought of as a positive quantity, a ``stuff''; seeing it as somebody's
+        \emph{liability} is hard (this is the inside/outside money distinction) \ts{2}{2}{1:50};
+  \item money is thought of as a creature of the nation-state; in this lecture the state does not appear, the
+        central bank is just a bankers' bank (the state enters in lecture~3) \ts{2}{2}{2:11};
+  \item general equilibrium puts all goods at the same level, linked by relative prices; monetary instruments
+        are \emph{not} at the same level, they only look so, until a crisis shows that things that seemed
+        equivalent are not \ts{2}{2}{2:31}\ts{2}{2}{2:52}.
+\end{enumerate}
+Students without economics background often find the start easier, because they have nothing to unlearn.
+Nothing here contradicts the economics one knows; it is integrated with it at the end of the course
+\ts{2}{2}{3:33}.
+
+% ------------------------------------------------------------------
+\section{FT: the eurocrisis, liquidity versus solvency}\label{sec:nh-ft}
+
+\begin{casestudy}[FT, September 2012: Draghi and Soros]
+The ECB under Mario Draghi has just announced that it is prepared to support the value of the short-term debt
+of the ``peripheral'' euro countries (Spain, Italy, \dots), to the dismay of some German central bankers
+\ts{2}{1}{0:27}. In the same issue of the FT, George Soros, under the title ``Lead or leave currency bloc,
+Soros tells Germany'', argues that the ECB is not doing enough and makes his own proposal \ts{2}{1}{0:48}.
+Mehrling uses the two plans to consolidate the distinction of lecture~1: Draghi's is a \emph{liquidity}
+operation, Soros's a \emph{solvency} operation \ts{2}{1}{1:08}.
+\end{casestudy}\begin{history}[``Whatever it takes'' and OMT (2012)]
+On 26 July 2012, in London, Draghi said that ``within our mandate, the ECB is ready to do whatever it takes to
+preserve the euro. And believe me, it will be enough.'' On 6 September 2012 the ECB Governing Council announced
+\emph{Outright Monetary Transactions} (OMT): unlimited purchases of government bonds with 1 to 3 years to maturity,
+on the secondary market, for countries under an EU assistance programme. OMT was never actually used, but
+spreads fell sharply after the announcement. In 2015 the European Court of Justice ruled it compatible with
+the EU treaties.\par
+\emph{References:} ECB press release ``Technical features of Outright Monetary Transactions'', 6 Sept 2012;
+CJEU, case C-62/14 \emph{Gauweiler}, 16 June 2015.
+\end{history}
+
+\paragraph{Draghi: a liquidity operation.} Investors, banks among them, hold short-term debt (\emph{bills}: short
+term; \emph{bonds}: usually long term) of the peripheral countries, which pays much higher rates than German or
+French debt \ts{2}{1}{1:54}\ts{2}{1}{2:14}. The ECB says it will cap those rates, without announcing an exact cap, by
+entering the market as a buyer of the bills, and it pays for them, at least at first, by expanding its own balance
+sheet: ``creating money'' \ts{2}{1}{2:34}\ts{2}{1}{2:56}.
+\begin{taccts}
+\tacct[2.9cm]{ECB}{$+$Peripheral bills}{$+$Money (reserves)}\qquad
+\tacct[2.9cm]{Bondholders}{$-$Peripheral bills\\$+$Money}{}
+\end{taccts}
+This expansion of both sides of the balance sheet is what people mean by ``monetizing government debt''
+\ts{2}{1}{2:56}. It supports the price of the bills and drags down the rates the periphery pays: a liquidity
+operation \ts{2}{1}{3:18}.
+
+\paragraph{Soros: a solvency operation.} Soros says that this only buys time: the fundamental problem is that some
+peripheral countries have too much debt, a debt-to-GDP ratio above 60\% \ts{2}{1}{3:58}\ts{2}{1}{4:20}. His plan
+\ts{2}{1}{4:40}\ts{2}{1}{5:24}:
+\begin{enumerate}
+  \item a \emph{European Fiscal Authority} (EFA), a fiscal unit of Europe as a whole, ``essentially like the US
+        Treasury'', buys the ``excess'' long-term bonds of the periphery (the part above 60\% of GDP);
+  \item it finances the purchase by issuing its own short-term debt, a liability of Europe as a whole:
+        \emph{Euro bills};
+  \item the ECB accepts Euro bills as the best collateral in the world, and may at first buy some of them by
+        expanding its balance sheet, to get the operation going \ts{2}{1}{5:44}\ts{2}{1}{6:08};
+  \item once bought, the excess bonds can be forgiven: the EFA's net worth takes the hit, but Europe as a whole is
+        solvent where Portugal is not; the debt has moved to the larger, solvent entity \ts{2}{1}{6:50}\ts{2}{1}{7:10}.
+\end{enumerate}
+\begin{taccts}
+\tacct[2.15cm]{EFA}{$+$Excess bonds}{$+$Euro bills}\quad
+\tacct[2.0cm]{ECB}{$+$Euro bills}{$+$Money}\quad
+\tacct[2.15cm]{Bondholders}{$-$Excess bonds\\$+$Money}{}
+\end{taccts}
+``You are going to get used to this pattern of thinking'': this minus and that plus are the same thing, every
+transaction has two sides and both are booked \ts{2}{1}{6:29}.
+
+\begin{intuition}[Money that appears and disappears]
+Banks all over Europe do not trust each other and hold huge reserves at the ECB, earning nothing, as the US banks
+held \$1.5 trillion at the Fed \ts{2}{1}{7:50}\ts{2}{1}{8:11}. Soros expects them to swap those reserves for Euro
+bills. Then the ECB's balance sheet shrinks back: it was used only temporarily to distribute the bills, the money
+disappears, and in the end no debt has been monetized; excess reserves have simply been replaced by Euro bills
+\ts{2}{1}{8:31}\ts{2}{1}{8:52}. Money is created when a balance sheet expands and destroyed when it contracts.
+\end{intuition}
+\begin{taccts}
+\tacct[2.15cm]{ECB}{$-$Euro bills}{$-$Reserves of banks}\qquad
+\tacct[2.15cm]{Banks}{$-$Reserves\\$+$Euro bills}{}
+\end{taccts}
+There is no European treasury, so the job is left to the ECB. ``When central banks do very bold things, it's because
+somebody else isn't doing their job'' \ts{2}{1}{9:12}\ts{2}{1}{9:33}. Understanding the mechanics allows a saner
+political discussion than throwing around words like ``hyperinflation'' \ts{2}{1}{9:53}.
+
+% ------------------------------------------------------------------
+\section{The hierarchy of financial instruments}\label{sec:nh-instruments}
+
+Start from the familiar distinction between money and credit \ts{2}{2}{4:18}.
+
+\begin{definition}[New concepts: money and credit]\label{def:nh-money}
+\emph{Money} is the means of final settlement: what debts are cancelled in. \emph{Credit} is a promise to pay money:
+a means of \emph{delaying} final settlement. Money is not just ``more expensive'' than credit, it is
+\emph{qualitatively} better \ts{2}{2}{4:18}. (``Credit'' from Latin \emph{credere}, to believe, to trust: a credit is a
+promise one trusts.)
+\end{definition}\begin{coursenote}[Hawtrey]
+The money/credit distinction is the framework of Ralph Hawtrey's \emph{Currency and Credit} (1919; Mehrling's notes
+cite the 1923 edition).
+\end{coursenote}
+
+The distinction is fine as far as it goes, but it goes both too far and not far enough (Mehrling's notes). Not far
+enough, because it has only two layers; too far, because what counts as final settlement depends on the layer:
+\emph{what looks like money at one level looks like credit from the level above.} To see this, take a world where
+the ultimate money is unproblematic: a gold standard \ts{2}{2}{4:59}\ts{2}{2}{5:19}, with four layers
+\ts{2}{2}{5:42}\ts{2}{2}{6:23}:
+\begin{enumerate}
+  \item \textbf{Gold}, the ultimate money, the international means of payment.
+  \item \textbf{National currency}, a liability of the central bank and a promise to pay gold at the mint parity.
+  \item \textbf{Bank deposits}, liabilities of private banks, promises to pay currency on demand: twice-removed
+        promises to pay gold.
+  \item \textbf{Securities} (and loans of every kind), promises to pay currency at some date in the future: even
+        more attenuated promises.
+\end{enumerate}
+
+\begin{nfigure}
+\begin{tikzpicture}[font=\small]
+  \fill[keycol!35] (0,4) -- (-0.8,3) -- (0.8,3) -- cycle;
+  \fill[defcol!30] (-0.8,3) -- (-1.6,2) -- (1.6,2) -- (0.8,3) -- cycle;
+  \fill[intcol!25] (-1.6,2) -- (-2.4,1) -- (2.4,1) -- (1.6,2) -- cycle;
+  \fill[fincol!20] (-2.4,1) -- (-3.2,0) -- (3.2,0) -- (2.4,1) -- cycle;
+  \draw[thick] (0,4) -- (-3.2,0) -- (3.2,0) -- cycle;
+  \foreach \y in {1,2,3} \draw (-3.2+0.8*\y,\y) -- (3.2-0.8*\y,\y);
+  \node at (0,3.35) {gold};
+  \node at (0,2.5) {currency};
+  \node at (0,1.5) {deposits};
+  \node at (0,0.5) {securities};
+  \draw[-{Stealth[length=4pt]},thick] (-4.6,0.2) -- (-4.6,3.8) node[midway,left,align=right,font=\scriptsize]{more\\``moneyness''};
+  \node[left,font=\scriptsize] at (-4.6,3.9) {money};
+  \node[left,font=\scriptsize] at (-4.6,0.1) {credit};
+  % three dividing lines
+  \draw[dashed,thmcol,thick] (0.8,3) -- (5.2,3) node[right,align=left,font=\scriptsize]{international\\settlement};
+  \draw[dashed,defcol,thick] (1.6,2) -- (5.2,2) node[right,align=left,font=\scriptsize]{bank settlement\\(19th-century view)};
+  \draw[dashed,intcol,thick] (2.4,1) -- (5.2,1) node[right,align=left,font=\scriptsize]{retail settlement\\(M1, M2, \dots)};
+  \node[right,font=\scriptsize,align=left] at (5.2,3.9) {where the line between\\money and credit falls:};
+\end{tikzpicture}
+\caption{The simple hierarchy of instruments under a gold standard \ts{2}{2}{5:42}. Each layer is a promise to pay the
+layer above. The line between money and credit depends on who is settling \ts{2}{2}{7:05}.}\label{fig:nh-instruments}
+\end{nfigure}
+
+\paragraph{Where is the line between money and credit?} It depends on the point of view \ts{2}{2}{7:05}:
+\begin{itemize}
+  \item \textbf{Banks.} Banks clear payments among themselves in national currency, so for a bank settling its
+        accounts at the end of the day currency (``high-powered money'') is money and deposits are credit. This was
+        the typical 19th-century view \ts{2}{2}{7:26}.
+  \item \textbf{Households and firms.} They pay with deposits, so deposits and everything above are money and
+        securities are credit. This is what textbooks mean by the money supply, with the ambiguity reflected in the
+        many definitions M1, M2, M3 \ts{2}{2}{7:46}.
+  \item \textbf{Countries.} Your own currency is no use in paying other countries: they want their own currency, or
+        the international means of settlement, gold under a gold standard, perhaps SDRs (the IMF's Special Drawing
+        Rights) today. Then only gold is money \ts{2}{2}{8:07}. (The US is the exception, because of the international
+        role of the dollar.)
+\end{itemize}
+So what counts as money depends on who you are and on the layer you are talking about. The course starts from
+concepts, not from definitions: in each situation, ask which layer we are at, and what is money and what is credit
+there \ts{2}{2}{8:27}\ts{2}{2}{8:47}. ``Once you get used to thinking about a hierarchy, you'll see it everywhere''
+\ts{2}{2}{9:08}.
+
+\begin{secondary}[More layers than four]
+Even with four layers the picture is much simpler than the real world (Mehrling's notes). Currency and high-powered
+money are not the same: high-powered money includes the deposits of banks at the central bank. Deposits are not
+homogeneous, and there are deposit-like instruments, such as money market mutual fund (MMMF) accounts, that are not
+the liability of any bank. Securities are even more heterogeneous, by maturity and credit quality. All this
+reinforces the point: avoid sterile debates about what is money and what is credit, and stand on the hierarchical
+character of the system.
+\end{secondary}
+
+\begin{aside}[Not a cloakroom ticket]
+A currency backed by gold reserves does not \emph{represent} gold: it is not a cloakroom ticket for gold held
+somewhere on the holder's behalf. Reserves only make the promise to pay more credible. This holds even with 100\%
+reserves (a currency board): there is still a promise, and a promise can be broken (Mehrling's notes).
+\end{aside}
+
+% ------------------------------------------------------------------
+\section{The hierarchy of financial institutions}\label{sec:nh-institutions}
+
+The same hierarchy can be seen through the institutions that issue and hold the instruments, i.e.\ through
+balance sheets \ts{2}{3}{0:08}:
+\begin{itemize}
+  \item the \textbf{central bank}, a bankers' bank, holds reserves of the international money (gold) and issues the
+        national money (currency) as its liability \ts{2}{3}{0:35}\ts{2}{3}{0:55};
+  \item the \textbf{banking system} holds currency (or deposits at the central bank) as reserves and issues deposits,
+        the private money supply \ts{2}{3}{1:15}\ts{2}{3}{1:36};
+  \item the \textbf{private sector} holds deposits, and also securities (through pension funds, insurance companies),
+        and issues securities \ts{2}{3}{1:57}\ts{2}{3}{2:19}.
+\end{itemize}
+\begin{taccts}
+\tacct[2.0cm]{Central bank}{Gold}{Currency}\qquad
+\tacct[2.0cm]{Banking system}{Currency}{Deposits}\qquad
+\tacct[2.0cm]{Private sector}{Deposits\\Securities}{Securities}
+\end{taccts}
+Much is left out: government debt, the main asset of a modern central bank; loans, the main asset of banks; and the
+shadow banking system altogether. This is 19th-century, gold-standard banking \ts{2}{3}{2:40}.
+
+\paragraph{Every item appears twice, except gold} \ts{2}{3}{3:01}. Each instrument is an asset of one balance sheet and
+a liability of another, except gold, which is no one's liability.
+
+\begin{definition}[New concepts: outside and inside money]\label{def:nh-inside}
+\emph{Outside money} is a financial asset that is no one's liability (gold). \emph{Inside money} is money that is
+also someone's liability, a form of credit: currency, deposits, the liabilities of shadow banks \ts{2}{3}{3:21}\ts{2}{3}{3:41}.
+If all balance sheets are consolidated into one, inside money cancels (asset of one, liability of another) and only
+outside money remains.
+\end{definition}
+
+Almost all money is inside money: ``it's not stuff, it's not a heap of anything, it's somebody's promise''
+\ts{2}{3}{4:02}. The terms come from John Gurley and Edward Shaw, \emph{Money in a Theory of Finance} (1960), a book
+about banking as intermediation, of which the course reads some chapters \ts{2}{3}{4:24}\ts{2}{3}{4:44}. Surprisingly,
+Gurley and Shaw treat \emph{currency} as outside money: they think of a single nation-state with fiat currency, and
+consolidate only the private sector, so currency has no counterpart in their accounts \ts{2}{3}{5:06}. Off the gold
+standard, the ``ontological status'' of currency is indeed less clear \ts{2}{3}{5:26}. The course takes a global view:
+every national money must be convertible, at some exchange rate, into an international money, so currency is
+always treated as \emph{inside} money \ts{2}{3}{5:46}\ts{2}{3}{6:06}.
+
+\begin{intuition}[Consolidation hides what matters]
+Consolidating all balance sheets makes the whole edifice of credit vanish, leaving a tiny quantity of gold. But the
+consolidation ``misses the entire point'' (Mehrling's notes): interest rates and GDP depend on the gross quantity of
+credit, on who issues it, who holds it, and where it lies in the hierarchy. Standard macro models keep only a
+quantity of money, usually treated as an outside asset. A physicist would say: the total charge is zero, but the
+field depends on where the charges are.
+\end{intuition}
+
+% ------------------------------------------------------------------
+\section{The dynamics of the hierarchy}\label{sec:nh-dynamics}
+
+\paragraph{The pyramid.} Take every balance sheet in the economy and record each instrument as a liability on the left
+and as an asset on the right, at its level of the hierarchy \ts{2}{4}{0:07}\ts{2}{4}{0:54}. The result is a symmetric
+pyramid centred on zero (\cref{fig:nh-pyramid}): the vertical axis is quality, from credit at the bottom to money at
+the top; the horizontal axis is quantity \ts{2}{4}{1:56}. The tip is drawn at zero because the quantity of gold is
+vanishingly small compared with the credit below it, ``gold is really even just in the mind'' \ts{2}{4}{1:15}: a
+pyramid of promises to pay, all the way up \ts{2}{4}{1:35}.
+
+\begin{nfigure}
+\begin{tikzpicture}[font=\small]
+  % contracted (steep) and expanded (flat) pyramids
+  \fill[defcol!10] (0,3.6) -- (-4.8,0) -- (4.8,0) -- cycle;
+  \draw[defcol,thick,dashed] (0,3.6) -- (-4.8,0) -- (4.8,0) -- cycle;
+  \fill[thmcol!15] (0,3.6) -- (-2.2,0) -- (2.2,0) -- cycle;
+  \draw[thmcol,thick] (0,3.6) -- (-2.2,0) -- (2.2,0) -- cycle;
+  \draw[-{Stealth[length=4pt]}] (-5.4,0) -- (5.6,0);
+  \draw[-{Stealth[length=4pt]}] (0,0) -- (0,4.2) node[above]{money};
+  \node[below,font=\scriptsize] at (0,0) {credit};
+  \node[below,font=\scriptsize] at (-3.2,-0.05) {quantity of liabilities};
+  \node[below,font=\scriptsize] at (3.2,-0.05) {quantity of assets};
+  \node[thmcol,font=\scriptsize,align=center] (ct) at (-3.2,2.7) {contraction:\\steep, scarce};
+  \draw[thmcol,thin] (ct.east) -- (-0.45,2.2);
+  \node[defcol,font=\scriptsize,align=center] at (3.9,1.6) {expansion:\\flat, elastic};
+  \draw[-{Stealth[length=4pt]},thick,defcol] (2.2,0.6) -- (3.6,0.6);
+  \draw[-{Stealth[length=4pt]},thick,defcol] (-2.2,0.6) -- (-3.6,0.6);
+\end{tikzpicture}
+\caption{The hierarchy as a pyramid centred on zero \ts{2}{4}{0:07}: liabilities to the left, assets to the right, quality on
+the vertical axis. In an expansion the pyramid flattens (more credit per unit of money); in a contraction it becomes
+steep again \ts{2}{4}{3:21}.}\label{fig:nh-pyramid}
+\end{nfigure}
+
+\paragraph{The system breathes.} The pyramid adds a third dimension: the system is dynamic, at every time scale
+\ts{2}{4}{2:17}\ts{2}{4}{2:38}:
+\begin{itemize}
+  \item within the day, payments are cleared with expansion and contraction of credit (daylight overdrafts);
+  \item over the business cycle, credit booms and busts;
+  \item over the rise and fall of nations, wars and depressions.
+\end{itemize}
+``At all time scales, this system is breathing'': its expansions and contractions are ``the beating heart of the
+financial system'' \ts{2}{4}{2:59}. In an expansion the pyramid becomes flatter and wider: the amount of credit for a
+given amount of money (a ``branching ratio'') increases; this is \emph{irrational exuberance}. In a contraction it
+shrinks and becomes steeper: \emph{financial crisis} \ts{2}{4}{3:21}\ts{2}{4}{3:43}. The system expands until it hits
+some limit, collapses until it hits another, and goes back and forth \ts{2}{4}{4:04}.
+
+\paragraph{Quantity and quality.} The fluctuation has the two dimensions of the picture \ts{2}{4}{4:24}:
+\begin{enumerate}
+  \item \textbf{quantity}: credit grows in a boom and collapses in a crisis (``deleveraging'');
+  \item \textbf{quality}: in a boom credit starts to look like money, moves up the hierarchy, becomes more liquid and
+        usable for payments; in a contraction you discover that what you hold is credit, not money: that gold and
+        currency are not the same thing, that deposits and currency are not the same thing \ts{2}{4}{4:44}\ts{2}{4}{5:05}.
+\end{enumerate}
+The quality dimension shows up in prices: \emph{credit spreads} (the excess of a borrower's interest rate over the
+rate on the best credit) become very flat in a boom and blow out in a crisis \ts{2}{4}{5:26}.
+
+\begin{definition}[New concepts: moneyness, credit spread, deleveraging]
+The \emph{moneyness} of an instrument is how close it is to money, i.e.\ how readily it is accepted in settlement at
+par. A \emph{credit spread} is the difference between the interest rate paid by a borrower and the rate on a
+reference of the highest quality. \emph{Deleveraging} is the reduction of debt relative to assets or capital (from
+\emph{leverage}, the lever that multiplies the effect of a given capital).
+\end{definition}
+
+\begin{finance}[Daily, cyclical, secular]
+A single trading day, a business cycle and a century of history show the same pattern of expansion and contraction:
+the hierarchy flattens as everyone accepts everyone's promises, then steepens as the promises are tested. The
+2007--2009 crisis is the reassertion phase at business-cycle frequency; the end of sterling as world money, which
+Young did not foresee (\cref{sec:fp-young}), is the same phenomenon at the secular scale.
+\end{finance}
+
+% ------------------------------------------------------------------
+\section{Discipline and elasticity}\label{sec:nh-discipline}
+
+Two principles drive the fluctuation \ts{2}{5}{0:08}:
+
+\begin{keyformulas}
+\begin{tabularx}{\linewidth}{@{}L c L@{}}
+\textbf{scarcity of ultimate money} (discipline) & $\leftrightarrow$ & \textbf{currency principle}\\
+\textbf{elasticity of derivative credit} (elasticity) & $\leftrightarrow$ & \textbf{banking principle}\\
+\end{tabularx}
+\end{keyformulas}
+
+\begin{enumerate}
+  \item \textbf{Scarcity (discipline).} There is only so much gold at the top of the pyramid \ts{2}{5}{0:36}. More
+        generally, no one can, by their own action, increase the quantity of money at a level above their own:
+        governments cannot create gold, banks cannot create government currency, you and I cannot create
+        currency, because our liabilities are not currency \ts{2}{5}{2:41}\ts{2}{5}{3:01}.
+  \item \textbf{Elasticity.} Credit is called \emph{derivative} because it is a promise to pay money, denominated in
+        money but not money itself; the word should get us used to derivatives before swaps appear
+        \ts{2}{5}{0:58}\ts{2}{5}{1:18}. Agents at any level can expand credit at their own level: if I buy something
+        from you and you accept my IOU, the trade happens, and the scarcity of gold has nothing to do with it
+        \ts{2}{5}{2:00}\ts{2}{5}{2:20}. If banks accommodate us, our credit expansion becomes an expansion of
+        deposits; if the central bank accommodates the banks, of currency too \ts{2}{5}{3:01}.
+\end{enumerate}
+In a crisis discipline ``smacks you'': this is money and that is not; in a boom elasticity says everything is money
+\ts{2}{5}{1:39}. The system is always some balance between discipline at the top and elasticity at the bottom, and the
+shifting balance shows up in prices and in output: it is a way to understand the fundamental instability of credit
+\ts{2}{5}{3:22}\ts{2}{5}{3:42}. Assuming it away because it makes the mathematics easier takes us farther from reality,
+not closer \ts{2}{5}{4:03}.
+
+\paragraph{The same swing in monetary theory.} One can build a monetary theory on either principle \ts{2}{5}{4:44}:
+\begin{itemize}
+  \item from the top, on the scarcity of ultimate money: the \emph{currency principle}; monetarism can be read this way
+        \ts{2}{5}{5:04};
+  \item from the bottom, on the elasticity of credit: the \emph{banking principle} \ts{2}{5}{5:28}.
+\end{itemize}
+Internationally the same opposition is \emph{metallism} versus \emph{chartalism}, which come later in the course
+\ts{2}{5}{6:33}. When scarcity of ultimate money is the issue, monetarism looks right; when elasticity is the issue,
+the Keynesians look right; monetarists are in the ascendant when we need more discipline, Keynesians when we need more
+elasticity \ts{2}{5}{6:09}\ts{2}{5}{7:15}. This makes economists look fickle, but Mehrling's claim is that \emph{both}
+theories are right: each captures something true of the system, neither the whole truth \ts{2}{5}{7:36}\ts{2}{5}{7:57}.
+This is his answer to ``which school are you'' (\cref{sec:fp-bigpicture}): embrace the fluctuation, of practice and of
+theory, and ask where in the system there is too much scarcity or too much elasticity right now; that makes for a
+healthier policy dialogue \ts{2}{5}{8:17}\ts{2}{5}{8:38}.\begin{history}[Currency School versus Banking School]
+The names come from the British debate of the 1830s--1840s on the Bank of England's note issue. The Currency School
+(Samuel Jones Loyd, later Lord Overstone; Robert Torrens; George Warde Norman) held that bank notes should vary
+exactly as a fully metallic currency would, one for one with gold. The Banking School (Thomas Tooke, John Fullarton)
+held that the note issue adapts to the ``needs of trade'' and cannot be overissued if notes are convertible. The
+Currency School won: Peel's Bank Charter Act of 1844 split the Bank into an Issue Department, whose notes beyond a
+fixed ``fiduciary issue'' of \pounds14 million had to be backed by gold, and a Banking Department. The Act had to be
+suspended in the crises of 1847, 1857 and 1866.\par
+\emph{References:} F.~W.~Fetter, \emph{Development of British Monetary Orthodoxy 1797--1875}, Harvard UP, 1965;
+Young, ``Dear and Cheap Money'' (course reading).
+\end{history}
+
+% ------------------------------------------------------------------
+\section{The hierarchy of market makers}\label{sec:nh-marketmakers}
+
+Put the institutions back on the hierarchy of instruments: each of them \emph{straddles} two layers, and each is, in
+its own way, a market maker \ts{2}{6}{0:07}\ts{2}{6}{0:48}. In the private sector, focus on security dealers.
+
+\begin{definition}[New concepts: market maker, dealer, bid--ask spread]\label{def:nh-mm}
+A \emph{market maker} (or \emph{dealer}) stands ready to buy or to sell an asset at prices it quotes, and absorbs the
+difference between purchases and sales in its own inventory. It quotes two prices: the \emph{bid}, at which it buys,
+and the \emph{ask} (or offer), at which it sells; the \emph{bid--ask spread} is the difference, its compensation
+\ts{2}{6}{1:08}. A dealer trades for its own account, unlike a \emph{broker}, who only matches buyers and sellers.
+\end{definition}
+
+\begin{itemize}
+  \item \textbf{Security dealers.} If you want to buy Apple stock a dealer sells it to you, if you want to sell it a
+        dealer buys it; there are liquid markets in Apple stock because dealers quote prices
+        \ts{2}{6}{1:28}. They knit together deposits and securities, and determine the price of securities, for which
+        the interest rate stands in \ts{2}{6}{1:49}\ts{2}{6}{2:11}. In Mehrling's notes, they hold inventories of
+        securities and money (in practice, of repos and reverse repos, which give access to securities and deposits
+        held elsewhere).
+  \item \textbf{Banks} are dealers too, quoting a two-way price in money: give Citibank cash and it gives you a
+        deposit, and the other way round \ts{2}{6}{2:51}. The price they maintain is \emph{par}, one for one, a single
+        price rather than two; and keeping a price fixed is a challenge \ts{2}{6}{3:12}.
+  \item \textbf{The central bank} is a dealer at a higher level, between international and domestic money: if you need
+        international money to buy abroad, it sells it to you; if you want to change it into domestic money, it buys
+        it. The price made there is the \emph{exchange rate} \ts{2}{6}{3:33}\ts{2}{6}{3:53}.
+\end{itemize}
+
+\begin{nfigure}
+\begin{tikzpicture}[font=\small,
+  lay/.style={draw,rounded corners=2pt,minimum width=2.6cm,minimum height=0.7cm,fill=#1!15},
+  mm/.style={draw,thick,rounded corners=2pt,minimum width=3cm,minimum height=0.6cm,fill=white,align=center}]
+  \node[lay=keycol] (g) at (0,4.5) {gold};
+  \node[lay=defcol] (c) at (0,3) {currency};
+  \node[lay=intcol] (d) at (0,1.5) {deposits};
+  \node[lay=fincol] (s) at (0,0) {securities};
+  \node[mm] (cb) at (4.3,3.75) {central bank};
+  \node[mm] (bk) at (4.3,2.25) {banking system};
+  \node[mm] (sd) at (4.3,0.75) {security dealers};
+  \foreach \m/\a/\b in {cb/g/c,bk/c/d,sd/d/s} {
+    \draw[semithick] (\m.west) -- ++(-0.6,0) |- (\a.east);
+    \draw[semithick] (\m.west) -- ++(-0.6,0) |- (\b.east);}
+  \node[right,font=\small\bfseries,keycol] at (6.1,3.75) {exchange rate};
+  \node[right,font=\small\bfseries,keycol] at (6.1,2.25) {par};
+  \node[right,font=\small\bfseries,keycol] at (6.1,0.75) {interest rate};
+  \node[font=\scriptsize\bfseries] at (0,5.3) {asset};
+  \node[font=\scriptsize\bfseries] at (4.3,5.3) {market maker};
+  \node[font=\scriptsize\bfseries,anchor=west] at (6.1,5.3) {price of money};
+\end{tikzpicture}
+\caption{The simple hierarchy of market makers \ts{2}{6}{0:07}: each market maker has one leg in each of two adjacent
+layers (the two sides of its balance sheet), and the price at which it trades them is one of the prices of money of
+\cref{def:fp-four}.}\label{fig:nh-marketmakers}
+\end{nfigure}
+
+\paragraph{From quality to quantity.} The prices of money are themselves hierarchical, one between each pair of layers
+\ts{2}{6}{4:15}. As long as these prices exist, the hierarchy is hidden: there is a price at which securities exchange for
+deposits, one at which deposits exchange for currency, and the qualitative difference looks like a quantitative
+similarity \ts{2}{6}{4:56}\ts{2}{6}{5:16}. Economics abstracts from money to see good A and good B exchanging at a relative
+price; applied to money, the same impulse loses the hierarchy \ts{2}{6}{4:35}\ts{2}{6}{5:37}. Economics prices a kidney and
+an army tank in the same way; the hierarchy of money is a reminder that some things are different in kind
+\ts{2}{6}{5:57}\ts{2}{6}{6:18}. In normal times the approximation is not so bad; in a crisis it fails.
+
+\paragraph{Market makers under stress.} As the system swings between elasticity and scarcity, the market makers stand
+in the middle, one leg on each level \ts{2}{6}{6:38}\ts{2}{6}{6:59}. When the hierarchy reasserts itself they are pulled
+in two directions: long the lower layer and short the upper one, if the upper one becomes scarce it rises in value, and
+they can become insolvent, but ``liquidity kills you quick'': if you cannot settle your books at the end of the day, you
+are done \ts{2}{6}{7:19}\ts{2}{6}{7:39}. All three face this constraint, which is where the course starts next
+\ts{2}{6}{8:00}.
+\begin{itemize}
+  \item Security dealers have it easier, because in a crisis they can change their price: asset prices plunge
+        \ts{2}{6}{8:00}.
+  \item Banks cannot: a bank offering ``80 cents on the dollar'' for its deposits would not be a bank any more
+        \ts{2}{6}{8:20}.
+  \item The same holds for a fixed exchange rate or the gold parity \ts{2}{6}{8:41}.
+\end{itemize}
+In the worst case the market makers lose all their money and stop making markets, and one cannot move from one level
+of the hierarchy to another at any price, because there is no dealer: that is a financial crisis \ts{2}{6}{9:01}.
+
+\begin{intuition}[The hierarchy is natural, not imposed]
+Mehrling calls the hierarchy \emph{natural} (notes, section IV): the institutions are hierarchical \emph{because} the
+underlying system is, not the other way round; the hierarchy is not imposed from the top by the state or the central
+bank, it grows from the ground up. (He adds that he does not mean self-organisation in the sense of Austrian economists
+such as Carl Menger.) The market makers are what turn qualitatively different layers into a continuum of prices.
+\end{intuition}
+
+% ------------------------------------------------------------------
+\section{Managing the hierarchy}\label{sec:nh-managing}
+
+So far the market makers have been profit maximizers: dealers and banks do not create liquidity to be nice, they do it to
+make money, and the course will analyse the source of that profit \ts{2}{7}{0:08}\ts{2}{7}{0:28}. One entity is different.
+Once the central bank becomes an agent of the state rather than a private bankers' bank, it need not maximize (short-term)
+profit \ts{2}{7}{0:49}. Sitting at the top, it notices that when things get really bad what everybody wants is its own
+liabilities, the best in the system, and that it can help \ts{2}{7}{1:10}. This happened gradually: the Bank of England was
+a private bank for a long time; in the US, J.~P.~Morgan acted as a private central bank in 1907 \ts{2}{7}{1:30}\ts{2}{7}{1:50}.
+
+\begin{definition}[New concepts: lender of last resort]\label{def:nh-lolr}
+A \emph{lender of last resort} is an institution that, when the scarcity of money threatens to make the market makers stop
+making markets, introduces elasticity from the top: it lends its own liabilities (expands the money supply) against
+securities taken as collateral, and so rejoins the layers of the hierarchy that have come apart \ts{2}{7}{2:35}\ts{2}{7}{2:56}.
+(``Last resort'': the lender to whom one turns when all other sources of funding are gone.)
+\end{definition}
+
+\paragraph{The widening remit of central banks} \ts{2}{7}{3:17}\ts{2}{7}{3:39}:
+\begin{enumerate}
+  \item \textbf{defend the exchange rate} (the mint parity), the most primitive job; central banks that did only this and
+        ``let the rest of the economy go to hell'' learned that they would be sucked down with it \ts{2}{7}{3:59};
+  \item \textbf{help banks maintain par}: in a run, people want currency instead of deposits, and the central bank can create
+        currency: financial stability, the lender of last resort \ts{2}{7}{4:21};
+  \item \textbf{monetary policy}: once the central bank has taken responsibility for the crisis, it would rather prevent it,
+        leaning against the wind: raising rates to impose scarcity when the economy is all elasticity, lowering them to
+        inject elasticity when it is all discipline. Counter-cyclical policy comes from taking responsibility for the
+        crisis \ts{2}{7}{6:07}\ts{2}{7}{6:48}\ts{2}{7}{7:09};
+  \item \textbf{regulation}: making sure banks do not get overextended or ``buy crap assets'' comes from the same source
+        \ts{2}{7}{7:29}\ts{2}{7}{7:49};
+  \item at the extreme, the ambition to eliminate the business cycle altogether by creating an artificial hierarchy
+        \ts{2}{7}{14:16}\ts{2}{7}{14:36}.
+\end{enumerate}
+
+\begin{aside}[A copy of \emph{Lombard Street}]
+Mehrling shows his used copy of Bagehot's \emph{Lombard Street}, inscribed ``Merry Christmas to father from Ed, 1907'': the
+year of a financial crisis, and Ed was giving his father the key to understanding it \ts{2}{7}{4:44}\ts{2}{7}{5:06}.
+\end{aside}
+Bagehot's point was that the Bank of England, a private central bank, had in past crises been acting as a lender of last
+resort without intending to, and should bring this to consciousness and embrace it: in a crisis, lend freely, at a high
+rate, against good collateral. It was very controversial when published, then became orthodoxy \ts{2}{7}{5:27}\ts{2}{7}{5:47}.
+
+\paragraph{Policy rate and market rates.} Most central banks intervene by setting a very short-term interest rate (in the
+US the Fed funds rate, an overnight rate) \ts{2}{7}{8:18}. Rates at different maturities form the \emph{term structure}
+(\cref{fig:nh-term}): at the short end, overnight money, set by policy; at the long end, 30-year Treasury bonds, set by
+private security markets. ``So who wins?'' \ts{2}{7}{8:39}\ts{2}{7}{9:20}\ts{2}{7}{9:41}
+
+\begin{definition}[New concepts: term structure, expectations hypothesis]\label{def:nh-eh}
+The \emph{term structure of interest rates} (the yield curve) is the interest rate as a function of maturity. The
+\emph{expectations hypothesis} says that a long rate is the expected average of the future short rates over its life:
+with $R_n$ the yield on an $n$-period bond and $r_t$ the one-period rate at $t$,
+\[
+  (1+R_n)^n = \E\Bigl[\,\prod_{t=0}^{n-1}(1+r_t)\Bigr], \qquad\text{approximately}\qquad R_n \approx \frac1n\sum_{t=0}^{n-1}\E[r_t].
+\]
+It looks like an arbitrage condition (rolling over overnight loans for 30 years versus lending for 30 years), yet it is
+rejected empirically ``basically all the time'' \ts{2}{7}{10:01}\ts{2}{7}{10:22}. Mehrling will argue that the reason is
+liquidity.
+\end{definition}
+
+\begin{nfigure}
+\begin{tikzpicture}[font=\small]
+  \draw[-{Stealth[length=4pt]}] (0,0) -- (7.2,0) node[right]{maturity};
+  \draw[-{Stealth[length=4pt]}] (0,0) -- (0,4) node[left]{rate};
+  \draw[very thick,defcol] (0,1.2) .. controls (1.2,2.2) and (3,2.6) .. (7,2.7) node[right,font=\scriptsize]{normal};
+  \draw[very thick,intcol] (0,0.3) .. controls (1.2,1.9) and (3,3.1) .. (7,3.4) node[right,font=\scriptsize]{elastic (steep)};
+  \draw[very thick,thmcol] (0,3.3) .. controls (1.2,2.4) and (3,2.0) .. (7,1.9) node[right,font=\scriptsize]{discipline (inverted)};
+  \node[left,font=\scriptsize,align=right] at (-0.1,1.2) {policy rate\\(Fed funds)};
+  \node[below,font=\scriptsize] at (0.3,0) {overnight};
+  \node[below,font=\scriptsize] at (6.6,0) {30 years};
+  \node[font=\scriptsize,align=center] at (5.2,0.8) {market rates\\(security markets)};
+\end{tikzpicture}
+\caption{The term structure of interest rates \ts{2}{7}{8:39}: the central bank sets the overnight end, security markets the
+long end. To impose discipline it pushes short rates above long rates (inverted curve); to make the pyramid more elastic
+it pushes them far below \ts{2}{7}{12:09}\ts{2}{7}{12:31}.}\label{fig:nh-term}
+\end{nfigure}
+
+\paragraph{The artificial hierarchy.} Policy tries to move the market by moving the short rate, but the market constrains
+what policy can do; and if policy simply follows the market it accepts the hierarchy as it is. ``Monetary policy is all
+about creating an artificial hierarchy of money and credit'' \ts{2}{7}{11:03}. In the term structure overnight money at the
+Fed plays the role of currency, long bonds the role of securities \ts{2}{7}{11:28}\ts{2}{7}{11:49}. To impose discipline the
+central bank makes short-term money ``ridiculously expensive'', more than long-term money: an inverted (negatively sloped)
+curve. To make the pyramid more elastic it lowers short rates far below long rates \ts{2}{7}{12:09}\ts{2}{7}{12:31}. Choosing
+the point between elasticity and discipline is monetary policy, with its politics \ts{2}{7}{12:52}.
+
+\begin{intuition}[A thin reed]
+The whole of monetary policy hangs on an overnight interest rate, ``a very thin reed'', while the credit pyramid is
+enormous. How can the ``puny little Fed'' have any influence on it? Where exactly is the transmission mechanism? This is a
+serious question that the course will be able to ask precisely once inside the system \ts{2}{7}{13:12}\ts{2}{7}{13:33}.
+Mehrling's notes add: the main policy instrument is the overnight rate, and there can be considerable ``slippage''
+between it and the long rates on which investment and spending depend.
+\end{intuition}\begin{history}[Punch bowl and string]
+William McChesney Martin, Fed chairman 1951--1970, said in a speech of October 1955 that the Fed is ``in the position of
+the chaperone who has ordered the punch bowl removed just when the party was really warming up'': raising rates in a boom.
+``Pushing on a string'', for the impotence of lower rates in a slump, is usually attributed to Keynes, but the first
+recorded use is in the 1935 House hearings on the Banking Act, in an exchange between Congressman T.~Alan Goldsborough and
+Fed chairman Marriner Eccles. Mehrling's notes quote both, attributing the second to Keynes as is customary.\par
+\emph{References:} W.~McC.~Martin, address to the New York Group of the Investment Bankers Association, 19 Oct 1955;
+US House, \emph{Banking Act of 1935}, Hearings, March 1935.
+\end{history}
+
+\paragraph{A brave new world.} The central question of the course is the proper role of the central bank today
+\ts{2}{7}{14:36}. Draghi, putting a floor under the price of peripheral bills by buying them himself, was acting as a
+\emph{security dealer}, a role nobody had anticipated \ts{2}{7}{14:57}\ts{2}{7}{15:19}. The Fed, which had never held a
+mortgage-backed security since 1913, bought about a trillion dollars of them in a few months
+\ts{2}{7}{15:19}\ts{2}{7}{15:39}. Central banks are reacting, making it up: we live in a ``Bagehot moment''. Bagehot looked
+back at what the Bank had done and told it to embrace it; we have no simple rule like his for today's global, shadow-banking
+system, and the course is part of the search for one \ts{2}{7}{16:00}\ts{2}{7}{16:20}\ts{2}{7}{16:41}.
+
+\begin{finance}[Operation Twist]
+Asked about \emph{Operation Twist} (2011--2012: the Fed sold short-term Treasuries and bought long-term ones, to lower
+long rates without expanding its balance sheet), Mehrling answers that by buying long-term bonds instead of only fixing the
+overnight rate the Fed is trying to influence the shape of the pyramid directly; whether it works, and why, is much debated
+\ts{2}{7}{17:28}\ts{2}{7}{17:48}. The name recalls the 1961 operation of the same kind, which ``twisted'' the yield curve.
+\end{finance}
+
+% ------------------------------------------------------------------
+\section*{Key formulas and ideas}
+\begin{keyformulas}
+\begin{tabularx}{\linewidth}{@{}l L@{}}
+Hierarchy & gold $>$ currency $>$ deposits $>$ securities: each layer a promise to pay the layer above\\
+Money vs credit & means of final settlement vs promise to pay; the line depends on the layer\\
+Inside / outside & inside money $=$ someone's liability (cancels on consolidation); outside $=$ no one's (gold)\\
+Dynamics & expansion: flatter pyramid, more credit per unit of money, credit looks like money; contraction: steeper, spreads widen\\
+Two principles & scarcity of ultimate money (currency principle) vs elasticity of derivative credit (banking principle)\\
+Market makers & central bank: exchange rate; banks: par; security dealers: interest rate\\
+Expectations hypothesis & $(1+R_n)^n = \E\prod_{t}(1+r_t)$, i.e.\ $R_n\approx \frac1n\sum_t\E r_t$ (empirically rejected)\\
+Monetary policy & creating an artificial hierarchy by setting the overnight rate\\
+\end{tabularx}
+\end{keyformulas}
+
+\section*{Exercises}
+
+\begin{exercise}[Where is the money?]
+For each agent, say which instruments are money and which are credit from its point of view, and why:
+\begin{enumerate}[(a)]
+  \item a household paying its rent;
+  \item a bank settling its payments with other banks at the end of the day;
+  \item the central bank of a small country paying for imports under a gold standard;
+  \item the same central bank today.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}[Consolidation]
+Write the balance sheets of \cref{sec:nh-institutions} with numbers: gold 10; currency 100, held by banks; deposits 1000,
+held by the private sector; securities 5000, issued by the private sector and held half by the private sector itself.
+\begin{enumerate}[(a)]
+  \item Consolidate the three sectors. What remains?
+  \item Consolidate only the private sector and the banking system, as Gurley and Shaw do. What is ``outside'' money now?
+  \item Compute the ``branching ratios'' deposits/currency and currency/gold. What happens to them in an expansion?
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}[Draghi versus Soros in T-accounts]
+Peripheral governments have issued 100 of excess long-term bonds, held by banks.
+\begin{enumerate}[(a)]
+  \item Record Soros's plan step by step: the EFA buys the bonds with Euro bills; the ECB buys 100 of Euro bills from the
+        EFA's buyers with new reserves; banks then swap 100 of excess reserves for Euro bills from the ECB.
+  \item What is the final change in the ECB's balance sheet? In the money supply?
+  \item The EFA forgives the bonds. Whose net worth falls, and by how much?
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}[The expectations hypothesis]
+The overnight rate is 1\% today and is expected to rise by 1 percentage point a year for the next 4 years, then stay
+constant.
+\begin{enumerate}[(a)]
+  \item Using the approximate expectations hypothesis, compute the 2-, 5- and 10-year yields and sketch the term
+        structure.
+  \item The observed 10-year yield is 1 percentage point higher than your answer. Give two possible explanations.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}[Market makers in a crisis]
+For each of the three market makers of \cref{fig:nh-marketmakers}, describe what happens to its balance sheet when the
+layer above becomes scarce, and what options it has: change its price, use reserves, borrow from the layer above, stop
+making the market.
+\end{exercise}
