@@ -32,3 +32,5 @@
   (IP flagged); needs a retry later or cookies (`--cookies-from-browser`, only with Alessio's OK).
 - Playlist errors: video L19.4 ("What is a swap") contains the same lecture as L19.5; L8.10 duplicates L8.9.
 - Possible next: appendix A (materials map).
+
+- Mehrling's written notes (sites.bu.edu/perry), one PDF per lecture, in materials/mehrling-notes/ (+ .txt with page markers). Cite with `\mn{L}{page}`. TODO: integrate them into all 22 chapters; L19.2 and L20.1 are not covered by them (still need audio).

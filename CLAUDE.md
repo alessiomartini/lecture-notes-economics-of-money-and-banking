@@ -34,3 +34,5 @@ without solutions, `mysolution` never edited (comments go in `\feedback`).
 Commit after each verified chapter; push only when asked.
 
 - Video links: never put consecutive `	s` links to the same video; keep only the earliest. Run `python tools/dedup_ts.py` after writing a chapter.
+
+- Mehrling's written notes per lecture: `materials/mehrling-notes/` (PDF + text with `=== pN` markers); cite with `\mn{L}{page}` (links to the PDF page on sites.bu.edu).

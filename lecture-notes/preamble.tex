@@ -326,6 +326,23 @@
 \newcommand{\seg}[3]{\tslink{#1}{#2}{0}{#3}}
 \makeatother
 
+% ---------- Mehrling's written lecture notes ----------
+%  \mn{19}{2} -> page 2 of Mehrling's notes for lecture 19, linked to the PDF on sites.bu.edu/perry
+%  (local copies in materials/mehrling-notes/). \mnfile{19}{...} lists the file names.
+\newcommand{\mnfile}[2]{\expandafter\def\csname mn@file@#1\endcsname{#2}}
+\mnfile{1}{Lec-01-The-Four-Prices-of-Money}\mnfile{2}{Lec-02-The-Natural-Hierarchy-of-Money}
+\mnfile{3}{Lec-03-Money-and-the-State-Domestic}\mnfile{4}{Lec-04-The-Money-View-Micro-and-Macro}
+\mnfile{5}{Lec-05-The-Central-Bank-as-a-Clearinghouse}\mnfile{6}{Lec-06-Federal-Funds-Final-Settlement}
+\mnfile{7}{Lec-07-Repos-Postponing-Settlement}\mnfile{8}{Lec-08-Eurodollars-Parallel-Settlement}
+\mnfile{9}{Lec-09-The-World-that-Bagehot-Knew}\mnfile{10}{Lec-10-Dealers-and-Liquid-Security-Markets}
+\mnfile{11}{Lec-11-Banks-and-The-Market-for-Liquidity}\mnfile{12}{Lec-12-Lender-or-Dealer-of-Last-Resort}
+\mnfile{13}{Lec-13-Chartalism-Metallism-and-Key-Currencies}\mnfile{14}{Lec-14-Money-and-the-State-International}
+\mnfile{15}{Lec-15-Banks-and-Global-Liquidity}\mnfile{16}{Lec-16-Foreign-Exchange}
+\mnfile{17}{Lec-17-Direct-and-Indirect-Finance}\mnfile{18}{Lec-18-Forwards-and-Futures}
+\mnfile{19}{Lec-19-Interest-Rate-Swaps}\mnfile{20}{Lec-20-Credit-Derivatives}
+\mnfile{21}{Lec-21-Shadow-Banking-Central-Banking}\mnfile{22}{Lec-22-Touching-the-Elephant-three-views}
+\DeclareRobustCommand{\mn}[2]{\mbox{\footnotesize\sffamily\href{https://sites.bu.edu/perry/files/2019/01/\csname mn@file@#1\endcsname.pdf\#page=#2}{\color{srccol}[Notes\,#1\,p.#2]}}}
+
 % ---------- maths shortcuts ----------
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\N}{\mathbb{N}}
