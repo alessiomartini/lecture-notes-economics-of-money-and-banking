@@ -1,0 +1,483 @@
+% !TEX root = ../main.tex
+\chapter{Money and the State: Domestic}\label{ch:state}
+\begin{paracol}{2}
+
+\begin{sources}
+\begin{tabularx}{\linewidth}{@{}l l L@{}}
+\toprule
+\textbf{Segment} & \textbf{Length} & \textbf{Content}\\
+\midrule
+\seg{3}{1}{L3.1 FT: Quantitative Easing and the Fed} & 7:47 & The Fed's balance sheet 2007--2010; QE; the expected QE3.\\
+\seg{3}{2}{L3.2 Allyn Young: Money and Economic Orthodoxy} & 9:09 & Where Young stands against the orthodoxy of economists and against outside opinions.\\
+\seg{3}{3}{L3.3 National Banking System before the Fed} & 3:22 & The pyramid of reserves: country banks, reserve cities, New York.\\
+\seg{3}{4}{L3.4 Civil War Finance, bonds and loans} & 8:49 & Bond sales, the \$150 million bank loan of 1861, suspension of gold payments.\\
+\seg{3}{5}{L3.5 Civil War Finance, legal tenders} & 7:07 & The greenbacks: state money inserted into the hierarchy.\\
+\seg{3}{6}{L3.6 National Banking System, origins} & 6:30 & Bonds sold to banks, bank notes backed by bonds; a fixed quantity of base money.\\
+\seg{3}{7}{L3.7 National Banking System, instability} & 5:57 & Seasonal demand for currency, call loans, crises; 1907 and clearinghouse certificates.\\
+\seg{3}{8}{L3.8 Federal Reserve System, plan} & 6:32 & Discounts and rediscounts: elastic reserves and elastic currency backed by loans to Main Street.\\
+\seg{3}{9}{L3.9 Federal Reserve System, actual} & 6:48 & War finance fills the Fed with Treasury bills; open market operations; state money versus private money.\\
+\bottomrule
+\end{tabularx}
+
+\smallskip
+\textbf{Files.} Transcripts \file{materials/transcripts/L03-P0*.txt}.
+\textbf{Reading.} Allyn Young's four chapters (\file{Allyn Young.pdf}, see \cref{sec:fp-young}); this lecture translates
+their history of American money into balance sheets.
+\end{sources}
+
+\section*{Motivation}
+Lecture~2 left the state out: the central bank was just a bankers' bank \ts{2}{2}{2:11}. Here the state comes in, through
+the history that Allyn Young tells: how the United States financed the Civil War, how that war finance produced the
+National Banking System, why that system was unstable, and how the Federal Reserve was designed to fix it and what it became
+instead. The history serves two purposes \ts{3}{9}{3:37}:
+\begin{enumerate}
+  \item practice with balance sheets: every episode is a set of T-accounts;
+  \item a conceptual point: the monetary system is a \emph{hybrid} of state money and private money, and a theory built on only
+        one of the two misses half of it.
+\end{enumerate}
+A recurring pattern: \emph{the history of American central banking is a history of war finance} \ts{3}{8}{0:07}.
+
+% ------------------------------------------------------------------
+\section{FT: quantitative easing and the Fed}\label{sec:st-ft}
+
+\begin{casestudy}[FT, September 2012: ``Fed's expected QE move weighs on the dollar'']
+Global stocks rallied and the dollar was sold amid expectations that the Fed would announce a third round of quantitative
+easing, and that Germany's constitutional court would allow Europe's new bailout fund (the court did, with reservations)
+\ts{3}{1}{0:28}\ts{3}{1}{0:48}. ``QE'' is a word not yet in the textbooks: it was invented during the crisis
+\ts{3}{1}{1:09}\ts{3}{1}{1:32}.
+\end{casestudy}
+
+\paragraph{The Fed's balance sheet in the crisis.} The chart shown in class plots the Fed's balance sheet from January 2007 to
+March 2010, assets as positive numbers and liabilities as negative ones, with two vertical lines: the collapse of Bear Stearns
+(March 2008) and of Lehman Brothers and AIG (September 2008) \ts{3}{1}{1:52}\ts{3}{1}{2:12}. It shows three phases.
+\begin{enumerate}
+  \item \textbf{Interest rates.} The crisis began in August 2007, and the Fed first lowered its rate from 5\% to 2\% in steps,
+        trying to make the system more elastic \ts{3}{1}{2:33}. It was not enough: Bear Stearns failed \ts{3}{1}{2:53}.
+  \item \textbf{Changing the composition of assets.} Before the crisis the Fed held essentially Treasury bills, against currency
+        \ts{3}{1}{3:13}. After Bear Stearns it sold about half of its bills and lent the proceeds directly to banks and
+        broker-dealers to support financial markets; liabilities did not change \ts{3}{1}{3:34}.
+  \item \textbf{Expanding both sides.} After Lehman and AIG this was not enough either, and the Fed expanded its own liabilities:
+        the balance sheet roughly doubled in a few weeks \ts{3}{1}{3:54}\ts{3}{1}{4:14}. First came short-term loans, to domestic
+        and to international banks: the \emph{central bank liquidity swaps} with the ECB, the Bank of Japan and others reached
+        about \$600 billion, because the problem had become global \ts{3}{1}{4:34}\ts{3}{1}{4:55}. As these facilities ran off
+        around the turn of the year, the Fed started buying mortgage-backed securities, about a trillion dollars of them
+        \ts{3}{1}{5:15}.
+\end{enumerate}
+
+\begin{nfigure}
+\begin{tikzpicture}[font=\scriptsize,x=0.42cm,y=0.42cm]
+  % stylised, not data: time on x (2007-2010), assets up, liabilities down
+  \draw[-{Stealth[length=3pt]}] (0,0) -- (14.5,0) node[right]{time};
+  \draw[-{Stealth[length=3pt]}] (0,-6.5) -- (0,6.5);
+  \node[left] at (0,5) {assets}; \node[left] at (0,-5) {liabilities};
+  % assets
+  \fill[defcol!45] (0,0) -- (0,3.6) -- (5,3.6) -- (6,1.8) -- (14,1.8) -- (14,0) -- cycle;
+  \fill[fincol!45] (5,3.6) -- (6,1.8) -- (8,1.8) -- (9,1.8) -- (8.5,5.5) -- (7,5.8) -- cycle;
+  \fill[cscol!45] (7,5.8) -- (8.5,5.5) -- (9,4) -- (14,6) -- (14,1.8) -- (9,1.8) -- (8,1.8) -- cycle;
+  % liabilities
+  \fill[defcol!25] (0,0) -- (0,-3.6) -- (14,-4.2) -- (14,0) -- cycle;
+  \fill[thmcol!30] (6.5,-3.7) -- (7.2,-6.2) -- (14,-6.0) -- (14,-4.2) -- cycle;
+  \draw[dashed] (5,-6.5) -- (5,6.5) node[above]{Bear Stearns};
+  \draw[dashed] (7,-6.5) -- (7,6.5) node[above right]{Lehman, AIG};
+  \node[align=center] at (2.5,1.8) {Treasury\\bills};
+  \node[align=center] at (7.2,3.3) {loans,\\swaps};
+  \node[align=center] at (11.6,3.8) {MBS};
+  \node[align=center] at (3,-1.8) {currency};
+  \node[align=center] at (10.5,-5.1) {bank reserves};
+  \node[below] at (0.5,-6.5) {2007}; \node[below] at (13.5,-6.5) {2010};
+\end{tikzpicture}
+\caption{Schematic of the Fed's balance sheet in the crisis, after the chart shown in class \ts{3}{1}{2:12} (shapes only
+indicative, not data): first a change of composition (bills sold, loans made), then an expansion of both sides (loans, swaps,
+then mortgage-backed securities, against reserves).}\label{fig:st-fedbs}
+\end{nfigure}
+
+\begin{coursenote}[QE1, QE2, QE3]
+In class Mehrling calls the expansion after Lehman ``QE1'' and the purchases of mortgage-backed securities ``QE2''
+\ts{3}{1}{4:14}\ts{3}{1}{5:15}. In the usual numbering the first program of large-scale asset purchases (QE1, from
+November 2008, extended in March 2009) included the MBS purchases, about \$1.25 trillion by March 2010; QE2 (November
+2010) was \$600 billion of long-term Treasuries; QE3, announced on 13 September 2012, the day after this lecture's FOMC
+meeting, was open-ended MBS purchases of \$40 billion a month. Mehrling also says ``March of 07'' for Bear Stearns, which
+failed in March 2008.
+\end{coursenote}\begin{aside}[Why ``QE1'']
+For someone ``of a certain age'', QE1 and QE2 are ocean liners, the \emph{Queen Elizabeth} and the \emph{Queen Elizabeth 2};
+Mehrling guesses the joke was coined by the \emph{Financial Times}, a British paper \ts{3}{1}{4:14}.
+\end{aside}
+
+\paragraph{QE3: two ways to lower long rates.} At Jackson Hole the Fed had signalled that the economy was softening. Short
+rates were already near zero; the question was how to lower the long end of the term structure further
+\ts{3}{1}{5:36}\ts{3}{1}{5:57}\ts{3}{1}{6:18}:
+\begin{enumerate}
+  \item \textbf{Announce} that short rates will stay low for a very long time: if the market believes it, long rates fall, by the
+        expectations hypothesis (\cref{def:nh-eh}) \ts{3}{1}{6:38};
+  \item \textbf{buy long bonds}, expanding the balance sheet on both sides, which pushes up their prices: a capital gain for
+        whoever owns them, hence the excitement of the market \ts{3}{1}{6:59}\ts{3}{1}{7:19}.
+\end{enumerate}
+In practice the Fed would probably do both \ts{3}{1}{6:59}.
+
+\begin{definition}[New concepts: quantitative easing]
+\emph{Quantitative easing} (QE) is the purchase by a central bank of large quantities of assets, especially long-term ones,
+paid for by creating reserves, i.e.\ by expanding both sides of its balance sheet, when the short-term policy rate is already
+near zero. ``Quantitative'' because the policy is stated as a quantity of purchases rather than as a rate.
+\end{definition}
+
+% ------------------------------------------------------------------
+\section{Allyn Young against orthodoxy}\label{sec:st-young}
+
+Young wrote in 1924, after the First World War; he had been the economist of the American delegation at Versailles, a
+contemporary of Keynes but a much quieter personality \ts{3}{2}{0:50}\ts{3}{2}{1:10}. His encyclopedia chapters read
+smoothly, and do not cite the literature they answer, so it is easy to miss that he takes position on many controversial
+issues \ts{3}{2}{1:31}. Mehrling lists six.
+
+\paragraph{Against economic orthodoxy} \ts{3}{2}{1:54}:
+\begin{enumerate}
+  \item \textbf{Barter.} Economics tells the story that money was invented to escape the inconvenience of barter (a trope Mehrling
+        attributes to Jevons). Young: there was never a period of barter; money has been there ever since trade, it is
+        ``baked into the cake'' \ts{3}{2}{1:54}\ts{3}{2}{2:15}.
+  \item \textbf{Growth.} A developing economy needs a proper financial system. Orthodoxy then and now disagrees: in the Solow growth
+        model growth comes from capital accumulation, population and productivity, technical change is a residual, and any
+        growth due to finance is dropped into that residual; money is a veil to look through \ts{3}{2}{2:35}\ts{3}{2}{2:56}\ts{3}{2}{3:16}.
+  \item \textbf{The currency principle.} Most economists think money gets its value from scarcity relative to demand, as in the
+        neoclassical theory of value, and fear over-issue \ts{3}{2}{3:59}\ts{3}{2}{4:20}. Young criticises the currency principle:
+        the National Banking System was built on it, limiting both note and deposit issue, and the lack of elasticity caused
+        periodic crises; the Fed arose to give elasticity \ts{3}{2}{4:40}\ts{3}{2}{5:01}.
+\end{enumerate}
+Young was professor of monetary economics at Harvard and adviser to Benjamin Strong of the New York Fed, but his view was a
+minority one among economists, then and now, though not inside central banks \ts{3}{2}{5:22}.
+
+\paragraph{Against outside opinions} \ts{3}{2}{5:43}:
+\begin{enumerate}[resume]
+  \item \textbf{Chartalism.} Against the idea that the dollar has value because the state declares it legal tender
+        \ts{3}{2}{6:04}\ts{3}{2}{6:24}.
+  \item \textbf{Efficient markets.} Young points out how the inefficiency of the monetary system made asset prices swing apart from
+        fundamental values; he is against speculation and for public policy to control bubbles \ts{3}{2}{6:45}\ts{3}{2}{7:06}\ts{3}{2}{7:26}.
+  \item \textbf{Populism.} Above all he defends the Federal Reserve against those who saw it as a behemoth, and, against William
+        Jennings Bryan, he wants the gold standard: the dollar is valuable because it is convertible into gold
+        \ts{3}{2}{7:47}\ts{3}{2}{8:08}\ts{3}{2}{8:28}. This fits the hierarchy of lecture~2, with gold at the top. But the gold
+        standard does not work perfectly by itself: it needs better financial institutions \ts{3}{2}{8:48}.
+\end{enumerate}\begin{history}[Bryan's ``Cross of Gold'' (1896)]
+At the Democratic national convention in Chicago, on 9 July 1896, William Jennings Bryan closed his speech for the free coinage
+of silver with: ``you shall not crucify mankind upon a cross of gold''. He won the nomination but lost the election to William
+McKinley; the Gold Standard Act of 1900 put the US formally on gold.\par
+\emph{References:} \emph{Official Proceedings of the Democratic National Convention}, 1896; Gold Standard Act, 14 March 1900.
+\end{history}\begin{history}[Young at Versailles]
+In 1918--1919 Allyn Young headed the economic division of the Inquiry and then of the American Commission to Negotiate Peace
+in Paris; Keynes was there for the British Treasury.\par
+\emph{References:} C.~P.~Blitch, \emph{Allyn Young: The Peripatetic Economist}, Macmillan, 1995.
+\end{history}
+
+% ------------------------------------------------------------------
+\section{The National Banking System before the Fed}\label{sec:st-nbs}
+
+The issue of gold versus silver versus fiat money is left to the lectures on international money \ts{3}{3}{0:07}. Young's
+chapters contain a table of the reserves of national banks before the Fed, in three groups \ts{3}{3}{0:30}:
+\begin{enumerate}
+  \item \textbf{Central reserve cities}: New York, Chicago, St.~Louis, required to hold 25\% of their deposits in ``lawful money''
+        (currency, or gold) \ts{3}{3}{0:50}\ts{3}{3}{1:31}. Deposits in the table: \$825 million in New York, \$262 million in
+        Chicago, \$116 million in St.~Louis; New York held \$218 million of lawful money, 26.8\% \ts{3}{3}{1:52}. To some extent
+        the central bank of the US was the collection of New York banks, ``J.~P.~Morgan and his buddies'', which also faced
+        Europe in international transactions \ts{3}{3}{1:11}.
+  \item \textbf{Other reserve cities} (Boston, San Francisco, Kansas City, \dots): also 25\%, but partly held as deposits in New
+        York, ``due from reserve agents'' \ts{3}{3}{2:12}.
+  \item \textbf{Country banks}, about six thousand small banks: 15\% reserves, partly cash (\$199 million) and partly deposits in
+        reserve cities or New York (\$226 million) \ts{3}{3}{2:32}\ts{3}{3}{2:53}.
+\end{enumerate}
+
+\begin{nfigure}
+\begin{tikzpicture}[font=\small,
+  b/.style={draw,rounded corners=2pt,align=center,minimum width=3.4cm,minimum height=0.8cm}]
+  \node[b,fill=keycol!15] (g) at (0,3.6) {lawful money (gold, currency)};
+  \node[b,fill=defcol!15] (ny) at (0,2.4) {New York banks (25\%)};
+  \node[b,fill=intcol!15] (rc) at (0,1.2) {reserve city banks (25\%)};
+  \node[b,fill=fincol!15] (cb) at (0,0) {country banks (15\%)};
+  \draw[-{Stealth[length=4pt]}] (cb.east) to[out=0,in=0] node[right,font=\scriptsize]{deposits} (rc.east);
+  \draw[-{Stealth[length=4pt]}] (rc.east) to[out=0,in=0] node[right,font=\scriptsize]{deposits} (ny.east);
+  \draw[-{Stealth[length=4pt]}] (ny.east) to[out=0,in=0] node[right,font=\scriptsize]{reserves} (g.east);
+  \draw[-{Stealth[length=4pt]},dashed] (cb.west) to[out=180,in=180] node[left,font=\scriptsize]{cash} (g.west);
+\end{tikzpicture}
+\caption{The layering of reserves in the National Banking System \ts{3}{3}{2:53}: country banks keep reserves as deposits in a
+reserve city, reserve city banks keep them in New York, New York banks keep lawful money. ``Hierarchy, you can see that.''}
+\label{fig:st-pyramid}
+\end{nfigure}
+
+% ------------------------------------------------------------------
+\section{Civil War finance}\label{sec:st-civilwar}
+
+The problem of war finance: the government must mobilise as many resources as it can to win the war \ts{3}{4}{0:07}\ts{3}{4}{0:28}.
+It taxes as much as it can, it conscripts labour, and then it asks for volunteers: it sells bonds \ts{3}{4}{0:49}\ts{3}{4}{1:10}.
+Salmon P.~Chase, Lincoln's Secretary of the Treasury, tried three methods in turn.
+
+\subsection{Stage 1: bonds and loans}
+\paragraph{Version 1: bonds sold to the public.} The government issues bonds and receives deposits, which it then spends on war
+goods; within the banking system only the ownership of deposits changes, and the total quantity of deposits does not
+\ts{3}{4}{1:33}\ts{3}{4}{1:54}\ts{3}{4}{2:35}\ts{3}{4}{2:56}.
+\begin{taccts}
+\tacct[2.0cm]{Government}{$+$Deposits (G)}{$+$Bonds}\quad
+\tacct[2.0cm]{Private sector}{$+$Bonds\\$-$Deposits}{}\quad
+\tacct[2.0cm]{Banks}{}{$-$Deposits (private)\\$+$Deposits (G)}
+\end{taccts}
+Spending the deposits on war goods transfers them back to the private sector \ts{3}{4}{2:56}.
+
+\paragraph{Version 2: a loan from the banks.} If the public will not buy the bonds, or only at a high rate, the government can
+borrow directly from the banking system \ts{3}{4}{3:16}\ts{3}{4}{3:37}. A loan is like a bond, a promise to pay at a future date,
+but not a security traded in the open capital market \ts{3}{4}{3:57}. It is a swap of IOUs: the banks say to the government ``I
+owe you \$150 million'' (a deposit), the government says ``I owe you \$150 million'' (the loan) \ts{3}{4}{4:18}\ts{3}{4}{4:39}. This
+is what Chase did in August 1861 with the big New York bankers \ts{3}{4}{4:59}.
+\begin{taccts}
+\tacct[3cm]{Government}{$+$Deposits \$150m}{$+$Loan \$150m}\qquad
+\tacct[3cm]{Banking system}{$+$Loan \$150m}{$+$Deposits (G) \$150m}
+\end{taccts}
+The deposits are bank money ``created from thin air'', an expansion of both sides of the balance sheet; ``you might call this
+quantitative easing''. There is no central bank and no private sector in this operation \ts{3}{4}{5:20}\ts{3}{4}{5:40}\ts{3}{4}{6:00}.
+
+\paragraph{Chase takes the gold.} Instead of spending the deposits at home, Chase withdrew them: deposits are promises to pay on
+demand, and he demanded gold \ts{3}{4}{6:21}\ts{3}{4}{6:41}. He wanted the gold to buy war material abroad, where dollars were not
+wanted; this turned out to be key, because the South had to barter cotton for European war material, while the North could pay
+in gold \ts{3}{4}{7:23}\ts{3}{4}{7:43}\ts{3}{4}{8:03}.
+\begin{taccts}
+\tacct[3cm]{Government}{$-$Deposits\\$+$Gold}{}\qquad
+\tacct[3cm]{Banking system}{$-$Gold}{$-$Deposits (G)}
+\end{taccts}
+With their gold reserves gone, the banks could not pay any other deposit in gold and suspended specie payments: the United States
+left the gold standard \ts{3}{4}{8:03}\ts{3}{4}{8:24}.
+
+\begin{history}[The loans of 1861 and the suspension]
+In August 1861 the associated banks of New York, Boston and Philadelphia agreed to lend the Treasury \$150 million in three
+instalments, paying in coin as the government drew on it. Chase insisted on withdrawing the coin rather than leaving it on deposit.
+After the \emph{Trent} affair raised fears of war with Britain, the New York banks suspended specie payments on 30 December 1861,
+followed by the Treasury.\par
+\emph{References:} W.~C.~Mitchell, \emph{A History of the Greenbacks}, Chicago UP, 1903, part I ch.~2; B.~Hammond,
+\emph{Sovereignty and an Empty Purse: Banks and Politics in the Civil War}, Princeton UP, 1970.
+\end{history}
+
+\begin{definition}[New concepts: specie, suspension, legal tender]
+\emph{Specie} is coined metal (Latin \emph{in specie}, ``in kind''); \emph{specie payments} are the conversion of notes and deposits into
+coin on demand, and their \emph{suspension} is the refusal to convert. \emph{Legal tender} is money that, by law, a creditor cannot
+refuse in payment of a debt (Latin \emph{tendere}, to offer).
+\end{definition}
+
+\subsection{Stage 2: the greenbacks}
+Banks would not fall for it twice \ts{3}{5}{0:08}. Chase's second method was legal tender notes, the \emph{greenbacks}. Mehrling
+shows a dollar authorized by the act of 3 March 1863 (the third Greenback act), with the words ``this note is a legal tender for one
+dollar'': you cannot get gold for it, only another dollar bill, and within the US you cannot refuse it in payment of a debt
+\ts{3}{5}{0:29}\ts{3}{5}{0:50}\ts{3}{5}{1:11}.
+
+The government buys war goods by paying with notes it prints \ts{3}{5}{2:56}\ts{3}{5}{3:20}\ts{3}{5}{3:40}; the private sector deposits
+some of them (say 100) in banks, where they become the banks' reserves \ts{3}{5}{4:21}\ts{3}{5}{4:42}:
+\begin{taccts}
+\tacct[2.0cm]{Government}{$+$War goods}{$+$Legal tenders 400}\quad
+\tacct[2.0cm]{Private sector}{$-$War goods\\$+$Legal tenders 300\\$+$Deposits 100}{}\quad
+\tacct[2.0cm]{Banks}{$+$Legal tenders 100}{$+$Deposits 100}
+\end{taccts}
+Depositors now withdraw legal tenders, not gold. In the language of lecture~2, Chase inserted a layer of state money between gold and
+deposits, at the top of the US hierarchy \ts{3}{5}{5:09}\ts{3}{5}{5:31}.
+
+\paragraph{Consequences.} Legal tenders could not buy foreign goods: foreigners ask their gold value \ts{3}{5}{5:51}. Throughout the
+war their value kept falling against gold, to about 50 cents on the dollar (a fall of the exchange rate), and domestic prices rose,
+because the government was adding purchasing power instead of transferring it from the private sector as a bond sale does
+\ts{3}{5}{6:11}\ts{3}{5}{6:32}\ts{3}{5}{6:53}. Young is ``aghast'' at this, while understanding that in war you do what it takes; the
+better way is the third one \ts{3}{5}{4:01}.
+
+\begin{coursenote}[Numbers]
+In class: \$400 million authorized, ``almost 400 million'' issued, falling to ``50 cents on the dollar'' \ts{3}{5}{0:50}\ts{3}{5}{6:11}.
+Historically the three Legal Tender Acts (25 February 1862, 11 July 1862, 3 March 1863) authorized \$450 million, of which about
+\$431 million were outstanding at the peak (1864), and the greenback reached its low in July 1864, at about 35 cents in gold
+(Mitchell, 1903).
+\end{coursenote}\begin{aside}[Wesley Clair Mitchell]
+In these passages Young draws on his close friend Wesley Clair Mitchell, author of \emph{A History of the Greenbacks} (1903),
+a long-time professor at Columbia and one of the founders of the National Bureau of Economic Research (1920), the great American
+institutionalist and quantitative economist \ts{3}{5}{1:55}\ts{3}{5}{2:16}\ts{3}{5}{2:36}.
+\end{aside}
+
+\subsection{Stage 3: the National Banking System}\label{sec:st-nbsorigin}
+In 1863 Chase went back to bonds \ts{3}{6}{0:09}\ts{3}{6}{0:37}. He asked the banks to buy, at full price, bonds with a low interest
+rate, paying with deposits (no gold withdrawals this time: the banks had none) \ts{3}{6}{0:58}\ts{3}{6}{1:18}. To sweeten the deal,
+banks could \emph{issue bank notes using the bonds as collateral} \ts{3}{6}{1:39}\ts{3}{6}{1:59}. The government spends the deposits
+on war goods; then, when the public wants to withdraw its deposits in currency, the banks print their own notes instead of paying
+out their reserves \ts{3}{6}{2:20}\ts{3}{6}{3:23}\ts{3}{6}{3:43}\ts{3}{6}{4:04}:
+\begin{taccts}
+\textit{Step 1: bonds for deposits, deposits spent on war goods.}\par
+\tacct[2.0cm]{Government}{$+$War goods}{$+$Bonds}\quad
+\tacct[2.0cm]{Banks}{$+$Bonds}{$+$Deposits}\quad
+\tacct[2.0cm]{Private sector}{$-$War goods\\$+$Deposits}{}
+
+\medskip
+\textit{Step 2: the public withdraws its deposits in bank notes.}\par
+\tacct[2.0cm]{Banks}{}{$-$Deposits\\$+$Bank notes}\quad
+\tacct[2.0cm]{Private sector}{$-$Deposits\\$+$Bank notes}{}
+\end{taccts}
+The bonds were deposited with a central authority as collateral: if the bank failed, a note holder did not need to go to the
+bankrupt bank, he could get a government bond for his note \ts{3}{6}{4:48}\ts{3}{6}{5:08}. In effect the government borrowed from the
+banks by allowing them to create money: notes one step removed from legal tenders, promises to pay legal tender, private money
+\ts{3}{6}{5:30}.
+
+\paragraph{A fixed base.} The number of such bonds was fixed, so at the end of the war they became the money supply: together with the
+legal tenders and gold (after resumption), a \emph{fixed supply of base money} after 1863, which did not expand or contract with the
+business cycle \ts{3}{6}{5:50}\ts{3}{6}{6:11}.
+
+\begin{coursenote}[Which bonds?]
+Mehrling describes ``special two percent bonds'' \ts{3}{6}{0:58}. The National Currency Act (25 February 1863) and the National Bank
+Act (3 June 1864) required national banks to deposit US bonds with the Comptroller of the Currency to secure their notes (notes up to
+90\% of the bonds' value); in the 1860s these were mostly the war bonds paying 5--6\%. The 2\% ``consols of 1930'', used for note
+issue until 1935, date from the Gold Standard Act of 1900. Also, the 25\%/15\% reserve requirements were set in 1863--64; Chicago
+and St.~Louis became central reserve cities only in 1887.
+\end{coursenote}
+
+% ------------------------------------------------------------------
+\section{The instability of the National Banking System}\label{sec:st-instability}
+
+Most deposits were in the country banks, \$2,627 million in Young's table, whose reserves were mostly deposits in the money
+centres \ts{3}{7}{0:07}. The United States was an agricultural country, and the demand for currency had a strong seasonal cycle: at
+harvest time farmers withdrew notes to move the crops; Young mentions \$50 million \ts{3}{7}{0:29}\ts{3}{7}{0:49}.
+
+\paragraph{The seasonal squeeze} \ts{3}{7}{1:09}\ts{3}{7}{1:57}:
+\begin{enumerate}
+  \item farmers withdraw \$50 million in cash from country banks;
+  \item country banks replenish their cash by drawing \$50 million on their deposits in New York;
+  \item New York banks held total reserves of \$221 million: they lose 25\% of them and fall far below the required 25\%
+        \ts{3}{7}{1:30}\ts{3}{7}{2:48};
+  \item to rebuild reserves they call in their \emph{call loans} to stock-market speculators: in slack seasons they had lent idle
+        reserves overnight to brokers, and at harvest they want the money back \ts{3}{7}{3:09}\ts{3}{7}{3:29}\ts{3}{7}{3:50};
+  \item the speculators sell what they bought: stock prices fall, interest rates rise \ts{3}{7}{3:50};
+  \item the banks also try to draw reserves from the world money market, London, disrupting the world gold market
+        \ts{3}{7}{4:13}\ts{3}{7}{4:41}.
+\end{enumerate}
+``The United States is this big child in the world monetary system, and every fall it throws a little fit'' \ts{3}{7}{4:41}.
+
+\begin{taccts}
+\tacct[2.4cm]{Country banks}{$-$Deposits in NY 50}{$-$Deposits 50}\quad
+\tacct[2.4cm]{New York banks}{$-$Reserves 50\\later: $-$Call loans}{$-$Deposits of country banks 50}
+\end{taccts}
+
+\begin{definition}[New concepts: call loan, clearinghouse]
+A \emph{call loan} is a loan repayable on demand (``at call''), typically to a stockbroker against securities. A \emph{clearinghouse} is an
+association of banks that settles the claims of its members on each other in one place, netting them (from \emph{clearing}, settling
+accounts so that they are ``clear'').
+\end{definition}
+
+\paragraph{1907.} Europe eventually ``got sick of this'' and sent help, Paul Warburg, to help create a central bank; there was also
+domestic agitation for one \ts{3}{7}{5:02}. The key moment was the crisis of 1907, when J.~P.~Morgan showed how to get out of a crisis:
+the clearinghouse of the New York banks issued \emph{clearinghouse loan certificates}, a substitute for money, creating elastic reserves,
+but privately and only for its members. The Fed's idea was to do the same for everyone, with a central bank \ts{3}{7}{5:23}\ts{3}{7}{5:43}.
+(Clearinghouses are the subject of lecture~5.)\begin{history}[From 1907 to 1913]
+The panic of October 1907 started with the failed attempt to corner United Copper and the run on the Knickerbocker Trust; J.~P.~Morgan
+organised the rescue, and clearinghouses across the country issued loan certificates. The Aldrich--Vreeland Act (1908) created a National
+Monetary Commission and emergency currency; Paul Warburg, a German banker who had settled in New York in 1902, became the main advocate of a
+central bank. The Federal Reserve Act was signed by President Woodrow Wilson on 23 December 1913; the twelve Federal Reserve Banks opened in
+November 1914.\par
+\emph{References:} R.~F.~Bruner and S.~D.~Carr, \emph{The Panic of 1907}, Wiley, 2007; Federal Reserve Act, 1913.
+\end{history}
+
+% ------------------------------------------------------------------
+\section{The Federal Reserve System: plan and reality}\label{sec:st-fed}
+
+\subsection{The plan}
+Attempts by the bankers themselves to create a central bank were not trusted; President Wilson got it through, just in time to use it
+for First World War finance \ts{3}{8}{0:07}. Young describes three levels \ts{3}{8}{0:50}\ts{3}{8}{1:12}:
+\begin{enumerate}
+  \item \textbf{member banks}, ordinary banks making loans to farmers and merchants, ``Main Street'', by expanding their own deposits
+        \ts{3}{8}{1:32}\ts{3}{8}{1:53};
+  \item the \textbf{Federal Reserve Banks}, located in the same cities as the old reserve-city banks (Boston, San Francisco, \dots);
+  \item the \textbf{Federal Reserve} itself at the top.
+\end{enumerate}
+What holds member banks back from lending is the fear that deposits are withdrawn and reserves run out \ts{3}{8}{2:13}. The plan removes
+the fear: a bank short of reserves can get more from its Reserve Bank by using its loans as collateral (a \emph{discount loan}), or by
+selling them to the Reserve Bank if they are in the right form \ts{3}{8}{2:33}\ts{3}{8}{2:54}\ts{3}{8}{3:14}.
+
+\begin{taccts}
+\tacct[2.6cm]{Member bank}{$+$Loans to Main Street\\$+$Reserves}{$+$Deposits\\$+$Discount loan}\quad
+\tacct[2.6cm]{Reserve bank}{$+$Discount loan}{$+$Reserves of member bank}
+\end{taccts}
+``The alchemy of banking once again'': the member bank lends without fear, because its loans can be turned into reserves, and the Reserve
+Bank creates the reserves from thin air by expanding its own balance sheet: \emph{elastic reserves}, unlike the National Banking System
+\ts{3}{8}{3:41}\ts{3}{8}{4:01}. If depositors want cash instead, Reserve Banks can \emph{rediscount} at the Federal Reserve, which prints
+notes: \emph{elastic currency} \ts{3}{8}{4:21}\ts{3}{8}{4:45}\ts{3}{8}{5:06}. (This is Young's description, not how it works today.)
+
+\begin{definition}[New concepts: discount, rediscount]
+To \emph{discount} a bill is to buy it before maturity for less than its face value; the difference is the interest. A central bank
+\emph{discount loan} is a loan to a bank against eligible paper, and to \emph{rediscount} is to discount again paper that has already been
+discounted once (by the member bank, then by the Reserve Bank). The rate charged is the \emph{discount rate}.
+\end{definition}
+
+The whole idea was a seasonal one: in an agricultural country the demand for currency and deposits fluctuates with the seasons, so the
+supply of currency and of reserves must fluctuate too, backed by loans to Main Street \ts{3}{8}{5:26}\ts{3}{8}{5:47}. The Federal Reserve
+Act says the assets of the Reserve Banks are to be these discounts; that is how Wilson sold it \ts{3}{8}{6:08}.
+
+\subsection{The reality}
+The Fed's balance sheet before the 2007 crisis held hardly any loans to Main Street: its main asset was Treasury bills \ts{3}{9}{0:08}.
+This was true almost from the start, because the US went to war soon after the Fed was created, and at the end of the war the Reserve
+Banks, and the member banks too, were ``stuffed full of Treasury bills'' \ts{3}{9}{0:28}\ts{3}{9}{0:48}. Young, writing in the 1920s,
+treats this as temporary, and imagines \emph{open market operations} as a temporary way to provide elasticity \ts{3}{9}{0:48}\ts{3}{9}{1:09}.
+
+\begin{definition}[New concepts: open market operations]
+\emph{Open market operations} are purchases and sales of securities (classically Treasury bills) by the central bank in the open market,
+paid for by creating or destroying reserves. They were developed by the New York Fed under Benjamin Strong in the 1920s \ts{3}{9}{1:34}.
+\end{definition}
+
+The importance of open market operations is a historical accident: the Fed was never supposed to lend to the government
+\ts{3}{9}{2:15}. The framers had the greenbacks in mind: give the government the power to print money and it will print money; so only
+loans to Main Street were to back the expansion of reserves and notes. Then came the First World War, ``the cat was out of the bag'', and
+everybody got used to a Fed full of Treasury bills, so much so that in 2008 people found it weird when the Fed sold them and lent to banks,
+to the private sector, in its commercial paper operations \ts{3}{9}{2:35}\ts{3}{9}{2:55}\ts{3}{9}{3:15}. (Mehrling adds that the textbook
+account of open market operations changing the money supply is not how they actually work: repo is involved, lecture~7
+\ts{3}{9}{1:54}.)
+
+\subsection{State money and private money}
+The conceptual point \ts{3}{9}{3:58}: the system is a \emph{hybrid}. The central bank is partly a bankers' bank; in war it is the
+government's bank, helping it sell its bonds, as in both world wars, and that is its job, not a perversion of it; in normal times it
+facilitates private capital markets; and it moves back and forth between these roles \ts{3}{9}{4:18}.
+
+\begin{intuition}[Two theories, both partly true]
+One can build a monetary theory in which the state prints money and everything else is a promise to pay it (chartalism), or one in which
+everything is private credit and the state is just a borrower (metallism, starting from gold and private pledges). Neither is any good
+alone, because the system is a hybrid that moves back and forth between the two \ts{3}{9}{4:40}\ts{3}{9}{5:00}\ts{3}{9}{5:20}. As with
+discipline and elasticity (\cref{sec:nh-discipline}), Mehrling is neither chartalist nor metallist, and uses both
+\ts{3}{9}{5:40}\ts{3}{9}{6:01}. The balance sheet approach is the bridge: debits and credits work the same way for state money and for
+private money \ts{3}{9}{6:22}\ts{3}{9}{6:42}.
+\end{intuition}
+
+% ------------------------------------------------------------------
+\flushside
+\section*{Key formulas and ideas}
+\begin{keyformulas}
+\begin{tabularx}{\linewidth}{@{}l L@{}}
+Bond sale to public & government $+$deposits/$+$bonds; only ownership of deposits changes, total deposits unchanged\\
+Loan from banks & swap of IOUs: bank $+$loan/$+$deposit; both sides expand (new bank money)\\
+Legal tenders & state money inserted between gold and deposits; adds purchasing power: depreciation and inflation\\
+National bank notes & bank notes backed by government bonds; fixed base money, inelastic\\
+Seasonal squeeze & farmers' cash demand $\to$ drain on New York reserves $\to$ call loans called $\to$ stocks fall, rates rise\\
+Fed plan & discount and rediscount of loans to Main Street: elastic reserves, elastic currency\\
+Fed reality & war finance: Treasury bills as main asset; open market operations\\
+Hybrid & state money and private money; chartalism and metallism each partly true\\
+\end{tabularx}
+\end{keyformulas}
+
+\section*{Exercises}
+
+\begin{exercise}[Three ways to finance a war]
+The government needs 100 of war goods. Write the T-accounts of government, banks and private sector when it
+\begin{enumerate}[(a)]
+  \item sells 100 of bonds to the public;
+  \item borrows 100 from the banks and spends the deposits;
+  \item prints 100 of legal tenders, of which the public deposits 40 in banks.
+\end{enumerate}
+In each case, what happens to the total of deposits and of currency? Which method adds purchasing power?
+\end{exercise}
+
+\begin{exercise}[The seasonal squeeze]
+Using the numbers of \cref{sec:st-instability}, suppose New York banks have deposits of 825 and reserves of 221, and country banks draw 50.
+\begin{enumerate}[(a)]
+  \item Compute the New York reserve ratio before and after.
+  \item How many call loans must be called (or gold imported) to restore 25\%?
+  \item Redo (b) when a Reserve Bank discounts loans for the New York banks.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}[Bank notes backed by bonds]
+A national bank buys 100 of government bonds with deposits and may issue notes up to 90\% of their value. Write its balance sheet after the
+public withdraws 90 of deposits in notes. Why could the total of notes not respond to the seasonal demand for currency?
+\end{exercise}
+
+\begin{exercise}[QE in T-accounts]
+The Fed buys 100 of long-term Treasury bonds from a pension fund that banks with Bank A. Write the changes in the three balance sheets and
+explain why the market price of bonds is expected to rise.
+\end{exercise}
