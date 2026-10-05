@@ -1,0 +1,330 @@
+% !TEX root = ../main.tex
+\chapter{Chartalism, Metallism and Key Currencies}\label{ch:chartalism}
+\begin{paracol}{2}
+
+\begin{sources}
+\begin{tabularx}{\linewidth}{@{}l l L@{}}
+\toprule
+\textbf{Segment} & \textbf{Length} & \textbf{Content}\\
+\midrule
+\seg{13}{1}{L13.1 FT: Autonomy of Bank of Japan} & 2:14 & A timid Bank of Japan, a stronger yen.\\
+\seg{13}{2}{L13.2 Key Currencies as a Hierarchical System} & 8:38 & Quoting conventions; the hierarchy of currencies.\\
+\seg{13}{3}{L13.3 What is Money? Chartalism versus Metallism} & 8:37 & Schumpeter's two traditions; king's money and international money.\\
+\seg{13}{4}{L13.4 Chartalism as a Theory of Money} & 2:10 & Currency as zero-interest government funding; taxes.\\
+\seg{13}{5}{L13.5 Quantity Theory of Money} & 4:39 & $MV=PT$ as a way to tame the power of the state; velocity and bank money.\\
+\seg{13}{6}{L13.6 Purchasing Power Parity} & 3:02 & The chartalist theory of the exchange rate.\\
+\seg{13}{7}{L13.7 Metallism as a Theory of Money} & 5:07 & Mint pars, gold points, forward parity.\\
+\seg{13}{8}{L13.8 A Money View of International Payments, FX Dealers} & 11:36 & A deficit country pays in dollars it does not have: matched-book and speculative FX dealers.\\
+\seg{13}{9}{L13.9 Chartalism, Metallism, and the Money View Compared} & 4:29 & Goods, assets, money: three readings of the exchange rate.\\
+\seg{13}{10}{L13.10 Private and Public Money: A Hybrid System} & 7:30 & How war finance merged the king's money and the bankers' money.\\
+\seg{13}{11}{L13.11 Hybridity in FX Market-making} & 5:33 & Private dealers and central banks along the currency hierarchy.\\
+\bottomrule
+\end{tabularx}
+
+\smallskip
+\textbf{Files.} Transcripts \file{materials/transcripts/L13-P*.txt}.
+\end{sources}
+
+\section*{Motivation}
+The second part of the course begins with four lectures on the \emph{exchange rate}, one of the four prices of money \ts{13}{1}{0:07}. Foreign exchange is
+the relative price of monies, so it is a \emph{money} market, not a capital market \ts{13}{2}{2:05}. To talk about the price of one money in terms of another
+we must face the question avoided so far, by focusing on credit: what kind of thing is money? \ts{13}{2}{3:07}\ts{13}{2}{3:27} Two traditions answer it,
+chartalism and metallism; each yields a theory of the exchange rate; the money view offers a third, and the modern system turns out to be a hybrid of the
+two kinds of money.
+
+% ------------------------------------------------------------------
+\section{FT: autonomy of the Bank of Japan}\label{sec:cm-ft}
+
+\begin{casestudy}[FT, October 2012: ``Autonomy of BoJ called into question'']
+The Bank of Japan was less aggressively expansionary than the market expected, and the yen rose about 0.5\% against the dollar within 30 minutes of the
+announcement: bad for a big export economy that has long struggled with deflation \ts{13}{1}{0:29}\ts{13}{1}{0:49}\ts{13}{1}{1:10}. ``Set alongside the
+spectacular easing of the US Federal Reserve or the European Central Bank, the more subdued Bank of Japan often struggles to compete''; and if prices keep
+falling, raising the real cost of borrowing, executives will not lever up \ts{13}{1}{1:31}. The article links central bank balance sheets to the price of
+money relative to foreign monies \ts{13}{1}{1:53}.
+\end{casestudy}
+
+% ------------------------------------------------------------------
+\section{Key currencies as a hierarchical system}\label{sec:cm-hierarchy}
+
+\paragraph{Quoting conventions.} A FRED chart shows the dollar price of gold, rising from 2003 to about \$1800 an ounce, and the dollar price of a euro, about
+\$1.30 \ts{13}{2}{0:00}\ts{13}{2}{0:20}\ts{13}{2}{0:40}. There are two ways to quote an exchange rate \ts{13}{2}{1:01}:
+
+\begin{definition}[New concepts: quoting conventions]
+In the \emph{American convention} the exchange rate is the number of dollars per unit of foreign currency (\$1.30 per euro); in the \emph{European convention}
+it is the number of units of foreign currency per dollar (0.77 euro per dollar). The theory is the same, but every formula changes into its inverse
+\ts{13}{2}{1:01}\ts{13}{2}{1:22}. In this course, so far, the European convention has been used.
+\end{definition}
+
+\paragraph{The international hierarchy.} So far the best money was reserves at the Fed (and currency), then Fed funds, then Eurodollars, all promises to pay
+reserves and trading at about the same price \ts{13}{2}{2:26}\ts{13}{2}{2:46}\ts{13}{2}{3:07}. What lies above? A stylised description of what one sees
+\ts{13}{2}{4:08}\ts{13}{2}{4:28}:
+\begin{enumerate}
+  \item the \textbf{international dollar}, the world reserve currency, in which most trade is denominated and settled \ts{13}{2}{4:28};
+  \item the \textbf{domestic dollar}, at par with it (with difficulty in the crisis, as seen) \ts{13}{2}{4:55}\ts{13}{2}{5:15};
+  \item \textbf{key currencies}: the yen in Asia (eventually perhaps the renminbi), the pound and the euro in Europe: with the dollar the four most traded
+        \ts{13}{2}{5:15};
+  \item other \textbf{majors}: the Swiss franc, the Canadian and Australian dollars: deep, liquid markets against the dollar, where very large trades do not move
+        the price \ts{13}{2}{5:35}\ts{13}{2}{5:58}\ts{13}{2}{6:18};
+  \item the \textbf{minor} currencies of the hundreds of other countries, which do not trade against each other: to trade Hungarian forints against Mexican pesos
+        one goes through dollars \ts{13}{2}{7:20}\ts{13}{2}{7:40}.
+\end{enumerate}
+In trading volume (as quoted in class), 51\% involves only the dollar, euro, yen and sterling, and 85\% of trades have the dollar on one side \ts{13}{2}{6:39}\ts{13}{2}{6:59}.
+``It really is a dollar system.'' Being at the centre makes it hard for Americans to think about foreign exchange, which Europeans think about all the time
+\ts{13}{2}{8:00}\ts{13}{2}{8:21}.
+
+\begin{nfigure}
+\begin{tikzpicture}[font=\scriptsize]
+  \fill[keycol!30] (0,4) -- (-0.7,3.2) -- (0.7,3.2) -- cycle;
+  \fill[defcol!25] (-0.7,3.2) -- (-1.5,2.2) -- (1.5,2.2) -- (0.7,3.2) -- cycle;
+  \fill[intcol!20] (-1.5,2.2) -- (-2.3,1.2) -- (2.3,1.2) -- (1.5,2.2) -- cycle;
+  \fill[fincol!15] (-2.3,1.2) -- (-3.2,0) -- (3.2,0) -- (2.3,1.2) -- cycle;
+  \draw[thick] (0,4) -- (-3.2,0) -- (3.2,0) -- cycle;
+  \node[align=center] at (0,3.45) {int'l\\dollar};
+  \node at (0,2.65) {domestic \$, euro, yen, pound};
+  \node at (0,1.65) {Swiss franc, CAD, AUD};
+  \node at (0,0.55) {minor currencies};
+  \node[right,align=left] at (3.4,3.4) {world reserve currency:\\85\% of trades have \$ on one side};
+  \node[right,align=left] at (3.4,1.7) {majors: deep, liquid\\markets against the dollar};
+  \node[right,align=left] at (3.4,0.5) {traded through the dollar;\\markets made by central banks};
+\end{tikzpicture}
+\caption{The hierarchy of currencies \ts{13}{2}{4:28}\ts{13}{2}{7:40} (a stylised description, not a theory).}\label{fig:cm-currencies}
+\end{nfigure}
+
+% ------------------------------------------------------------------
+\section{What is money? Chartalism versus metallism}\label{sec:cm-what}
+
+The two words come from Joseph Schumpeter's treatise on the history of economic analysis, which classifies monetary theories into chartalist and metallist
+\ts{13}{3}{0:20}\ts{13}{3}{0:41}.
+
+\begin{definition}[New concepts: chartalism, metallism]\label{def:cm-chartalism}
+\emph{Chartalism}: a piece of money is an emblem of the power of the state that issues it; the quintessential money is fiat currency, ``the king's money''. Its
+classic theorist is Georg Friedrich Knapp \ts{13}{3}{0:41}\ts{13}{3}{1:01}\ts{13}{3}{1:22}. \emph{Metallism}: the essence of money is a physical, metallic value,
+gold or silver \ts{13}{3}{1:43}. (Chartalism from Latin \emph{charta}, a token or ticket, the state-stamped token; \emph{fiat}, ``let it be done''.)
+\end{definition}\begin{history}[Knapp and Schumpeter]
+Georg Friedrich Knapp's \emph{Staatliche Theorie des Geldes} (1905; English \emph{The State Theory of Money}, 1924) argued that money is a creature of law,
+defined by what the state accepts in payment. Schumpeter's posthumous \emph{History of Economic Analysis} (1954) contrasts ``theoretical metallism'' with
+``theoretical cartalism''.\par
+\emph{References:} G.~F.~Knapp, \emph{The State Theory of Money}, Macmillan, 1924; J.~A.~Schumpeter, \emph{History of Economic Analysis}, Oxford UP, 1954, part~II ch.~6.
+\end{history}
+
+Both traditions allow a large superstructure of credit, so most of the course is consistent with either; but the debate can get very heated
+\ts{13}{3}{2:04}\ts{13}{3}{2:24}. For metallists inconvertible money is a kind of robbery, unanchored, anxiety-inducing; for chartalists the state is the ultimate
+authority, and who is gold to tell it what to do? It is discipline versus elasticity again: state money against the discipline of gold and of the market
+\ts{13}{3}{2:45}\ts{13}{3}{3:05}\ts{13}{3}{3:25}.
+
+\paragraph{Two moneys in history.} When two traditions are at loggerheads forever, look for a higher point of view, or for a historical origin; here both apply
+\ts{13}{3}{3:45}\ts{13}{3}{4:06}. Before the modern nation-state there were two parallel monetary systems in the same country \ts{13}{3}{4:06}\ts{13}{3}{4:27}\ts{13}{3}{4:48}\ts{13}{3}{5:09}:
+\begin{itemize}
+  \item the \textbf{king's money}: local, domestic, used in retail trade and to pay taxes; the king's face on it matters if he is your king;
+  \item \textbf{international money}: gold, which you simply weigh, used in wholesale and international business.
+\end{itemize}
+Both circulated, with an exchange rate between them. Mehrling learned this from Fernand Braudel, \emph{The Wheels of Commerce}, volume 2 of his trilogy on the
+15th to 18th centuries, which describes the wheels of trade at the lowest and at the highest level \ts{13}{3}{5:29}\ts{13}{3}{5:50}. It is no surprise that there are
+two traditions in monetary theory: there were always two kinds of money \ts{13}{3}{6:10}.
+
+\begin{taccts}
+\tacct[2.4cm]{King's money system}{}{King's money\\\quad domestic credit superstructure}\qquad
+\tacct[2.4cm]{International money system}{}{Gold\\\quad business credit superstructure}
+\end{taccts}
+Each money is at the top of its own hierarchy \ts{13}{3}{6:31}\ts{13}{3}{6:52}. The systems touch: merchants who trade internationally and sell retail move between them,
+and kings fighting foreign wars need gold to pay soldiers and buy war material abroad \ts{13}{3}{7:13}\ts{13}{3}{7:33}. Today there are many hierarchies: each currency has its
+domestic credit hierarchy, and the international dollar a whole international one; the world funding markets are dollar markets \ts{13}{3}{8:15}.
+
+% ------------------------------------------------------------------
+\section{Chartalism: the state, the quantity theory, PPP}\label{sec:cm-chartalist}
+
+\paragraph{Currency as cheap funding.} If money is a creature of the state, think of the central bank as a government bank: the Treasury issues bills paying, say, 5\%;
+the central bank buys them and issues currency paying 0\%. Looking through the central bank, currency is zero-interest funding for the government, which is why states
+like to monopolise its issue \ts{13}{4}{0:00}\ts{13}{4}{0:25}\ts{13}{4}{0:45}\ts{13}{4}{1:06}.
+\begin{taccts}
+\tacct[2.2cm]{Treasury}{(authority to tax)}{Treasury bills (5\%)}\qquad
+\tacct[2.2cm]{Central bank}{Treasury bills (5\%)}{Currency (0\%)}
+\end{taccts}
+What supports the value of such a liability? The government's authority, especially its taxing authority: it insists that taxes be paid in its currency, and if you
+do not pay, it throws you in jail \ts{13}{4}{1:26}\ts{13}{4}{1:47}.
+
+\paragraph{The quantity theory.} Economists turn this into a proper theory with the quantity theory of money \ts{13}{5}{0:00}:
+\begin{keyformulas}
+\textbf{Quantity theory} \ts{13}{5}{0:21}: $MV = PT$ (money $\times$ velocity $=$ price level $\times$ transactions). With $V$ fixed by institutions and $T$ by the
+real economy, $M$ determines $P$ \ts{13}{5}{0:43}\ts{13}{5}{1:04}.
+
+\medskip
+\textbf{Purchasing power parity} \ts{13}{6}{0:23}\ts{13}{6}{0:43}: $E\,P = P^\ast$, with $E$ the exchange rate (foreign currency per dollar), $P$ and $P^\ast$ the domestic
+and foreign price levels: the exchange rate is the relative price of goods in the two countries.
+\end{keyformulas}
+The quantity theory tells the government: you can say what money is, but not what it is worth; print too much and it is inflated away \ts{13}{5}{1:25}\ts{13}{5}{1:46}. People get
+heated about it because of a deep anxiety about the power of the state and about green pieces of paper that could become worthless; the equation is ``the way economists
+regulate their anxiety'' \ts{13}{5}{2:06}\ts{13}{5}{2:27}\ts{13}{5}{2:48}. But the government is not the only issuer: if quantity causes prices, bank money should worry us too; it
+seems to worry people less because it looks like credit \ts{13}{5}{2:48}\ts{13}{5}{3:08}\ts{13}{5}{3:28}. And since the hierarchy expands and contracts, velocity is not constant: in an
+expansion private money grows with transactions even if government money does not, which in the equation appears as rising $V$ \ts{13}{5}{3:28}\ts{13}{5}{3:49}.
+
+\paragraph{PPP.} If money is fiat and its quantity sets the price level, the natural theory of the exchange rate is \emph{purchasing power parity}: the quantity theory works
+behind the scenes in each country, and the relative price of monies is just the relative price of goods \ts{13}{6}{0:02}\ts{13}{6}{0:23}\ts{13}{6}{1:04}. Two prices of money, the
+exchange rate and the price level, connected, and no interest rate anywhere \ts{13}{6}{1:27}. It suits economists who look through the veil of money to a barter economy of
+goods for goods \ts{13}{6}{1:50}\ts{13}{6}{2:10}. But it does not hold empirically except perhaps in the long run: price levels move slowly, exchange rates ``bop all around''
+\ts{13}{6}{2:30}\ts{13}{6}{2:51}.
+
+% ------------------------------------------------------------------
+\section{Metallism: mint pars and gold points}\label{sec:cm-metallist}
+
+If money is gold, the exchange rate depends only on how much gold each money contains \ts{13}{7}{0:03}\ts{13}{7}{0:24}. If the dollar is $x$ ounces of gold and the pound $y$
+ounces, the exchange rate is the ratio of the \emph{mint pars}, $x/y$ \ts{13}{7}{0:45}\ts{13}{7}{1:08}. Arbitrage enforces it: if the rate deviates, melt the heavier coin into the
+lighter one \ts{13}{7}{1:29}\ts{13}{7}{1:49}. But that means shipping gold, which is costly, so the rate can deviate within a band \ts{13}{7}{2:10}\ts{13}{7}{2:31}.
+
+\begin{definition}[New concepts: mint par, gold points]
+The \emph{mint par} is the quantity of gold a currency unit represents at the mint; the ratio of two mint pars is the \emph{mint parity} exchange rate. The \emph{gold
+points} are the exchange rates above and below mint parity at which it pays to ship gold, given the costs of shipping and insurance: outside them arbitrage moves gold,
+inside them it does not \ts{13}{7}{2:54}.
+\end{definition}
+
+Mint parity with gold points is a finance view: the forward parity condition of lecture~8 (in class here, with the spot rate $E$ related to the forward rate by the ratio of
+the two interest rates) holds under the gold standard too, because the gold points bound the spot rate between a floor and a cap \ts{13}{7}{3:20}\ts{13}{7}{3:40}\ts{13}{7}{4:04}\ts{13}{7}{4:24}.
+A floor and a cap suggest Treynor's outside spread, with dealers trading inside it and determining the exchange rate: that is where the money view enters
+\ts{13}{7}{4:24}\ts{13}{7}{4:45}.
+
+\begin{history}[The classical gold standard]
+Under the classical gold standard (roughly 1880--1914) the dollar was defined as 23.22 grains of pure gold and the pound as 113.0016 grains, giving a mint parity of
+about \$4.8665 per pound; the gold points between New York and London were typically within about 0.5--1\% of parity.\par
+\emph{References:} L.~Officer, \emph{Between the Dollar--Sterling Gold Points}, Cambridge UP, 1996.
+\end{history}
+
+% ------------------------------------------------------------------
+\section{A money view of international payments}\label{sec:cm-fxdealers}
+
+A \emph{deficit} country has bought from a \emph{surplus} country and owes \$10, in dollars, the international reserve currency (neither is the US)
+\ts{13}{8}{0:03}\ts{13}{8}{0:24}\ts{13}{8}{0:45}\ts{13}{8}{1:05}. If it has \$10, no problem; but suppose it does not \ts{13}{8}{1:25}. The point of a payment system is that willing buyers
+and sellers are not stopped by not having the means of payment at hand; domestically the answer was credit; internationally it is harder \ts{13}{8}{1:47}\ts{13}{8}{2:07}\ts{13}{8}{2:28}.
+
+\paragraph{The FX dealer.} A foreign exchange dealer in the middle buys $10E$ of the deficit country's currency and sells it \$10 spot, which settles the debt: the surplus
+country has been paid, the deficit country thinks it is off the hook \ts{13}{8}{2:49}\ts{13}{8}{3:09}\ts{13}{8}{3:33}\ts{13}{8}{3:56}\ts{13}{8}{4:17}\ts{13}{8}{4:40}. The dealer made the
+payment, with dollars ``created from nothing'', promises to pay dollars: a short position in dollars against a long position in foreign exchange, just as a bank makes the
+payments its customers cannot \ts{13}{8}{5:00}\ts{13}{8}{5:32}\ts{13}{8}{5:52}\ts{13}{8}{6:13}.
+
+\paragraph{Hedging in the term market.} The dealer is exposed to the exchange rate, and to the surplus country demanding currency for its dollar claim \ts{13}{8}{6:33}. It hedges by
+trading term deposits with another dealer: a \$10 term deposit asset and a $10E$ foreign-currency term deposit liability; whatever the exchange rate does, it gains on one side
+what it loses on the other \ts{13}{8}{6:54}\ts{13}{8}{7:15}\ts{13}{8}{7:35}. This uses forward interest parity: in effect it hedges its spot position at the forward rate. It is now a
+\emph{matched-book} FX dealer \ts{13}{8}{7:55}\ts{13}{8}{8:16}. Someone must take the other side of those term deposits: a \emph{speculative} dealer, exposed to exchange risk and
+compensated for it \ts{13}{8}{8:58}\ts{13}{8}{9:18}.
+\begin{taccts}
+\tacct[1.9cm]{Deficit country}{$-$FX $10E$}{$-$Due to surplus \$10}\quad
+\tacct[1.9cm]{Matched-book FX dealer}{FX $10E$ (spot)\\\$10 term}{\$10 spot\\FX $10E$ term}\quad
+\tacct[1.9cm]{Speculative FX dealer}{FX $10E$ term}{\$10 term}
+
+\medskip
+\tacct[1.9cm]{Surplus country}{$-$Due from \$10\\$+$\$10 spot}{}
+\end{taccts}
+Foreign exchange trading is about \$4 trillion a day, one of the largest markets \ts{13}{8}{8:37}. Every asset is someone's liability, but the functions differ: the matched-book dealer
+bears another kind of risk (later), and can be called a forward-interest-parity dealer; the speculative dealer, recognisable from Treynor's model, bears exchange risk and must expect a
+profit, which is what moves the forward rate away from the expected spot rate: an uncovered-interest-parity dealer \ts{13}{8}{9:39}\ts{13}{8}{10:00}\ts{13}{8}{10:20}\ts{13}{8}{10:40}.
+
+\begin{definition}[New concepts: spot and forward FX, matched-book and speculative FX dealers]
+A \emph{spot} foreign exchange transaction is settled now (in practice in two business days); a \emph{forward} one at a future date at a rate fixed today. A
+\emph{matched-book} FX dealer balances its currency positions (spot against term), bearing no exchange-rate risk; a \emph{speculative} FX dealer holds an open position in a
+currency and bears the exchange risk.
+\end{definition}
+
+\section{Three readings of the exchange rate}\label{sec:cm-compared}
+
+\begin{nfigure}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\linewidth}{l|L|L}
+\textbf{Tradition} & \textbf{The exchange rate is} & \textbf{Theory}\\\hline
+Chartalism & relative price of goods & purchasing power parity; trade (current) account\\
+Metallism (finance) & relative price of assets & interest parity; capital account\\
+Money view & price of money in terms of money & dealers' balance sheets\\
+\end{tabularx}
+\caption{What kind of a thing is an exchange rate? \ts{13}{9}{0:04}\ts{13}{9}{0:24}\ts{13}{9}{0:46}\ts{13}{9}{1:06}\ts{13}{9}{3:29}}\label{fig:cm-three}
+\end{nfigure}
+
+The chartalist road leads to the exchange rate as a relative price of tradeable goods (PPP); the metallist road to a relative price of financial assets, interest rates. Some theories
+stress the trade or current account, others the capital account \ts{13}{9}{0:04}\ts{13}{9}{0:24}\ts{13}{9}{0:46}. The money view sees the exchange rate as the price of money in terms of
+money, on the dealers' balance sheets \ts{13}{9}{1:06}. Economics abstracts from liquidity to price commodities, finance to price assets; the course is about liquidity, so it cannot.
+PPP and interest parity are not wrong, but they abstract from liquidity, so they cannot be fully right \ts{13}{9}{1:27}\ts{13}{9}{1:48}\ts{13}{9}{2:08}.
+
+\begin{intuition}[Pushing exchange risk into the future]
+In the example nobody lends: not the surplus country, not the FX dealer; they swap currencies. The dealer takes risk in the spot market and hedges it in the forward market, where
+someone else takes it: exchange rate risk located today is pushed into the future, exactly as the money market pushes a payment one cannot make today to tomorrow or 90 days. The
+speculative dealer's position is a \emph{carry trade}, and it is compensated because the payment system needs it \ts{13}{9}{2:08}\ts{13}{9}{2:29}\ts{13}{9}{2:49}\ts{13}{9}{3:09}.
+\end{intuition}
+
+% ------------------------------------------------------------------
+\section{Private and public money: a hybrid system}\label{sec:cm-hybrid}
+
+How did the two parallel systems of the 15th century become today's? Mostly through war \ts{13}{10}{0:05}\ts{13}{10}{0:46}\ts{13}{10}{1:08}. Start with two separate systems
+\ts{13}{10}{1:34}\ts{13}{10}{1:54}\ts{13}{10}{2:16}:
+\begin{taccts}
+\tacct[2.4cm]{Government bank}{Treasury bills}{King's money (currency)}\qquad
+\tacct[2.4cm]{Private bankers' bank}{Gold\\Private credit}{Deposits (promises to pay gold)}
+\end{taccts}
+The government bank needs no reserves: the king can always print more pieces of paper with his head on them, a cheap way to fund himself \ts{13}{10}{2:36}\ts{13}{10}{2:56}. Then comes
+war, and, as in the Civil War (\cref{sec:st-civilwar}), the Treasury asks the private bank for a loan, which it makes by creating deposits, and then withdraws them in gold
+\ts{13}{10}{3:17}\ts{13}{10}{3:37}\ts{13}{10}{4:14}\ts{13}{10}{4:35}:
+\begin{taccts}
+\tacct[2.4cm]{Government}{$+$Gold}{$+$Loan from bankers' bank}\qquad
+\tacct[2.4cm]{Private bankers' bank}{$+$Loan to government\\$-$Gold}{($+$Deposits, then $-$Deposits withdrawn in gold)}
+\end{taccts}
+``Here's hybridity'': the government bank has all the gold, and the bankers' bank starts using domestic currency as its reserve \ts{13}{10}{4:35}\ts{13}{10}{4:56}. It happened in the
+Bank of England, in the US, in most countries: the state used the private and international bank for war finance, twisting its arm \ts{13}{10}{5:17}\ts{13}{10}{5:37}.
+
+\begin{proposition}[Why hybridity lasted]
+After the war both sides kept the arrangement, ``a marriage made in heaven'': the state blessed private money, giving bank deposits legal protection as money (political cover for
+private money issuers); the private market accepted Treasury bills as promises to pay money, giving the state access to capital markets. A government that funds itself by printing
+money cannot fund much; one that sells Treasury bills to the private sector can fund a huge war. Modern monetary systems are always hybrid \ts{13}{10}{5:37}\ts{13}{10}{5:58}\ts{13}{10}{6:19}\ts{13}{10}{6:40}\ts{13}{10}{7:00}\ts{13}{10}{7:21}.
+\end{proposition}
+
+\section{Hybridity in FX market-making}\label{sec:cm-fxhybrid}
+
+Are the FX dealers private banks or central banks? ``It depends'' on the place in the currency hierarchy \ts{13}{11}{0:03}\ts{13}{11}{0:24}\ts{13}{11}{0:45}:
+\begin{itemize}
+  \item in the dollar and the majors, a huge number of private dealers, highly liquid, with very thin margins;
+  \item in the Hungarian forint, the central bank: there is no deep and liquid private market; the weaker the currency, the more it is all central bank \ts{13}{11}{1:05}.
+\end{itemize}
+So the theory of exchange rates must be about the relationship between private, profit-seeking FX dealers and the public, welfare-seeking central bank \ts{13}{11}{1:26}\ts{13}{11}{1:49}.
+(Not that central banks are the good guys: in many countries the central bank is the agent of a rapacious dictator, and the private dealers who refuse to do business with it are
+the good guys \ts{13}{11}{2:12}.) For some currencies the exchange rate is mostly politics; for others the central bank is a dealer of last resort in the wings
+\ts{13}{11}{2:33}\ts{13}{11}{2:54}. Under the gold standard the outside spread was the gold points; today there are none, but central banks, by controlling short-term interest rates,
+create an outside spread for the FX market, as the next lectures show \ts{13}{11}{3:14}\ts{13}{11}{3:34}.
+
+\begin{finance}[Why so much FX trading?]
+Foreign exchange is more ``mind-blowing'' than domestic money markets: all of a money market in one country, all of it in another, and a set of dealers in between
+\ts{13}{11}{3:34}\ts{13}{11}{3:56}. Economists and finance professors simplify it to a relative price of goods or assets, and wonder why \$4 trillion a day is traded. But behind a
+\$10 trade there are many trades ``below the line'' that separate the risk into categories and put each in the right place; today it is electronic and cheap, so there is a lot of
+positioning without burning real resources \ts{13}{11}{4:16}\ts{13}{11}{4:36}\ts{13}{11}{4:57}\ts{13}{11}{5:18}.
+\end{finance}
+
+% ------------------------------------------------------------------
+\flushside
+\section*{Key formulas and ideas}
+\begin{keyformulas}
+\begin{tabularx}{\linewidth}{@{}l L@{}}
+Conventions & American: \$ per foreign unit; European: foreign units per \$ (inverse formulas)\\
+Currency hierarchy & international \$ $>$ domestic \$, euro, yen, pound $>$ other majors $>$ minors (via \$)\\
+Chartalism & money $=$ state token; currency $=$ zero-interest funding; value from taxes; $MV=PT$; PPP $EP=P^\ast$\\
+Metallism & money $=$ gold; exchange rate $=$ ratio of mint pars within gold points; interest parity\\
+Money view & exchange rate $=$ price of money in money, set by FX dealers (matched-book and speculative)\\
+Hybridity & war finance merged king's money and bankers' money; modern systems always hybrid\\
+FX dealers & private in major currencies, central banks in weak ones; central banks set the outside spread via interest rates\\
+\end{tabularx}
+\end{keyformulas}
+
+\section*{Exercises}
+
+\begin{exercise}[Conventions]
+The euro trades at \$1.30. Write the rate in the European convention. If the dollar depreciates by 10\% against the euro, what are the new quotes in both conventions? Rewrite
+covered interest parity (lecture~8) in the American convention.
+\end{exercise}
+
+\begin{exercise}[Gold points]
+Mint parity is \$4.8665 per pound; shipping gold from New York to London costs 0.5\% of its value. Between which exchange rates is gold not shipped? In which direction does gold
+flow if the pound trades at \$4.92 in New York?
+\end{exercise}
+
+\begin{exercise}[PPP]
+A basket costs 100 dollars in the US and 12{,}000 yen in Japan, and the yen trades at 80 per dollar. What does PPP predict? US inflation is 2\% and Japanese inflation 0\% for a
+year, while the yen goes from 80 to 78 per dollar. Has PPP moved closer or further?
+\end{exercise}
+
+\begin{exercise}[A payment through FX dealers]
+Redo the deficit-country example with numbers: $E=1.25$ units per dollar, six-month dollar rate 1\%, foreign rate 3\%. Write all the T-accounts, compute the forward rate the matched-book
+dealer locks in, and state what the speculative dealer gains or loses if the spot rate in six months is 1.30.
+\end{exercise}
