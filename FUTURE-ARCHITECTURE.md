@@ -22,3 +22,13 @@
 - T-account columns as justified `p` columns: ugly hyphenation; now ragged-right with `\amt`.
 - The template in `~/.claude/templates/lecture-notes` is older than the 18.642 preamble (no paracol,
   answers, requests, history temple): this project started from the 18.642 preamble instead.
+
+## Status (Oct 2026)
+- Chapters 1-22 written, built, committed (one chapter per lecture).
+- Missing content: segments L19.2 (FOMC 1952 reading), L20.1 (FT: internationalization of the euro),
+  L21.4 (global dimension) have no YouTube captions. Plan: download audio (yt-dlp -x) and transcribe
+  locally with faster-whisper into materials/transcripts/LXX-PYY.txt, then add the sections.
+  Oct 2026 attempt: YouTube answered "Sign in to confirm you're not a bot" for every player client
+  (IP flagged); needs a retry later or cookies (`--cookies-from-browser`, only with Alessio's OK).
+- Playlist errors: video L19.4 ("What is a swap") contains the same lecture as L19.5; L8.10 duplicates L8.9.
+- Possible next: appendix A (materials map).

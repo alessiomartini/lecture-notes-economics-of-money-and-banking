@@ -1,0 +1,272 @@
+% !TEX root = ../main.tex
+\chapter{Touching the Elephant: Three Views}\label{ch:threeviews}
+\begin{paracol}{2}
+
+\begin{sources}
+\begin{tabularx}{\linewidth}{@{}l l L@{}}
+\toprule
+\textbf{Segment} & \textbf{Length} & \textbf{Content}\\
+\midrule
+\seg{22}{1}{L22.1 FT: Future of banking} & 4:46 & Banking union, cross-border fragmentation, resolution of global banks.\\
+\seg{22}{2}{L22.2 Three world views} & 15:14 & Money, economics and finance views; Black's 1976 manifesto.\\
+\seg{22}{3}{L22.3 Economics View: Commodity Exchange} & 8:54 & Relative prices, the quantity theory pasted on; Fisher and IS--LM.\\
+\seg{22}{4}{L22.4 Finance View: Risk} & 15:41 & CAPM in balance sheets; Black's banking in a world without money.\\
+\seg{22}{5}{L22.5 The education of Fischer Black} & 4:52 & ``Noise'' (1985); Treynor's dealer model.\\
+\seg{22}{6}{L22.6 Steps from finance view to money view} & 7:45 & Market liquidity, funding liquidity, the central bank.\\
+\seg{22}{7}{L22.7 A money view of economics and finance} & 5:12 & Selective control over liquidity allocation.\\
+\bottomrule
+\end{tabularx}
+
+\smallskip
+\textbf{Files.} Transcripts \file{materials/transcripts/L22-P*.txt}.
+\end{sources}
+
+\section*{Motivation}
+Lecture~1 promised a course that would not be applied microeconomics (utility functions for banks) nor applied macroeconomics (what lies behind the LM curve), but would
+start from the world, the actual operations of money markets, and learn inductively \ts{22}{2}{0:03}. The last lecture connects that money view to the economics and
+finance that students know: three blind men touching the same elephant.
+
+% ------------------------------------------------------------------
+\section{FT: the future of banking}\label{sec:tv-ft}
+
+\begin{casestudy}[FT, December 2012: three data points in one day]
+\begin{enumerate}
+  \item ``Debate rages on how to set up bank supervisor'': the ECB, with no supervisory experience, no dedicated staff and hostility from some of its future charges, is
+        to supervise the eurozone's 6000 banks in a banking union \ts{22}{1}{0:07}. Mehrling's reading of the unspoken resistance: common
+        collateral rules would end the sweetheart deals by which national central banks lean on local banks to buy their government's bonds \ts{22}{1}{1:09};
+  \item ``Cross-border lending falls sharply'': US banks stop lending to Europe and separate their European and US books; core--periphery lending within Europe shrinks: a
+        market-driven ``return to autarky'' \ts{22}{1}{2:10};
+  \item an op-ed by Martin Gruenberg (FDIC chairman) and Paul Tucker (Bank of England deputy governor), ``Global banks need global solutions when they fail'': the
+        resolution authority would take control of the parent, impose losses on shareholders and unsecured creditors, and remove management. They say they will no longer
+        support institutions, not yet what they will do instead \ts{22}{1}{2:51}.
+\end{enumerate}
+\end{casestudy}
+
+% ------------------------------------------------------------------
+\section{Three world views}\label{sec:tv-views}
+
+\paragraph{The money view: the present determines the present.} The course has focused on now: the day's clearing, with past investments and future promises fixed as
+data. Cash outflows (discipline) meet cash inflows (elasticity); if outflows exceed inflows people borrow from the future and drive up the money rate of interest
+\ts{22}{2}{0:45}. It is a flow view; stocks sit unchanged in the
+background \ts{22}{2}{3:12}.
+
+\paragraph{The economics view: the past determines the present.} Output today is a function of the capital stock accumulated by past investment, sunk and unchangeable
+\ts{22}{2}{4:19}. Very much Adam Smith's view: worry about parsimony and profligacy, princes plundering the capital stock, slow
+``turtle'' growth by accumulation \ts{22}{2}{5:21}. Through most of the history of economic thought the money view, natural
+to bankers and central bankers, was a minority view against this one, which seems more natural and more ethical (the virtue of saving) \ts{22}{2}{6:24}.
+
+\paragraph{The finance view: the future determines the present.} After World War~II a new view: the key variable is the \emph{price} of capital, the expected discounted
+value of future cash flows, not the labour that built it. ``Radically subversive'': if capital is not productive it is worth zero; and an idea about the future, once
+capitalized, gives purchasing power today, the tech bubble mentality \ts{22}{2}{7:49}.
+Promises based on those dreams are promises to pay cash: back to the money view \ts{22}{2}{10:24}.
+
+\begin{nfigure}
+\begin{tikzpicture}[font=\scriptsize]
+  \draw[thick,-{Stealth[length=4pt]}] (0,0) -- (13,0) node[right]{time};
+  \fill (6.5,0) circle (2pt) node[below=3pt]{now};
+  \node[align=center,draw,rounded corners,fill=defcol!10] at (2.2,1.1) {\textbf{economics view}\\past determines present\\quantity of capital (stock)};
+  \node[align=center,draw,rounded corners,fill=keycol!10] at (6.5,1.1) {\textbf{money view}\\present determines present\\cash flows (flow)};
+  \node[align=center,draw,rounded corners,fill=fincol!10] at (10.8,1.1) {\textbf{finance view}\\future determines present\\price of capital (stock)};
+  \draw[-{Stealth}] (3.2,0.25) -- (6.2,0.25);
+  \draw[-{Stealth}] (9.8,0.25) -- (6.8,0.25);
+\end{tikzpicture}
+\caption{Three views of the same elephant \ts{22}{2}{3:33}.}\label{fig:tv-views}
+\end{nfigure}
+
+Past investments generate cash inflows, the way they were financed generates cash outflows; dreams about the future require outlays greater than inflows; either someone
+takes the other side or the dreams do not get their chance \ts{22}{2}{10:45}. Economics and finance are stock views and mirror images of each other;
+the money view is a flow view \ts{22}{2}{11:25}. Mehrling's assertion: the big intellectual battle of the last 30 years has been economics versus finance,
+settled by a modus vivendi (finance in the business school, economics in the economics department, each a minor subfield of the other); neither has much room for money.
+His life project: make the money view talk to the finance view, as in the 19th century it talked to economics \ts{22}{2}{12:06}.
+
+\begin{reading}[F.~Black, ``What a Non-Monetarist Thinks'']
+The challenge that started Mehrling on this road: in a country with a smoothly working financial system, Black argued, the government cannot control the money stock;
+money responds passively to the private sector's demand, and the Fed's monetary policy pronouncements are ``a charade'' with almost no effect on output, employment or
+inflation. If true, ``we have just been wasting our time'' this semester \ts{22}{2}{13:27}.
+\end{reading}
+
+\begin{coursenote}
+In class the piece is dated 1976 and said to be published. It was reprinted in F.~Black, \emph{Business Cycles and Equilibrium}, Basil Blackwell, 1987; the original
+1976 date is as given in class and in Mehrling's biography of Black.
+\end{coursenote}
+
+% ------------------------------------------------------------------
+\section{The economics view: commodity exchange}\label{sec:tv-econ}
+
+The standard theory of value: apples and oranges, a production possibilities frontier, a budget line tangent to an indifference curve, its slope the relative price
+$p_O/p_A$ \ts{22}{3}{0:01}. Two observations: there is no money (a barter relation between goods), and only a relative price is
+determined, not the price level \ts{22}{3}{1:08}.
+
+\begin{keyformulas}
+\textbf{The quantity theory, pasted on} \ts{22}{3}{1:48}:
+\[
+  MV = p_O q_O + p_A q_A = PQ .
+\]
+Read left to right, money determines the price level; read right to left (the banking school, money as endogenous credit), transactions determine how much money is needed.
+\end{keyformulas}
+
+The velocity equation always had an uneasy relationship with the theory of value: an accounting identity turned into a theory, the closest the field came to science
+\ts{22}{3}{3:11}. Irving Fisher's breakthrough: treat the two goods as consumption at dates 1 and 2, so the relative price involves $1/(1+r)$, and extend
+the quantity equation to financial assets (the transactions version): more money means higher prices of goods and of assets, i.e.\ lower interest rates. From this tradition
+came IS--LM: in the short run money affects output and interest rates, in the long run only the price level \ts{22}{3}{3:52}.
+
+\begin{intuition}[A patch]
+The same structure extends to $n$ periods, intertemporal Arrow--Debreu general equilibrium. General equilibrium theorists, Frank Hahn above all, complained that it has no place
+for money, and were unhappy with Fisher's patch. Post-war monetary economics can be told as attempts to squeeze money in (search theory and others); Mehrling bet that they
+would not get far, and 25 years later is glad he chose finance instead \ts{22}{3}{6:58}.
+\end{intuition}
+
+% ------------------------------------------------------------------
+\section{The finance view: risk}\label{sec:tv-finance}
+
+\paragraph{CAPM.} (Say ``cap-M'': ``CAPM model'' says model twice.) Every capital asset is characterized by its expected return and its volatility; finance domesticates risk,
+which general equilibrium, bringing in time without risk, did not; it is probabilistic risk, not true uncertainty, an assumption, but a step ahead
+\ts{22}{4}{0:03}. Portfolios of securities form a frontier; investors like return and dislike
+risk; the tangency of the line from the risk-free rate is the market portfolio, held by everyone, combined with more or less of the risk-free asset according to risk aversion;
+beyond the tangency investors borrow \ts{22}{4}{2:10}.
+
+\begin{keyformulas}
+\textbf{CAPM} \ts{22}{4}{5:19}:
+\begin{gather*}
+  \text{security market line: } \E[R_i] = R_f + \beta_i\,(\E[R_m]-R_f),\\
+  \text{capital market line: } \E[R_p] = R_f + (\E[R_m]-R_f)\,\frac{\sigma_p}{\sigma_m}.
+\end{gather*}
+\end{keyformulas}
+
+\begin{definition}[New concepts: capital asset pricing model]
+The \emph{CAPM} (Treynor, Sharpe, Lintner, Mossin, 1960s) prices each asset by its covariance with the market portfolio ($\beta_i$) times the market risk premium; ``capital
+asset'' because it values the claims to capital \ts{22}{4}{0:03}.
+\end{definition}
+
+\paragraph{CAPM in balance sheets.} Two people with wealth 100 each: the risk-tolerant one holds 150 of the market portfolio and borrows 50; the risk-averse one holds 50 of
+the market portfolio and 50 risk-free \ts{22}{4}{7:03}. Black's twist, not standard in teaching CAPM: the
+50 lent and the 50 borrowed are the same 50, inside borrowing intermediated by a bank, loans on one side, deposits on the other \ts{22}{4}{8:48}.
+
+\begin{nfigure}
+\begin{taccts}
+\tacct[1.9cm]{Risk tolerant}{Market portfolio \amt{150}}{Loan \amt{50}\\Net worth \amt{100}}\quad
+\tacct[1.9cm]{Bank}{Loan \amt{50}}{Deposit \amt{50}}\quad
+\tacct[1.9cm]{Risk averse}{Market portfolio \amt{50}\\Deposit \amt{50}}{Net worth \amt{100}}
+\end{taccts}
+\caption{Black's ``banking in a world without money'': the risk-free asset is a bank deposit funding a loan to the risk-tolerant investor \ts{22}{4}{7:45}.}\label{fig:tv-black}
+\end{nfigure}
+
+\begin{history}[Black's first paper]
+Fischer Black's first publication was ``Banking and Interest Rates in a World without Money: The Effects of Uncontrolled Banking'', \emph{Journal of Bank Research} 1, 1970,
+pp.~8--20, describing in words a world where banks intermediate between borrowers and lenders and money has no special role.\par
+\emph{Reference:} P.~Mehrling, \emph{Fischer Black and the Revolutionary Idea of Finance}, Wiley, 2005.
+\end{history}
+
+\paragraph{Two conclusions.} The bank intermediates between risk-averse and risk-tolerant; with diversification and limits to lending its loans might be nearly risk-free
+\ts{22}{4}{9:34}:
+\begin{enumerate}
+  \item the risk-free rate is the rate that clears this loan market, and the risk premium is determined in the capital market too: no degree of freedom is left for the Fed
+        to peg the short rate, hence ``a charade'' \ts{22}{4}{10:35};
+  \item if the price of capital rises, both gain, the risk-tolerant three times as much: it wants to borrow more and buy more of the market portfolio, while the risk-averse
+        wants to sell risky assets and lend more. The bank's balance sheet grows on both sides: the money supply must be endogenous, rising with asset prices, for asset
+        markets to clear. Money is passive; read the quantity theory from right to left \ts{22}{4}{11:57}.
+\end{enumerate}
+This made Black the \emph{b\^ete noire} of monetarists and economists; he did not mind being a minority of one \ts{22}{4}{15:06}.
+
+% ------------------------------------------------------------------
+\section{The education of Fischer Black}\label{sec:tv-education}
+
+Black taught at Chicago and MIT, then joined Goldman Sachs, remarking that the world looks different from the banks of the Hudson than from the banks of the Charles
+\ts{22}{5}{0:04}. As president of the American Finance Association he gave the address ``Noise'' at its New York meeting on 30 December 1985: an efficient market might be
+defined as one in which price is ``within a factor of 2 of value'', and by that definition almost all markets are efficient almost all of the time (at least 90\%)
+\ts{22}{5}{0:25}. A bombshell: prices need not be closely related to fundamentals \ts{22}{5}{1:07}.
+
+\begin{intuition}[Treynor added to CAPM]
+Black, who never took an economics or finance course, had been a strong believer in efficient markets, and Chicago hired him. Mehrling argues, in his biography, that the
+``factor of two'' came from his friend Jack Treynor's dealer model: prices are set by dealers quoting bid--ask spreads, and when inventories are pushed far to one side prices can
+deviate as far as the outside spread, without outsiders knowing unless they see dealers' inventories. Ironically Black learned CAPM itself from Treynor, whose correct
+unpublished version preceded Sharpe's. The dealer model is the beginning of a bridge between finance and the money view \ts{22}{5}{1:28}.
+\end{intuition}
+
+\begin{history}[Black and Treynor]
+Black (1938--1995), PhD in applied mathematics at Harvard, met Jack Treynor at Arthur D.~Little in the 1960s; Treynor's manuscript ``Toward a Theory of Market Value of Risky Assets''
+(1962) anticipated the CAPM of W.~F.~Sharpe (1964). Black taught at Chicago (1971--75) and MIT (1975--84) and joined Goldman Sachs in 1984. ``Noise'' was published in the
+\emph{Journal of Finance} 41(3), July 1986.\par
+\emph{References:} F.~Black, ``Noise'', \emph{Journal of Finance} 41, 1986, 529--543; P.~Mehrling, \emph{Fischer Black and the Revolutionary Idea of Finance}, 2005.
+\end{history}
+
+By his death in 1995 Black had moved far from efficient markets, though not all the way to the money view; Mehrling imagines him in the audience: ``you came part of the way;
+now the next logical step is here'' \ts{22}{5}{4:13}.
+
+% ------------------------------------------------------------------
+\section{Steps from the finance view to the money view}\label{sec:tv-steps}
+
+Perfect liquidity, buying and selling at the efficient price, is an assumption that liquidity is a free good; in reality a dealer takes imbalances onto his balance sheet, and
+trading itself moves prices, not just fundamentals \ts{22}{6}{0:03}.
+
+\begin{keyformulas}
+\textbf{Three steps} \ts{22}{6}{1:25}:
+\begin{enumerate}
+  \item market liquidity (buying or selling fast, in volume, without moving the price) depends on the dealer system: it is not free, and prices deviate from fundamentals;
+  \item dealers' ability to make markets depends on their funding liquidity (and capital);
+  \item the ultimate source of funding liquidity is the central bank.
+\end{enumerate}
+\end{keyformulas}
+
+\paragraph{Funding, not just capital.} The finance literature studies how dealers' capital limits market making; but losing capital would not matter if dealers could borrow. The
+money view stresses funding liquidity, which can vanish even if capital does not: ``I'm scared, I'm not going to fund you'', and the financing limits close in. Black surely got to
+step one and probably to step two \ts{22}{6}{3:13}.
+
+\paragraph{The third step,} the one Black would have resisted most, is a long way from ``money can only be passive''. But it is not all the way to IS--LM and fine-tuning: in a
+financially developed economy markets and dealers play a large role in money market rates, and the central bank changes them essentially by being a dealer, taking pressure onto
+its own balance sheet, which works because its liabilities are money, better than dealers' \ts{22}{6}{5:21}.
+The hierarchy of money is antithetical to the finance view, where assets differ only by price and risk, ``all flat''; the money view is hierarchical, the best money, the next
+best, then securities: where lectures~1 and~2 began \ts{22}{6}{7:06}.
+
+% ------------------------------------------------------------------
+\section{A money view of economics and finance}\label{sec:tv-moneyview}
+
+Banks, or money dealers more generally, can relax the survival constraint of anyone who comes to them, but need not: they sell access to their balance sheet
+\ts{22}{7}{0:04}. To the debtor bound by ``the dead hand of the past'' the banker may say ``pay me tomorrow, I will carry you'', taking a liquidity risk the debtor
+cannot bear, or ``no way, you're out of business''; to the entrepreneur with a new app, needing cash outflows before any inflow, the banker may lend or refuse
+\ts{22}{7}{0:45}.
+
+\begin{keyformulas}
+\textbf{Selective control over liquidity allocation} \ts{22}{7}{1:46}: the banking system decides who gets spending
+power, who rolls over debt, who issues debt in the first place; by endorsing others' liabilities it turns them into means of payment. It chooses discipline or elasticity, for
+individuals and the whole economy; the central bank influences it. This is where the money view connects with what economics cares about (investment) and what finance cares
+about (asset prices).
+\end{keyformulas}
+
+Economics and finance abstract from money as the oil that greases transactions, and end up seriously incomplete; the money view does not contradict them, but ``the present
+determines the present'' is a genuine aspect of the system, with real effects in crises and in normal times \ts{22}{7}{3:31}. It has always been a
+minority view and may remain one, ``but if you want to understand money markets, it's the point of view you want to be grappling with'' \ts{22}{7}{4:34}.
+
+% ------------------------------------------------------------------
+\flushside
+\section*{Key formulas and ideas}
+\begin{keyformulas}
+\begin{tabularx}{\linewidth}{@{}l L@{}}
+Three views & economics: past $\to$ present (quantity of capital); finance: future $\to$ present (price of capital); money: present $\to$ present (cash flows)\\
+Economics & relative prices from GE; $MV=PQ$ pasted on; Fisher $\to$ IS--LM\\
+CAPM & $\E[R_i]=R_f+\beta_i(\E[R_m]-R_f)$; Black: risk-free asset $=$ bank deposit, money endogenous and passive\\
+Noise & price within a factor of 2 of value: the dealer's outside spread\\
+Three steps & market liquidity $\leftarrow$ dealers $\leftarrow$ funding liquidity $\leftarrow$ central bank\\
+Money view & hierarchy of money; banks' selective control over liquidity allocation\\
+\end{tabularx}
+\end{keyformulas}
+
+\section*{Exercises}
+
+\begin{exercise}[Black's banking world]
+In the two-person example the price of the market portfolio rises by 20\%. Compute both net worths, and the new loans and deposits if each restores its original ratio of
+risky assets to net worth. By how much does the money supply grow?
+\end{exercise}
+
+\begin{exercise}[Reading the quantity equation]
+Explain the difference between reading $MV=PQ$ from left to right and from right to left, and which reading fits Black's world, the banking school and the money view.
+\end{exercise}
+
+\begin{exercise}[A factor of two]
+Using Treynor's model, explain how a dealer's price can deviate from value as far as the outside spread, and what determines the width of that spread in an equity market and
+in a money market.
+\end{exercise}
+
+\begin{exercise}[Three views of one event]
+Describe the collapse of AIG in September 2008 from the economics view, the finance view and the money view. Which features does each view see, and which does it miss?
+\end{exercise}
