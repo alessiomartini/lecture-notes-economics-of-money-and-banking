@@ -1,0 +1,371 @@
+% !TEX root = ../main.tex
+\chapter{Direct and Indirect Finance}\label{ch:directindirect}
+\begin{paracol}{2}
+
+\begin{sources}
+\begin{tabularx}{\linewidth}{@{}l l L@{}}
+\toprule
+\textbf{Segment} & \textbf{Length} & \textbf{Content}\\
+\midrule
+\seg{17}{1}{L17.1 FT: Shadow banking} & 4:15 & Adair Turner: shadow banking is like cholesterol; traditional versus shadow bank.\\
+\seg{17}{2}{L17.2 Bagehot's World} & 8:51 & Money market and capital market as separate worlds.\\
+\seg{17}{3}{L17.3 The New World} & 10:55 & American banks: long-term assets, interbank repo, the origin of rating agencies.\\
+\seg{17}{4}{L17.4 Funding liquidity versus market liquidity} & 2:33 & Moulton's shiftability (1918).\\
+\seg{17}{5}{L17.5 Digression: Schumpeter on banking} & 4:05 & Banks as engines of development.\\
+\seg{17}{6}{L17.6 Payment versus funding} & 5:31 & A loan funded by deposits, then taken out by a bond.\\
+\seg{17}{7}{L17.7 Reading: Gurley and Shaw} & 2:04 & \emph{Money in a Theory of Finance} (1960): direct and indirect finance.\\
+\seg{17}{8}{L17.8 Financial evolution} & 13:12 & Pension funds and insurers; from intermediation to mutual funds.\\
+\seg{17}{9}{L17.9 Banking evolution} & 11:12 & Deposits as cheap permanent funding; from Jimmy Stewart banks to shadow banks.\\
+\seg{17}{10}{L17.10 Preview: Central banking and shadow banking} & 8:28 & Liquidity puts, solvency versus liquidity, market liquidity provided by dealers.\\
+\bottomrule
+\end{tabularx}
+
+\smallskip
+\textbf{Files.} Transcripts \file{materials/transcripts/L17-P*.txt}.
+\textbf{Reading.} J.~G.~Gurley and E.~S.~Shaw, \emph{Money in a Theory of Finance}, Brookings Institution, 1960 (passages).
+\end{sources}
+
+\section*{Motivation}
+This lecture opens the fourth and last part of the course, which extends the money view from the money market to the capital market, to asset prices and the
+prices of risk \ts{17}{1}{0:49}\ts{17}{1}{1:09}\ts{17}{2}{0:03}. The two subjects are usually taught separately: capital markets and CAPM in finance courses in the
+business school, money and banking (perhaps IS--LM) in economics departments \ts{17}{2}{0:03}\ts{17}{2}{0:23}\ts{17}{2}{0:44}. Shadow banking shows that this
+intellectual separation does not match the real world, where the two are more intertwined than at any time since World War~II, perhaps World War~I
+\ts{17}{2}{1:04}\ts{17}{2}{1:25}. The separation has a historical origin, which the lecture reconstructs.
+
+% ------------------------------------------------------------------
+\section{FT: regulators to tackle shadow banking}\label{sec:di-ft}
+
+\begin{casestudy}[FT, November 2012: ``Regulators to tackle shadow banking'']
+A report led by Lord Adair Turner, the UK regulator, calls for regulation of shadow banking; Turner: shadow banking ``is like cholesterol'', there is good and
+bad \ts{17}{1}{0:07}\ts{17}{1}{0:28}\ts{17}{1}{1:09}\ts{17}{1}{1:31}. Mehrling, who was working on the subject, thinks shadow banking is in our future and hopes
+it will be the good kind \ts{17}{1}{0:28}\ts{17}{1}{1:31}\ts{17}{1}{1:51}.
+\end{casestudy}
+
+\begin{nfigure}
+\begin{taccts}
+\tacct[2.4cm]{Traditional (``Jimmy Stewart'') bank}{Loans}{Deposits}\qquad
+\tacct[3.2cm]{Shadow bank}{RMBS (tranched)\\Interest rate swap\\Credit default swap}{Repo (RP)\\ABCP held by MMMF}
+\end{taccts}
+\caption{Traditional and shadow bank, as on Mehrling's slide \ts{17}{1}{1:51}\ts{17}{1}{2:53}\ts{17}{1}{3:14}. The traditional bank has a solvency backstop
+(FDIC) and a liquidity backstop (Fed); the shadow bank has neither directly, only liquidity puts to traditional banks.}\label{fig:di-banks}
+\end{nfigure}
+
+The \textbf{traditional bank}, deposits against loans, is the ``Jimmy Stewart bank'' of the holiday film with a run on his bank. It is backstopped by the FDIC,
+which insures the deposits (a solvency backstop), and by the Fed (a liquidity backstop); it is the balance sheet most people have in mind when they say ``bank''
+\ts{17}{1}{1:51}\ts{17}{1}{2:11}\ts{17}{1}{2:32}. The world is increasingly like the \textbf{shadow bank}: mortgages packaged into residential mortgage-backed
+securities, tranched into risky and risk-free tranches, insured by interest rate and credit default swaps, and funded in the money market by repo or asset-backed
+commercial paper held by money market mutual funds \ts{17}{1}{2:53}\ts{17}{1}{3:14}. On both sides of its balance sheet the prices are market prices: the money
+market funding rate and the price of risk; hence the coming lectures on swaps \ts{17}{1}{3:34}\ts{17}{1}{3:55}.
+
+\begin{definition}[New concepts: shadow banking]
+\emph{Shadow banking}: money market funding of capital market lending, outside the traditional banking system and its backstops \ts{17}{1}{0:49}\ts{17}{1}{3:34}
+(``shadow'' because it does banking business outside the light of bank regulation).
+\end{definition}
+
+\begin{history}[Jimmy Stewart's bank]
+In Frank Capra's \emph{It's a Wonderful Life} (1946) James Stewart plays George Bailey, who runs the Bailey Building and Loan in Bedford Falls; during a run he
+tells the depositors that their money is not in a vault but in each other's houses.\par
+\emph{Reference:} F.~Capra (dir.), \emph{It's a Wonderful Life}, Liberty Films/RKO, 1946.
+\end{history}
+
+% ------------------------------------------------------------------
+\section{Bagehot's world: two separate markets}\label{sec:di-bagehot}
+
+\paragraph{The money market: indirect finance.} In Bagehot's world banks discounted short-term bills that firms issued to finance goods on their way to final sale;
+a portfolio of bills maturing at various dates assured the bank's liquidity \ts{17}{2}{2:06}\ts{17}{2}{2:27}. New in the course: the bank seen as an
+\emph{intermediary}, between a primary lender (the household, for the first time in the course, holding deposits to make payments) and a primary borrower (a
+business financing working capital with bills): deposits fund loans. This is \emph{indirect finance} \ts{17}{2}{2:47}\ts{17}{2}{3:08}\ts{17}{2}{3:28}\ts{17}{2}{3:49}\ts{17}{2}{4:10}.
+
+\paragraph{The capital market: direct finance.} There was also a capital market: government bonds (including perpetual bonds paying a coupon forever), some
+corporate bonds for large projects, and equity, held directly by rich people as wealth: \emph{direct finance}, no intermediary
+\ts{17}{2}{4:30}\ts{17}{2}{4:51}\ts{17}{2}{5:12}\ts{17}{2}{5:32}. The two markets touch when bonds are issued, since the household pays with deposits that the firm
+spends; afterwards the bond market seems separate. Bonds promise small coupons and principal only at maturity, perhaps 30 years later; the staggered-timing
+liquidity issue of bills does not arise \ts{17}{2}{5:54}\ts{17}{2}{6:14}\ts{17}{2}{6:35}\ts{17}{2}{6:55}.
+
+\begin{nfigure}
+\begin{taccts}
+\tacct[2.0cm]{Household (primary lender)}{Deposits\\Bonds, equity}{}\quad
+\tacct[2.0cm]{Bagehot bank}{Bills}{Deposits}\quad
+\tacct[2.0cm]{Business (primary borrower)}{Working capital\\Fixed capital}{Bills\\Bonds, equity}
+\end{taccts}
+\caption{Bagehot's world: indirect finance in the money market, direct finance in the capital market \ts{17}{2}{2:47}\ts{17}{2}{3:28}\ts{17}{2}{5:12}.}\label{fig:di-bagehot}
+\end{nfigure}
+
+\begin{aside}[A cult of liquidity?]
+Some economic historians (among them some of Mehrling's professors) argue that Britain's hyper-developed short-term money market, the centre of world trade
+finance, came with underdeveloped long-term finance: banks were forbidden by a ``cult of liquidity'' from long-term lending, which may help explain Britain
+lagging after the industrial revolution. Mehrling does not vouch for it: ``I'm not an expert on Britain'' \ts{17}{2}{7:15}\ts{17}{2}{7:35}\ts{17}{2}{7:56}\ts{17}{2}{8:16}.
+\end{aside}
+
+% ------------------------------------------------------------------
+\section{The new world}\label{sec:di-newworld}
+
+The US was a developing country, with an extreme need for long-term finance: railroads, buildings, factories, homes. American banks held corporate bonds and
+long-term loans, including ``six-month'' loans that were always rolled over, and few short-term bills \ts{17}{3}{0:03}\ts{17}{3}{0:24}\ts{17}{3}{0:44}\ts{17}{3}{1:05}.
+Before there was a central bank, how did they manage? By cash reserves, by bankers' (correspondent) balances, and by interbank borrowing against bonds as
+collateral: essentially repo, a paired sale and repurchase \ts{17}{3}{1:26}\ts{17}{3}{2:32}\ts{17}{3}{2:52}\ts{17}{3}{3:13}\ts{17}{3}{3:35}. A deficit bank
+at the clearing pays in cash, in bankers' balances, or borrows against a bond.
+
+\begin{nfigure}
+\begin{taccts}
+\tacct[2.4cm]{Deficit bank}{Bonds (collateral)\\Loans\\$-$Cash \emph{or} $-$Bankers' balances}{Deposits\\\emph{or} $+$Repo borrowing}\qquad
+\tacct[2.4cm]{Surplus bank}{Bonds, loans\\Cash reserves\\$+$Cash \emph{or} $+$Repo lending}{Deposits\\Bankers' balances}
+\end{taccts}
+\caption{Interbank settlement in the US before the Fed \ts{17}{3}{1:50}\ts{17}{3}{2:10}\ts{17}{3}{3:35}.}\label{fig:di-us}
+\end{nfigure}
+
+\paragraph{Deficit at the clearing.} A student asks whether, in a developing country with many borrowers, the central bank acted as the surplus bank. There was no
+central bank; and ``deficit'' refers to the clearing, not the whole system. Banks lend, as always, by creating deposits; when the borrower spends the deposit
+in New York, the bank must pay the New York bank, with reserves, with bankers' balances at its correspondent, or by borrowing against a bond
+\ts{17}{3}{3:55}\ts{17}{3}{4:16}\ts{17}{3}{4:36}\ts{17}{3}{4:57}\ts{17}{3}{5:17}.
+
+\paragraph{The origin of rating agencies.} In Mehrling's account rating agencies arose in this period: banks paying each other did not want to analyse every bond
+offered as collateral, so they bought Moody's book of ratings, which said a bond was unlikely to default in the next year, good enough for short-term collateral;
+the rating entered the terms of the repo \ts{17}{3}{5:38}\ts{17}{3}{5:59}\ts{17}{3}{6:19}\ts{17}{3}{6:39}\ts{17}{3}{7:00}. Unsecured lending through bankers'
+balances needs a relationship; secured lending against a rated railroad bond can be done with a New York bank that has never heard of you \ts{17}{3}{7:20}.
+Capital market and money market are completely intertwined: ``19th-century shadow banking'' \ts{17}{3}{7:41}.
+
+\begin{history}[Moody's, 1909]
+John Moody published \emph{Moody's Analyses of Railroad Investments} in 1909, assigning letter ratings to railroad bonds; Poor's (1916), Standard Statistics
+(1922) and Fitch (1924) followed. The link to interbank collateral is Mehrling's interpretation.\par
+\emph{References:} R.~Sylla, ``An historical primer on the business of credit rating'', in R.~M.~Levich et al.\ (eds), \emph{Ratings, Rating Agencies and the
+Global Financial System}, Kluwer, 2002.
+\end{history}
+
+\paragraph{The Fed and the shadow system.} After the 1907 crisis the reformers tried to replace this system with discounting of short-term bills at a new Fed, but
+not enough bills were issued: the US needed long-term finance \ts{17}{3}{7:41}\ts{17}{3}{8:01}\ts{17}{3}{8:22}. Mehrling's argument: the Fed's mistake around 1929
+was to let the shadow banking system of its day collapse, refusing to support mortgage credit and bonds as improper for banks, and so it brought down the US
+banking system and the world's \ts{17}{3}{8:22}\ts{17}{3}{8:42}\ts{17}{3}{9:03}. In 2007 we were fortunate that the Fed did backstop the shadow banking system,
+much of it in Europe, through the liquidity puts linking shadow banks to Citibank and other traditional banks \ts{17}{3}{9:03}\ts{17}{3}{9:23}\ts{17}{3}{9:44}. The
+founders of the Fed ``pasted a kind of central bank onto'' a system it did not fit; today's question is how to have a central bank that supports a system like
+this \ts{17}{3}{10:04}\ts{17}{3}{10:25}\ts{17}{3}{10:45}.
+
+% ------------------------------------------------------------------
+\section{Funding liquidity versus market liquidity}\label{sec:di-shiftability}
+
+The British concept of liquidity was \emph{funding liquidity}: guaranteed cash inflows. In the new world a bank's liquidity was having bonds pledgeable or
+shiftable to someone else: \emph{shiftability}, which the course calls market liquidity, the ability to buy or sell an asset quickly without moving the price much
+\ts{17}{4}{0:04}\ts{17}{4}{0:24}\ts{17}{4}{0:45}.
+
+\begin{definition}[New concepts: shiftability]
+\emph{Shiftability}: the liquidity of an asset that can be shifted to another holder (sold or pledged) without loss, as opposed to liquidity from self-liquidating
+short-term assets. Term of Harold Moulton, 1918 \ts{17}{4}{0:45}\ts{17}{4}{1:06}.
+\end{definition}
+
+Moulton argued that shiftability was the right concept for the US, and that the Fed should backstop it. The Fed did, not for all assets but for Treasury bills:
+that is where open market operations came from, supporting market liquidity in the capital market \ts{17}{4}{1:06}\ts{17}{4}{1:26}\ts{17}{4}{1:46}. This course
+uses both kinds of liquidity and their interlink, dealers who create market liquidity must fund their inventories, an understanding not yet there in 1918
+\ts{17}{4}{1:46}\ts{17}{4}{2:07}.
+
+\begin{history}[Harold G.~Moulton]
+Harold Glenn Moulton (1883--1965) published ``Commercial Banking and Capital Formation'' in four parts in the \emph{Journal of Political Economy} in 1918; he
+was the first president of the Brookings Institution (1927--1952).\par
+\emph{References:} H.~G.~Moulton, \emph{JPE} vol.~26, 1918 (four parts); Brookings Institution, ``History''.
+\end{history}
+
+% ------------------------------------------------------------------
+\section{Schumpeter on banking}\label{sec:di-schumpeter}
+
+Joseph Schumpeter, sympathetic to the American scene, emphasized all his life the importance of banks willing to do long-term development finance: money market
+funding of capital market lending \ts{17}{5}{0:04}\ts{17}{5}{0:24}\ts{17}{5}{0:48}\ts{17}{5}{1:08}. Banks create new money for entrepreneurs, who need not find
+someone who has saved: ``created from nothing'', the alchemy of banking. To say so risks sounding like a monetary crank, and Schumpeter was not one
+\ts{17}{5}{1:08}\ts{17}{5}{1:29}. Expanding the balance sheet is not ``bread from heaven'': something must discipline it (next section) \ts{17}{5}{1:50}\ts{17}{5}{2:10}.
+
+Schumpeter admired H.~D.~Macleod, who stressed this kind of banking in the development of Scotland. The Lewis model of development, with surplus labour in
+subsistence agriculture, also gives banking a role in mobilizing it towards cities and factories \ts{17}{5}{2:10}\ts{17}{5}{2:31}\ts{17}{5}{2:51}\ts{17}{5}{3:12}.
+Development economists are usually ``real side'' people; Mehrling would give half of a development course to finance, ``but hey, I would say that''
+\ts{17}{5}{3:32}\ts{17}{5}{3:53}.
+
+\begin{coursenote}
+In class Schumpeter's ``thesis'' is dated 1912. The book meant is \emph{Theorie der wirtschaftlichen Entwicklung} (published late 1911, dated 1912; English
+\emph{The Theory of Economic Development}, 1934), not his doctoral thesis. Henry Dunning Macleod (1821--1902) was a Scottish economist, author of \emph{The Theory
+and Practice of Banking} (1855--56). The Lewis model is W.~A.~Lewis, ``Economic Development with Unlimited Supplies of Labour'', \emph{Manchester School}, 1954,
+which discusses capital formation financed by credit creation \ts{17}{5}{0:04}\ts{17}{5}{2:10}\ts{17}{5}{2:51}.
+\end{coursenote}
+
+% ------------------------------------------------------------------
+\section{Payment versus funding}\label{sec:di-payment}
+
+A business wants to buy a machine from ``society''. The bank lends by a swap of IOUs, $+$loan against $+$deposit, and the business pays with the deposit
+\ts{17}{6}{0:05}\ts{17}{6}{0:29}\ts{17}{6}{0:50}\ts{17}{6}{1:10}\ts{17}{6}{1:32}. The question: what \emph{funds} the loan? If society is happy to add the
+deposit to its portfolio, the deposit funds the machine, even though it is a demand deposit and the machine a loom with a ten-year life
+\ts{17}{6}{1:53}\ts{17}{6}{2:13}\ts{17}{6}{2:34}. If society does not want to hold it, the business must fund the machine otherwise, by issuing a bond that
+society buys with the deposit, and repaying the loan \ts{17}{6}{2:55}\ts{17}{6}{3:16}\ts{17}{6}{3:36}\ts{17}{6}{3:56}.
+
+\begin{nfigure}
+\begin{taccts}
+\tacct[2.0cm]{Bank}{$+$Loan\\(later $-$Loan)}{$+$Deposit\\(later $-$Deposit)}\quad
+\tacct[2.0cm]{Business}{$+$Machine}{$+$Loan\\(later $-$Loan, $+$Bond)}\quad
+\tacct[2.0cm]{Society}{$-$Machine, $+$Deposit\\(later $-$Deposit, $+$Bond)}{}
+\end{taccts}
+\caption{Payment versus funding: bank credit as a bridge loan, the bond as take-out financing \ts{17}{6}{1:10}\ts{17}{6}{3:56}\ts{17}{6}{4:17}.}\label{fig:di-payment}
+\end{nfigure}
+
+The money market intermediation is a bridge loan: it gets the ball rolling, using the elasticity of the payment system; once the machine is running, the capital
+market provides permanent, take-out financing. First intermediation, as in Bagehot but long; then direct finance, bond for bond, the intermediary drops out
+\ts{17}{6}{4:17}\ts{17}{6}{4:37}\ts{17}{6}{4:58}\ts{17}{6}{5:18}.
+
+% ------------------------------------------------------------------
+\section{Gurley and Shaw: intermediaries in the capital market}\label{sec:di-gurleyshaw}
+
+\begin{reading}[J.~G.~Gurley and E.~S.~Shaw, Money in a Theory of Finance (1960)]
+Gurley and Shaw (Brookings, 1960) introduced the terms \emph{direct finance} (the primary lender lends directly to the primary borrower) and \emph{indirect
+finance} (an intermediary in between). They stressed intermediation not just in the money market but in the capital market, for long-term finance, following
+Moulton; and not only by banks but by the other intermediaries that had grown since his day \ts{17}{7}{0:04}\ts{17}{7}{0:31}\ts{17}{7}{0:51}\ts{17}{7}{1:12}\ts{17}{7}{1:32}.
+\end{reading}
+
+\begin{definition}[New concepts: direct and indirect finance, financial intermediary]
+\emph{Direct finance}: the primary borrower's securities are held by the primary lender. \emph{Indirect finance}: a \emph{financial intermediary} (from Latin
+\emph{inter}, between, and \emph{medius}, middle) issues its own liabilities to lenders and holds the borrowers' securities \ts{17}{7}{0:31}\ts{17}{7}{0:51}.
+\end{definition}
+
+% ------------------------------------------------------------------
+\section{Financial evolution}\label{sec:di-finevol}
+
+The two main capital market intermediaries in the US are pension funds and insurance companies \ts{17}{8}{0:05}\ts{17}{8}{0:25}:
+\begin{itemize}
+  \item a \textbf{pension fund}, typically a defined benefit plan in 1960, promises workers a fraction of final income for life, a long-term, annuity-like promise,
+        and hedges it with long-term assets, especially equities \ts{17}{8}{0:46}\ts{17}{8}{1:10}\ts{17}{8}{1:30};
+  \item an \textbf{insurance company} has contingent liabilities (fire, life policies) and holds bonds \ts{17}{8}{1:30}\ts{17}{8}{1:50}.
+\end{itemize}
+Both stand between households and businesses, like Bagehot's bank, though their liabilities are not money; they became bigger than banks in funding American
+development \ts{17}{8}{2:11}\ts{17}{8}{2:31}\ts{17}{8}{2:52}\ts{17}{8}{3:12}.
+
+\begin{intuition}[Gurley and Shaw's vision: intermediaries face both ways]
+Households want to hold liquid assets, money, insurance, pensions; businesses want to borrow long. How can the capital development of the nation be financed?
+An intermediary faces both ways: to households it says ``I'll give you what you want'', deposits, policies, pensions; to businesses, ten-year loans, or it buys
+their bonds and equity. Without it, the mismatch between what households want and what businesses issue could block development
+\ts{17}{8}{3:33}\ts{17}{8}{3:54}\ts{17}{8}{4:15}\ts{17}{8}{4:36}\ts{17}{8}{4:57}.
+\end{intuition}
+
+Their liquidity: insurance has an actuarial quality (not every house burns at once), and in a hurricane the insurer sells bonds; pension funds turn equities into
+bonds (annuities) when a worker retires. Both depend on market liquidity, shiftability, as Moulton said for banks; Moulton became president of Brookings, which
+may be why Brookings hired Gurley and Shaw \ts{17}{8}{5:17}\ts{17}{8}{5:38}\ts{17}{8}{5:59}\ts{17}{8}{6:19}\ts{17}{8}{6:39}\ts{17}{8}{7:00}.
+
+\paragraph{The flaw: risk does not go away.} The risk of the assets does not disappear because you promise something else: it falls on the liabilities, or on
+whoever guarantees them, typically the government. With risky assets, guaranteed benefits may not be paid; the risk is borne by the sponsor (often a corporation),
+by the government through the Pension Benefit Guaranty Corporation, or by the beneficiaries when promises are not kept. Finance and arbitrage will make you
+appreciate it, through mispricing \ts{17}{8}{7:20}\ts{17}{8}{7:42}\ts{17}{8}{8:03}\ts{17}{8}{8:24}\ts{17}{8}{8:45}.
+
+\paragraph{From indirect to direct finance.} Since 1960 indirect finance has been hollowed out in favour of mutual funds: stock funds hold equities and issue shares
+in the portfolio (Fidelity's Magellan), bond funds hold bonds (PIMCO): the risk passes right through to the holder, ``this is not investment advice''
+\ts{17}{8}{9:07}\ts{17}{8}{9:28}\ts{17}{8}{9:48}\ts{17}{8}{10:08}\ts{17}{8}{10:30}. Pensions moved from defined benefit to defined contribution plans such as the
+401(k), where you see your risk \ts{17}{8}{10:51}\ts{17}{8}{11:11}.
+
+\begin{keyformulas}
+\textbf{Quantities versus prices} \ts{17}{8}{11:32}\ts{17}{8}{11:52}\ts{17}{8}{12:13}. Indirect finance solves the mismatch between what lenders want and what
+borrowers want with \emph{quantities}, on its own balance sheet. Modern finance solves it with \emph{prices}: if you don't want to hold bonds, bonds fall in
+price until you do. Price does much more work than in 1960, which is why everyone watches the stock market.
+\end{keyformulas}
+
+The same evolution, from intermediation to direct finance, has happened in banking and the money market: shadow banking is its natural next step \ts{17}{8}{12:33}\ts{17}{8}{12:54}.
+
+% ------------------------------------------------------------------
+\section{Banking evolution}\label{sec:di-bankevol}
+
+Banks as intermediaries are a new conception in the course, which has treated banking as a payment system and as market making, not as funding
+\ts{17}{9}{0:06}. Why can banks fund things? Because people want deposits not just to pay but as an asset, a liquidity reserve in their wealth
+\ts{17}{9}{0:26}\ts{17}{9}{0:47}\ts{17}{9}{1:07}:
+\begin{itemize}
+  \item deposits are \textbf{permanent} funding for the system as a whole: money demand fluctuates but does not go to zero, so reserves need cover only the
+        fluctuations; a banker who sees deposits never fall below 80\% of the balance sheet can hold 80\% in earning loans \ts{17}{9}{2:10}\ts{17}{9}{2:31}\ts{17}{9}{2:51}\ts{17}{9}{3:11};
+  \item deposits are \textbf{cheap} funding, close substitutes for cash that pays no interest; even when banks compete by paying interest, it is less than on bonds
+        \ts{17}{9}{1:30}\ts{17}{9}{1:50}.
+\end{itemize}
+
+\paragraph{Sharing out the spoils.} Everyone wants this cheap funding \ts{17}{9}{3:52}\ts{17}{9}{4:13}: the government through the central bank (Treasury bills
+against cash), business through commercial banks (industrial loans against deposits), households through savings and loans, the Jimmy Stewart banks (mortgages
+against ``deposits'', legally shares but used as money) \ts{17}{9}{4:33}\ts{17}{9}{4:54}\ts{17}{9}{5:15}\ts{17}{9}{5:35}\ts{17}{9}{5:56}.
+
+\begin{nfigure}
+\begin{taccts}
+\tacct[1.9cm]{Central bank}{Treasury bills}{Cash}\quad
+\tacct[1.9cm]{Commercial bank}{Business loans}{Deposits}\quad
+\tacct[1.9cm]{Savings and loan}{Household mortgages}{``Deposits'' (shares)}
+\end{taccts}
+\caption{Cheap permanent funding shared out among government, business and households \ts{17}{9}{4:33}\ts{17}{9}{5:15}\ts{17}{9}{5:56}.}\label{fig:di-spoils}
+\end{nfigure}
+
+\paragraph{The risk passes through, to the taxpayer.} The banks face both ways, but the risk does not vanish: in the Jimmy Stewart bank the FDIC guarantees
+solvency and the Fed liquidity, so the taxpayer bears it. Hence regulation (no risky loans, no interest on deposits), and hence a regulatory arbitrage to create
+non-banks doing the same thing: that is where shadow banking came from \ts{17}{9}{6:17}\ts{17}{9}{6:38}\ts{17}{9}{6:59}\ts{17}{9}{7:19}\ts{17}{9}{7:40}. In
+the Jimmy Stewart bank the risk stays in the community: ``your money is in your houses'' \ts{17}{9}{7:40}\ts{17}{9}{8:01}.
+
+\paragraph{Shadow banking strips the risks.} In shadow banking the loans become traded securities whose price is the price of all their risks: a mortgage has
+duration risk (30 years) and default risk (household income). The interest rate swap and the credit default swap strip them off, leaving a synthetic Treasury
+bill funded in the money market: risk is not eliminated but hedged, sold off separately, rather than borne by a government that pretends it is not there, with the
+moral hazard that implies \ts{17}{9}{8:22}\ts{17}{9}{8:42}\ts{17}{9}{9:03}\ts{17}{9}{9:23}. As pension funds evolved into stock funds and insurers into bond funds,
+banks evolved into money market mutual funds, many outside the US, holding dollars for sovereign wealth funds and central banks: ``a global dollar system funding
+subprime mortgages in Cleveland'' \ts{17}{9}{9:44}\ts{17}{9}{10:05}\ts{17}{9}{10:25}. From indirect finance (Gurley and Shaw, 1960) to direct finance (2012),
+with all risks priced in markets and money and capital markets completely integrated \ts{17}{9}{10:45}.
+
+% ------------------------------------------------------------------
+\section{Preview: central banking and shadow banking}\label{sec:di-preview}
+
+\paragraph{The central bank's exposure.} A student asks how the central bank becomes exposed to shadow banks \ts{17}{10}{0:10}\ts{17}{10}{0:31}. To the traditional
+bank the Fed gives a liquidity backstop only; if it is insolvent the FDIC shuts it down and pays depositors from accumulated premia, and beyond that the
+government backstops solvency \ts{17}{10}{0:52}\ts{17}{10}{1:12}. Nobody directly backstops the shadow bank, but there is the liquidity put: when the quality of the
+collateral came into question, money funds refused to roll their funding (``you told me these were just like Treasury bills with a yield advantage''), and the
+shadow banks drew on their parents' promises, say Citibank's, to roll their funding; so they came back onto traditional banks' balance sheets
+\ts{17}{10}{1:33}\ts{17}{10}{1:53}\ts{17}{10}{2:14}. Regulators had endorsed the system to get risk out of banks: it removed most solvency risk but not liquidity risk
+\ts{17}{10}{2:35}\ts{17}{10}{2:55}.
+
+\begin{definition}[New concepts: liquidity put]
+A commitment by a bank to provide funding to an off-balance-sheet vehicle if it cannot roll its money market funding: in effect an option to ``put'' the funding
+problem back to the bank \ts{17}{10}{1:33}\ts{17}{10}{2:14}.
+\end{definition}
+
+\paragraph{Where is solvency?} Most banking courses are about solvency; this course stresses liquidity. In the shadow bank the solvency risk sits with the holders of
+the swaps and of the mezzanine and junior tranches. For AAA credit default swaps it was AIG, an insurance company with a lot of capital and bonds, the ``FDIC
+equivalent'' of the system, whose capital was sucked out very quickly by the counterparties, Soci\'et\'e G\'en\'erale and Goldman Sachs and their clients, which were
+acting as market makers \ts{17}{10}{2:55}\ts{17}{10}{3:16}\ts{17}{10}{3:37}\ts{17}{10}{3:58}\ts{17}{10}{4:18}\ts{17}{10}{4:39}.
+
+\begin{intuition}[The fantasy of modern finance]
+The shadow banking system had no explicit lender of last resort, on the belief that removing solvency risk removes liquidity risk: a risk-free asset is like a
+Treasury bill, hence liquid by design. False: someone must still buy it. Market liquidity is created by dealers quoting bid--ask spreads, and dealers must fund
+their inventories; if they cannot, they stop making markets, prices go away, nobody knows what the collateral is worth, and the ability to fund the portfolio goes
+away. That is what happened in 2007--09 \ts{17}{10}{5:03}\ts{17}{10}{5:24}\ts{17}{10}{5:44}\ts{17}{10}{6:06}\ts{17}{10}{7:27}.
+\end{intuition}
+
+A traditional bank has no market prices on either side: deposits were forbidden to pay interest, and loans are illiquid, specific to each borrower. A shadow bank
+lives on two prices, the market price of the RMBS and the world dollar funding rate \ts{17}{10}{6:26}\ts{17}{10}{6:46}\ts{17}{10}{7:07}. The system had moved off
+the Fed's balance sheet, ``out of sight, out of mind'', Europe's problem; wrong: a global funding system came under threat almost immediately, and the expansion of
+the Fed's balance sheet shown in the first lecture bailed it out \ts{17}{10}{7:49}\ts{17}{10}{8:10}.
+
+% ------------------------------------------------------------------
+\flushside
+\section*{Key formulas and ideas}
+\begin{keyformulas}
+\begin{tabularx}{\linewidth}{@{}l L@{}}
+Shadow banking & money market funding of capital market lending; prices on both sides\\
+Bagehot's world & money market (bills, indirect) and capital market (bonds, equity, direct) separate\\
+New world & long-term bank assets, interbank repo against rated bonds: capital and money markets intertwined\\
+Liquidity & funding liquidity (British) versus shiftability $=$ market liquidity (Moulton 1918)\\
+Payment vs funding & bank credit as bridge loan; bonds as take-out finance\\
+Gurley--Shaw & intermediaries face both ways; but risk passes through to someone\\
+Evolution & intermediation $\to$ mutual funds; banks $\to$ MMMFs and shadow banks; quantities $\to$ prices\\
+Backstops & traditional: FDIC (solvency), Fed (liquidity); shadow: liquidity puts, AIG as solvency\\
+\end{tabularx}
+\end{keyformulas}
+
+\section*{Exercises}
+
+\begin{exercise}[Bridge and take-out]
+A firm borrows 100 from a bank to buy a machine and, a year later, issues a 10-year bond of 100 bought by a household. Write the T-accounts of bank, firm and
+household at each step, and say which step is indirect and which direct finance.
+\end{exercise}
+
+\begin{exercise}[Permanent funding]
+A bank's deposits have fluctuated between 800 and 1000 over ten years. How much of its balance sheet can it hold in long-term loans, and how much in reserves?
+What changes if a money market fund offers a close substitute for deposits?
+\end{exercise}
+
+\begin{exercise}[Who bears the risk?]
+For a defined benefit pension fund, a defined contribution 401(k), a Jimmy Stewart bank and a shadow bank holding an RMBS hedged with swaps, say who bears the
+default risk and who the liquidity risk.
+\end{exercise}
+
+\begin{exercise}[Market liquidity needs funding]
+Using Treynor's model, explain why a dealer in AAA mortgage securities stops quoting when its repo funding is cut, and what happens to the value of the same
+securities as repo collateral.
+\end{exercise}
