@@ -27,17 +27,17 @@
 \section*{Motivation}
 All semester Mehrling promised that the course's balance sheets would handle credit default swaps; now he delivers \ts{20}{2}{0:06}. Think of a corporate bond with a lot
 of credit risk: a credit default swap peels that risk off and sells it separately, just as an interest rate swap peels off interest rate exposure
-\ts{20}{2}{3:11}\ts{20}{2}{3:31}. Three examples from the crisis (UBS, AIG, Abacus) then show that the trouble came not from defaults but from liquidity.
+\ts{20}{2}{3:11}. Three examples from the crisis (UBS, AIG, Abacus) then show that the trouble came not from defaults but from liquidity.
 
 % ------------------------------------------------------------------
 \section{Credit indices}\label{sec:cds-index}
 
 \begin{finance}[The Markit CDX family]
 Markit's CDX indices are, in its words, the standard tradable family of credit default swap indices for North America and emerging markets: they offer exposure to
-a diversified portfolio of credits, a hedge of credit risk, and liquidity that flows into the single-name CDS market \ts{20}{2}{0:27}\ts{20}{2}{0:48}\ts{20}{2}{1:08}.
+a diversified portfolio of credits, a hedge of credit risk, and liquidity that flows into the single-name CDS market \ts{20}{2}{0:27}.
 The CDX.NA.HY (North America high yield, i.e.\ junk) index: spreads of 450--580 basis points over a riskless rate between late September and the day of the lecture;
 the index is set at 100 and moves inversely to the spread (about 530 bp at that point). Its constituents are 100 companies, each with 1\% weight, with ratings
-such as BB, B, CCC \ts{20}{2}{1:29}\ts{20}{2}{1:50}\ts{20}{2}{2:10}\ts{20}{2}{2:30}\ts{20}{2}{2:50}.
+such as BB, B, CCC \ts{20}{2}{1:29}.
 \end{finance}
 
 % ------------------------------------------------------------------
@@ -45,10 +45,10 @@ such as BB, B, CCC \ts{20}{2}{1:29}\ts{20}{2}{1:50}\ts{20}{2}{2:10}\ts{20}{2}{2:
 
 In an unpublished 1970 memo, which Mehrling read while writing Black's biography, the young Fischer Black imagined a long-term corporate bond sold to three
 separate persons: one supplying the money, one bearing the interest rate risk and one the default risk, the last two putting up no capital but perhaps posting
-collateral. ``That's the world that came to be'' \ts{20}{3}{0:05}\ts{20}{3}{0:27}\ts{20}{3}{0:48}.
+collateral. ``That's the world that came to be'' \ts{20}{3}{0:05}.
 
 \begin{keyformulas}
-\textbf{Black's decomposition} \ts{20}{3}{0:48}\ts{20}{3}{1:08}\ts{20}{3}{1:31}\ts{20}{3}{1:51}:
+\textbf{Black's decomposition} \ts{20}{3}{0:48}:
 \[
   \text{risk-free security} = \text{risky (corporate) bond} + \text{interest rate hedge (IRS)} + \text{credit hedge (CDS)}.
 \]
@@ -63,8 +63,8 @@ Sachs. Mehrling's biography draws on his unpublished papers, including the 1970 
 % ------------------------------------------------------------------
 \section{What is a credit default swap}\label{sec:cds-what}
 
-There is a buyer and a seller of ``insurance''. The buyer is \emph{long the swap} and \emph{short credit risk} \ts{20}{4}{0:04}\ts{20}{4}{0:30}. Balance sheet
-construction \ts{20}{4}{0:56}\ts{20}{4}{1:22}\ts{20}{4}{1:46}\ts{20}{4}{2:08}\ts{20}{4}{2:30}:
+There is a buyer and a seller of ``insurance''. The buyer is \emph{long the swap} and \emph{short credit risk} \ts{20}{4}{0:04}. Balance sheet
+construction \ts{20}{4}{0:56}:
 \begin{enumerate}
   \item start from a risky corporate bond;
   \item add (in brackets: notional) a long Treasury bond and a short position in the same corporate bond, of the same maturity: the net exposure is now a
@@ -78,44 +78,44 @@ construction \ts{20}{4}{0:56}\ts{20}{4}{1:22}\ts{20}{4}{1:46}\ts{20}{4}{2:08}\ts
 \tacct[2.6cm]{Seller of protection}{}{CDS (short swap, long credit risk)\\IRS}
 \end{taccts}
 \caption{A CDS and an IRS as notional swaps of IOUs: the hedges are booked as contingent assets of the buyer and contingent liabilities of the seller
-\ts{20}{4}{2:50}\ts{20}{4}{3:32}\ts{20}{4}{4:13}\ts{20}{4}{4:33}.}\label{fig:cds-bs}
+\ts{20}{4}{2:50}.}\label{fig:cds-bs}
 \end{nfigure}
 
 \begin{definition}[New concepts: credit default swap, protection buyer and seller]
 A \emph{credit default swap} (CDS) is a contract in which the \emph{protection buyer} pays a periodic premium and, if the reference bond defaults, receives
-from the \emph{protection seller} the difference between face value and the bond's post-default value \ts{20}{4}{0:04}\ts{20}{6}{4:28}\ts{20}{6}{4:48}.
+from the \emph{protection seller} the difference between face value and the bond's post-default value \ts{20}{4}{0:04}\ts{20}{6}{4:28}.
 (\emph{Default}: from Old French \emph{defaute}, a failing or lack.)
 \end{definition}
 
 The course books any hedge as a contingent asset, so the buyer lists both the long credit exposure (the bond) and the short one (the CDS) as assets; real-world
-practice is not consistent, often off balance sheet \ts{20}{4}{3:12}\ts{20}{4}{3:32}\ts{20}{4}{3:53}. The seller is long credit risk and short the swap: the
-lingo is consistent between CDS and IRS. ``Credit default swaps are not some weird exotic creature of Wall Street'' \ts{20}{4}{4:33}\ts{20}{4}{4:54}.
+practice is not consistent, often off balance sheet \ts{20}{4}{3:12}. The seller is long credit risk and short the swap: the
+lingo is consistent between CDS and IRS. ``Credit default swaps are not some weird exotic creature of Wall Street'' \ts{20}{4}{4:33}.
 
 % ------------------------------------------------------------------
 \section{Corporate bonds}\label{sec:cds-bonds}
 
 For the first time in the course, a corporate bond: a fixed coupon every six months or year for, say, ten years, and the principal at the end; unlike a mortgage it
-is not amortized \ts{20}{5}{0:04}\ts{20}{5}{0:24}\ts{20}{5}{0:44}.
+is not amortized \ts{20}{5}{0:04}.
 \begin{keyformulas}
-\textbf{Bond price} \ts{20}{5}{1:05}\ts{20}{5}{1:29}\ts{20}{5}{1:49}: with coupons $C_t$, face value $F$ at maturity $T$, and a risk-weighted discount rate
+\textbf{Bond price} \ts{20}{5}{1:05}: with coupons $C_t$, face value $F$ at maturity $T$, and a risk-weighted discount rate
 (the risk-free rate plus a credit spread $\delta$, e.g.\ 530 bp),
 \[
   P_0 = \sum_{t=1}^{T}\frac{C_t}{(1+r+\delta)^t} + \frac{F}{(1+r+\delta)^T}.
 \]
 \end{keyformulas}
 Bonds have ratings, and at any moment there are credit spreads between rating classes, which change over time. So a bond's price changes when the spread for its
-rating changes and when its rating changes, a ``double whammy'' if a downgrade comes with wider spreads \ts{20}{5}{2:12}\ts{20}{5}{2:33}\ts{20}{5}{2:53}\ts{20}{5}{3:13}.
+rating changes and when its rating changes, a ``double whammy'' if a downgrade comes with wider spreads \ts{20}{5}{2:12}.
 
 % ------------------------------------------------------------------
 \section{CDS pricing}\label{sec:cds-pricing}
 
 \paragraph{Step 1: strip the interest rate risk.} Take a ten-year bond with constant coupon and swap fixed for LIBOR: what remains is a ten-year floating-rate bond paying
-LIBOR $+\,s$, with the credit spread $s$ locked in \ts{20}{6}{0:02}\ts{20}{6}{0:27}\ts{20}{6}{0:48}\ts{20}{6}{1:09}\ts{20}{6}{1:30}.
+LIBOR $+\,s$, with the credit spread $s$ locked in \ts{20}{6}{0:02}.
 
 \paragraph{Step 2: the CDS as a swap.} Each year the bond survives, one side pays LIBOR times face value and the other LIBOR $+\,u$: the protection buyer pays the net
-premium $u$ times face value \ts{20}{6}{1:51}\ts{20}{6}{2:13}\ts{20}{6}{3:04}\ts{20}{6}{3:24}\ts{20}{6}{3:45}. If the bond defaults, say in period five, the buyer
-swaps it for a Treasury bond: it receives face value minus the bond's price at that time \ts{20}{6}{4:05}\ts{20}{6}{4:28}\ts{20}{6}{4:48}. The contract follows the
-two parts of a bond: the annual (coupon) business and the terminal payment if it defaults \ts{20}{6}{5:35}\ts{20}{6}{5:56}\ts{20}{6}{6:16}.
+premium $u$ times face value \ts{20}{6}{1:51}. If the bond defaults, say in period five, the buyer
+swaps it for a Treasury bond: it receives face value minus the bond's price at that time \ts{20}{6}{4:05}. The contract follows the
+two parts of a bond: the annual (coupon) business and the terminal payment if it defaults \ts{20}{6}{5:35}.
 
 \begin{nfigure}
 \begin{tikzpicture}[font=\scriptsize,x=1.3cm,y=1cm]
@@ -126,33 +126,33 @@ two parts of a bond: the annual (coupon) business and the terminal payment if it
   \foreach \t in {1,...,5} \node[above] at (\t,0.05) {\t};
 \end{tikzpicture}
 \caption{Cash flows to the protection buyer: the premium $u$ times face value $F$ while the bond survives, face value minus the bond's price $P_5$ at default
-\ts{20}{6}{3:45}\ts{20}{6}{4:05}\ts{20}{6}{4:48}.}\label{fig:cds-flows}
+\ts{20}{6}{3:45}.}\label{fig:cds-flows}
 \end{nfigure}
 
 \begin{keyformulas}
-\textbf{CDS pricing by arbitrage} \ts{20}{6}{6:36}\ts{20}{6}{6:57}\ts{20}{6}{7:17}\ts{20}{6}{7:39}: the CDS premium $u$ should equal the bond's credit spread $s$;
+\textbf{CDS pricing by arbitrage} \ts{20}{6}{6:36}: the CDS premium $u$ should equal the bond's credit spread $s$;
 otherwise go long the bond and insure it (if $u<s$), or short the bond and sell insurance (if $u>s$). This is how CDS are priced, ``assuming that there's no
 liquidity premium anywhere in this picture''. The difference $u-s$ is the \emph{CDS--bond basis}.
 \end{keyformulas}
 
 \paragraph{Not just insurance.} A CDS is a promise to pay a fixed premium for its life, but its value fluctuates, inversely to the bond, whenever the warranted
 discount rate changes; so CDS are used not only as insurance against default but as a way to get exposure to credit risk, traded and reversed like any liquid
-derivative. Unlike fire insurance, you are not just waiting for the house to burn \ts{20}{6}{8:00}\ts{20}{6}{8:21}\ts{20}{6}{8:41}\ts{20}{6}{9:02}\ts{20}{6}{9:22}.
+derivative. Unlike fire insurance, you are not just waiting for the house to burn \ts{20}{6}{8:00}.
 
 \begin{intuition}[Is a CDS insurance?]
 ``Insurance'' is used to remember which side of the balance sheet to book; but many people dislike the word, on both sides of the political spectrum. If it were
 insurance it would be regulated as insurance, with reserves and suitability standards; and insurance works by pooling independent risks (fires), while credit risk
 is systemic: corporate bonds and their spreads move together. The mathematicians and theorists say: it is not insurance, just a swap
-\ts{20}{6}{9:43}\ts{20}{6}{10:04}\ts{20}{6}{10:24}\ts{20}{6}{10:45}\ts{20}{6}{11:06}.
+\ts{20}{6}{9:43}.
 \end{intuition}
 
 % ------------------------------------------------------------------
 \section{Market making in CDS}\label{sec:cds-dealers}
 
 Opposite the protection buyer is typically a dealer writing CDS on bonds $i$, $j$, $k$\ldots: a portfolio of CDS is like a diversified portfolio of corporate bonds
-\ts{20}{7}{0:03}\ts{20}{7}{0:26}\ts{20}{7}{0:46}. The dealer cannot find someone wanting exactly the opposite single-name positions, so it hedges with a CDS on the
+\ts{20}{7}{0:03}. The dealer cannot find someone wanting exactly the opposite single-name positions, so it hedges with a CDS on the
 CDX index, which is correlated with its portfolio; on the other side may be an asset manager seeking exposure to the bond market as a whole
-\ts{20}{7}{1:08}\ts{20}{7}{1:31}\ts{20}{7}{1:52}\ts{20}{7}{2:14}\ts{20}{7}{2:34}\ts{20}{7}{2:55}.
+\ts{20}{7}{1:08}.
 
 \begin{nfigure}
 \begin{taccts}
@@ -160,48 +160,48 @@ CDX index, which is correlated with its portfolio; on the other side may be an a
 \tacct[1.9cm]{CDS dealer (investment bank)}{CDS on CDX index}{CDS on bonds $i, j, k, \ldots$}\quad
 \tacct[1.9cm]{Asset manager}{}{CDS on CDX index (long credit risk)}
 \end{taccts}
-\caption{A CDS dealer hedging a portfolio of single names with the index \ts{20}{7}{1:31}\ts{20}{7}{1:52}\ts{20}{7}{2:34}.}\label{fig:cds-dealer}
+\caption{A CDS dealer hedging a portfolio of single names with the index \ts{20}{7}{1:31}.}\label{fig:cds-dealer}
 \end{nfigure}
 
 With a dealer in the middle, order flow pushes CDS prices around without necessarily moving bond prices; someone must arbitrage to bring them in line. So
-arbitrage opportunities appear whenever CDS prices are out of line with bond prices, ``and sometimes it is'' one \ts{20}{7}{2:55}\ts{20}{7}{3:15}\ts{20}{7}{3:35}.
+arbitrage opportunities appear whenever CDS prices are out of line with bond prices, ``and sometimes it is'' one \ts{20}{7}{2:55}.
 
 % ------------------------------------------------------------------
 \section{UBS: the negative basis trade and liquidity risk}\label{sec:cds-ubs}
 
 UBS lost a lot of money on what it thought was a riskless trade, and its regulator made it write a public report explaining how; Mehrling wishes US regulators had
-required the same of Citibank and the TARP banks \ts{20}{8}{0:03}\ts{20}{8}{0:24}\ts{20}{8}{0:45}. UBS noticed that the spread $s$ on a security exceeded the
-cost $u$ of insuring it against default, at least from AIG \ts{20}{8}{0:45}\ts{20}{8}{1:05}\ts{20}{8}{1:26}:
+required the same of Citibank and the TARP banks \ts{20}{8}{0:03}. UBS noticed that the spread $s$ on a security exceeded the
+cost $u$ of insuring it against default, at least from AIG \ts{20}{8}{0:45}:
 \begin{enumerate}
   \item it bought AAA tranches of CDOs on mortgage-backed securities, some on subprime mortgages, with the credit risk supposedly carved off into lower tranches
-        \ts{20}{8}{1:26}\ts{20}{8}{1:48};
+        \ts{20}{8}{1:26};
   \item its European regulators required insurance to use them as bank collateral, so it bought CDS, from AIG among others: ``double insurance''
-        \ts{20}{8}{2:09}\ts{20}{8}{2:30}\ts{20}{8}{2:52};
+        \ts{20}{8}{2:09};
   \item it funded them in the money market, asset-backed commercial paper or repo, with the tranche as collateral: money market funding of capital market lending,
-        shadow banking, but right on UBS's balance sheet, unlike Citibank's structured investment vehicles off balance sheet \ts{20}{8}{3:17}\ts{20}{8}{3:37}\ts{20}{8}{3:58}\ts{20}{8}{4:18}.
+        shadow banking, but right on UBS's balance sheet, unlike Citibank's structured investment vehicles off balance sheet \ts{20}{8}{3:17}.
 \end{enumerate}
 
 \begin{nfigure}
 \begin{taccts}
 \tacct[3.0cm]{UBS (negative basis trade)}{AAA CDO tranche (yield LIBOR $+\,s$)\\CDS bought from AIG (premium $u<s$)}{Money market funding (ABCP, repo), collateral: the tranche}
 \end{taccts}
-\caption{The negative basis trade \ts{20}{8}{1:48}\ts{20}{8}{2:52}\ts{20}{8}{3:17}.}\label{fig:cds-ubs}
+\caption{The negative basis trade \ts{20}{8}{1:48}.}\label{fig:cds-ubs}
 \end{nfigure}
 
 \paragraph{Booking 20 years of profit today.} The \emph{negative basis trade} left money over each period for the life of the tranche, 10 or 20 years; UBS booked the
-whole stream as profit today and paid bonuses on it \ts{20}{8}{4:42}\ts{20}{8}{5:02}\ts{20}{8}{5:23}.
+whole stream as profit today and paid bonuses on it \ts{20}{8}{4:42}.
 
 \paragraph{The liquidity spiral.} Then small doubts about the AAA tranche: its value fluctuated a little; the CDS moved the other way, fine; but the tranche, not the
 CDS, was the collateral, so the funding could not be rolled, the tranche had to be sold, pushing its price down further, and others doing the same trade made a
-downward liquidity spiral \ts{20}{8}{5:47}\ts{20}{8}{6:07}\ts{20}{8}{6:27}\ts{20}{8}{6:48}. Moreover, AIG's insurance was expensive, so late in the game UBS insured
-only against a 2\% fall (from 100 to 98) and kept the tail risk itself \ts{20}{8}{6:48}\ts{20}{8}{7:08}\ts{20}{8}{7:29}. They felt they took no risk at all and lost
+downward liquidity spiral \ts{20}{8}{5:47}. Moreover, AIG's insurance was expensive, so late in the game UBS insured
+only against a 2\% fall (from 100 to 98) and kept the tail risk itself \ts{20}{8}{6:48}. They felt they took no risk at all and lost
 billions, because they assumed they could always roll their funding \ts{20}{8}{7:50}.
 
 \begin{coursenote}
 A student asks why the lenders did not accept the CDS as collateral together with the tranche. Perhaps by analogy with Bagehot's bills, where the acceptance was
 attached to the bill; here they are separate securities, and money market funds are restricted in the collateral they may accept. Mehrling recalls that when AIG
 was failing he proposed that the government write CDS itself, since a CDS is like an acceptance, which is what a liquidity problem needs
-\ts{20}{8}{8:11}\ts{20}{8}{8:31}\ts{20}{8}{8:51}\ts{20}{8}{9:12}\ts{20}{8}{9:33}\ts{20}{8}{9:53}.
+\ts{20}{8}{8:11}.
 \end{coursenote}
 
 \begin{history}[The UBS report]
@@ -214,23 +214,23 @@ negative basis trades and the ``Amplified Mortgage Portfolio'' (AMPS), in which 
 \section{AIG and Goldman Sachs: a private backstop}\label{sec:cds-aig}
 
 Goldman Sachs, a dealer in CDS selling protection to its clients (not completely matched book: short credit risk when it mattered), kept buying CDS from AIG, which held
-CDS liabilities and capital \ts{20}{9}{0:00}\ts{20}{9}{0:22}\ts{20}{9}{0:43}\ts{20}{9}{1:16}. When the CDS came into the money, AIG's contingent liability, zero when
-written, became, say, \$30 billion owed to Goldman \ts{20}{9}{1:36}\ts{20}{9}{1:57}. Goldman had written the contracts so that if AIG's rating fell below AAA it
-would post margin; Moody's downgraded AIG, and it had to \emph{pay} the \$30 billion, not just owe it \ts{20}{9}{2:19}\ts{20}{9}{2:40}.
+CDS liabilities and capital \ts{20}{9}{0:00}. When the CDS came into the money, AIG's contingent liability, zero when
+written, became, say, \$30 billion owed to Goldman \ts{20}{9}{1:36}. Goldman had written the contracts so that if AIG's rating fell below AAA it
+would post margin; Moody's downgraded AIG, and it had to \emph{pay} the \$30 billion, not just owe it \ts{20}{9}{2:19}.
 
 \begin{nfigure}
 \begin{taccts}
 \tacct[2.4cm]{Goldman Sachs (dealer)}{CDS bought from AIG\\($+$\$30 bn when in the money: margin received)}{CDS sold to clients\\($+$\$30 bn owed to clients)}\qquad
 \tacct[2.4cm]{AIG}{Capital (bonds)\\($-$cash paid as margin)}{CDS on AAA securities\\($+$\$30 bn contingent liability)}
 \end{taccts}
-\caption{AIG as private backstop of CDS market making; the \$30 billion is illustrative \ts{20}{9}{1:16}\ts{20}{9}{1:57}\ts{20}{9}{2:40}\ts{20}{9}{5:05}.}\label{fig:cds-aig}
+\caption{AIG as private backstop of CDS market making; the \$30 billion is illustrative \ts{20}{9}{1:16}.}\label{fig:cds-aig}
 \end{nfigure}
 
 \begin{intuition}[Liquidity kills you quick]
 AIG thought it was insuring against defaults that would never happen; but you can go bankrupt without any default if the CDS fluctuate in value and you must pay
 margin. The contractual promise to post collateral killed AIG; monoline insurers that wrote CDS without margin saw the marks go against them but paid nothing.
 ``Insolvency you can survive for a long time\ldots{} but liquidity kills you quick'': AIG, the anchor of the system, fell two or three days after Lehman in September
-2008, and the system went into free fall \ts{20}{9}{2:40}\ts{20}{9}{3:01}\ts{20}{9}{3:22}\ts{20}{9}{3:42}\ts{20}{9}{6:27}\ts{20}{9}{6:47}\ts{20}{9}{7:07}.
+2008, and the system went into free fall \ts{20}{9}{2:40}.
 \end{intuition}
 
 \begin{coursenote}
@@ -243,32 +243,32 @@ November 2009.
 
 \paragraph{Should the government have clawed it back?} Neil Barofsky (SIGTARP), whose book is on the final-exam reading, wrote a report on AIG: Goldman and, even bigger,
 Soci\'et\'e G\'en\'erale sucked the capital out of AIG, the government took over AIG, and the question was what to do about the money already paid to Goldman
-\ts{20}{9}{4:03}\ts{20}{9}{4:24}\ts{20}{9}{4:44}. But to the extent Goldman was a market maker with offsetting positions, taking back the \$30 billion would have left it
+\ts{20}{9}{4:03}. But to the extent Goldman was a market maker with offsetting positions, taking back the \$30 billion would have left it
 unable to pay its clients and the whole thing unravels; ``I don't say that Geithner necessarily did the right thing'', but it was not simply unearned profit: the
-point of a CDS is that when the corporate bond goes south you replace it with a Treasury \ts{20}{9}{5:05}\ts{20}{9}{5:26}\ts{20}{9}{5:46}\ts{20}{9}{6:06}.
+point of a CDS is that when the corporate bond goes south you replace it with a Treasury \ts{20}{9}{5:05}.
 
 \paragraph{No fraud, a misunderstanding of risk.} Mehrling is not sure there was fraud, at AIG or at UBS: a systematic misunderstanding of risk, a supposedly risk-free
 arbitrage on which you bet the bank, and do more of it. ``If it looks like free money, look again'', with the money view: is the arbitrage just a liquidity premium
 you think should be zero? Then you are becoming the lender of last resort to the whole system without being a central bank that can print money
-\ts{20}{9}{7:28}\ts{20}{9}{7:49}\ts{20}{9}{8:09}\ts{20}{9}{8:31}\ts{20}{9}{8:52}.
+\ts{20}{9}{7:28}.
 
 \paragraph{Moral hazard?} A student suggests they took the risk expecting a bailout. There is always some such calculation, but Mehrling thinks they were surprised.
 The one really relying on the government was Goldman: it chose AIG though it was more expensive (UBS found it too expensive), because AIG promised margin and had a
 huge capital base; and AIG, reserving nothing and paying bonuses on each sale, could not be allowed to fail, with fire insurance policies worldwide. But a
-counterparty that dies is not the right counterparty: Goldman surely did not expect to destroy AIG \ts{20}{9}{9:18}\ts{20}{9}{9:39}\ts{20}{9}{10:00}\ts{20}{9}{10:20}\ts{20}{9}{10:41}\ts{20}{9}{11:01}\ts{20}{9}{11:21}\ts{20}{9}{11:42}\ts{20}{9}{12:03}.
+counterparty that dies is not the right counterparty: Goldman surely did not expect to destroy AIG \ts{20}{9}{9:18}.
 
 \paragraph{What triggered payment?} Without margin, the premium flows and a large payment comes only at actual default; for AAA tranches, with many tranches beneath,
 defaults rarely reached them. It was not default but the fluctuation in CDS values that caused the problem. That is why many underestimated the crisis: ``there
 just aren't a lot of subprime mortgages'', ignoring leverage, liquidity and the embedding in world money and capital markets. Those who took the low tranches and
-knew they bore risk mostly survived; those who thought they took no risk failed \ts{20}{9}{12:24}\ts{20}{9}{12:44}\ts{20}{9}{13:05}\ts{20}{9}{13:25}\ts{20}{9}{13:46}\ts{20}{9}{14:06}\ts{20}{9}{14:26}\ts{20}{9}{14:47}\ts{20}{9}{15:07}.
+knew they bore risk mostly survived; those who thought they took no risk failed \ts{20}{9}{12:24}.
 
 % ------------------------------------------------------------------
 \section{Abacus: the synthetic CDO as collateral prepayment}\label{sec:cds-abacus}
 
 John Paulson wanted to short subprime, expecting the housing bubble to end. He bought CDS on CDO tranches of mortgage-backed securities, insurance without owning the
-securities \ts{20}{10}{0:02}\ts{20}{10}{0:22}\ts{20}{10}{0:43}. Goldman Sachs set up an entity, Abacus, which took the other side of the CDS, credit exposure as if owning
-RMBS, ``just a side bet'' \ts{20}{10}{1:04}\ts{20}{10}{1:26}\ts{20}{10}{1:47}. Abacus sold the German bank IKB a CDO tranche paying a spread over the risk-free rate; IKB
-borrowed to buy it, and Abacus invested the proceeds in Treasury bills \ts{20}{10}{2:08}\ts{20}{10}{2:28}.
+securities \ts{20}{10}{0:02}. Goldman Sachs set up an entity, Abacus, which took the other side of the CDS, credit exposure as if owning
+RMBS, ``just a side bet'' \ts{20}{10}{1:04}. Abacus sold the German bank IKB a CDO tranche paying a spread over the risk-free rate; IKB
+borrowed to buy it, and Abacus invested the proceeds in Treasury bills \ts{20}{10}{2:08}.
 
 \begin{nfigure}
 \begin{taccts}
@@ -276,19 +276,19 @@ borrowed to buy it, and Abacus invested the proceeds in Treasury bills \ts{20}{1
 \tacct[1.9cm]{Abacus (synthetic CDO)}{Treasury bills}{CDS sold to Paulson\\CDO tranche sold to IKB}\quad
 \tacct[1.9cm]{IKB}{CDO tranche}{Borrowing}
 \end{taccts}
-\caption{The synthetic CDO: T-bills plus a short CDS replicate a long position in mortgage-backed securities \ts{20}{10}{2:28}\ts{20}{10}{2:49}\ts{20}{10}{3:09}.}\label{fig:cds-abacus}
+\caption{The synthetic CDO: T-bills plus a short CDS replicate a long position in mortgage-backed securities \ts{20}{10}{2:28}.}\label{fig:cds-abacus}
 \end{nfigure}
 
 \begin{definition}[New concepts: synthetic CDO]
 A \emph{collateralized debt obligation} (CDO) issues tranches backed by a pool of debt; a \emph{synthetic} CDO owns no such debt but replicates the exposure with
-risk-free securities plus CDS sold on the reference assets \ts{20}{10}{2:49}\ts{20}{10}{3:09}.
+risk-free securities plus CDS sold on the reference assets \ts{20}{10}{2:49}.
 \end{definition}
 
 When the tranches fell, the CDS rose and the T-bills went to Paulson as margin. From a liquidity perspective that is the genius of it: IKB had paid 100\% upfront,
 so there was no problem getting paid, no bill to send to IKB that it could dispute, no need to liquidate RMBS exposure
-\ts{20}{10}{3:30}\ts{20}{10}{3:54}\ts{20}{10}{4:15}\ts{20}{10}{4:35}\ts{20}{10}{5:57}\ts{20}{10}{6:17}. There were issues about Paulson's role in choosing the tranches most
+\ts{20}{10}{3:30}. There were issues about Paulson's role in choosing the tranches most
 likely to default and about Goldman's representations, and a fine was paid; but no issue of payment. IKB was bailed out by the German government; AIG's counterparties
-included Soci\'et\'e G\'en\'erale: the international aspects again \ts{20}{10}{4:55}\ts{20}{10}{5:16}\ts{20}{10}{5:36}.
+included Soci\'et\'e G\'en\'erale: the international aspects again \ts{20}{10}{4:55}.
 
 \begin{history}[Abacus 2007-AC1]
 In April 2010 the SEC charged Goldman Sachs with misleading investors in the synthetic CDO Abacus 2007-AC1, whose reference portfolio Paulson \& Co.\ had helped select

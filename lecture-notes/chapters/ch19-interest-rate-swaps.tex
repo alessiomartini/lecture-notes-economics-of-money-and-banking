@@ -27,8 +27,8 @@ are identical to those of L19.5, so L19.5 is cited throughout.
 
 \section*{Motivation}
 Interest rate swaps are a private-sector yield curve, a kind of corporate bond term structure, usually seen as a spread over the Treasury curve
-\ts{19}{3}{0:02}\ts{19}{3}{0:22}. Since the crisis the spread has gone ``a little crazy'', negative at the long end: an apparent arbitrage nobody takes
-\ts{19}{3}{0:46}\ts{19}{3}{1:07}\ts{19}{3}{1:48}\ts{19}{3}{2:08}. To understand why, the lecture translates swaps into the course's balance sheets, shows the
+\ts{19}{3}{0:02}. Since the crisis the spread has gone ``a little crazy'', negative at the long end: an apparent arbitrage nobody takes
+\ts{19}{3}{0:46}. To understand why, the lecture translates swaps into the course's balance sheets, shows the
 swap dealers who make the market, and finds that the prices of the capital market are made by dealers who fund themselves in the money market.
 
 % ------------------------------------------------------------------
@@ -38,19 +38,19 @@ swap dealers who make the market, and finds that the prices of the capital marke
 A full page on Argentina's ``unforgiving debt'' after the New York ruling on the holdouts (``vulture'' bondholders), quoting people from a research project Mehrling
 was involved in; a full page on Greece, where, as Gavyn Davies writes, the eurozone has embarked on official debt forgiveness while avoiding outright
 cancellation of nominal debt: most Greek debt is now held by official European entities, so the renegotiation is with euro partners, not bondholders
-\ts{19}{1}{0:07}\ts{19}{1}{0:27}\ts{19}{1}{0:49}\ts{19}{1}{1:09}\ts{19}{1}{1:31}. Spanish and Italian yields have fallen after Draghi's announcement of Outright
-Monetary Transactions, though nothing has been bought yet, as the theory of the course would predict (a midterm question) \ts{19}{1}{1:52}\ts{19}{1}{2:12}.
+\ts{19}{1}{0:07}. Spanish and Italian yields have fallen after Draghi's announcement of Outright
+Monetary Transactions, though nothing has been bought yet, as the theory of the course would predict (a midterm question) \ts{19}{1}{1:52}.
 ``This party is over'': some pension funds are giving up long-dated sovereign debt, expecting yields to rise, possibly related to the Treasury and swap curves
-\ts{19}{1}{2:32}\ts{19}{1}{2:53}.
+\ts{19}{1}{2:32}.
 \end{casestudy}
 
 % ------------------------------------------------------------------
 \section{The Treasury--swap spread: a puzzle}\label{sec:irs-puzzle}
 
 On the day of the lecture: at one year the swap rate is a little above the Treasury rate; at ten years they are on top of each other; at 30 years the swap spread is
-negative \ts{19}{3}{1:07}\ts{19}{3}{1:27}\ts{19}{3}{1:48}. That suggests an arbitrage, short the ``corporate'' rate and long Treasuries. Why does nobody do it? The
+negative \ts{19}{3}{1:07}. That suggests an arbitrage, short the ``corporate'' rate and long Treasuries. Why does nobody do it? The
 negative long-end spread has persisted throughout and since the crisis: something is seriously skewed in the structure of the capital market
-\ts{19}{3}{1:48}\ts{19}{3}{2:08}\ts{19}{3}{2:29}.
+\ts{19}{3}{1:48}.
 
 \begin{nfigure}
 \begin{tikzpicture}[font=\scriptsize,x=0.36cm,y=1.6cm]
@@ -61,7 +61,7 @@ negative long-end spread has persisted throughout and since the crisis: somethin
   \draw[very thick,thmcol] (1,0.4) -- (5,0.85) -- (10,1.68) -- (30,2.55) node[right]{swap};
   \node[align=left] at (21,0.9) {schematic shape: swap above Treasury at 1 year,\\equal at 10 years, below at 30 years};
 \end{tikzpicture}
-\caption{Treasury and swap yield curves, late 2012, as shown in class (four maturities joined by straight lines) \ts{19}{3}{1:07}\ts{19}{3}{1:27}. Shape only, not the actual numbers.}\label{fig:irs-curves}
+\caption{Treasury and swap yield curves, late 2012, as shown in class (four maturities joined by straight lines) \ts{19}{3}{1:07}. Shape only, not the actual numbers.}\label{fig:irs-curves}
 \end{nfigure}
 
 % ------------------------------------------------------------------
@@ -69,40 +69,40 @@ negative long-end spread has persisted throughout and since the crisis: somethin
 
 Stigum's example: an AA firm can borrow relatively cheaply at a fixed long-term rate (a ten-year bond), a BBB firm most cheaply at a short-term floating rate (say
 three-month LIBOR); BBB worries about rolling over and would like to lock in long-term funding, AA is happy with short-term borrowing. They swap exposures
-\ts{19}{3}{3:11}\ts{19}{3}{3:32}\ts{19}{3}{3:55}\ts{19}{3}{4:15}\ts{19}{3}{4:35}\ts{19}{3}{4:55}.
+\ts{19}{3}{3:11}.
 
-\paragraph{A swap is a parallel loan.} As always, ask what IOUs are notionally swapped \ts{19}{3}{4:55}\ts{19}{3}{5:16}\ts{19}{3}{5:39}\ts{19}{3}{5:59}\ts{19}{3}{6:19}:
+\paragraph{A swap is a parallel loan.} As always, ask what IOUs are notionally swapped \ts{19}{3}{4:55}:
 \begin{itemize}
   \item AA, wanting floating: lends fixed and borrows at LIBOR, i.e.\ \emph{receives fixed, pays floating};
   \item BBB, wanting fixed: \emph{pays fixed, receives floating}.
 \end{itemize}
 In reality there is no loan and no principal: the parties net the interest payments, so the swap is off balance sheet and does not show up as leverage
-\ts{19}{3}{7:42}\ts{19}{3}{8:02}.
+\ts{19}{3}{7:42}.
 
 \begin{definition}[New concepts: interest rate swap, swap rate]
 An \emph{interest rate swap} is an agreement to exchange, on a notional principal, fixed-rate interest payments for floating-rate payments (e.g.\ six-month LIBOR)
-for the life of the swap; only the net payment changes hands. The \emph{swap rate} is the fixed rate quoted against the floating leg \ts{19}{3}{5:59}\ts{19}{3}{6:19}\ts{19}{3}{7:21}\ts{19}{3}{7:42}.
+for the life of the swap; only the net payment changes hands. The \emph{swap rate} is the fixed rate quoted against the floating leg \ts{19}{3}{5:59}.
 (\emph{Swap}: exchange, from the old sense ``to strike hands'' on a bargain.)
 \end{definition}
 
 \begin{finance}[Reading the FT quotes]
 The FT's second section quotes swaps daily for euros, pounds, Swiss francs, dollars and yen, from one to 30 years, with a bid and an ask: for the ten-year dollar
-swap, 1.66--1.69, against six-month LIBOR as the footnotes say \ts{19}{3}{6:19}\ts{19}{3}{6:40}\ts{19}{3}{7:00}\ts{19}{3}{7:21}.
+swap, 1.66--1.69, against six-month LIBOR as the footnotes say \ts{19}{3}{6:19}.
 \end{finance}
 
 \paragraph{Street lingo.} AA, receiving fixed and paying floating, is the \emph{seller} of the swap, ``short'' the swap; BBB, paying fixed, is the \emph{buyer}, ``long''
 the swap. Following the lingo, the course books a short swap on the liability side and a long swap on the asset side, though actual balance sheets have no such
-convention \ts{19}{3}{8:23}\ts{19}{3}{8:45}\ts{19}{3}{9:06}\ts{19}{3}{9:28}.
+convention \ts{19}{3}{8:23}.
 
 \begin{intuition}[A short swap is like a repo'd bond]
 A short swap position (receive fixed, pay floating) is like owning a fixed-rate bond and financing it short term in the repo market: a long-term repo in which a
-corporate bond is the collateral \ts{19}{3}{9:49}\ts{19}{3}{10:10}\ts{19}{3}{10:32}.
+corporate bond is the collateral \ts{19}{3}{9:49}.
 \end{intuition}
 
 % ------------------------------------------------------------------
 \section{Why swap? An example from Stigum}\label{sec:irs-why}
 
-AA and BBB ask their bankers for a floating-rate term loan and a five-year fixed-rate Eurobond \ts{19}{5}{0:01}\ts{19}{5}{0:22}\ts{19}{5}{0:44}\ts{19}{5}{1:05}\ts{19}{5}{1:27}:
+AA and BBB ask their bankers for a floating-rate term loan and a five-year fixed-rate Eurobond \ts{19}{5}{0:01}:
 
 \begin{nfigure}
 \renewcommand{\arraystretch}{1.35}
@@ -116,44 +116,44 @@ fixed (five-year Eurobond) & 5.375\% & 5.85\% & 47.5 bp\\
 room for a deal & \multicolumn{3}{c}{$47.5-12.5 = 35$ bp}\\
 \bottomrule
 \end{tabular}
-\caption{Stigum's quotes \ts{19}{5}{1:05}\ts{19}{5}{1:27}\ts{19}{5}{1:49}\ts{19}{5}{2:10}.}\label{tab:irs-stigum}
+\caption{Stigum's quotes \ts{19}{5}{1:05}.}\label{tab:irs-stigum}
 \end{nfigure}
 
 \paragraph{Comparative advantage.} AA has an absolute advantage at every maturity, but its advantage is much larger in the long market: BBB has a comparative
 advantage in short-term borrowing. Mehrling is ``not sure that is really a very good way to understand this, but the math works that way''
-\ts{19}{5}{2:51}\ts{19}{5}{3:11}\ts{19}{5}{3:33}.
+\ts{19}{5}{2:51}.
 
 \paragraph{The deal.} AA issues fixed at 5.375\% and does a swap with BBB at 5.50\% against LIBOR flat; BBB borrows at six-month LIBOR $+\tfrac14$
-\ts{19}{5}{4:14}\ts{19}{5}{4:36}\ts{19}{5}{4:56}:
+\ts{19}{5}{4:14}:
 \begin{itemize}
-  \item BBB pays $(\text{LIBOR}+0.25) + 5.50 - \text{LIBOR} = 5.75\%$ fixed: 10 bp less than its 5.85\% \ts{19}{5}{5:17}\ts{19}{5}{5:38};
-  \item AA pays $5.375 + \text{LIBOR} - 5.50 = \text{LIBOR}-\tfrac18$: 25 bp less than its LIBOR $+\tfrac18$ \ts{19}{5}{5:59}\ts{19}{5}{6:19}.
+  \item BBB pays $(\text{LIBOR}+0.25) + 5.50 - \text{LIBOR} = 5.75\%$ fixed: 10 bp less than its 5.85\% \ts{19}{5}{5:17};
+  \item AA pays $5.375 + \text{LIBOR} - 5.50 = \text{LIBOR}-\tfrac18$: 25 bp less than its LIBOR $+\tfrac18$ \ts{19}{5}{5:59}.
 \end{itemize}
-The 35 bp are shared 25 to AA and 10 to BBB; the split is negotiated, and one would expect the better borrower to get most of it \ts{19}{5}{2:30}\ts{19}{5}{6:19}\ts{19}{5}{6:40}.
+The 35 bp are shared 25 to AA and 10 to BBB; the split is negotiated, and one would expect the better borrower to get most of it \ts{19}{5}{2:30}.
 
 \begin{nfigure}
 \begin{taccts}
 \tacct[2.6cm]{AA}{(Fixed loan to BBB, 5.50) $=$ short swap}{Fixed bond 5.375\%\\(LIBOR loan from BBB)}\qquad
 \tacct[2.6cm]{BBB}{(LIBOR loan to AA) $=$ long swap}{LIBOR $+\tfrac14$ bank loan\\(Fixed loan from AA, 5.50)}
 \end{taccts}
-\caption{Stigum's swap as a notional parallel loan (in parentheses: not actual loans; only net payments are made) \ts{19}{5}{4:14}\ts{19}{5}{4:56}.}\label{fig:irs-parallel}
+\caption{Stigum's swap as a notional parallel loan (in parentheses: not actual loans; only net payments are made) \ts{19}{5}{4:14}.}\label{fig:irs-parallel}
 \end{nfigure}
 
 \paragraph{Exposure.} Why can AA get funding below LIBOR? It has an exposure to BBB. BBB has hedged LIBOR movements, not its own credit spread: if in six months its
-banker wants LIBOR $+1$, it still receives only LIBOR flat on the swap, may get into trouble rolling its loan, and then paying AA \ts{19}{5}{6:40}\ts{19}{5}{7:03}\ts{19}{5}{7:25}\ts{19}{5}{7:46}\ts{19}{5}{8:06}.
+banker wants LIBOR $+1$, it still receives only LIBOR flat on the swap, may get into trouble rolling its loan, and then paying AA \ts{19}{5}{6:40}.
 But it is not credit risk on a principal: if BBB stops paying, AA stops paying and tears up the swap, losing only the change in value of net payments, far less than
-on an actual parallel loan \ts{19}{5}{8:27}\ts{19}{5}{8:47}\ts{19}{5}{9:08}.
+on an actual parallel loan \ts{19}{5}{8:27}.
 
 \paragraph{Market imperfections.} Many swaps exist because one borrower has cheap local funding (the government likes it, capital controls, an immature bond market)
-and swaps it to others, breaking down inequalities across markets until the bond market grows up \ts{19}{5}{9:28}\ts{19}{5}{9:48}\ts{19}{5}{10:09}.
+and swaps it to others, breaking down inequalities across markets until the bond market grows up \ts{19}{5}{9:28}.
 
 % ------------------------------------------------------------------
 \section{Market making in swaps}\label{sec:irs-dealers}
 
 The 35 bp are an incentive for a dealer to set the deal up and keep a couple of basis points. In the FT the bid--ask spread is 0.32--0.35 at one year, three basis
-points, and three basis points at two and 30 years too: the dealer's spread \ts{19}{6}{0:01}\ts{19}{6}{0:22}\ts{19}{6}{0:43}\ts{19}{6}{1:04}. An investment bank
+points, and three basis points at two and 30 years too: the dealer's spread \ts{19}{6}{0:01}. An investment bank
 stands between AA (short a swap) and BBB (long a swap), doing a swap with each, and runs a swap book, here shown as a matched book earning the spread
-\ts{19}{6}{1:24}\ts{19}{6}{1:44}\ts{19}{6}{2:05}\ts{19}{6}{2:25}.
+\ts{19}{6}{1:24}.
 
 \begin{nfigure}
 \begin{taccts}
@@ -161,18 +161,18 @@ stands between AA (short a swap) and BBB (long a swap), doing a swap with each, 
 \tacct[1.9cm]{Swap dealer (investment bank)}{Swap with BBB (bid)}{Swap with AA (ask)}\quad
 \tacct[1.9cm]{BBB}{Long swap}{}
 \end{taccts}
-\caption{The swap dealer's matched book \ts{19}{6}{1:24}\ts{19}{6}{2:05}\ts{19}{6}{2:25}.}\label{fig:irs-dealer}
+\caption{The swap dealer's matched book \ts{19}{6}{1:24}.}\label{fig:irs-dealer}
 \end{nfigure}
 
 \paragraph{Where prices come from.} The swap yield curve comes from dealers quoting bid and ask; customers decide whether to buy or sell and need not find a
-counterparty, which is the dealer's problem; the dealer hedges imbalances with Treasuries, forwards or futures \ts{19}{6}{2:46}\ts{19}{6}{3:07}. With an investment
+counterparty, which is the dealer's problem; the dealer hedges imbalances with Treasuries, forwards or futures \ts{19}{6}{2:46}. With an investment
 bank in the middle, AA's exposure is to Goldman Sachs, not to BBB; the dealer holds a diversified portfolio of low-rated counterparties on one side and high-rated
-on the other, in effect a diversified corporate bond portfolio in swap space that takes up no balance sheet room \ts{19}{6}{5:31}\ts{19}{6}{5:53}\ts{19}{6}{6:13}\ts{19}{6}{6:33}.
+on the other, in effect a diversified corporate bond portfolio in swap space that takes up no balance sheet room \ts{19}{6}{5:31}.
 Usually the fixed rate exceeds the floating, so BBB pays AA the difference over the swap's life, while still paying its bank; if its six-month loan is not renewed,
-it is in crisis: that is why the market lent to it only for six months \ts{19}{6}{4:09}\ts{19}{6}{4:30}\ts{19}{6}{4:50}\ts{19}{6}{5:10}.
+it is in crisis: that is why the market lent to it only for six months \ts{19}{6}{4:09}.
 
 \begin{keyformulas}
-\textbf{The swap market is the government securities dealer market for corporate bonds} \ts{19}{6}{6:55}\ts{19}{6}{7:15}\ts{19}{6}{7:36}\ts{19}{6}{7:56}\ts{19}{6}{8:17}.
+\textbf{The swap market is the government securities dealer market for corporate bonds} \ts{19}{6}{6:55}.
 Interest rate swaps are where forward rates all along the yield curve come from; the Fed, by acting on the short end, also influences the swap curve, since the two
 curves trade off each other and the same dealers often run both books, hedging one with the other. The dealers are highly leveraged and fund themselves in the
 money market: capital market prices are much closer to the money market than one thought.
@@ -181,11 +181,11 @@ money market: capital market prices are much closer to the money market than one
 % ------------------------------------------------------------------
 \section{Money market swaps}\label{sec:irs-mmswap}
 
-Stigum's second example, a money market swap, mostly an interbank market \ts{19}{7}{0:02}\ts{19}{7}{0:23}\ts{19}{7}{0:43}. An AA bank receives a one-year deposit
+Stigum's second example, a money market swap, mostly an interbank market \ts{19}{7}{0:02}. An AA bank receives a one-year deposit
 from a client but wants a floating-rate liability, to match its assets: it swaps with J.P.~Morgan, one year fixed against three-month LIBOR, at 4.44\%
-\ts{19}{7}{1:05}\ts{19}{7}{1:26}\ts{19}{7}{1:54}\ts{19}{7}{2:14}\ts{19}{7}{2:35}. Morgan, now exposed to interest rate risk, may hedge short term in futures or
+\ts{19}{7}{1:05}. Morgan, now exposed to interest rate risk, may hedge short term in futures or
 FRAs until it finds the opposite customer: a leveraged buyout firm (LBO) with a three-month floating bank loan that wants to swap into one year, at 4.47\%
-\ts{19}{7}{2:56}\ts{19}{7}{3:17}\ts{19}{7}{3:37}\ts{19}{7}{3:59}\ts{19}{7}{4:25}.
+\ts{19}{7}{2:56}.
 
 \begin{nfigure}
 \begin{taccts}
@@ -193,13 +193,13 @@ FRAs until it finds the opposite customer: a leveraged buyout firm (LBO) with a 
 \tacct[2.2cm]{J.P.~Morgan (dealer)}{(1-year, 4.44, to AA bank)\\(3-month LIBOR to LBO)}{(3-month LIBOR from AA bank)\\(1-year, 4.47, from LBO)}\quad
 \tacct[2.2cm]{LBO}{(1-year, 4.47, to Morgan)}{3-month bank loan\\(3-month LIBOR from Morgan)}
 \end{taccts}
-\caption{A money market swap as notional parallel loans: Morgan receives 4.47 and pays 4.44, the LIBOR legs net out \ts{19}{7}{4:25}\ts{19}{7}{4:46}\ts{19}{7}{5:06}.}\label{fig:irs-mm}
+\caption{A money market swap as notional parallel loans: Morgan receives 4.47 and pays 4.44, the LIBOR legs net out \ts{19}{7}{4:25}.}\label{fig:irs-mm}
 \end{nfigure}
 
 \begin{coursenote}
 Students often object that 4.47 on a liability exceeds 4.44 on an asset, which does not look like profit. The lingo trips you up: think of the parallel loans
 behind the swaps. Morgan is paid 4.47 by the LBO and pays 4.44 to the AA bank, and the two LIBOR legs net: three basis points. Booking a ``short swap'' as a
-liability does not mean subtracting it from assets to get net worth \ts{19}{7}{4:25}\ts{19}{7}{4:46}\ts{19}{7}{5:06}\ts{19}{7}{5:27}\ts{19}{7}{5:47}.
+liability does not mean subtracting it from assets to get net worth \ts{19}{7}{4:25}.
 \end{coursenote}
 
 % ------------------------------------------------------------------
@@ -207,23 +207,23 @@ liability does not mean subtracting it from assets to get net worth \ts{19}{7}{4
 
 Swap market making happens at all maturities, one to 30 years. Liquidity lives in derivatives markets because they use little capital: no loans, ``swaps of IOUs
 all the way down'', profit from selling one IOU for more than you buy the other, cash flows netted. ``This is banking, but without the actual loans'': the core of
-the modern system is not Jimmy Stewart banking but swap dealers quoting two-sided markets and so making prices \ts{19}{8}{0:02}\ts{19}{8}{0:22}\ts{19}{8}{0:43}\ts{19}{8}{1:03}.
+the modern system is not Jimmy Stewart banking but swap dealers quoting two-sided markets and so making prices \ts{19}{8}{0:02}.
 
 \begin{reading}[M.~Stigum, \emph{The Money Market}, p.~900: arbitrage land]
 Stigum describes money market swaps as living in what could be called ``arbitrage land'': traders arbitrage swaps against futures, against cash, against FRAs, FRAs
 against futures, and so on. An event that moves one rate sends a ripple through the related markets, creating basis points for every player, except perhaps the
-unhedged speculator in the futures pit, who usually is the one who loses \ts{19}{8}{1:24}\ts{19}{8}{1:45}\ts{19}{8}{2:05}.
+unhedged speculator in the futures pit, who usually is the one who loses \ts{19}{8}{1:24}.
 \end{reading}
 
 \paragraph{A hierarchy of arbitrages.} The chain ends in the futures market, where price risk is hedged and liquidity risk is borne: hence last lecture on forwards
-and futures \ts{19}{8}{2:26}\ts{19}{8}{2:47}. The same idea is in the 1952 FOMC report: government securities dealers doing term structure arbitrage, buying the
+and futures \ts{19}{8}{2:26}. The same idea is in the 1952 FOMC report: government securities dealers doing term structure arbitrage, buying the
 five-year when cheap, financing it in a primitive repo market, selling the ten-year. ``1952 is the future'', extended from government securities to corporate
 securities and then to mortgages: an RMBS is a 30-year bond with option features (early repayment), and the swap apparatus built for corporate securities was moved
-into mortgage space, producing a global market in household bonds: ``AA, LBO, subprime'' \ts{19}{8}{2:47}\ts{19}{8}{3:08}\ts{19}{8}{3:29}\ts{19}{8}{3:50}\ts{19}{8}{4:12}\ts{19}{8}{4:33}.
+into mortgage space, producing a global market in household bonds: ``AA, LBO, subprime'' \ts{19}{8}{2:47}.
 
 \begin{coursenote}
 The segment devoted to the 1952 FOMC report (L19.2) has no captions on YouTube, so its content is not reported here; only what is said about it in other segments
-\ts{19}{6}{7:15}\ts{19}{8}{2:47}\ts{19}{8}{3:08}. The report is that of the FOMC's Ad Hoc Subcommittee on the Government Securities Market (chaired by William
+\ts{19}{6}{7:15}\ts{19}{8}{2:47}. The report is that of the FOMC's Ad Hoc Subcommittee on the Government Securities Market (chaired by William
 McChesney Martin, November 1952), which recommended that open market operations be confined to the short end of the market, normally Treasury bills
 (``bills only''), leaving the rest of the yield curve to dealers' arbitrage.\par
 \emph{Reference:} Federal Reserve, \emph{Federal Reserve Bulletin}, 1953; FOMC Minutes, March 1953.
@@ -233,33 +233,33 @@ McChesney Martin, November 1952), which recommended that open market operations 
 \section{The Treasury--swap spread explained}\label{sec:irs-spread}
 
 To exploit a swap curve below the Treasury curve, one would borrow at the ``corporate'' rate and lend at the Treasury rate: be long a Treasury, financed in repo
-with the Treasury as collateral, and long a swap (pay fixed, receive floating) \ts{19}{9}{0:22}\ts{19}{9}{0:43}\ts{19}{9}{1:04}\ts{19}{9}{1:24}\ts{19}{9}{1:46}\ts{19}{9}{2:06}.
+with the Treasury as collateral, and long a swap (pay fixed, receive floating) \ts{19}{9}{0:22}.
 Corporations that can borrow are in effect doing it on their own balance sheets, issuing 30-year debt and holding cash or Treasuries; it is not enough to close
-the gap \ts{19}{9}{2:27}\ts{19}{9}{2:48}.
+the gap \ts{19}{9}{2:27}.
 
 \begin{nfigure}
 \begin{taccts}
 \tacct[2.6cm]{Arbitrageur}{30-year Treasury\\Long swap (pay fixed, receive floating)}{Repo (short-term funding)}
 \end{taccts}
-\caption{The arbitrage that would close a negative swap spread: no credit risk, but borrowing short to lend long \ts{19}{9}{1:24}\ts{19}{9}{2:06}\ts{19}{9}{3:09}.}\label{fig:irs-arb}
+\caption{The arbitrage that would close a negative swap spread: no credit risk, but borrowing short to lend long \ts{19}{9}{1:24}.}\label{fig:irs-arb}
 \end{nfigure}
 
 \begin{intuition}[Why the gap stays open]
 The position borrows short and lends long: no credit risk (it is the Treasury), but liquidity risk, since one does not know whether, or at what price, the funding
 can be rolled. Even with the market flooded by QE, people do not want that risk. Other stories (capital constraints coming with Basel~III) are possible; any story
-must explain why nobody has done the arbitrage for four years \ts{19}{9}{3:09}\ts{19}{9}{3:30}\ts{19}{9}{3:51}\ts{19}{9}{4:11}.
+must explain why nobody has done the arbitrage for four years \ts{19}{9}{3:09}.
 \end{intuition}
 
 \begin{aside}[The fiscal cliff]
 A manufactured crisis: unless Congress agreed by a date, taxes would rise and spending fall, with large demand effects. Mehrling sees political brinkmanship; it may
 lead people to stay long cash, and firms to pay out cash as dividends ahead of tax rises, but it cannot explain a four-year anomaly
-\ts{19}{9}{4:11}\ts{19}{9}{4:33}\ts{19}{9}{4:53}\ts{19}{9}{5:14}\ts{19}{9}{5:34}.
+\ts{19}{9}{4:11}.
 \end{aside}
 
 \paragraph{Where the mortgage rate comes from.} The interest rate swap market is enormous, ``trillions, trillions, trillions''. When a Jimmy Stewart banker quotes you
 a mortgage rate, it comes from here: the mortgage will be packaged and sold as a bond, so the banker looks at the swap curve for mortgage-backed securities. Prices
 are made in dealer markets in derivatives, with supply and demand for loans behind the scenes: ``that's the way modern banking works''
-\ts{19}{9}{5:54}\ts{19}{9}{6:15}\ts{19}{9}{6:35}\ts{19}{9}{6:56}.
+\ts{19}{9}{5:54}.
 
 % ------------------------------------------------------------------
 \flushside

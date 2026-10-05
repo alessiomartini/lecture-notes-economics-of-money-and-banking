@@ -32,3 +32,5 @@ without solutions, `mysolution` never edited (comments go in `\feedback`).
 `cd lecture-notes && python .vscode/build.py full`, then grep `build/main.log` for
 `\.tex:[0-9]+:`, `undefined`, `Overfull`; look at the rendered pages (Read tool on `build/main.pdf`).
 Commit after each verified chapter; push only when asked.
+
+- Video links: never put consecutive `	s` links to the same video; keep only the earliest. Run `python tools/dedup_ts.py` after writing a chapter.

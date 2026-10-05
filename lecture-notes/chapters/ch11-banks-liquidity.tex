@@ -25,7 +25,7 @@
 \section*{Motivation}
 Lecture~10 built the Treynor model for security dealers, who turn funding liquidity into market liquidity. This lecture climbs one step up the hierarchy, to
 banks \ts{11}{2}{1:09}. Banks make a market between currency and deposits at par: a fixed price, with no bid--ask spread. How can that be possible, and profitable?
-\ts{11}{2}{1:49}\ts{11}{2}{2:30}\ts{11}{2}{3:13} The route is indirect: first see security dealers as dealers in \emph{money}, apply Treynor's model to liquidity risk,
+\ts{11}{2}{1:49} The route is indirect: first see security dealers as dealers in \emph{money}, apply Treynor's model to liquidity risk,
 then bring in the Fed as the maker of the outside spread in the money market; the answer comes at the end.
 
 % ------------------------------------------------------------------
@@ -34,28 +34,28 @@ then bring in the Fed as the maker of the outside spread in the money market; th
 \begin{casestudy}[FT, October 2012: ``Court drama puts focus on money funds'']
 Anyone wondering why Mary Schapiro, chairman of the SEC, pushes so hard to reform money market funds should sit in courtroom 6B of Manhattan's federal courthouse,
 where the SEC is reliving 2008: the oldest money market fund, the Reserve Primary Fund, suffered a run when investors discovered it was owed money by bankrupt Lehman
-Brothers \ts{11}{1}{0:07}\ts{11}{1}{0:27}\ts{11}{1}{0:47}. The fund was started by Bruce Bent, and the case involves him and his son \ts{11}{1}{1:08}.
+Brothers \ts{11}{1}{0:07}. The fund was started by Bruce Bent, and the case involves him and his son \ts{11}{1}{1:08}.
 \end{casestudy}
 
 \begin{definition}[New concepts: money market mutual fund, net asset value]
 A \emph{money market mutual fund} (MMMF) holds money market assets (time deposits, Eurodollars, commercial paper, repo) and issues shares meant to look and feel like
-deposits \ts{11}{1}{1:28}\ts{11}{1}{1:49}\ts{11}{1}{2:10}. Like any mutual fund, the value of its shares is the value of its assets: the \emph{net asset value} (NAV) per share
-\ts{11}{1}{2:30}\ts{11}{1}{2:50}. Money funds use accounting that keeps the NAV at \$1, absorbing fluctuations in the interest they pay, so that a share can be treated as a
-dollar deposit \ts{11}{1}{3:11}\ts{11}{1}{3:31}. ``Breaking the buck'' means the NAV falling below \$1.
+deposits \ts{11}{1}{1:28}. Like any mutual fund, the value of its shares is the value of its assets: the \emph{net asset value} (NAV) per share
+\ts{11}{1}{2:30}. Money funds use accounting that keeps the NAV at \$1, absorbing fluctuations in the interest they pay, so that a share can be treated as a
+dollar deposit \ts{11}{1}{3:11}. ``Breaking the buck'' means the NAV falling below \$1.
 \end{definition}
 
 \begin{taccts}
 \tacct[2.6cm]{Money market fund}{Commercial paper (incl.\ Lehman)\\Eurodollar time deposits\\Repo}{Shares (NAV kept at \$1)}
 \end{taccts}
 Money funds were a response to a regulatory constraint, \emph{Regulation Q}, which forbade banks to pay interest on (demand) deposits: Bent offered interest on something
-very like a deposit, and ``the world beat a path to his door'' \ts{11}{1}{3:52}\ts{11}{1}{4:12}. In September 2008 the fund's Lehman commercial paper became worthless; the
+very like a deposit, and ``the world beat a path to his door'' \ts{11}{1}{3:52}. In September 2008 the fund's Lehman commercial paper became worthless; the
 loss could not be absorbed in the interest rate (it would have needed a negative rate), holders ran, and shares were redeemed below a dollar. The fund was diversified, so it
-lost only its Lehman paper, a few cents per share \ts{11}{1}{4:33}\ts{11}{1}{4:53}\ts{11}{1}{5:13}. The SEC claims the Bents told investors they intended to support the fund with
+lost only its Lehman paper, a few cents per share \ts{11}{1}{4:33}. The SEC claims the Bents told investors they intended to support the fund with
 their own money when they had no such intention; Bent replies that it was a run, a liquidity problem that no private wealth could stop \ts{11}{1}{5:35}. The run stopped when the
-Treasury in effect created deposit insurance for money funds \ts{11}{1}{5:55}\ts{11}{1}{6:16}.
+Treasury in effect created deposit insurance for money funds \ts{11}{1}{5:55}.
 
 \begin{coursenote}[Facts about the Reserve Primary Fund]
-In class: the first money fund, started in 1969, redeemed at about 98 cents \ts{11}{1}{1:08}\ts{11}{1}{4:53}. The Reserve Fund was launched by Bruce Bent and Henry Brown in
+In class: the first money fund, started in 1969, redeemed at about 98 cents \ts{11}{1}{1:08}. The Reserve Fund was launched by Bruce Bent and Henry Brown in
 1971--1972; its NAV fell to \$0.97 on 16 September 2008. On 19 September the Treasury announced a temporary guarantee program for money market funds. Regulation Q
 prohibited interest on demand deposits and capped the rates on time and savings deposits.
 \end{coursenote}
@@ -64,46 +64,46 @@ prohibited interest on demand deposits and capped the rates on time and savings 
 \section{The puzzle: banks as money dealers}\label{sec:bl-puzzle}
 
 A bank makes a market between two layers of the hierarchy, currency and deposits, at par (\cref{sec:nh-marketmakers}) \ts{11}{2}{1:49}. This seems to contradict the Treynor
-model on two counts \ts{11}{2}{2:30}\ts{11}{2}{3:13}:
+model on two counts \ts{11}{2}{2:30}:
 \begin{enumerate}
   \item the price is \emph{fixed}: it cannot fall as inventories grow, which is how a dealer protects itself;
   \item there is \emph{no bid--ask spread}: currency goes into deposits and deposits into currency at the same price.
 \end{enumerate}
 So: how is it possible, and why is it profitable? ``When you confront a puzzle like this, it's better not to hit it head on'': back up to security dealers
-\ts{11}{2}{3:34}\ts{11}{2}{3:55}.
+\ts{11}{2}{3:34}.
 
 % ------------------------------------------------------------------
 \section{Security dealers as money dealers}\label{sec:bl-moneydealers}
 
-\paragraph{Two books.} Split a security dealer's book in two \ts{11}{3}{0:21}\ts{11}{3}{0:42}:
+\paragraph{Two books.} Split a security dealer's book in two \ts{11}{3}{0:21}:
 \begin{itemize}
   \item a \emph{matched book}: securities in 100, securities out 100, the same securities, long and short, netting to zero;
   \item a \emph{speculative book} (Treynor's book): a net long position of 10 in bonds financed by borrowing of 10, exposed to price risk.
 \end{itemize}
 In real dealers' balance sheets most of the book is matched, gross exposure, and only a little is net; they make a lot of money on the matched book too, which Treynor's model
-ignores \ts{11}{3}{1:27}\ts{11}{3}{1:48}\ts{11}{3}{2:28}\ts{11}{3}{2:48}.
+ignores \ts{11}{3}{1:27}.
 
 \paragraph{The gestalt switch.} Now look at the security dealer as a dealer in \emph{money}: the securities are just collateral for borrowing and lending money
-\ts{11}{3}{3:11}\ts{11}{3}{3:32}\ts{11}{3}{4:12}. From the New York Fed's primary dealer statistics (the memorandum items, in billions) \ts{11}{3}{4:35}:
+\ts{11}{3}{3:11}. From the New York Fed's primary dealer statistics (the memorandum items, in billions) \ts{11}{3}{4:35}:
 \begin{taccts}
 \tacct[3.4cm]{Primary dealers as money dealers}{Overnight reverse\amt{854}\\Term reverse\amt{1{,}253}}{Overnight repo\amt{1{,}796}\\Term repo\amt{826}}
 \end{taccts}
-Reverse and repo are the same instrument from opposite sides, so there is a matched book underneath \ts{11}{3}{4:58}\ts{11}{3}{5:18}. Assume, for the sake of the concept, that the
-term instruments have the same term \ts{11}{3}{5:39}\ts{11}{3}{6:00}. Carve out the matched parts \ts{11}{3}{6:00}\ts{11}{3}{6:40}\ts{11}{3}{7:07}\ts{11}{3}{7:27}:
+Reverse and repo are the same instrument from opposite sides, so there is a matched book underneath \ts{11}{3}{4:58}. Assume, for the sake of the concept, that the
+term instruments have the same term \ts{11}{3}{5:39}. Carve out the matched parts \ts{11}{3}{6:00}:
 \begin{taccts}
 \tacct[3.4cm]{Matched book}{Overnight reverse\amt{854}\\Term reverse\amt{826}}{Overnight repo\amt{854}\\Term repo\amt{826}}\quad
 \tacct[3.4cm]{The rest}{Term reverse\amt{427}\\Net financing (bonds)\amt{515}}{Overnight repo\amt{942}}
 \end{taccts}
 The numbers are the same, only rearranged; the ``net financing'' of 515 is bonds financed in the overnight repo market. One more step: finance the bonds with term repo instead,
-adding 515 of term repo on both sides \ts{11}{3}{8:29}\ts{11}{3}{8:50}\ts{11}{3}{9:10}. The rest becomes two separate exposures, read line by line:
+adding 515 of term repo on both sides \ts{11}{3}{8:29}. The rest becomes two separate exposures, read line by line:
 \begin{taccts}
 \tacct[3.4cm]{Two exposures}{Term reverse\amt{942}\\Bonds\amt{515}}{Overnight repo\amt{942}\\Term repo\amt{515}}
 \end{taccts}
 \begin{enumerate}
-  \item \textbf{Bonds 515 against term repo 515}: Treynor's \emph{price risk} \ts{11}{3}{9:10}\ts{11}{3}{9:31};
+  \item \textbf{Bonds 515 against term repo 515}: Treynor's \emph{price risk} \ts{11}{3}{9:10};
   \item \textbf{Term reverse 942 against overnight repo 942}: borrowing overnight, lending for a month, both secured. ``You're basically a bank'': the overnight repo is like a demand
         deposit, the term reverse like a one-month loan. This is \emph{liquidity risk}: the funding must be rolled every day, and could run, as the Reserve Primary Fund did
-        \ts{11}{3}{9:31}\ts{11}{3}{9:52}\ts{11}{3}{10:13}\ts{11}{3}{10:34}.
+        \ts{11}{3}{9:31}.
 \end{enumerate}
 
 \begin{definition}[New concepts: price risk, liquidity risk (of a dealer)]
@@ -114,10 +114,10 @@ need to refinance short-term borrowing that funds longer-term lending, i.e.\ to 
 % ------------------------------------------------------------------
 \section{Adapting Treynor to liquidity risk}\label{sec:bl-treynor}
 
-Put \emph{liquidity risk} on the horizontal axis of Treynor's diagram: the scale of the maturity mismatch, up to some maximum \ts{11}{4}{0:07}\ts{11}{4}{0:29}. There are two prices,
+Put \emph{liquidity risk} on the horizontal axis of Treynor's diagram: the scale of the maturity mismatch, up to some maximum \ts{11}{4}{0:07}. There are two prices,
 the overnight rate and the term rate; what matters is the spread between them, the dealer's profit \ts{11}{4}{0:49}. Take the overnight rate as fixed by the Fed (Fed funds, and by
-arbitrage repo) for the moment, and focus on the \emph{term} rate \ts{11}{4}{1:09}\ts{11}{4}{1:30}. Money markets quote yields, not prices; a yield is an inverse price, so the curves
-slope \emph{upward} and bid and offer swap places \ts{11}{4}{1:52}\ts{11}{4}{2:14}\ts{11}{4}{2:34}.
+arbitrage repo) for the moment, and focus on the \emph{term} rate \ts{11}{4}{1:09}. Money markets quote yields, not prices; a yield is an inverse price, so the curves
+slope \emph{upward} and bid and offer swap places \ts{11}{4}{1:52}.
 
 \begin{nfigure}
 \begin{tikzpicture}[font=\scriptsize,x=1cm,y=1cm]
@@ -132,40 +132,40 @@ slope \emph{upward} and bid and offer swap places \ts{11}{4}{1:52}\ts{11}{4}{2:1
   \draw[{Stealth[length=3pt]}-{Stealth[length=3pt]}] (1.2,1.3) -- (1.2,2.72);
   \node[right,align=left] at (1.25,1.75) {spread $=$\\dealer's\\profit};
 \end{tikzpicture}
-\caption{Treynor's model applied to liquidity \ts{11}{4}{1:52}\ts{11}{4}{2:57}: quotes are yields, so the curves slope upward. To take on more liquidity risk (lend more at term
+\caption{Treynor's model applied to liquidity \ts{11}{4}{1:52}: quotes are yields, so the curves slope upward. To take on more liquidity risk (lend more at term
 against overnight funding) the dealer must be paid a larger spread of the term rate over the overnight rate.}\label{fig:bl-liqtreynor}
 \end{nfigure}
 
 \begin{proposition}[The price of liquidity risk]
 For dealers to take on more liquidity risk they must be paid, and what they are paid is the spread between the term rate and the overnight rate. With a big enough spread,
-``give it a whirl, life is short'': they expand their balance sheets, although a run is always possible \ts{11}{4}{2:57}\ts{11}{4}{3:18}.
+``give it a whirl, life is short'': they expand their balance sheets, although a run is always possible \ts{11}{4}{2:57}.
 \end{proposition}
 
 \paragraph{Two margins.} The bond price is driven by the dealer's net bond position (515), the term rate by its liquidity position (942); there is no reason for them to be equal.
 A dealer can change its bond position without changing its liquidity risk, by expanding both sides, and vice versa: a profit-seeking dealer adjusts both margins, dealing in
-bonds and in money separately \ts{11}{4}{3:41}\ts{11}{4}{4:02}\ts{11}{4}{4:22}\ts{11}{4}{4:42}\ts{11}{4}{5:03}. The same diagram describes a bank, with deposits in place of overnight
-repo and term loans to companies in place of term reverse: a bank is a dealer whose ``security'' is money \ts{11}{4}{5:24}\ts{11}{4}{5:45}. The other side of a bank, the payment system,
+bonds and in money separately \ts{11}{4}{3:41}. The same diagram describes a bank, with deposits in place of overnight
+repo and term loans to companies in place of term reverse: a bank is a dealer whose ``security'' is money \ts{11}{4}{5:24}. The other side of a bank, the payment system,
 is what puzzled us \ts{11}{4}{6:06}.
 
 % ------------------------------------------------------------------
 \section{Digression: the evolution of American banking}\label{sec:bl-evolution}
 
 Why this way of thinking is now necessary, and why textbooks, by a kind of hysteresis, still do not use it; it also helps read Stigum, who belongs to an earlier generation
-\ts{11}{5}{0:07}\ts{11}{5}{0:28}\ts{11}{5}{0:48}.
+\ts{11}{5}{0:07}.
 
 \begin{enumerate}
   \item \textbf{Banks as intermediaries} (``\emph{It's a Wonderful Life}'' banking of the 1950s): households save in bank deposits, banks lend to businesses for capital
         investment; Janus-faced, giving households the short-term liquid asset they want and firms the long-term liability they need. Banks also hold government securities and
-        borrow wholesale, which lets loans and deposits move separately; capital absorbs losses, reserves at the Fed serve payments \ts{11}{5}{1:12}\ts{11}{5}{1:54}\ts{11}{5}{2:35}\ts{11}{5}{2:56}\ts{11}{5}{3:17}\ts{11}{5}{3:38}.
+        borrow wholesale, which lets loans and deposits move separately; capital absorbs losses, reserves at the Fed serve payments \ts{11}{5}{1:12}.
   \item \textbf{The death of loans}: corporations found the commercial paper market cheaper than bank loans \ts{11}{5}{4:19}.
-  \item \textbf{The death of deposits}: households and businesses moved money to money market funds, which paid interest \ts{11}{5}{4:39}\ts{11}{5}{5:00}.
+  \item \textbf{The death of deposits}: households and businesses moved money to money market funds, which paid interest \ts{11}{5}{4:39}.
   \item \textbf{A parallel banking system}: finance companies (General Motors' financing arm making auto loans) issue commercial paper, money funds buy it and issue deposit
-        substitutes; intermediation bypasses banks \ts{11}{5}{5:20}\ts{11}{5}{5:41}\ts{11}{5}{6:02}\ts{11}{5}{6:22}.
+        substitutes; intermediation bypasses banks \ts{11}{5}{5:20}.
   \item \textbf{The shadow banking system}: households issue mortgages, which are packaged into residential mortgage-backed securities, sliced into AAA ``quasi Treasury bills''
         held by a shadow bank (on the balance sheet of a European bank, or a structured investment vehicle of Citibank), which uses them as collateral to borrow in the wholesale
-        money market, through asset-backed commercial paper and repo, bought by money funds that issue shares \ts{11}{5}{6:43}\ts{11}{5}{7:08}\ts{11}{5}{7:28}\ts{11}{5}{7:49}\ts{11}{5}{8:09}\ts{11}{5}{8:31}\ts{11}{5}{8:51}.
+        money market, through asset-backed commercial paper and repo, bought by money funds that issue shares \ts{11}{5}{6:43}.
         None of it passes through a bank with an account at the Fed, and much happened offshore: UBS or Deutsche Bank borrowing in the dollar money market to invest in dollar RMBS
-        \ts{11}{5}{9:12}\ts{11}{5}{9:32}.
+        \ts{11}{5}{9:12}.
 \end{enumerate}
 
 \begin{nfigure}
@@ -187,34 +187,34 @@ Why this way of thinking is now necessary, and why textbooks, by a kind of hyste
   \draw[arr] (m2) -- node[below]{ABCP, repo} (s2);
   \draw[arr] (h3) -- node[right]{shares} (m2);
 \end{tikzpicture}
-\caption{From bank intermediation to market-based credit \ts{11}{5}{1:33}\ts{11}{5}{6:43}: the shares of money funds fund mortgages through the wholesale money market, without passing
+\caption{From bank intermediation to market-based credit \ts{11}{5}{1:33}: the shares of money funds fund mortgages through the wholesale money market, without passing
 through a bank. (Arrows point from the funder to the funded asset.)}\label{fig:bl-shadow}
 \end{nfigure}
 
 \begin{intuition}[Two prices, both made by dealers]
 A shadow bank makes money on two prices: the price of its assets, essentially a bond price, and the price of its funding, a term interest rate. Both are made in dealer markets, by
 the two versions of Treynor's model of this and the previous lecture. ``The modern banking system is a capital-market-based credit system, not a bank-loan-based system'': hence
-the central place of the economics of the dealer function in the course \ts{11}{5}{10:16}\ts{11}{5}{10:36}\ts{11}{5}{10:57}\ts{11}{5}{11:17}.
+the central place of the economics of the dealer function in the course \ts{11}{5}{10:16}.
 \end{intuition}
 
 % ------------------------------------------------------------------
 \section{The Fed in the Fed funds market}\label{sec:bl-fed}
 
-Now unbracket the overnight rate \ts{11}{6}{0:07}\ts{11}{6}{0:28}. The Fed does two things in the Fed funds market \ts{11}{6}{1:08}:
+Now unbracket the overnight rate \ts{11}{6}{0:07}. The Fed does two things in the Fed funds market \ts{11}{6}{1:08}:
 \begin{enumerate}
   \item it makes the \emph{outside spread};
   \item in normal times it \emph{stabilises} the rate within it.
 \end{enumerate}
 
 \paragraph{The outside spread today.} Since the crisis the Fed pays \emph{interest on excess reserves} (IOER), 0.25\%, where before reserves earned nothing, like cash: a floor
-\ts{11}{6}{1:49}\ts{11}{6}{2:09}\ts{11}{6}{2:31}. (Fed funds effective at 0.16\% is below the floor because some lenders cannot hold accounts at the Fed and lend to banks that can, which
-pocket the spread by depositing at 0.25\% \ts{11}{6}{2:51}\ts{11}{6}{3:12}.) The ceiling is the discount rate, 0.75\%: the Fed lends to banks at that rate, so Fed funds cannot
-really go above it \ts{11}{6}{3:32}\ts{11}{6}{3:53}. With a trillion dollars of excess reserves, the market is ``smack up against'' the floor: the Fed is flooding the market with liquidity.
-This is unusual, maybe pathological, and the Fed is experimenting with ways to soak up reserves: reverse repos, and last month term deposits \ts{11}{6}{4:13}\ts{11}{6}{4:33}\ts{11}{6}{4:54}\ts{11}{6}{5:14}.
+\ts{11}{6}{1:49}. (Fed funds effective at 0.16\% is below the floor because some lenders cannot hold accounts at the Fed and lend to banks that can, which
+pocket the spread by depositing at 0.25\% \ts{11}{6}{2:51}.) The ceiling is the discount rate, 0.75\%: the Fed lends to banks at that rate, so Fed funds cannot
+really go above it \ts{11}{6}{3:32}. With a trillion dollars of excess reserves, the market is ``smack up against'' the floor: the Fed is flooding the market with liquidity.
+This is unusual, maybe pathological, and the Fed is experimenting with ways to soak up reserves: reverse repos, and last month term deposits \ts{11}{6}{4:13}.
 
 \paragraph{Before the crisis.} The floor was zero; the discount rate was set 100 basis points above the Fed funds \emph{target}: an outside spread that never bit, because the Fed
 stabilised the rate around the target every day, anticipating fluctuations in the demand for reserves and supplying it, sometimes with repos twice a day; whole books were written on
-forecasting the need for reserves \ts{11}{6}{5:34}\ts{11}{6}{5:55}\ts{11}{6}{6:16}\ts{11}{6}{6:36}\ts{11}{6}{6:57}\ts{11}{6}{7:17}.
+forecasting the need for reserves \ts{11}{6}{5:34}.
 
 \begin{nfigure}
 \begin{tikzpicture}[font=\scriptsize,x=1cm,y=1cm]
@@ -238,21 +238,21 @@ forecasting the need for reserves \ts{11}{6}{5:34}\ts{11}{6}{5:55}\ts{11}{6}{6:1
     \fill[keycol] (2.2,0.8) circle (2pt) node[above]{\$1 tn};
   \end{scope}
 \end{tikzpicture}
-\caption{The Fed's outside spread in the Fed funds market \ts{11}{6}{2:09}\ts{11}{6}{3:32}\ts{11}{6}{5:55}: before the crisis a wide spread with the rate stabilised at the target
+\caption{The Fed's outside spread in the Fed funds market \ts{11}{6}{2:09}: before the crisis a wide spread with the rate stabilised at the target
 inside it; in 2012 a narrow spread with the market pressed against the floor by a trillion dollars of excess reserves. (Schematic.)}\label{fig:bl-corridor}
 \end{nfigure}
 
 \paragraph{How the Fed stabilised.} If the market pushed Fed funds above the target, the Fed added reserves with a \emph{temporary open market operation}: a repo with a dealer, a
-purchase and sale of a Treasury for a fixed period, overnight, three days, a week (an outright purchase would be permanent) \ts{11}{6}{8:40}\ts{11}{6}{9:04}\ts{11}{6}{9:24}\ts{11}{6}{9:45}. The
+purchase and sale of a Treasury for a fixed period, overnight, three days, a week (an outright purchase would be permanent) \ts{11}{6}{8:40}. The
 dealer, which has no Fed account, uses the cash to repay a loan from its bank, borrowed at Fed funds plus 50 basis points: it replaces expensive borrowing with cheap repo. The bank's
-reserves rise, and it lends them in the Fed funds market, pushing the rate down \ts{11}{6}{10:08}\ts{11}{6}{10:30}\ts{11}{6}{10:51}\ts{11}{6}{11:12}.
+reserves rise, and it lends them in the Fed funds market, pushing the rate down \ts{11}{6}{10:08}.
 \begin{taccts}
 \tacct[2.0cm]{Fed}{$+$Repo (dealer)}{$+$Reserves (bank)}\quad
 \tacct[2.0cm]{Dealer}{}{$+$Repo from Fed\\$-$Loan from bank}\quad
 \tacct[2.0cm]{Bank}{$+$Reserves\\$-$Loan to dealer}{}
 \end{taccts}
 In doing so the Fed moves dealer inventories and so their prices; and it puts part of the Fed funds market on its own balance sheet, borrowing from a bank and lending to a dealer: a
-``dealer of first resort'', trading not at the outside spread but inside the inside spread, since it asks the dealers to bid and takes the best bids \ts{11}{6}{11:32}\ts{11}{6}{11:53}\ts{11}{6}{12:13}\ts{11}{6}{12:34}.
+``dealer of first resort'', trading not at the outside spread but inside the inside spread, since it asks the dealers to bid and takes the best bids \ts{11}{6}{11:32}.
 
 \begin{definition}[New concepts: interest on excess reserves, corridor]
 \emph{Interest on excess reserves} (IOER), paid by the Fed since October 2008, is the rate on reserve balances above the requirement; it sets a floor under the overnight rate for
@@ -262,16 +262,16 @@ institutions that can hold reserves. Together with the discount rate as ceiling,
 % ------------------------------------------------------------------
 \section{Return to the initial puzzle}\label{sec:bl-answer}
 
-Banks, like security dealers, have two faces: on one side they are money dealers, in the money market; on the other they operate the payment system \ts{11}{7}{0:07}\ts{11}{7}{0:28}.
+Banks, like security dealers, have two faces: on one side they are money dealers, in the money market; on the other they operate the payment system \ts{11}{7}{0:07}.
 
 \begin{proposition}[How banks can make markets at par]
 \leavevmode
 \begin{enumerate}[(i)]
   \item \emph{Possible}: all the slack is taken up in the money market: the ability to expand and contract the balance sheet and to get reserves when needed is what lets a bank
-        hold par in the payment system \ts{11}{7}{0:49}\ts{11}{7}{1:10}.
+        hold par in the payment system \ts{11}{7}{0:49}.
   \item \emph{Profitable}: the money-market side earns a spread; the payment side may even lose money, but the two are on the same balance sheet, complementary, and the joint
-        business is profitable \ts{11}{7}{1:10}\ts{11}{7}{1:30}.
-  \item As for dealers, the size of the payment business and of the funding exposure are separate margins the bank can move independently \ts{11}{7}{1:50}\ts{11}{7}{2:11}.
+        business is profitable \ts{11}{7}{1:10}.
+  \item As for dealers, the size of the payment business and of the funding exposure are separate margins the bank can move independently \ts{11}{7}{1:50}.
 \end{enumerate}
 \end{proposition}
 

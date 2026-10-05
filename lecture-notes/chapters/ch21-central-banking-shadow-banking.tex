@@ -1,0 +1,337 @@
+% !TEX root = ../main.tex
+\chapter{Central Banking for Shadow Banking}\label{ch:cbshadow}
+\begin{paracol}{2}
+
+\begin{sources}
+\begin{tabularx}{\linewidth}{@{}l l L@{}}
+\toprule
+\textbf{Segment} & \textbf{Length} & \textbf{Content}\\
+\midrule
+\seg{21}{1}{L21.1 FT: Regulation of shadow banking} & 3:34 & Bail-in debt for banks; central counterparties for swaps.\\
+\seg{21}{2}{L21.2 Shadow banking vs traditional banking} & 6:55 & Pozsar's diagram; a stylized shadow banking system without government backstops.\\
+\seg{21}{3}{L21.3 Liquidity and solvency backstops} & 7:18 & Immature private backstops: liquidity puts and CDS; collapse onto the Fed.\\
+\seg{21}{4}{L21.4 Global dimension} & 5:16 & \emph{No captions available; not covered in these notes.}\\
+\seg{21}{5}{L21.5 Evolution of modern finance} & 3:19 & Securitization, globalization, derivatives: risk transfer.\\
+\seg{21}{6}{L21.6 What is shadow banking?} & 12:22 & Money market funding of capital market lending; a world of only shadow banking.\\
+\seg{21}{7}{L21.7 Backstopping the market makers} & 7:46 & The Fed's balance sheet in December 2011 as a dealer in swaps.\\
+\seg{21}{8}{L21.8 Regulation of systemic risk} & 6:27 & Inherent instability of credit: boom and bust through dealers' balance sheets.\\
+\seg{21}{9}{L21.9 Regulation of Collateral and Payment} & 10:29 & Normal fluctuations: collateral flows and payment flows.\\
+\seg{21}{10}{L21.10 Private backstop, and public} & 8:20 & Four principles; the central bank as outside spread.\\
+\bottomrule
+\end{tabularx}
+
+\smallskip
+\textbf{Files.} Transcripts \file{materials/transcripts/L21-P*.txt}; no transcript exists for L21.4 (YouTube has no captions for it).
+\end{sources}
+
+\section*{Motivation}
+This is the last lecture about banking: it draws together forwards and futures, FX swaps, interest rate swaps and credit default swaps, and asks what they mean for
+banking and central banking; the next lecture connects the course to economics \ts{21}{2}{0:03}. The question: why is shadow banking
+in our future, ``given how desperately it has failed us'', and how should it be managed? \ts{21}{2}{2:27}
+
+% ------------------------------------------------------------------
+\section{FT: old banking and new banking}\label{sec:cbs-ft}
+
+\begin{casestudy}[FT, December 2012: two articles on reform]
+``Regulators in long-term debt plan for big banks'': more long-term debt, subordinated and ``bail-inable'' bonds that convert to equity when a bank runs into
+trouble, could lessen reliance on cheaper short-term funding. This is the traditional Basel approach (capital adequacy), now extended from the equity tranche to
+subordinated debt, for traditional banks \ts{21}{1}{0:07}. Three pages later, ``Regulators wrestle
+with hidden risks in swaps shake-up'': standardized interest rate swaps and credit derivatives to be traded on exchanges and cleared through central
+counterparties, to increase price transparency, ensure adequate collateral and keep taxpayers from paying next time \ts{21}{1}{1:53}.
+Old banking and new banking, a few pages apart \ts{21}{1}{2:55}.
+\end{casestudy}
+
+\begin{definition}[New concepts: central counterparty, bail-in]
+A \emph{central counterparty} (CCP) interposes itself between the two sides of every trade, becoming buyer to every seller and seller to every buyer, and manages
+margin and netting. \emph{Bail-in}: imposing losses on a bank's creditors (by conversion to equity or write-down) instead of a taxpayer \emph{bail-out}
+\ts{21}{1}{1:32}.
+\end{definition}
+
+% ------------------------------------------------------------------
+\section{Shadow banking versus traditional banking}\label{sec:cbs-vs}
+
+Zoltan Pozsar's famous diagram, made at the New York Fed, shows loans funded by deposits through seven stages of securitization, slicing and dicing, wrapped by the
+Fed's U-shaped embrace of liquidity facilities during the crisis: a Rube Goldberg machine, built piece by piece; much of it fell apart, but the next stage can be
+simpler \ts{21}{2}{1:06}.
+
+\begin{history}[The shadow banking map]
+Z.~Pozsar, T.~Adrian, A.~Ashcraft and H.~Boesky, ``Shadow Banking'', Federal Reserve Bank of New York Staff Report 458, July 2010, includes a large fold-out map of
+the shadow banking system and of the Fed's crisis facilities.\par
+\emph{Reference:} FRBNY Staff Report 458, 2010 (revised 2012).
+\end{history}
+
+\paragraph{Stylized comparison.} The traditional (Jimmy Stewart) bank takes retail deposits, makes retail loans, holds cash reserves and a capital buffer; beyond
+them the Fed is the liquidity backstop and the FDIC the capital backstop \ts{21}{2}{2:48}. The stylized shadow banking system, three
+entities instead of seven: RMBS tranched into high, mid and low tranches; the high tranche held by a shadow bank as collateral for repo funding; the repo bought by
+a money market mutual fund issuing ``deposits'' \ts{21}{2}{3:49}. Differences: it is wholesale (pension funds, foreign central banks,
+corporations; a ``small'' deposit is \$10 million), its assets are securities in the capital market, and it may be offshore, on a computer in the Cayman Islands
+\ts{21}{2}{4:53}. Seen through traditional banking it looks similar, deposits funding loans, but no government backstop
+is anywhere to be seen; the Fed and the FDIC said ``good riddance'' to offshore risk \ts{21}{2}{6:14}.
+
+\begin{nfigure}
+\begin{taccts}
+\tacct[1.8cm]{Traditional bank}{Loans\\Reserves}{Deposits\\Capital}\quad
+\tacct[1.8cm]{Shadow bank}{High tranche RMBS}{Repo (RP)}\quad
+\tacct[1.8cm]{MMMF}{Repo (RP)}{``Deposits'' (shares)}
+\end{taccts}
+\caption{Traditional bank, backstopped by Fed and FDIC, versus a stylized shadow banking chain with no government backstop \ts{21}{2}{3:08}.}\label{fig:cbs-chain}
+\end{nfigure}
+
+% ------------------------------------------------------------------
+\section{Immature backstops}\label{sec:cbs-backstops}
+
+\paragraph{A private liquidity backstop.} Invented over the last 30 years or so, the system had an immature, private liquidity backstop: liquidity puts held by the
+shadow bank and by the money fund, liabilities of traditional banks. Citibank wrote in contracts that if its offshore entities could not roll their repo, for any
+reason, it would lend them what they needed; other backstops were only reputational \ts{21}{3}{0:02}.
+All money funds were run, but only the Reserve Primary Fund failed, because it had no larger parent to back it \ts{21}{3}{1:43}. A private backstop works
+only if the backstopper is healthy; in a large crisis it becomes the traditional bank's crisis, and then the government backstops kick in: the government was
+indirectly on the hook, perhaps without realizing it \ts{21}{3}{2:25}.
+
+\paragraph{A private solvency backstop.} Even more immature: the shadow bank bought CDS on its high tranche from AIG; mid tranches went to pension funds and insurers,
+low tranches to credit hedge funds, which might buy CDS from an investment bank (think Lehman or Bear Stearns) making markets in CDS on all tranches; AIG, writing
+naked CDS on the highest tranche, ``picking up nickels'', was the ultimate support \ts{21}{3}{3:06}.
+Lehman went, AIG went, prices went into free fall; through the liquidity backstop everything dropped onto the Fed's balance sheet, which tripled more or less
+overnight \ts{21}{3}{6:10}.
+
+\begin{nfigure}
+\begin{taccts}
+\tacct[1.8cm]{Shadow bank}{High tranche\\CDS on high tranche\\Liquidity put}{Repo}\quad
+\tacct[1.8cm]{AIG}{Capital}{CDS on high tranche}\quad
+\tacct[1.8cm]{Traditional bank}{}{Liquidity put}
+\end{taccts}
+\begin{taccts}
+\tacct[1.8cm]{Pension fund / insurer}{Mid tranche\\CDS on mid}{DB pensions, annuities}\quad
+\tacct[1.8cm]{Credit hedge fund}{Low tranche\\CDS on low}{Capital}\quad
+\tacct[1.8cm]{Investment bank (CDS dealer)}{CDS on high}{CDS on mid, low}
+\end{taccts}
+\caption{Immature private liquidity and solvency backstops of the shadow banking system \ts{21}{3}{0:22}.}\label{fig:cbs-immature}
+\end{nfigure}
+
+\begin{history}[The Reserve Primary Fund]
+On 16 September 2008, the day after Lehman's bankruptcy, the Reserve Primary Fund, which held \$785 million of Lehman commercial paper, ``broke the buck'' (net asset
+value below \$1 per share, \$0.97); on 19 September the US Treasury announced a temporary guarantee of money market funds.\par
+\emph{References:} Financial Crisis Inquiry Commission, \emph{Final Report}, 2011, ch.~18; US Treasury press release HP-1147, 19 September 2008.
+\end{history}
+
+% ------------------------------------------------------------------
+\section{The evolution of modern finance: risk transfer}\label{sec:cbs-risk}
+
+Shadow banking used recent developments of modern finance: securitization, which came with globalization (individual small loans are not transferred across borders,
+but packaged bonds with a market price are bought by foreign asset managers); global capital markets; derivatives markets for moving risk, of which tranching was an
+awkward approximation \ts{21}{5}{0:04}.
+
+\paragraph{An idealized shadow banking system.} A shadow bank holds RMBS funded in the money market and strips out all the risk with derivatives (interest rate swaps, FX
+swaps, CDS): what is left is a quasi-Treasury bill, which can be financed in the money market without price risk. On the other side, an asset manager gets its
+customers' risk exposure entirely through derivatives, without holding risky assets, equivalent to holding RMBS outright: Black's 1970 vision. That is what shadow
+banking was trying to do, and probably what its future looks like \ts{21}{5}{1:06}.
+
+% ------------------------------------------------------------------
+\section{What is shadow banking?}\label{sec:cbs-what}
+
+\begin{definition}[New concepts: shadow banking as market-based credit]
+Shadow banking is \emph{money market funding of capital market lending}, on whatever balance sheet it sits (a bank's, as at UBS, a non-bank's, or a special
+vehicle's), with three features \ts{21}{6}{0:03}:
+\begin{enumerate}
+  \item global (dollar) wholesale funding of local lending;
+  \item market prices on both sides, for money and for capital, visible and changing over time;
+  \item market makers, dealers quoting bid--ask spreads according to inventories and risk tolerance: that is where the prices come from.
+\end{enumerate}
+\end{definition}
+
+The existing literature starts from traditional banking and stresses the ``shadow'': banking by non-banks, evading regulation, without a direct government backstop,
+something a little fishy; so it would move the same regulations and backstops over, make it a bank \ts{21}{6}{2:06}.
+Mehrling disagrees: there was plenty of regulatory arbitrage and fraud, but the fundamental forces are financial globalization and the revolution in modern finance;
+removing the fraud will not remove shadow banking \ts{21}{6}{3:28}.
+
+\paragraph{A world of only shadow banking.} His project since \emph{The New Lombard Street}: imagine a world with only shadow banking and ask how to regulate it. It
+will never be literally true, but it frees us from Jimmy Stewart habits of thought; extending old regulations creates new obstacles that modern finance will get
+around, ``a disastrous way of thinking about the problem'' \ts{21}{6}{4:10}.
+
+\begin{nfigure}
+\begin{taccts}
+\tacct[1.8cm]{Capital funding bank}{RMBS\\CDS, IRS, FXS}{Money market funding}\quad
+\tacct[1.8cm]{Global money dealer}{Money market loans}{Deposits}\quad
+\tacct[1.8cm]{Asset manager}{Deposits}{Capital\\CDS, IRS, FXS}
+\end{taccts}
+\begin{taccts}
+\tacct[2.6cm]{Derivative dealer}{CDS, IRS, FXS (with asset manager)}{CDS, IRS, FXS (with capital funding bank)}
+\end{taccts}
+\caption{Mehrling's idealized market-based credit system: the dealers stand between the asset manager and the capital funding bank in the funding market and in the
+risk market \ts{21}{6}{5:37}.}\label{fig:cbs-ideal}
+\end{nfigure}
+
+\paragraph{The dealers are the key.} The global money dealer, borrowing and lending three-month deposits, is where the price of money is set; the derivative dealer, on the
+other side of all the derivatives, is the risk market \ts{21}{6}{6:18}. Today these balance sheets are the big investment banks' swap
+books; central counterparties would move those positions (Lehman's, Bear Stearns's) into one place where they can be seen and netted. The money funding system is
+relatively mature; the risk transfer system is very immature, and this is the part to clean up \ts{21}{6}{7:20}. If the
+dealers stop making markets the whole thing collapses; so regulation focused on the capital funding bank (``let's have long-term funding'') looks in the wrong place
+\ts{21}{6}{8:44}.
+
+\paragraph{Where is the capital?} In the idealization the only capital is the asset manager's: the dealers are perfectly matched, the hedges perfect, no liquidity
+reserves anywhere. If risk is properly transferred, the capital backing the capital funding bank sits on the asset manager's balance sheet, not the bank's
+\ts{21}{6}{9:45}. The model abstracts from retail depositors, traditional banks, bad underwriting, reserves and
+speculative dealers, to focus on system interlinkages, normal liquidity risk and tail backstops \ts{21}{6}{11:07}.
+
+% ------------------------------------------------------------------
+\section{Backstopping the market makers}\label{sec:cbs-backstop}
+
+In a crisis, the backstop: a liquidity put to the global money dealer (lender of last resort, familiar from Bagehot, 1873) and one to the derivative dealer, a
+backstop for capital market prices (dealer of last resort, the new bit), both contingent liabilities of a central bank or a consortium of central banks
+\ts{21}{7}{0:03}.
+
+\paragraph{The Fed as a dealer in swaps.} The Fed's H.4.1 for 15 December 2011: about \$1.7 trillion of long-term Treasuries and almost \$1 trillion of MBS and GSE
+(Fannie and Freddie) securities, funded by about \$1 trillion of currency and \$1.6 trillion of excess reserves (against \$50 billion of reserves in normal times)
+\ts{21}{7}{1:47}. Now add the same items to both sides \ts{21}{7}{2:50}:
+
+\begin{nfigure}
+\begin{taccts}
+\tacct[3.0cm]{Federal Reserve (restated, \$ trillion)}{MBS, GSE \amt{0.9}\\T-bonds ($1.7+0.9$) \amt{2.6}\\{}[T-bills] \amt{2.6}}{{}[T-bonds] \amt{0.9}\\{}[T-bills] \amt{2.6}\\Currency and reserves \amt{2.6}}
+\end{taccts}
+\caption{The Fed's balance sheet, 15 December 2011, restated as exposures: risky securities against T-bonds (a CDS), T-bonds against T-bills (an IRS), T-bills
+against overnight money (a funding swap) \ts{21}{7}{3:10}.}\label{fig:cbs-fed}
+\end{nfigure}
+
+The bracketed pairs are swaps, parallel loans: risky securities against T-bonds is a CDS; long against short bonds an interest rate swap; T-bills against currency and
+reserves, three-month against overnight money, like the overnight index swap that blew out in the crisis \ts{21}{7}{3:53}. The
+out-of-the-money liquidity puts came into the money and onto the Fed's balance sheet: in parallel-loan terms about \$6.4 trillion of notional swap exposure, the Fed
+acting both as global money dealer and as global derivative dealer \ts{21}{7}{4:36}.
+
+\begin{intuition}[A Bagehot moment]
+What a central bank would have to do to backstop a collapsing shadow banking system is exactly what the Fed did: evidence that shadow banking is the centre of the
+system and traditional banking the edges. ``We're living in a Bagehot moment'': the role of the central bank is shifting, and monetary policy, bank regulation and
+inflation targeting, designed for a previous banking system, must be rethought from scratch. As Bagehot said, money does not manage itself
+\ts{21}{7}{5:37}.
+\end{intuition}
+
+% ------------------------------------------------------------------
+\section{Regulating systemic risk}\label{sec:cbs-systemic}
+
+Start from the inherent instability of credit, not from a self-equilibrating system \ts{21}{8}{0:02}. Earlier authors located its endogenous sources:
+Hawtrey coined ``the inherent instability of credit'' for the British banking system (1919); Minsky, \emph{Stabilizing an Unstable Economy}, focused on business
+credit; Adrian and Shin, ``Liquidity and Leverage'', on dealer balance sheets \ts{21}{8}{0:43}. Mehrling uses Treynor's model: dealers
+create market liquidity by moving order-flow imbalances onto their own balance sheets, positions that must be funded \ts{21}{8}{1:24}.
+
+\paragraph{Boom.} Asset managers pile up cash and seek credit risk exposure faster than capital funding banks absorb it; dealers absorb the imbalance, which pushes
+money market rates down and risk premia down: exactly what makes setting up capital funding banks very profitable. Prices are distorted and more shadow banking is
+built than matched-book equilibrium models would suggest \ts{21}{8}{2:05}.
+
+\paragraph{Bust.} Once overbuilt, the asset managers' flows fall short of the shadow banks' funding needs; the dealers' imbalance reverses, rates and risk premia rise,
+shadow banks look unprofitable; losses shrink the dealers' capital and financing limits, leaving excess exposure to liquidate, and in Treynor's model liquidation
+happens at the outside spread: the central bank \ts{21}{8}{4:08}. A Hawtrey--Minsky story updated for
+modern times, ``a starting place'' \ts{21}{8}{5:53}.
+
+\begin{history}[Hawtrey and the instability of credit]
+Ralph Hawtrey (1879--1975), a Treasury economist, argued in \emph{Currency and Credit} (1919) that credit is inherently unstable, a cumulative process that the
+banking system must restrain. Hyman Minsky's \emph{Stabilizing an Unstable Economy} appeared in 1986.\par
+\emph{References:} R.~G.~Hawtrey, \emph{Currency and Credit}, Longmans, 1919; H.~P.~Minsky, \emph{Stabilizing an Unstable Economy}, Yale UP, 1986; T.~Adrian and
+H.~S.~Shin, ``Liquidity and Leverage'', \emph{Journal of Financial Intermediation} 19(3), 2010.
+\end{history}
+
+% ------------------------------------------------------------------
+\section{Normal times: collateral and payments}\label{sec:cbs-collateral}
+
+In normal times the issue is the payment system: the survival constraint, ``liquidity kills you quick''. But besides payment flows there are collateral flows, the
+subject of the paper by Singh and Aitken \ts{21}{9}{0:03}.
+
+\paragraph{The model with numbers.} The capital funding bank holds RMBS of 100, funded by 100 of secured money market funding, the collateral perhaps passing through
+the money dealer to secure the asset manager's deposit; CDS and IRS are worth 0 at inception everywhere; the asset manager has plenty of deposits as cash collateral
+\ts{21}{9}{1:06}. No counterparty risk by construction: the bank is exactly hedged, and the asset
+manager's capital (the pensioners') can absorb even a total loss \ts{21}{9}{2:52}.
+
+\paragraph{A temporary fall: collateral.} RMBS fall to 90, CDS rise to 10. Collateral must flow from the asset manager through the derivative dealer; and the money market
+funding of 100 is now backed by only 90 of RMBS, so the CDS, or the collateral behind it, must be usable for the funding. Otherwise the asset manager may pull its deposits
+from a money dealer lending against inadequate collateral, and a liquidity spiral can start from collateral problems alone
+\ts{21}{9}{4:14}. The central bank can help as lender of last resort to the dealers, or
+as dealer of last resort in RMBS or CDS, putting a floor under the collateral market \ts{21}{9}{6:20}.
+
+\begin{definition}[New concepts: rehypothecation]
+\emph{Rehypothecation}: reusing collateral received from one party as collateral for one's own borrowing (from \emph{hypothecation}, Greek \emph{hypoth\=ek\=e}, a
+pledge) \ts{21}{9}{7:02}. Making it illegal, as some propose, would block the collateral flows through the dealers and push the work onto the central bank
+\ts{21}{9}{7:23}.
+\end{definition}
+
+\begin{coursenote}
+The paper is given in the captions as by ``Aiken Singh''. It is M.~Singh and J.~Aitken, ``The (sizable) role of rehypothecation in the shadow banking system'', IMF
+Working Paper 10/172, July 2010 \ts{21}{9}{0:44}.
+\end{coursenote}
+
+\paragraph{A permanent fall: payments.} If the loss is permanent, the system deleverages: RMBS 90, funding 90, CDS back to 0. The asset manager pays 10 to the derivative
+dealer, who pays the capital funding bank, which repays 10 of money market funding: a circle of payments, and if someone says ``I'm not paying until I get paid'',
+everything stops \ts{21}{9}{7:43}.
+
+\begin{nfigure}
+\begin{taccts}
+\tacct[1.8cm]{Capital funding bank}{RMBS \amt{100} $\to$ \amt{90}\\CDS \amt{0} $\to$ \amt{10} $\to$ \amt{0}}{Funding \amt{100} $\to$ \amt{90}}\quad
+\tacct[1.8cm]{Derivative dealer}{CDS \amt{0} $\to$ \amt{10} $\to$ \amt{0}}{CDS \amt{0} $\to$ \amt{10} $\to$ \amt{0}}\quad
+\tacct[1.8cm]{Asset manager}{Deposits \amt{100} $\to$ \amt{90}}{Capital\\CDS \amt{0} $\to$ \amt{10} $\to$ \amt{0}}
+\end{taccts}
+\caption{A fall in RMBS from 100 to 90: first collateral flows, then, if permanent, a circle of payments of 10 \ts{21}{9}{4:35}.}\label{fig:cbs-numbers}
+\end{nfigure}
+
+\paragraph{Outside spread, not inside.} Collateral flows and payment flows are both key to keeping normal fluctuations from becoming crises. Having become dealer of last
+resort, the central bank's job, as in Bagehot's day, is to set up the system so that it is not called upon every day, because of moral hazard: ``I'm willing to be
+outside spread, but not inside spread'' \ts{21}{9}{9:27}.
+
+% ------------------------------------------------------------------
+\section{Private backstop, and public}\label{sec:cbs-principles}
+
+To keep the central bank from acting daily, make the dealers robust, especially the new one, the derivative dealer: matched-book dealers need liquidity reserves,
+speculative (proprietary) dealers need capital to absorb losses \ts{21}{10}{0:04}.
+
+\begin{keyformulas}
+\textbf{Four ideas for regulating the shadow banking system of the future} (``they might change tomorrow'') \ts{21}{10}{1:27}:
+\begin{enumerate}
+  \item focus on the dealers, money dealers and derivative dealers, not on the shadow banks;
+  \item distinguish matched-book from proprietary (speculative) dealers;
+  \item liquidity for the matched-book dealers, capital for the proprietary ones (``liquidity kills you quick'');
+  \item the survival constraint concerns collateral flows as well as payment flows: a system of secured funding; a collateral call by Goldman and Soci\'et\'e G\'en\'erale
+        killed AIG, perhaps not insolvent on fundamental valuations \ts{21}{10}{2:50}.
+\end{enumerate}
+\end{keyformulas}
+
+``I think we're at a Bagehot moment, 1873. We're building it from scratch'' \ts{21}{10}{3:53}.
+
+\paragraph{How to keep dealers from leaning on the Fed?} A student asks. First, adequate capital for the speculative dealers, so their financing limits do not shift
+(and, since the line between matched-book and speculative dealing is not sharp, probably for matched-book dealers too) \ts{21}{10}{4:34}.
+Second, the central bank should create the outside spread, not the inside spread: ``insure freely but at a high premium'', put a floor under capital markets ``at 80 cents
+on the dollar'', uneconomic except in need. Some programs, the self-liquidating ones, did this; mostly the Fed played catch-up, forced to act on weekends
+\ts{21}{10}{5:35}. The modern analogue of Bagehot's ``lend freely at a high rate against good security'' is the outside spread: be away
+from the market, but act boldly when you are; make it a known principle, expensive for those who come, who must come ``begging''
+\ts{21}{10}{6:36}. There will be another crisis: the inherent instability of credit \ts{21}{10}{7:58}.
+
+% ------------------------------------------------------------------
+\flushside
+\section*{Key formulas and ideas}
+\begin{keyformulas}
+\begin{tabularx}{\linewidth}{@{}l L@{}}
+Shadow banking & money market funding of capital market lending: global funding, market prices on both sides, dealers\\
+Immature backstops & private liquidity puts (traditional banks), private solvency backstop (AIG CDS)\\
+Ideal system & capital funding bank $+$ asset manager linked by a money dealer and a derivative dealer\\
+Fed, Dec.\ 2011 & restated as CDS $+$ IRS $+$ funding swap: dealer of last resort in money and risk\\
+Instability & order-flow imbalances on dealers' balance sheets: boom (low rates, low premia), bust (outside spread $=$ central bank)\\
+Normal times & collateral flows and payment flows must not stop\\
+Principles & regulate dealers; liquidity for matched book, capital for proprietary; central bank as outside spread\\
+\end{tabularx}
+\end{keyformulas}
+
+\section*{Exercises}
+
+\begin{exercise}[Liquidity put]
+A sponsored vehicle holds \$50 billion of AAA RMBS funded by three-month ABCP, with a liquidity put from its parent bank. Write the balance sheets before and after the
+ABCP fails to roll, and then after the bank borrows from the Fed.
+\end{exercise}
+
+\begin{exercise}[Restating the Fed]
+Using the December 2011 figures, redo the restatement of the Fed's balance sheet and check the \$6.4 trillion of notional swap exposure. Which swap corresponds to QE in
+mortgage securities and which to QE in Treasuries?
+\end{exercise}
+
+\begin{exercise}[Collateral and payments]
+In the 100/90 example, write all balance sheets after the temporary fall, assuming collateral flows work, and after the permanent fall. Which payment, if refused, stops
+the circle?
+\end{exercise}
+
+\begin{exercise}[Outside spread]
+Compare Bagehot's rule with ``insure freely at a high premium''. Design a central bank backstop bid for AAA RMBS at a price that is an outside spread, and explain why it
+should rarely be used.
+\end{exercise}
