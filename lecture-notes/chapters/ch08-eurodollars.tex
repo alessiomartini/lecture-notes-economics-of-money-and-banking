@@ -131,6 +131,11 @@ turned to dollars; US Regulation Q ceilings on deposit rates; and later US capit
 \emph{References:} C.~R.~Schenk, ``The origins of the Eurodollar market in London: 1955--1963'', \emph{Explorations in Economic History} 35 (1998).
 \end{history}
 
+\begin{exercise}[Exxon's transfer]
+Redo Stigum's example with Crédit Lyonnais in place of Citi London, and then let Crédit Lyonnais lend \$5 million to a Korean firm that pays a US supplier banking at Chase. Write all the
+T-accounts, including the Fed.
+\end{exercise}
+
 \section{Why is there a Eurodollar market?}\label{sec:ed-why}
 There is demand: the dollar is the world reserve currency, and traders in Japan and Argentina may invoice and pay in dollars without any office in the US
 \ts{8}{4}{0:07}. They could do it through accounts in New York, but the Fed prefers that this happens offshore: it wants to focus on domestic credit
@@ -238,6 +243,14 @@ the balance sheet structure, and are ``not really off balance sheet''. The metho
 the instrument is for \ts{8}{7}{3:18}.
 \end{proposition}
 
+\begin{exercise}[FRA settlement]
+Bank X buys an FRA at $f=0.60\%$ on \$10 million for the period from month 2 to month 5 (90 days). At month 2 three-month LIBOR is 0.90\%.
+\begin{enumerate}[(a)]
+  \item Who pays whom, and how much (paid at the end of the period)?
+  \item Show that X's all-in funding cost for its loan is 0.60\%.
+\end{enumerate}
+\end{exercise}
+
 % ------------------------------------------------------------------
 \section{Forward parity}\label{sec:ed-parity}
 
@@ -279,6 +292,11 @@ bank gains on the swap (and loses as much on its yen loan), if $S_T<F_T$ the rev
 reproduces exactly these net flows, swapping yen for dollars at $S_0$ and back at $F_T$; unlike the FRA, the principal cannot be netted, because it is in two currencies
 \mn{8}{7}.
 
+\begin{exercise}[Forward interest parity]
+Two-month Eurodollar deposits pay 0.30\% and five-month deposits 0.45\% (annualised, actual/360, 60 and 150 days). Compute the implied three-month forward rate two months ahead. If an
+FRA is quoted at 0.70\%, describe the arbitrage.
+\end{exercise}
+
 \section{Forward rates are not expected spot rates}\label{sec:ed-eh}
 
 Two natural guesses \ts{8}{9}{0:08}:
@@ -307,6 +325,14 @@ The video ``Forward Rates are NOT Expected Spot Rates'' (\seg{8}{10}{L8.10}), fi
 
 % ------------------------------------------------------------------
 \flushside
+
+\begin{exercise}[Covered interest parity]
+The spot rate is 80 yen per dollar, six-month dollar deposits pay 0.5\% and yen deposits 0.1\% (for six months).
+\begin{enumerate}[(a)]
+  \item Compute the six-month forward rate.
+  \item Under UIP, what is the expected spot rate in six months? What does the failure of UIP mean for a bank that funds in yen and lends in dollars?
+\end{enumerate}
+\end{exercise}
 \section*{Key formulas and ideas}
 \begin{keyformulas}
 \begin{tabularx}{\linewidth}{@{}l L@{}}
@@ -320,31 +346,3 @@ Covered interest parity & $F = S(1+R^\ast)/(1+R)$\\
 EH, UIP & $f=\E[\text{future rate}]$, $F=\E[S_T]$: both fail empirically (liquidity)\\
 \end{tabularx}
 \end{keyformulas}
-
-\section*{Exercises}
-
-\begin{exercise}[Forward interest parity]
-Two-month Eurodollar deposits pay 0.30\% and five-month deposits 0.45\% (annualised, actual/360, 60 and 150 days). Compute the implied three-month forward rate two months ahead. If an
-FRA is quoted at 0.70\%, describe the arbitrage.
-\end{exercise}
-
-\begin{exercise}[FRA settlement]
-Bank X buys an FRA at $f=0.60\%$ on \$10 million for the period from month 2 to month 5 (90 days). At month 2 three-month LIBOR is 0.90\%.
-\begin{enumerate}[(a)]
-  \item Who pays whom, and how much (paid at the end of the period)?
-  \item Show that X's all-in funding cost for its loan is 0.60\%.
-\end{enumerate}
-\end{exercise}
-
-\begin{exercise}[Covered interest parity]
-The spot rate is 80 yen per dollar, six-month dollar deposits pay 0.5\% and yen deposits 0.1\% (for six months).
-\begin{enumerate}[(a)]
-  \item Compute the six-month forward rate.
-  \item Under UIP, what is the expected spot rate in six months? What does the failure of UIP mean for a bank that funds in yen and lends in dollars?
-\end{enumerate}
-\end{exercise}
-
-\begin{exercise}[Exxon's transfer]
-Redo Stigum's example with Crédit Lyonnais in place of Citi London, and then let Crédit Lyonnais lend \$5 million to a Korean firm that pays a US supplier banking at Chase. Write all the
-T-accounts, including the Fed.
-\end{exercise}

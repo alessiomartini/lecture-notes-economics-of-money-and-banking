@@ -127,6 +127,16 @@ There is no European treasury, so the job is left to the ECB. ``When central ban
 somebody else isn't doing their job'' \ts{2}{1}{9:12}. Understanding the mechanics allows a saner
 political discussion than throwing around words like ``hyperinflation'' \ts{2}{1}{9:53}.
 
+\begin{exercise}[Draghi versus Soros in T-accounts]
+Peripheral governments have issued 100 of excess long-term bonds, held by banks.
+\begin{enumerate}[(a)]
+  \item Record Soros's plan step by step: the EFA buys the bonds with Euro bills; the ECB buys 100 of Euro bills from the
+        EFA's buyers with new reserves; banks then swap 100 of excess reserves for Euro bills from the ECB.
+  \item What is the final change in the ECB's balance sheet? In the money supply?
+  \item The EFA forgives the bonds. Whose net worth falls, and by how much?
+\end{enumerate}
+\end{exercise}
+
 % ------------------------------------------------------------------
 \section{The hierarchy of financial instruments}\label{sec:nh-instruments}
 
@@ -214,6 +224,16 @@ somewhere on the holder's behalf. Reserves only make the promise to pay more cre
 reserves (a currency board): there is still a promise, and a promise can be broken \mn{2}{1}.
 \end{aside}
 
+\begin{exercise}[Where is the money?]
+For each agent, say which instruments are money and which are credit from its point of view, and why:
+\begin{enumerate}[(a)]
+  \item a household paying its rent;
+  \item a bank settling its payments with other banks at the end of the day;
+  \item the central bank of a small country paying for imports under a gold standard;
+  \item the same central bank today.
+\end{enumerate}
+\end{exercise}
+
 % ------------------------------------------------------------------
 \section{The hierarchy of financial institutions}\label{sec:nh-institutions}
 
@@ -261,6 +281,16 @@ credit, on who issues it, who holds it, and where it lies in the hierarchy. Stan
 quantity of money, usually treated as an outside asset. A physicist would say: the total charge is zero, but the
 field depends on where the charges are.
 \end{intuition}
+
+\begin{exercise}[Consolidation]
+Write the balance sheets of \cref{sec:nh-institutions} with numbers: gold 10; currency 100, held by banks; deposits 1000,
+held by the private sector; securities 5000, issued by the private sector and held half by the private sector itself.
+\begin{enumerate}[(a)]
+  \item Consolidate the three sectors. What remains?
+  \item Consolidate only the private sector and the banking system, as Gurley and Shaw do. What is ``outside'' money now?
+  \item Compute the ``branching ratios'' deposits/currency and currency/gold. What happens to them in an expansion?
+\end{enumerate}
+\end{exercise}
 
 % ------------------------------------------------------------------
 \section{The dynamics of the hierarchy}\label{sec:nh-dynamics}
@@ -472,6 +502,12 @@ bank, it grows from the ground up. (He adds that he does not mean self-organisat
 such as Carl Menger.) The market makers are what turn qualitatively different layers into a continuum of prices.
 \end{intuition}
 
+\begin{exercise}[Market makers in a crisis]
+For each of the three market makers of \cref{fig:nh-marketmakers}, describe what happens to its balance sheet when the
+layer above becomes scarce, and what options it has: change its price, use reserves, borrow from the layer above, stop
+making the market.
+\end{exercise}
+
 % ------------------------------------------------------------------
 \section{Managing the hierarchy}\label{sec:nh-managing}
 
@@ -586,6 +622,16 @@ overnight rate the Fed is trying to influence the shape of the pyramid directly;
 \ts{2}{7}{17:28}. The name recalls the 1961 operation of the same kind, which ``twisted'' the yield curve.
 \end{finance}
 
+\begin{exercise}[The expectations hypothesis]
+The overnight rate is 1\% today and is expected to rise by 1 percentage point a year for the next 4 years, then stay
+constant.
+\begin{enumerate}[(a)]
+  \item Using the approximate expectations hypothesis, compute the 2-, 5- and 10-year yields and sketch the term
+        structure.
+  \item The observed 10-year yield is 1 percentage point higher than your answer. Give two possible explanations.
+\end{enumerate}
+\end{exercise}
+
 % ------------------------------------------------------------------
 \section*{Key formulas and ideas}
 \begin{keyformulas}
@@ -600,51 +646,3 @@ Expectations hypothesis & $(1+R_n)^n = \E\prod_{t}(1+r_t)$, i.e.\ $R_n\approx \f
 Monetary policy & creating an artificial hierarchy by setting the overnight rate\\
 \end{tabularx}
 \end{keyformulas}
-
-\section*{Exercises}
-
-\begin{exercise}[Where is the money?]
-For each agent, say which instruments are money and which are credit from its point of view, and why:
-\begin{enumerate}[(a)]
-  \item a household paying its rent;
-  \item a bank settling its payments with other banks at the end of the day;
-  \item the central bank of a small country paying for imports under a gold standard;
-  \item the same central bank today.
-\end{enumerate}
-\end{exercise}
-
-\begin{exercise}[Consolidation]
-Write the balance sheets of \cref{sec:nh-institutions} with numbers: gold 10; currency 100, held by banks; deposits 1000,
-held by the private sector; securities 5000, issued by the private sector and held half by the private sector itself.
-\begin{enumerate}[(a)]
-  \item Consolidate the three sectors. What remains?
-  \item Consolidate only the private sector and the banking system, as Gurley and Shaw do. What is ``outside'' money now?
-  \item Compute the ``branching ratios'' deposits/currency and currency/gold. What happens to them in an expansion?
-\end{enumerate}
-\end{exercise}
-
-\begin{exercise}[Draghi versus Soros in T-accounts]
-Peripheral governments have issued 100 of excess long-term bonds, held by banks.
-\begin{enumerate}[(a)]
-  \item Record Soros's plan step by step: the EFA buys the bonds with Euro bills; the ECB buys 100 of Euro bills from the
-        EFA's buyers with new reserves; banks then swap 100 of excess reserves for Euro bills from the ECB.
-  \item What is the final change in the ECB's balance sheet? In the money supply?
-  \item The EFA forgives the bonds. Whose net worth falls, and by how much?
-\end{enumerate}
-\end{exercise}
-
-\begin{exercise}[The expectations hypothesis]
-The overnight rate is 1\% today and is expected to rise by 1 percentage point a year for the next 4 years, then stay
-constant.
-\begin{enumerate}[(a)]
-  \item Using the approximate expectations hypothesis, compute the 2-, 5- and 10-year yields and sketch the term
-        structure.
-  \item The observed 10-year yield is 1 percentage point higher than your answer. Give two possible explanations.
-\end{enumerate}
-\end{exercise}
-
-\begin{exercise}[Market makers in a crisis]
-For each of the three market makers of \cref{fig:nh-marketmakers}, describe what happens to its balance sheet when the
-layer above becomes scarce, and what options it has: change its price, use reserves, borrow from the layer above, stop
-making the market.
-\end{exercise}

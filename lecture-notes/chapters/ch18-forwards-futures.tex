@@ -130,6 +130,11 @@ A \emph{futures contract} is a standardized forward traded on an exchange, whose
 value in cash each day (through margin), so that the contract's value returns to zero \ts{18}{3}{12:38}\ts{18}{5}{0:04}. (\emph{Futures}: short for contracts for future delivery.)
 \end{definition}
 
+\begin{exercise}[Forward versus futures cash flows]
+A forward and a futures contract on the same bill have $K=F_0=98$. The futures price then goes 98.5, 97.0, 96.5, 98.0, 99.0 at maturity. Compute the daily cash
+flows of a short futures position and the single cash flow of a short forward. What is the largest cumulative cash outflow of the futures position?
+\end{exercise}
+
 % ------------------------------------------------------------------
 \section{The value of a forward over its life}\label{sec:ff-value}
 
@@ -192,6 +197,11 @@ every day: ``a very concrete way in which views about the future are settled tod
 longs; when it falls, back \ts{18}{5}{1:06}. With a forward, who was winning in the middle does
 not matter; with futures the largest swings may come in the middle, and you must be ready to absorb them. Futures carry liquidity risk that forwards do not, which
 may be why their prices differ, though the formulas treat them as interchangeable \ts{18}{5}{2:50}.
+
+\begin{exercise}[Forward interest parity]
+Three-month and six-month rates are 1.0\% and 2.2\% (not annualized). Compute $f_{3,6}$. One month later the two-month and five-month rates are 0.7\% and 1.8\%: compute
+the new forward rate and say whether the bank that lent forward has gained or lost.
+\end{exercise}
 
 % ------------------------------------------------------------------
 \section{Cash and carry arbitrage}\label{sec:ff-cashcarry}
@@ -271,6 +281,16 @@ liquidity risk and are paid the term premium, the difference between the forward
 
 % ------------------------------------------------------------------
 \flushside
+
+\begin{exercise}[Implied repo rate]
+A six-month bill trades at $S_0=99$ and the three-month futures price on it is $F_0=99.6$; the three-month repo rate is 2\% a year (continuous compounding). Compute the
+implied repo rate. Is a cash and carry trade profitable, and what liquidity must the trader hold?
+\end{exercise}
+
+\begin{exercise}[Who should do it?]
+Explain why a bank with access to the discount window, rather than a hedge fund, is the natural holder of a cash and carry position, and what happens to the
+forward--futures spread if banks' access to liquidity is restricted.
+\end{exercise}
 \section*{Key formulas and ideas}
 \begin{keyformulas}
 \begin{tabularx}{\linewidth}{@{}l L@{}}
@@ -282,25 +302,3 @@ Stylized fact & $f_{3,6}>$ futures rate $>\E[r_{3,6}]$: each hedger takes part o
 Cash and carry & long bill $+$ short repo $+$ short futures; profit if $\rho>r$; the residual risk is liquidity risk\\
 \end{tabularx}
 \end{keyformulas}
-
-\section*{Exercises}
-
-\begin{exercise}[Forward interest parity]
-Three-month and six-month rates are 1.0\% and 2.2\% (not annualized). Compute $f_{3,6}$. One month later the two-month and five-month rates are 0.7\% and 1.8\%: compute
-the new forward rate and say whether the bank that lent forward has gained or lost.
-\end{exercise}
-
-\begin{exercise}[Forward versus futures cash flows]
-A forward and a futures contract on the same bill have $K=F_0=98$. The futures price then goes 98.5, 97.0, 96.5, 98.0, 99.0 at maturity. Compute the daily cash
-flows of a short futures position and the single cash flow of a short forward. What is the largest cumulative cash outflow of the futures position?
-\end{exercise}
-
-\begin{exercise}[Implied repo rate]
-A six-month bill trades at $S_0=99$ and the three-month futures price on it is $F_0=99.6$; the three-month repo rate is 2\% a year (continuous compounding). Compute the
-implied repo rate. Is a cash and carry trade profitable, and what liquidity must the trader hold?
-\end{exercise}
-
-\begin{exercise}[Who should do it?]
-Explain why a bank with access to the discount window, rather than a hedge fund, is the natural holder of a cash and carry position, and what happens to the
-forward--futures spread if banks' access to liquidity is restricted.
-\end{exercise}

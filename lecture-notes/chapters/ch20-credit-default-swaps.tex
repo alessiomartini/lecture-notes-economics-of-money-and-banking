@@ -87,6 +87,11 @@ Sachs. Mehrling's biography draws on his unpublished papers, including the 1970 
 \emph{Reference:} P.~Mehrling, \emph{Fischer Black and the Revolutionary Idea of Finance}, Wiley, 2005.
 \end{history}
 
+\begin{exercise}[Black's decomposition]
+Write the balance sheet of an investor who holds a ten-year BBB bond, an interest rate swap and a CDS on it, and show that its net exposure is a Treasury bill. Who
+bears the interest rate risk and who the default risk?
+\end{exercise}
+
 % ------------------------------------------------------------------
 \section{What is a credit default swap}\label{sec:cds-what}
 
@@ -117,6 +122,11 @@ from the \emph{protection seller} the difference between face value and the bond
 The course books any hedge as a contingent asset, so the buyer lists both the long credit exposure (the bond) and the short one (the CDS) as assets; real-world
 practice is not consistent, often off balance sheet \ts{20}{4}{3:12}. The seller is long credit risk and short the swap: the
 lingo is consistent between CDS and IRS. ``Credit default swaps are not some weird exotic creature of Wall Street'' \ts{20}{4}{4:33}.
+
+\begin{exercise}[CDS cash flows]
+A protection buyer on \$10 million face pays $u=400$ bp a year. The bond defaults at the end of year 3 and then trades at 35. Write the cash flows each year. What is
+the buyer's position worth just before default if spreads have widened to 900 bp?
+\end{exercise}
 
 % ------------------------------------------------------------------
 \section{Corporate bonds}\label{sec:cds-bonds}
@@ -260,6 +270,11 @@ The report is in the course files (\file{materials/readings/L20-ubs-shareholder-
 So, by the report's own breakdown, most of the loss came from the thinly hedged AMPS book, not from the fully insured trade.
 \end{coursenote}
 
+\begin{exercise}[Negative basis]
+A AAA tranche yields LIBOR $+$ 60 bp, protection costs 20 bp, and repo funding costs LIBOR $+$ 10 bp. Compute the annual carry on \$1 billion. The tranche's price falls
+from 100 to 96 and the repo haircut rises from 2\% to 10\%: how much cash must be found, and from where?
+\end{exercise}
+
 % ------------------------------------------------------------------
 \section{AIG and Goldman Sachs: a private backstop}\label{sec:cds-aig}
 
@@ -331,6 +346,11 @@ defaults rarely reached them. It was not default but the fluctuation in CDS valu
 just aren't a lot of subprime mortgages'', ignoring leverage, liquidity and the embedding in world money and capital markets. Those who took the low tranches and
 knew they bore risk mostly survived; those who thought they took no risk failed \ts{20}{9}{12:24}.
 
+\begin{exercise}[Margin or no margin]
+Compare an AIG-style CDS seller that posts margin when downgraded with a monoline that posts none, if the marked-to-market value of the CDS rises by \$5 billion but no
+default occurs. Which one fails, and why?
+\end{exercise}
+
 % ------------------------------------------------------------------
 \section{Abacus: the synthetic CDO as collateral prepayment}\label{sec:cds-abacus}
 
@@ -381,25 +401,3 @@ AIG & margin calls on in-the-money CDS: ``liquidity kills you quick''\\
 Abacus & synthetic CDO $=$ T-bills $+$ short CDS: collateral prepaid\\
 \end{tabularx}
 \end{keyformulas}
-
-\section*{Exercises}
-
-\begin{exercise}[Black's decomposition]
-Write the balance sheet of an investor who holds a ten-year BBB bond, an interest rate swap and a CDS on it, and show that its net exposure is a Treasury bill. Who
-bears the interest rate risk and who the default risk?
-\end{exercise}
-
-\begin{exercise}[CDS cash flows]
-A protection buyer on \$10 million face pays $u=400$ bp a year. The bond defaults at the end of year 3 and then trades at 35. Write the cash flows each year. What is
-the buyer's position worth just before default if spreads have widened to 900 bp?
-\end{exercise}
-
-\begin{exercise}[Negative basis]
-A AAA tranche yields LIBOR $+$ 60 bp, protection costs 20 bp, and repo funding costs LIBOR $+$ 10 bp. Compute the annual carry on \$1 billion. The tranche's price falls
-from 100 to 96 and the repo haircut rises from 2\% to 10\%: how much cash must be found, and from where?
-\end{exercise}
-
-\begin{exercise}[Margin or no margin]
-Compare an AIG-style CDS seller that posts margin when downgraded with a monoline that posts none, if the marked-to-market value of the CDS rises by \$5 billion but no
-default occurs. Which one fails, and why?
-\end{exercise}

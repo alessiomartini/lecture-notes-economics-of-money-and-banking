@@ -115,6 +115,11 @@ An \emph{overdraft} is a negative balance on a deposit account, i.e.\ a loan fro
 than he has (one ``draws over'' the balance). It is an asset of the bank.
 \end{definition}
 
+\begin{exercise}[The payment matrix]
+In the credit one-big-bank, $\alpha$ and $\beta$ have deposits of 50 each, $\gamma$ and $\lambda$ overdrafts of 30 each. Compute the size of the balance sheet
+after each of the following payments, applied in sequence: $\gamma$ pays $\alpha$ 20; $\alpha$ pays $\lambda$ 40; $\lambda$ pays $\gamma$ 10.
+\end{exercise}
+
 % ------------------------------------------------------------------
 \section{Many banks}\label{sec:ch-many}
 
@@ -231,6 +236,15 @@ banks at a New York bank; a payment between two country banks in different regio
 \label{fig:ch-network}
 \end{nfigure}
 
+\begin{exercise}[Correspondent balances]
+Country bank C holds a balance of 100 at city bank N. Customers of C pay customers of N 30 more than they receive.
+\begin{enumerate}[(a)]
+  \item Write the T-accounts when the net is settled by drawing down C's balance.
+  \item The balance is now too low; N offers to lend C 50 by crediting its account. Write the T-accounts and explain why this is ``discipline for the debtor
+        bank''.
+\end{enumerate}
+\end{exercise}
+
 % ------------------------------------------------------------------
 \section{The clearinghouse in normal times}\label{sec:ch-chouse}
 
@@ -278,6 +292,14 @@ payment (reserves) that discharges the net obligations. \emph{Netting} replaces 
 exists between the moment a payment is credited to the payee and the moment it is settled.
 \end{definition}
 
+\begin{exercise}[Netting]
+Four banks have the following gross obligations at the end of the day (row pays column): A$\to$B 30, B$\to$C 40, C$\to$A 35, A$\to$C 10, D$\to$A 5, B$\to$D 15.
+\begin{enumerate}[(a)]
+  \item Compute the total gross payments, the total of bilateral nets, and the total of multilateral nets.
+  \item Which banks must deliver certificates to the clearinghouse, and how many?
+\end{enumerate}
+\end{exercise}
+
 % ------------------------------------------------------------------
 \section{The clearinghouse as private lender of last resort}\label{sec:ch-lolr}
 
@@ -324,6 +346,11 @@ assembled bankers in his library to organise loans to the weaker institutions, a
 certificates; currency went to a premium over certified checks, i.e.\ par between currency and deposits was broken.\par
 \emph{References:} Bruner and Carr, \emph{The Panic of 1907}, 2007; Sprague, \emph{History of Crises under the National Banking System}, 1910.
 \end{history}
+
+\begin{exercise}[Loan certificates]
+Bank A owes the clearinghouse 20 at settlement and has no certificates. The clearinghouse issues 20 of loan certificates at 6\% against A's government bonds.
+Write the T-accounts of the clearinghouse, A, and the creditor bank B. What happens a week later when A repays? Why might B prefer not to be repaid?
+\end{exercise}
 
 % ------------------------------------------------------------------
 \section{The Fed as a public clearinghouse}\label{sec:ch-fed}
@@ -419,32 +446,3 @@ Fed & public clearinghouse: Fedwire, Fed funds, discount loans\\
 Drains & internal: met by expansion; external: suspension, unless central banks expand together\\
 \end{tabularx}
 \end{keyformulas}
-
-\section*{Exercises}
-
-\begin{exercise}[The payment matrix]
-In the credit one-big-bank, $\alpha$ and $\beta$ have deposits of 50 each, $\gamma$ and $\lambda$ overdrafts of 30 each. Compute the size of the balance sheet
-after each of the following payments, applied in sequence: $\gamma$ pays $\alpha$ 20; $\alpha$ pays $\lambda$ 40; $\lambda$ pays $\gamma$ 10.
-\end{exercise}
-
-\begin{exercise}[Netting]
-Four banks have the following gross obligations at the end of the day (row pays column): A$\to$B 30, B$\to$C 40, C$\to$A 35, A$\to$C 10, D$\to$A 5, B$\to$D 15.
-\begin{enumerate}[(a)]
-  \item Compute the total gross payments, the total of bilateral nets, and the total of multilateral nets.
-  \item Which banks must deliver certificates to the clearinghouse, and how many?
-\end{enumerate}
-\end{exercise}
-
-\begin{exercise}[Correspondent balances]
-Country bank C holds a balance of 100 at city bank N. Customers of C pay customers of N 30 more than they receive.
-\begin{enumerate}[(a)]
-  \item Write the T-accounts when the net is settled by drawing down C's balance.
-  \item The balance is now too low; N offers to lend C 50 by crediting its account. Write the T-accounts and explain why this is ``discipline for the debtor
-        bank''.
-\end{enumerate}
-\end{exercise}
-
-\begin{exercise}[Loan certificates]
-Bank A owes the clearinghouse 20 at settlement and has no certificates. The clearinghouse issues 20 of loan certificates at 6\% against A's government bonds.
-Write the T-accounts of the clearinghouse, A, and the creditor bank B. What happens a week later when A repays? Why might B prefer not to be repaid?
-\end{exercise}

@@ -157,6 +157,11 @@ security for another of the same class, to keep things smooth; the dealer is a l
 \ts{7}{5}{3:53}. Repo defaults usually happen not because someone is insolvent but because the securities were sold on and not returned
 \ts{7}{5}{4:42}.
 
+\begin{exercise}[Who is doing repo?]
+For each statement, write the T-account entry of every party: (a) ``the Fed did \$5 billion of reverse repos with primary dealers''; (b) ``the money fund reversed in
+\$1 billion of Treasuries from a dealer''; (c) ``the dealer repoed out its inventory of corporate bonds''.
+\end{exercise}
+
 % ------------------------------------------------------------------
 \section{The legal construction of repo: haircut and interest}\label{sec:rp-legal}
 
@@ -201,6 +206,14 @@ of a point (one point $=$ 1\% of face value).
 \paragraph{Haircuts make collateral homogeneous.} Different securities get different haircuts (2\% for a Treasury, 5, 10 or 50\% for a mortgage-backed
 security, which in a crisis may not be accepted at all) and then the same repo rate \ts{7}{6}{4:38}. The haircut is negotiated first,
 according to the volatility of the collateral's price, then the rate \ts{7}{6}{4:59}.
+
+\begin{exercise}[Repo arithmetic]
+A Treasury note with market value 102.50 per 100 face is repoed for 3 days (a weekend), haircut 2\%, repo rate 0.30\%.
+\begin{enumerate}[(a)]
+  \item How much is lent on \$10 million face value, and how much is repaid?
+  \item What is the same interest with compound interest on a 365-day year? Compare.
+\end{enumerate}
+\end{exercise}
 
 % ------------------------------------------------------------------
 \section{The security dealer's balance sheet}\label{sec:rp-dealers}
@@ -253,6 +266,15 @@ With haircut $h$, a dealer with capital $E$ can hold securities worth at most $E
 haircut from 2\% to 10\% forces assets to fall by a factor of five for the same capital: a positive-feedback loop if the sales lower prices and raise haircuts
 further.
 \end{intuition}
+
+\begin{exercise}[Funding gap]
+A dealer has capital 5 and holds MBS worth 100, financed by repo with a 5\% haircut.
+\begin{enumerate}[(a)]
+  \item Write its balance sheet.
+  \item The haircut rises to 20\%. How much new funding does it need? If it must sell MBS at 90\% of value, what is its capital after selling enough to restore the
+        haircut constraint?
+\end{enumerate}
+\end{exercise}
 
 % ------------------------------------------------------------------
 \section{Repo, modern finance and the Fed}\label{sec:rp-fed}
@@ -355,6 +377,10 @@ ceased in 2023, replaced by SOFR, a rate computed from overnight Treasury repo t
 
 % ------------------------------------------------------------------
 \flushside
+
+\begin{exercise}[The arbitrage]
+Repo trades at 0.31\%, Fed funds at 0.16\%. Describe the arbitrage a bank could do, write its T-accounts, and give two reasons why it might not close the spread.
+\end{exercise}
 \section*{Key formulas and ideas}
 \begin{keyformulas}
 \begin{tabularx}{\linewidth}{@{}l L@{}}
@@ -368,31 +394,3 @@ Fed & open market operations = repos/reverse repos with primary dealers\\
 Spreads & normal: repo $<$ FF $<$ LIBOR (repo as Bagehot's market rate below bank rate); repo $>$ FF signals funding stress\\
 \end{tabularx}
 \end{keyformulas}
-
-\section*{Exercises}
-
-\begin{exercise}[Repo arithmetic]
-A Treasury note with market value 102.50 per 100 face is repoed for 3 days (a weekend), haircut 2\%, repo rate 0.30\%.
-\begin{enumerate}[(a)]
-  \item How much is lent on \$10 million face value, and how much is repaid?
-  \item What is the same interest with compound interest on a 365-day year? Compare.
-\end{enumerate}
-\end{exercise}
-
-\begin{exercise}[Funding gap]
-A dealer has capital 5 and holds MBS worth 100, financed by repo with a 5\% haircut.
-\begin{enumerate}[(a)]
-  \item Write its balance sheet.
-  \item The haircut rises to 20\%. How much new funding does it need? If it must sell MBS at 90\% of value, what is its capital after selling enough to restore the
-        haircut constraint?
-\end{enumerate}
-\end{exercise}
-
-\begin{exercise}[Who is doing repo?]
-For each statement, write the T-account entry of every party: (a) ``the Fed did \$5 billion of reverse repos with primary dealers''; (b) ``the money fund reversed in
-\$1 billion of Treasuries from a dealer''; (c) ``the dealer repoed out its inventory of corporate bonds''.
-\end{exercise}
-
-\begin{exercise}[The arbitrage]
-Repo trades at 0.31\%, Fed funds at 0.16\%. Describe the arbitrage a bank could do, write its T-accounts, and give two reasons why it might not close the spread.
-\end{exercise}

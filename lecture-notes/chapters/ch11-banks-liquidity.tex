@@ -60,6 +60,14 @@ In class: the first money fund, started in 1969, redeemed at about 98 cents \ts{
 prohibited interest on demand deposits and capped the rates on time and savings deposits.
 \end{coursenote}
 
+\begin{exercise}[A run on a money fund]
+A money fund has \$100 of assets, of which \$3 of commercial paper of a bank that fails (worth zero), and 100 shares.
+\begin{enumerate}[(a)]
+  \item What is the NAV? What happens if it keeps paying \$1 per share to the first 50\% of holders who redeem?
+  \item Why is it rational to run? Which institution's guarantee stops the run, and why?
+\end{enumerate}
+\end{exercise}
+
 % ------------------------------------------------------------------
 \section{The puzzle: banks as money dealers}\label{sec:bl-puzzle}
 
@@ -111,6 +119,14 @@ A dealer's \emph{price risk} is its exposure to changes in the prices of the sec
 need to refinance short-term borrowing that funds longer-term lending, i.e.\ to the market for funding.
 \end{definition}
 
+\begin{exercise}[Rearranging a repo book]
+A dealer has overnight reverse 300, term reverse 700, overnight repo 800, term repo 250 (assume equal terms).
+\begin{enumerate}[(a)]
+  \item Separate the matched book and the rest.
+  \item What is its net bond position? Rewrite the rest as a price-risk exposure and a liquidity-risk exposure.
+\end{enumerate}
+\end{exercise}
+
 % ------------------------------------------------------------------
 \section{Adapting Treynor to liquidity risk}\label{sec:bl-treynor}
 
@@ -146,6 +162,11 @@ A dealer can change its bond position without changing its liquidity risk, by ex
 bonds and in money separately \ts{11}{4}{3:41}. The same diagram describes a bank, with deposits in place of overnight
 repo and term loans to companies in place of term reverse: a bank is a dealer whose ``security'' is money \ts{11}{4}{5:24}. The other side of a bank, the payment system,
 is what puzzled us \ts{11}{4}{6:06}.
+
+\begin{exercise}[Pricing liquidity]
+A dealer can borrow overnight at 0.30\% and lends term (one month) at a rate that rises by 1 basis point for each \$10 billion of term lending it does. It must earn at least 5 basis
+points over the overnight rate on its marginal lending. What is its maximum term lending if the market term rate is 0.40\% at zero dealer position?
+\end{exercise}
 
 % ------------------------------------------------------------------
 \section{Digression: the evolution of American banking}\label{sec:bl-evolution}
@@ -270,6 +291,15 @@ In doing so the Fed moves dealer inventories and so their prices; and it puts pa
 institutions that can hold reserves. Together with the discount rate as ceiling, it forms a \emph{corridor} within which the policy rate moves.
 \end{definition}
 
+\begin{exercise}[The corridor]
+With IOER at 0.25\% and the discount rate at 0.75\%:
+\begin{enumerate}[(a)]
+  \item Explain why Fed funds can trade below 0.25\%.
+  \item Describe what the Fed must do to raise the effective rate to 0.50\% with \$1 trillion of excess reserves outstanding, using the tools mentioned in class (reverse repos,
+        term deposits).
+\end{enumerate}
+\end{exercise}
+
 % ------------------------------------------------------------------
 \section{Return to the initial puzzle}\label{sec:bl-answer}
 
@@ -300,35 +330,3 @@ Fed & outside spread: IOER (floor), discount rate (ceiling); stabilisation by te
 Banks at par & possible thanks to the money market; profitable as a joint business with it\\
 \end{tabularx}
 \end{keyformulas}
-
-\section*{Exercises}
-
-\begin{exercise}[Rearranging a repo book]
-A dealer has overnight reverse 300, term reverse 700, overnight repo 800, term repo 250 (assume equal terms).
-\begin{enumerate}[(a)]
-  \item Separate the matched book and the rest.
-  \item What is its net bond position? Rewrite the rest as a price-risk exposure and a liquidity-risk exposure.
-\end{enumerate}
-\end{exercise}
-
-\begin{exercise}[A run on a money fund]
-A money fund has \$100 of assets, of which \$3 of commercial paper of a bank that fails (worth zero), and 100 shares.
-\begin{enumerate}[(a)]
-  \item What is the NAV? What happens if it keeps paying \$1 per share to the first 50\% of holders who redeem?
-  \item Why is it rational to run? Which institution's guarantee stops the run, and why?
-\end{enumerate}
-\end{exercise}
-
-\begin{exercise}[The corridor]
-With IOER at 0.25\% and the discount rate at 0.75\%:
-\begin{enumerate}[(a)]
-  \item Explain why Fed funds can trade below 0.25\%.
-  \item Describe what the Fed must do to raise the effective rate to 0.50\% with \$1 trillion of excess reserves outstanding, using the tools mentioned in class (reverse repos,
-        term deposits).
-\end{enumerate}
-\end{exercise}
-
-\begin{exercise}[Pricing liquidity]
-A dealer can borrow overnight at 0.30\% and lends term (one month) at a rate that rises by 1 basis point for each \$10 billion of term lending it does. It must earn at least 5 basis
-points over the overnight rate on its marginal lending. What is its maximum term lending if the market term rate is 0.40\% at zero dealer position?
-\end{exercise}
