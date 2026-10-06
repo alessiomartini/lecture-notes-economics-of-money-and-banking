@@ -22,7 +22,8 @@
 \end{tabularx}
 
 \smallskip
-\textbf{Files.} Transcripts \file{materials/transcripts/L04-P*.txt}.
+\textbf{Files.} Transcripts \file{materials/transcripts/L04-P*.txt}; Mehrling's notes \mn{4}{1}, which point to the Fed's Z.1 release and its
+notable features in 2012: household deleveraging, a switch from credit to money, the largest instrument discrepancy in repo, sectoral discrepancies.
 \textbf{Reading.} Mehrling's article on Hyman Minsky (not among the course files); Minsky, \emph{Stabilizing an Unstable
 Economy} (1986), quoted in class.
 \end{sources}
@@ -337,7 +338,9 @@ what makes them hard to read for people who do not have the framework in mind \t
   \item $MV=PT$ treats all transactions as made with money, ``as if the whole economy were Oren's Daily Roast'', while most transactions
         are credit transactions, absorbed into velocity \ts{4}{8}{5:56}.
 \end{itemize}
-Mehrling thinks Copeland was right, but he did not win: the accounts were compiled by a small division of the Board of Governors, but not
+In the flow of funds the sale of goods and the sale of assets are equivalent ways of obtaining a source of funds; the national accounts shunt
+the latter aside. And the Keynesian framework, the notes observe, grows out of the quantity theory: $C+I+G+X-M$ is a disaggregation of $MV$, and $Y$
+a subset of $PT$; Copeland wanted to go further \mn{4}{6}. Mehrling thinks Copeland was right, but he did not win: the accounts were compiled by a small division of the Board of Governors, but not
 used for policy, because no macroeconomic theory was attached to them; Keynesians and monetarists each had theirs. ``So there's a Nobel
 prize for you'' \ts{4}{8}{6:17}.
 
@@ -368,9 +371,11 @@ periods $t,\dots,t+3$, with cash inflow 10 every period (40 in all) and total co
 cash inflow (all cases) & 10 & 10 & 10 & 10 & \\\hline
 commitments, hedge & 5 & 5 & 5 & 5 & never binds\\
 commitments, short-term & 20 & 0 & 0 & 0 & binds today\\
+commitments, future mismatch & 0 & 20 & 0 & 0 & binds tomorrow\\
 \end{tabular}
-\caption{Same stocks, different flows \ts{4}{10}{2:35}: in both cases inflows total 40 and commitments 20 (ignoring
-discounting), so the balance sheet is the same; only the time pattern differs.}\label{fig:mv-patterns}
+\caption{Same stocks, different flows \ts{4}{10}{2:35}\mn{4}{7}: in all cases inflows total 40 and commitments 20 (ignoring
+discounting), so the balance sheet is the same; only the time pattern differs. The notes call the three a liquid capital structure, an
+illiquid one with a current mismatch, and an illiquid one with a future mismatch.}\label{fig:mv-patterns}
 \end{nfigure}
 
 \begin{enumerate}
@@ -393,6 +398,14 @@ is price-inelastic, and the more such agents there are, the further rates can mo
 \ts{4}{10}{8:03}. Think of Bear Stearns or Lehman before their collapse: this is the stuff of financial crises, and all banks, with
 short-term liabilities that can vanish tomorrow, look like this \ts{4}{10}{8:44}. Agents with surplus cash lend it into the market. Over the
 business cycle the balance swings between easy and tight credit, and it shows up in the money market \ts{4}{10}{9:04}.
+
+In the notes' words, all three types meet in the money market at every moment: those with a current mismatch are \emph{necessitous
+borrowers}, who must borrow whatever it costs; those with a future mismatch may borrow today to avoid tomorrow's problem, or wait; those with
+current liquidity may help the others, or do something else. ``The result of all this pushing and pulling is the money rate of interest''
+\mn{4}{8}. If there is a mismatch, someone must be persuaded to give up current cash for a mere promise of future cash, and the relative price of the
+two is the rate of interest: hence mismatches show up as upward pressure on the short-term money rate. And since people move anticipated future
+problems into the present, where they are easier to handle, the state of the money market measures how well the whole structure of commitments
+matches the pattern of cash flows, looking forward as well as today \mn{4}{8}\mn{4}{9}.
 
 \begin{definition}[New concepts: hedge financing, rollover]
 \emph{Hedge financing} (Minsky): commitments in every period are covered by expected cash inflows of the same period. To \emph{roll over}
@@ -445,6 +458,20 @@ incurred \ts{4}{11}{4:38}. And each looks forward too: liabilities and assets ha
 value adds them up, as a discounted present value (40 and 20 in the examples) \ts{4}{11}{5:18}. The examples of \cref{fig:mv-patterns} have
 identical stocks and very different prospects: the balance sheet shows solvency; to see fragility one must look behind it, at the time
 patterns \ts{4}{11}{5:38}.
+
+\begin{example}[A factory is a bond]
+Finance values assets, real ones too, as the present value of future cash flows: from a financial point of view a factory is just a kind of bond
+\mn{4}{9}. A factory expected to yield a net cash flow of \$10 a year in perpetuity, with the interest rate at 5\% and expected to stay there, is
+worth
+\[
+  \sum_{t\ge1}\frac{10}{(1+R)^t} = \frac{10}{R} = \$200 .
+\]
+Money is easier: its face value is its present value \mn{4}{9}.
+\end{example}
+
+\paragraph{Solvency as the outer bound.} For the money view solvency matters mainly as an outer bound on each agent's credit limit, which is
+somehow related to net worth: solvent agents have unused borrowing power they can mobilize to make payments. So asset price fluctuations move
+borrowing power, with consequences for immediate liquidity: solvency problems can easily become liquidity problems \mn{4}{10}.
 
 % ------------------------------------------------------------------
 \flushside
