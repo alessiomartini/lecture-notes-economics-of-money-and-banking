@@ -21,7 +21,7 @@
 \end{tabularx}
 
 \smallskip
-\textbf{Files.} Transcripts \file{materials/transcripts/L08-P*.txt}.
+\textbf{Files.} Transcripts \file{materials/transcripts/L08-P*.txt}; Mehrling's notes \mn{8}{1}.
 \textbf{Reading.} Stigum, \emph{The Money Market}, chapter on the Eurodollar market (from p.~212), and on FRAs.
 \end{sources}
 
@@ -116,7 +116,9 @@ account at the Fed, but it can hold one at a bank that does \ts{8}{3}{3:53}.
 \paragraph{A clearer example.} A branch makes it look like internal accounting of one bank. Better: Exxon moves its money to Crédit Lyonnais in Paris, which holds its
 dollar reserves as a deposit at Citi New York, a different bank: a correspondent relationship, and Citi New York certainly considers its reserves to back \emph{its own}
 deposits \ts{8}{3}{4:55}. Crédit Lyonnais can now go into the dollar business: make dollar loans by creating dollar deposits, and
-pay withdrawals with its deposit in New York, even though it is in France \ts{8}{3}{6:18}.
+pay withdrawals with its deposit in New York, even though it is in France \ts{8}{3}{6:18}. In the notes' words: inside the US, Citi New York's balance sheet expands
+and Chase's contracts by exactly as much; outside the US Crédit Lyonnais expands with no corresponding contraction: ``from a global perspective, there has been an expansion
+of credit'' \mn{8}{1}.
 
 \begin{definition}[New concepts: Eurodollar]\label{def:ed}
 \emph{Eurodollars} are dollar-denominated deposits (and loans) at banks outside the United States, including foreign branches of US banks. Their reserves are deposits at
@@ -144,6 +146,11 @@ an order of magnitude larger than the Fed funds market \ts{8}{4}{2:13}.
 and Mehrling too, worried that with so much volume offshore, and big banks able to borrow in either market, the Fed could lose control of the rate
 \ts{8}{4}{3:14}. The crisis settled it: the Eurodollar market froze, the Fed funds market did not, because the Fed supported it. Fed funds are the
 ``real'' dollars, Eurodollars a credit extension of them, below Fed funds in the hierarchy \ts{8}{4}{3:34}.
+
+The notes add two points \mn{8}{2}. The market grew outside the control of US authorities, escaping capital controls and regulatory costs on dollars held at home (reserve
+requirements, deposit insurance premiums); most barriers have been lifted, but the market survives as a separate entity. And monetary policy: the Fed focuses on domestic money
+and rates, leaving out the international dollar on the idea that its holders are foreigners, not domestic consumers and businesses, ``increasingly a difficult abstraction to
+defend, since important entities are global''.
 
 % ------------------------------------------------------------------
 \section{The Eurodollar market as global funding market}\label{sec:ed-funding}
@@ -221,7 +228,9 @@ forward borrower pays \ts{8}{6}{3:31}\ts{8}{7}{1:55}.
 
 Market people describe it as a bet on LIBOR, and it can be used to speculate; but that is not why it exists \ts{8}{6}{4:13}. X funds at LIBOR plus or minus the FRA payment,
 i.e.\ at $f$ whatever happens: the FRA implements exactly what the swap of IOUs did, locking in funding, without balance sheet space. ``It looks like a side bet on LIBOR, but it's used to
-line up payments in time'' \ts{8}{7}{2:37}.
+line up payments in time'' \ts{8}{7}{2:37}. The notes underline the hidden assumption: X does not care how high LIBOR goes, and Y how low, only so long as the
+\emph{liquidity is there} to raise and invest the principal when needed: ``a key assumption, almost always satisfied but likely to fail when you need it most''
+\mn{8}{4}.
 
 \begin{proposition}[Derivatives as implicit swaps of IOUs]
 All the derivatives of the course, interest rate swaps, foreign exchange swaps, credit default swaps, can be viewed as implicit, behind-the-scenes swaps of IOUs: they are integrated in
@@ -264,6 +273,12 @@ currency \ts{8}{8}{5:46}.)
 \tacct[2.4cm]{Bank B}{Yen deposit at bank $S$}{Dollar deposit of bank 1}
 \end{taccts}
 
+The notes spell out the cash flows of this swap (yen per dollar, so a rise of $S$ is a dollar appreciation) \mn{8}{6}\mn{8}{7}: at time 0 the bank pays \$1 and receives
+$S_0$ yen; at $T$ it pays $(1+R^\ast)S_0$ yen and receives $1+R$ dollars. If $S_T=F_T$ the two flows have equal value; if $S_T>F_T$ the dollars received buy more yen and the
+bank gains on the swap (and loses as much on its yen loan), if $S_T<F_T$ the reverse: the bank does not care what happens to the yen. The off-balance-sheet FX swap
+reproduces exactly these net flows, swapping yen for dollars at $S_0$ and back at $F_T$; unlike the FRA, the principal cannot be netted, because it is in two currencies
+\mn{8}{7}.
+
 \section{Forward rates are not expected spot rates}\label{sec:ed-eh}
 
 Two natural guesses \ts{8}{9}{0:08}:
@@ -275,6 +290,16 @@ Two natural guesses \ts{8}{9}{0:08}:
 \end{itemize}
 Both fail empirically, all the time: a puzzle for economics \ts{8}{9}{1:10}. Mehrling's answer, to be developed, is that it has to do with the hierarchy of money and credit, with
 liquidity: payments today are worth more than promised payments in the future, and not only because of time preference, in foreign exchange as in the term structure \ts{8}{9}{2:12}.
+
+\begin{keyformulas}
+\textbf{The two violations, as stated in Mehrling's notes} \mn{8}{7}\mn{8}{8}:
+\begin{itemize}
+  \item EH fails as $f_{N,T} > \E[R_{N,T}]$: bank X would typically have done better without the FRA, borrowing spot; it pays for insurance, and it is the \emph{borrower} of
+        money who pays, not the lender: ``another symptom of the hierarchy of money and credit'';
+  \item UIP fails as: if $F_T<S_0$ (i.e.\ $R>R^\ast$), then $F_T<\E[S_T]$: the low-yielding currency does not appreciate enough to equalize yields; typically it actually
+        \emph{depreciates}, contrary to UIP.
+\end{itemize}
+\end{keyformulas}
 
 \begin{coursenote}[Segment 8.10]
 The video ``Forward Rates are NOT Expected Spot Rates'' (\seg{8}{10}{L8.10}), filed in the playlist under lecture~21, repeats almost word for word the second half of L8.9.
