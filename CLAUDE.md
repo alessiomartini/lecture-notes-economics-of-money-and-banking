@@ -7,6 +7,9 @@ fixed box colours, screen layout with right column, notes/answers/requests syste
 without solutions, `mysolution` never edited (comments go in `\feedback`).
 
 ## Sources and how to use them
+- The GitHub repo is **public**. Never commit third-party material: `materials/transcripts/`, `week1/`,
+  `mehrling-notes/`, `web/`, reading PDFs/texts and audio are gitignored and local only (history was
+  cleaned in Oct 2026). Check `git status` for these paths before every commit.
 - One chapter per lecture (`chapters/chNN-<slug>.tex`), sections follow the video segments.
 - Read the segment transcripts `materials/transcripts/LXX-PYY.txt` (auto-captions, lower case, no
   punctuation: paraphrase in clean English, fix mis-hearings such as "badget" -> Bagehot, "stigm" ->

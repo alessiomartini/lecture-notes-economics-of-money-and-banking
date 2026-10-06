@@ -6,6 +6,14 @@ Personal LaTeX study notes for Perry Mehrling's course *Economics of Money and B
 
 The compiled book is `lecture-notes/build/book.pdf` (refreshed by every full build).
 
+## Third-party material (not in this public repo)
+
+The repository is public. Copyrighted course material is kept **locally only** (`.gitignore`) and was
+removed from the whole git history (Oct 2026): `materials/transcripts/`, `materials/week1/`,
+`materials/mehrling-notes/`, `materials/web/`, the reading PDFs and the audio. The transcripts can be
+regenerated with the commands below; Mehrling's notes and the readings can be downloaded from the URLs in
+`lecture-notes/preamble.tex` (`\mnfile`) and `materials/readings/links.txt`.
+
 ## Structure
 
 ```
@@ -19,6 +27,8 @@ The compiled book is `lecture-notes/build/book.pdf` (refreshed by every full bui
 │   │   ├── raw/                # yt-dlp json3 auto-captions, one per video
 │   │   └── transcript-lecture-*.txt   # original concatenated transcripts of lectures 1-12 (cross-check)
 │   ├── week1/                  # from the Week 1 zip: Mehrling's lecture notes (Lec 1-2), human .srt captions, Allyn Young reading
+│   ├── mehrling-notes/         # Mehrling's written notes for all 22 lectures (PDF + text), from sites.bu.edu/perry
+│   ├── readings/               # readings linked from the BU lecture pages (links.txt + README in git, PDFs local)
 │   ├── web/                    # saved Coursera / INET / YouTube playlist pages
 │   └── Week28money002%29.zip   # original Week 1 download with the videos (not in git)
 └── lecture-notes/              # the LaTeX book (same setup as the MIT 18.642 notes)
