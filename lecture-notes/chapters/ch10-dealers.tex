@@ -68,7 +68,8 @@ is in there and the shelves are depleted; the prices are the same morning and ev
 does not move. The secret is \emph{inventories}: the shelves absorb the flow of demand and are restocked at night, from inventories in New Jersey, the wholesale market, which in
 turn are restocked from farms: ``dare I say a hierarchy of inventories'' \ts{10}{2}{4:43}. The supermarket is a \emph{one-sided} dealer: it sells
 retail but does not buy from you (come in with a box of mangoes and they will ask whether you stole it); it buys wholesale. An investment bank underwriting an initial public
-offering is a one-sided security dealer: it buys the whole issue and distributes it, holding inventory meanwhile \ts{10}{2}{6:07}.
+offering is a one-sided security dealer: it buys the whole issue and distributes it, holding inventory meanwhile \ts{10}{2}{6:07}. Even Japanese ``just-in-time'' production
+does not eliminate inventories, the notes observe: it pushes them back before production, into the parts and components held by suppliers \mn{10}{2}.
 
 % ------------------------------------------------------------------
 \section{Two-sided dealers}\label{sec:dl-twosided}
@@ -156,6 +157,11 @@ will sell and buy. \emph{Adverse selection} is the risk of trading with a better
 Security dealers demand funding liquidity, borrowing to finance their inventories, and supply market liquidity, quoting prices at which anyone can trade \ts{10}{4}{10:02}.
 \end{proposition}
 
+The notes describe the liquidity the dealer supplies as an \emph{option to trade}: at the quoted prices, either way, if you want to, but it is up to you. Anyone who places a limit order
+supplies liquidity in this sense, and amateur day traders often do, ``until they run out of money'' (the concept is developed in Larry Harris, \emph{Trading and Exchanges}, 2003)
+\mn{10}{4}. In the notes' Treynor model the value-based traders' outside spread may be ``maybe 20\% below and 20\% above'' their estimate of fundamental value; when the dealer hits his
+position limits, the value-based trader becomes market maker of last resort \mn{10}{4}.
+
 \begin{keyformulas}
 \textbf{A linear Treynor dealer} (a simple parametrisation of \cref{fig:dl-treynor}): with inventory $I\in[-I_{\max},I_{\max}]$,
 \[
@@ -209,6 +215,18 @@ for the banking lectures \ts{10}{6}{3:59}. Managing price risk well allows tight
   \item \textbf{offsetting} long with short exposures, buying at the bid and selling at the ask: the more both-way business, the more spread earned.
 \end{enumerate}
 
+\begin{intuition}[A just-in-time inventory system that straddles the hierarchy]
+Through repo the dealer reaches the inventory of cash, through reverse the inventory of securities: it behaves as if it had inventories that are actually out in the market, a just-in-time
+system. In a crisis it matters where the inventories are: cash comes from higher in the hierarchy, from banks, securities from lower, from security holders; the dealer straddles the
+layers. Troubles come when it must produce securities it reversed in and sold, and more seriously when it must produce money it repoed in and spent \mn{10}{5}\mn{10}{6}.
+\end{intuition}
+
+\begin{coursenote}
+The notes give the crisis examples: ``fails'' (collateral not returned) became so widespread that the Fed lent its own Treasuries to dealers through the Term Securities Lending Facility,
+and when the repo market collapsed it opened the Primary Dealer Credit Facility, a lender of last resort for dealers \mn{10}{6}. (Both were created in March 2008, around the collapse of
+Bear Stearns.)
+\end{coursenote}
+
 % ------------------------------------------------------------------
 \section{Arbitrage and the assumption of perfect liquidity}\label{sec:dl-arbitrage}
 
@@ -226,6 +244,12 @@ Most asset pricing, and general equilibrium theory, assume \emph{perfect arbitra
 it and sell a tiny bit above, the inside spread is squeezed to zero, and liquidity is a free good \ts{10}{7}{4:49}. In Treynor's world your
 ability to trade comes from trading at a price \emph{different} from fundamental value: liquidity is provided for profit, and in fluctuating quantity \ts{10}{7}{6:36}.
 \end{proposition}
+
+The notes add a ``philosophical question'' \mn{10}{6}\mn{10}{7}: finance assumes that arbitrage creates perfect liquidity by entering at the smallest deviation; but in a fully efficient market
+arbitrage would not be profitable, all bets being fair, so position takers would not make money, would compete less for market making, and markets would be less liquid, with wider spreads and
+more volatile prices: ``in practice it seems that we must expect liquidity to enter into asset prices''. Arbitrageurs, by taking positions against temporary distortions, spread their
+impact into other markets and so counteract them: ``porters'' of liquidity, producing a result ``no part of their intention''. Arbitrage and liquidity are two sides of the same coin
+\mn{10}{6}. Some markets, and some times, are close to the frictionless limit; others are not \mn{10}{7}.
 
 \begin{history}[Treynor, Black and ``Noise'']
 Jack Treynor, a friend of Fischer Black, published ``The Economics of the Dealer Function'' in the \emph{Financial Analysts Journal} (1987); in 1971 he had already written, under the pseudonym
