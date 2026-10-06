@@ -20,7 +20,7 @@
 \end{tabularx}
 
 \smallskip
-\textbf{Files.} Transcripts \file{materials/transcripts/L09-P*.txt}.
+\textbf{Files.} Transcripts \file{materials/transcripts/L09-P*.txt}; Mehrling's notes \mn{9}{1}.
 \textbf{Readings.} Bagehot, \emph{Lombard Street} (1873), two chapters; John Hicks, \emph{A Market Theory of Money} (1989), excerpt (not among the
 course files).
 \end{sources}
@@ -31,6 +31,19 @@ background \ts{9}{2}{1:51}. The next two weeks ask where the interest rate comes
 midterm the course moves up to the exchange rate and out to asset prices, the price of risk \ts{9}{2}{2:11}. The shift is from payments to
 \emph{market making}: banks, central banks and security dealers as dealers who create liquidity by standing ready to buy and sell \ts{9}{2}{2:53}.
 The lecture starts in the 19th century, where things are simpler: the London money market of Bagehot \ts{9}{3}{0:30}.
+
+\begin{intuition}[Review and preview, from Mehrling's notes]
+\emph{Review} \mn{9}{1}\mn{9}{2}. The money market is a mechanism for making a decentralized payment system work as close as possible to the ideal of one big bank: the central bank as a
+clearinghouse, Fed funds for banks, repo for dealers, Eurodollars offshore (where foreign banks without the discount window match flows in advance with FRAs and FX swaps), each with a
+backstop one level up (the discount window for Fed funds, clearing-bank credit lines for repo). The key distinction was money (final settlement) versus credit (postponed settlement):
+``the difference between money and credit is all about time''. Real-time gross settlement and overdraft limits on Fedwire, net settlement on CHIPS, looser limits in repo and Eurodollars
+protect the core of the payment system from excess elasticity and the core of the credit system from excess discipline. Of the four prices only par has been in focus.
+
+\emph{Preview} \mn{9}{2}\mn{9}{3}. Credit instruments are now seen as securities with a price in money, and the focus moves to the institutions that make liquid markets in them. Stigum says
+dealers are like banks, intermediaries (p.~432); Mehrling reverses it: \emph{banks are like dealers}, market makers in money, and so is the central bank. These layers of market making knit
+the hierarchy together and make the difference between instruments look like one of price (quantity) rather than of moneyness (quality); the hierarchy ``occasionally springs out onto the
+stage during crises''.
+\end{intuition}
 
 % ------------------------------------------------------------------
 \section{FT: depreciation of Iran's currency}\label{sec:bg-ft}
@@ -193,6 +206,12 @@ it has public duties, whether it admits it or not \ts{9}{7}{6:03}. Usually the m
 for cash the market rate rises to bank rate, and then everyone goes to the Bank, which ``disgorges'' its notes and expands its deposits, which banks treat as cash, although deposits
 are promises to pay notes and notes promises to pay gold \ts{9}{7}{7:05}.
 
+\paragraph{Discipline and elasticity in Peel's Act.} The division fixed the note issue in aggregate: discipline. Elasticity came from the Bank holding more notes than it needed and lending them
+through discount, and from deposits, which other banks used as reserves when notes were scarce \mn{9}{6}. A profit-seeking central bank would expand like any bank in a credit boom, buying
+bills against new deposits; but whenever money is tight it can set the rate as a matter of its own policy: high enough that net rediscounting is minimal, lower to let its balance sheet expand,
+or so high that rediscounting turns negative and its balance sheet contracts, using the rate to control the pace. ``Bank rate thus moves as a policy variable, while the market rate moves as a
+market price'' \mn{9}{6}.
+
 \begin{nfigure}
 \begin{tikzpicture}[font=\scriptsize,x=0.8cm,y=0.8cm]
   \draw[-{Stealth[length=3pt]}] (0,0) -- (10,0) node[right]{time};
@@ -217,6 +236,10 @@ form: set a maximum rate, and when the crisis comes act passively, lending to al
 In a crisis the central bank should \emph{lend freely, at a high rate, against good security} \ts{9}{8}{0:48}. That is all Bagehot says in \emph{Lombard Street}; he does not say to move
 bank rate around to influence the economy \ts{9}{8}{0:48}.
 \end{proposition}
+
+\paragraph{Dealer, not lender, of last resort.} Bagehot called this the \emph{lender} of last resort; Mehrling's notes call it \emph{dealer} of last resort, to fix ideas useful for modern
+conditions. Narrow profit maximization is not the right policy for a central bank: its ability to relax the survival constraint of banks below it brings responsibility for the balance between
+discipline and elasticity. In an internal drain its job is to lend its note reserve ``to the last farthing'', and even create deposits as a substitute for notes \mn{9}{7}.
 
 \paragraph{Elasticity and discipline in one phrase.} ``Lend freely'' is elasticity: otherwise borrowers who cannot make their payments default, and liquidity kills you quick. ``At a high
 rate'' is discipline: only those who really need it come, and they repay fast, borrowing in the market again as soon as the market rate falls; the lending is self-liquidating
@@ -252,7 +275,9 @@ central banks \ts{9}{9}{5:48}.
 \begin{intuition}[Cooperation and its limits]
 Central banks willing to borrow and lend gold among themselves could jointly relax their survival constraint, as banks do in the Fed funds market. But central bank cooperation, ``easier
 said than done'', involves national interests, politicians and finance ministers. Without it the survival constraint binds on central banks, which then have no choice but to raise rates,
-even if that crunches all the banks below them: discipline is transmitted down the hierarchy. ``Does this sound familiar?'' \ts{9}{9}{6:49}.
+even if that crunches all the banks below them: discipline is transmitted down the hierarchy. ``Does this sound familiar?'' \ts{9}{9}{6:49}. The notes push the point: from the world's perspective gold flows between countries change the world gold stock no
+more than internal flows change the domestic one; if we accommodate the latter, why not the former? Only because it needs cooperation (the French central bank lending back the gold flowing out
+of England): a practical problem, not a necessity. The system does, however, need some overall disciplining factor \mn{9}{8}.
 \end{intuition}
 
 \paragraph{The money market as coordinator.} The central bank is in between, not at the absolute top: it can relax its own constraint with other central banks, and impose discipline below
