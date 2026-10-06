@@ -7,9 +7,6 @@
 - `main.tex`: Part II (`\part{Advanced...}`) is commented out until chapter 13 exists.
 
 ## Ideas
-- Readings: only the Allyn Young chapters are in `materials/week1/readings`; the other readings
-  (Minsky, Dunbar, Bagehot, Hicks, Treynor, Mundell, Kindleberger, Gurley–Shaw, FOMC 1952) are
-  summarised from what the lectures say. Add the PDFs if found, and summarise them in `reading` boxes.
 - Mehrling's own lecture notes exist for every lecture (Coursera module 1, "Lecture Notes (for
   download)"); only Lec 1–2 are here. With the others, each chapter could be checked against them.
 - Appendix A: map lecture -> segments -> videos -> readings (generate from `materials/videos.csv`).
@@ -31,7 +28,7 @@
   Oct 2026 attempt: YouTube answered "Sign in to confirm you're not a bot" for every player client
   (IP flagged); needs a retry later or cookies (`--cookies-from-browser`, only with Alessio's OK).
 - Playlist errors: ColumbiaLearn video L19.4 duplicates L19.5; the right segment is the re-upload eZk9A6Pw10g (OVERRIDE in tools/transcripts.py, transcribed with whisper). L8.10 duplicates L8.9.
-- Readings linked from sites.bu.edu/perry lecture pages (Hicks, Mundell, Moulton I-IV, UBS report, SIGTARP, Black's World Without Money...) are not downloaded yet.
+- Readings linked from sites.bu.edu/perry lecture pages: downloaded (materials/readings/) and integrated as `reading`/`coursenote` boxes in ch3, 7, 9, 10, 12-22. Not used: L07 deal.pdf (a 2015 version unrelated to the 2012 lecture). Corrections found: AIG collateral $30-35bn was to all counterparties (Goldman $8.4bn, SIGTARP Table 2); UBS report names monolines, not AIG, as NegBasis protection sellers. Bagehot, Minsky, Dunbar, Kindleberger, Gurley-Shaw, Treynor still summarised from the lectures only.
 - Possible next: appendix A (materials map).
 
 - Mehrling's written notes (sites.bu.edu/perry), one PDF per lecture, in materials/mehrling-notes/ (+ .txt with page markers). Cite with `\mn{L}{page}`. Integrated into all 22 chapters (Oct 2026); page links with \mn{L}{page}.
