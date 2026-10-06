@@ -183,7 +183,16 @@ But it is not credit risk on a principal: if BBB stops paying, AA stops paying a
 on an actual parallel loan \ts{19}{5}{8:27}.
 
 \paragraph{Market imperfections.} Many swaps exist because one borrower has cheap local funding (the government likes it, capital controls, an immature bond market)
-and swaps it to others, breaking down inequalities across markets until the bond market grows up \ts{19}{5}{9:28}.
+and swaps it to others, breaking down inequalities across markets until the bond market grows up \ts{19}{5}{9:28}. Stigum tells of British capital controls evaded by parallel loans that were
+in effect currency swaps, and dates US interest rate swaps to 1981, in the Volcker tight-money period, when lesser credits were locked out of some markets completely \mn{19}{3}.
+
+\begin{intuition}[A swap is a strip of forwards]
+Finance usually analyses a swap as a portfolio of forward interest rate contracts, one for each payment date (forwards, not futures, since payments are periodic, not marked to market): BBB
+locks in future borrowing rates, AA future lending rates. Comparing parallel loans, the first payment of a \emph{short} swap is exactly a \emph{long} forward, the later ones more distant forwards.
+Warning: being long a swap is like being short a portfolio of forwards, so a long swap is hedged with \emph{long} futures, ``rather counterintuitive (to say the least!)'' \mn{19}{2}. The parallel loan
+structure itself would expand both balance sheets, and with them apparent leverage and counterparty exposure; netting the payments, and then the principal too, puts the whole thing off balance
+sheet \mn{19}{1}.
+\end{intuition}
 
 % ------------------------------------------------------------------
 \section{Market making in swaps}\label{sec:irs-dealers}
@@ -258,6 +267,16 @@ and futures \ts{19}{8}{2:26}. The same idea is in the 1952 FOMC report: governme
 five-year when cheap, financing it in a primitive repo market, selling the ten-year. ``1952 is the future'', extended from government securities to corporate
 securities and then to mortgages: an RMBS is a 30-year bond with option features (early repayment), and the swap apparatus built for corporate securities was moved
 into mortgage space, producing a global market in household bonds: ``AA, LBO, subprime'' \ts{19}{8}{2:47}.
+
+\begin{keyformulas}
+\textbf{Swaps in the hierarchy (Mehrling's notes)} \mn{19}{4}\mn{19}{5}\mn{19}{6}. Stigum calls a swap a synthetic corporate bond (p.~906): a short swap is a long bond financed by repo, hedged
+with a short position in Treasuries or Eurodollar futures, leaving basis risk (the swap rate is a corporate rate) and counterparty risk on both sides. The swap dealer is a government securities dealer
+for corporate bonds: at every maturity a private rate and a government rate, kept in touch by speculators on the spread. The swap market, by notional principal larger than the bond market itself,
+may seem to rival the government market; in good times its liquidity matches, but in bad times ``the hierarchical structure is restored'': swap dealers sit below government bond dealers, who sit
+below the banks that make markets in money, who sit below central banks. Swaps spread stress across the system and across time and unite separate markets, evading regulatory imperfections; but
+the sequence swap (over the counter) $\to$ FRA (interbank) $\to$ futures also concentrates stress: ``everything comes back to futures''. In the money market swap, Morgan hedges temporarily with
+long futures, a position that carries liquidity risk, until the LBO swap closes it out (``a swap is a strip of FRAs, and a FRA is a single-set swap'', p.~897).
+\end{keyformulas}
 
 \begin{coursenote}
 On the 1952 report see \cref{sec:irs-fomc}. It is that of the FOMC's Ad Hoc Subcommittee on the Government Securities Market (chaired by William
