@@ -7,7 +7,7 @@
 \toprule
 \textbf{Segment} & \textbf{Length} & \textbf{Content}\\
 \midrule
-\seg{20}{1}{L20.1 FT: Internationalization of the Euro} & 5:07 & \emph{No captions available; not covered in these notes.}\\
+\seg{20}{1}{L20.1 FT: Internationalization of the Euro} & 5:07 & Offshore euro trading in London; bonds replacing syndicated loans.\\
 \seg{20}{2}{L20.2 Credit indices} & 3:40 & The Markit CDX high-yield index.\\
 \seg{20}{3}{L20.3 Fischer Black (1970), risk-free security} & 2:14 & A risky bond $=$ risk-free bond $+$ interest rate risk $+$ default risk.\\
 \seg{20}{4}{L20.4 What is a Credit Default Swap (CDS)} & 5:12 & Buyer and seller of protection on the balance sheet.\\
@@ -21,13 +21,40 @@
 \end{tabularx}
 
 \smallskip
-\textbf{Files.} Transcripts \file{materials/transcripts/L20-P*.txt}; no transcript exists for L20.1 (YouTube has no captions for it).
+\textbf{Files.} Transcripts \file{materials/transcripts/L20-P*.txt}; L20.1 has no YouTube captions and was transcribed locally from the audio (faster-whisper). Mehrling's notes \mn{20}{1}.
 \end{sources}
 
 \section*{Motivation}
 All semester Mehrling promised that the course's balance sheets would handle credit default swaps; now he delivers \ts{20}{2}{0:06}. Think of a corporate bond with a lot
 of credit risk: a credit default swap peels that risk off and sells it separately, just as an interest rate swap peels off interest rate exposure
 \ts{20}{2}{3:11}. Three examples from the crisis (UBS, AIG, Abacus) then show that the trouble came not from defaults but from liquidity.
+
+% ------------------------------------------------------------------
+\section{FT: the internationalization of the euro}\label{sec:cds-ft}
+
+Mehrling had just come back from Rome, where Italian central bankers and securities regulators asked his shadow banking team whether shadow banking could channel
+credit to small and medium-sized enterprises: they depend on banks, and banks, having bought government bonds, now need to build up capital and are not lending
+\ts{20}{1}{0:00}. He reads two articles of the day as symptoms of sea changes in the European financial system
+\ts{20}{1}{1:24}.
+
+\begin{casestudy}[FT, November 2012: two European evolutions]
+\begin{enumerate}
+  \item ``France targets UK euro trade supremacy'': 40\% of euro trading takes place in London, and France wants it inside the eurozone, under control
+        \ts{20}{1}{1:35}. Mehrling recalls the rise of the Eurodollar market in London and the old American worry about losing control of the dollar;
+        the US concluded it could not stop it, and the same holds for the euro: people who want to trade euro derivatives will find somewhere to do it, London or
+        Hong Kong. A ``little naive'', but a sign of the maturation of the euro as an international currency \ts{20}{1}{2:03};
+  \item ``Syndicated bank loans in eurozone slump to ten-year low'': top-rated corporations no longer take syndicated loans (a bank making a loan much bigger than it
+        could hold and parcelling out pieces to other banks) but issue bonds directly, in big amounts: the capital market replaces bank lending, as in the US
+        evolution from indirect to direct finance (lecture~\ref{ch:directindirect}) \ts{20}{1}{3:21}.
+\end{enumerate}
+One evolution is in the money market (London), the other in the capital market; link the two and you have shadow banking, money market funding of capital market
+lending, driven by market forces, while ``none of the regulations are right for this'' \ts{20}{1}{4:15}.
+\end{casestudy}
+
+\begin{coursenote}
+The figure of 40\% is as said in class, quoting the FT. The ``30 years ago'' of the Eurodollar debate is approximate: the Eurodollar market grew in London from the
+late 1950s, and the US debate on controlling it was intense in the late 1960s and 1970s \ts{20}{1}{1:46}.
+\end{coursenote}
 
 % ------------------------------------------------------------------
 \section{Credit indices}\label{sec:cds-index}

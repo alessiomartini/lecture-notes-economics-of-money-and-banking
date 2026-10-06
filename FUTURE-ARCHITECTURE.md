@@ -25,7 +25,7 @@
 
 ## Status (Oct 2026)
 - Chapters 1-22 written, built, committed (one chapter per lecture).
-- Missing content: segments L19.2 (FOMC 1952 reading), L20.1 (FT: internationalization of the euro),
+- L19.2, L20.1, L21.4 had no YouTube captions: transcribed locally (tools/whisper_segments.py, audio in materials/audio, gitignored) and written up.
   L21.4 (global dimension) have no YouTube captions. Plan: download audio (yt-dlp -x) and transcribe
   locally with faster-whisper into materials/transcripts/LXX-PYY.txt, then add the sections.
   Oct 2026 attempt: YouTube answered "Sign in to confirm you're not a bot" for every player client

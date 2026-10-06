@@ -8,7 +8,7 @@
 \textbf{Segment} & \textbf{Length} & \textbf{Content}\\
 \midrule
 \seg{19}{1}{L19.1 FT: Sovereign debt crises} & 3:21 & Argentina, Greece, Draghi; pension funds leaving long sovereign debt.\\
-\seg{19}{2}{L19.2 Reading: FOMC Report (1952)} & 7:40 & \emph{No captions available; not covered in these notes} (see the coursenote in \cref{sec:irs-arbland}).\\
+\seg{19}{2}{L19.2 Reading: FOMC Report (1952)} & 7:40 & The Fed's secret 1952 plan: dealers, market liquidity, transmission along the yield curve.\\
 \seg{19}{3}{L19.3 Treasury-swap spread, a puzzle} & 11:04 & Negative swap spreads at the long end; what a swap is; swap lingo.\\
 \seg{19}{4}{L19.4 What is a swap} & 10:35 & Same captions as L19.5.\\
 \seg{19}{5}{L19.5 Why swap? An example from Stigum} & 10:37 & AA and BBB share 35 basis points; exposure in a swap.\\
@@ -20,7 +20,8 @@
 \end{tabularx}
 
 \smallskip
-\textbf{Files.} Transcripts \file{materials/transcripts/L19-P*.txt}; no transcript exists for L19.2 (YouTube has no captions for it). The video published as L19.4
+\textbf{Files.} Transcripts \file{materials/transcripts/L19-P*.txt}; L19.2 has no YouTube captions and was transcribed locally from the audio
+(faster-whisper, \file{tools/whisper_segments.py}). Mehrling's notes \mn{19}{1}. The video published as L19.4
 (``What is a swap'') contains the same lecture as L19.5 (the two auto-caption files are independent but match word for word with the same timings): an error in the
 playlist, so L19.5 is cited throughout. The material that title promises is covered at the end of L19.3.
 \textbf{Reading.} Federal Open Market Committee, report of the Ad Hoc Subcommittee on the Government Securities Market (1952); M.~Stigum, \emph{The Money Market}.
@@ -44,6 +45,42 @@ Monetary Transactions, though nothing has been bought yet, as the theory of the 
 ``This party is over'': some pension funds are giving up long-dated sovereign debt, expecting yields to rise, possibly related to the Treasury and swap curves
 \ts{19}{1}{2:32}.
 \end{casestudy}
+
+% ------------------------------------------------------------------
+\section{Reading: the FOMC report of 1952}\label{sec:irs-fomc}
+
+\begin{reading}[FOMC, Report of the Ad Hoc Subcommittee on the Government Securities Market, 12 November 1952]
+``It doesn't sound interesting, does it?'' A preamble says the document was secret, internal to the Fed, and came to light only through a congressional
+investigation. It is the Fed's own judgement of how it would run monetary policy from 1952 on, close to the money view and unlike the academic textbooks,
+which were written before it became public and picked up the public version \ts{19}{2}{0:00}.
+\end{reading}
+
+\paragraph{From dealer of first resort to dealers.} The report asks whether operating practices ``conceived in the atmosphere of war finance'', made to keep a
+fixed pattern of prices and yields, inhibit the development of ``depth, breadth and resiliency'' in a market that operates without continuous support
+\ts{19}{2}{1:24}. During the war the Fed pegged Treasury rates, buying whenever a bill or bond yield tended to rise above its peg: not dealer of
+last resort but ``dealer of first resort'', in effect the underwriter, and it kept the pegs after the war so bondholders would not take capital losses
+\ts{19}{2}{1:50}. With the Treasury--Fed Accord it got authority over short-term rates back, the birth
+of post-war monetary policy; this document explains what it meant to do with that authority \ts{19}{2}{2:43}.
+
+\begin{coursenote}
+In class the wartime pegs are illustrative (``let's say'' 1\% for bills and 2\% for the ten-year). The actual pegs, from 1942, were $\tfrac38$\% on Treasury
+bills and $2\tfrac12$\% on long-term bonds; the bill peg was dropped in 1947 and the Treasury--Federal Reserve Accord of March 1951 freed the Fed from supporting
+bond prices \ts{19}{2}{1:57}.\par
+\emph{Reference:} Federal Reserve History, ``The Treasury-Fed Accord''; A.~H.~Meltzer, \emph{A History of the Federal Reserve}, vol.~1, Chicago UP, 2003, ch.~7.
+\end{coursenote}
+
+\paragraph{Market liquidity through private dealers.} By 1952 a dealer market in government securities had developed; ``depth, breadth and resiliency'' means
+market liquidity. Private, profit-driven dealers make markets at every maturity and arbitrage along the yield curve (with ideas such as forward interest
+parity), so the Fed no longer needs to support prices: it will intervene ``around the edges'' and keep the ``tone'' of the money market, knowing that dealers
+finance their long bonds by borrowing in the money market: leveraged dealers \ts{19}{2}{3:08}.
+Only government securities: bond and stock markets, closed down in the Depression and the war, were still in their infancy \ts{19}{2}{4:57}.
+
+\begin{intuition}[Open market operations are not ``changing the interest rate'']
+Textbooks treat changing the rate of interest and open market operations as equivalent; the report does not. Any purchase or sale by the Committee changes
+member banks' reserves and is ``promptly reflected in the tone of the money market'': a small purchase of bills ordinarily finds a response in the long-term
+market, large purchases could scarcely fail to. The transmission is along the yield curve to asset prices, through leveraged dealers who are in effect shadow
+banks of the government securities market; nothing of the textbook story of reserves lent out by banks in a credit expansion \ts{19}{2}{5:11}.
+\end{intuition}
 
 % ------------------------------------------------------------------
 \section{The Treasury--swap spread: a puzzle}\label{sec:irs-puzzle}
@@ -223,8 +260,7 @@ securities and then to mortgages: an RMBS is a 30-year bond with option features
 into mortgage space, producing a global market in household bonds: ``AA, LBO, subprime'' \ts{19}{8}{2:47}.
 
 \begin{coursenote}
-The segment devoted to the 1952 FOMC report (L19.2) has no captions on YouTube, so its content is not reported here; only what is said about it in other segments
-\ts{19}{6}{7:15}\ts{19}{8}{2:47}. The report is that of the FOMC's Ad Hoc Subcommittee on the Government Securities Market (chaired by William
+On the 1952 report see \cref{sec:irs-fomc}. It is that of the FOMC's Ad Hoc Subcommittee on the Government Securities Market (chaired by William
 McChesney Martin, November 1952), which recommended that open market operations be confined to the short end of the market, normally Treasury bills
 (``bills only''), leaving the rest of the yield curve to dealers' arbitrage.\par
 \emph{Reference:} Federal Reserve, \emph{Federal Reserve Bulletin}, 1953; FOMC Minutes, March 1953.

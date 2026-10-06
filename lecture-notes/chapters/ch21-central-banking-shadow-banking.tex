@@ -10,7 +10,7 @@
 \seg{21}{1}{L21.1 FT: Regulation of shadow banking} & 3:34 & Bail-in debt for banks; central counterparties for swaps.\\
 \seg{21}{2}{L21.2 Shadow banking vs traditional banking} & 6:55 & Pozsar's diagram; a stylized shadow banking system without government backstops.\\
 \seg{21}{3}{L21.3 Liquidity and solvency backstops} & 7:18 & Immature private backstops: liquidity puts and CDS; collapse onto the Fed.\\
-\seg{21}{4}{L21.4 Global dimension} & 5:16 & No captions; covered from Mehrling's slides only (\cref{sec:cbs-global}).\\
+\seg{21}{4}{L21.4 Global dimension} & 5:16 & Dollar funding of Korean banks and of shadow banks; a mature funding system, an immature risk transfer system.\\
 \seg{21}{5}{L21.5 Evolution of modern finance} & 3:19 & Securitization, globalization, derivatives: risk transfer.\\
 \seg{21}{6}{L21.6 What is shadow banking?} & 12:22 & Money market funding of capital market lending; a world of only shadow banking.\\
 \seg{21}{7}{L21.7 Backstopping the market makers} & 7:46 & The Fed's balance sheet in December 2011 as a dealer in swaps.\\
@@ -21,7 +21,7 @@
 \end{tabularx}
 
 \smallskip
-\textbf{Files.} Transcripts \file{materials/transcripts/L21-P*.txt}; no transcript exists for L21.4 (YouTube has no captions for it).
+\textbf{Files.} Transcripts \file{materials/transcripts/L21-P*.txt}; L21.4 has no YouTube captions and was transcribed locally from the audio (faster-whisper). Mehrling's slides \mn{21}{1}.
 \end{sources}
 
 \section*{Motivation}
@@ -116,19 +116,19 @@ value below \$1 per share, \$0.97); on 19 September the US Treasury announced a 
 % ------------------------------------------------------------------
 \section{The global dimension}\label{sec:cbs-global}
 
-\begin{coursenote}
-The video of this segment (L21.4) has no captions, so this section is built only on Mehrling's slides for the lecture (slides 7--8, ``Shadow banking as \ldots{}
-global banking'' and ``From domestic to international LOLR'') \mn{21}{7}\mn{21}{8}; the spoken commentary is not reported.
-\end{coursenote}
+What Mehrling had not adequately appreciated: shadow banking tapped a \emph{global} funding market, the dollar funding markets, which are mature and have been
+tested many times \ts{21}{4}{0:00}. His slides call this ``shadow banking as global banking'' \mn{21}{7}.
 
-The second way of looking at shadow banking on the slides is as \emph{global banking}: the same structure seen through the dollar funding of banks outside the US
-\mn{21}{7}. Two chains are drawn:
-\begin{itemize}
-  \item a non-US bank (the slide's example is a Korean bank) makes loans in domestic currency and holds FX swaps and dollar reserves, funded by dollar funding; a
-        global bank lends dollars, funded in the wholesale money market; a ``dollar bank'' holds wholesale money market claims against ``deposits'';
-  \item the US mortgage chain: RMBS tranched into high, mid and low tranches; the shadow bank holds the high tranche funded by asset-backed commercial paper; the
-        money market mutual fund holds the ABCP against ``deposits''.
-\end{itemize}
+\paragraph{Development lending in dollars.} A Korean bank borrows short term in dollars from a global bank (say Deutsche Bank), which issues short-term money market
+liabilities held by a ``dollar bank'', perhaps a money market mutual fund: since the dollar is the world reserve currency, a country that wants to invest more than its
+domestic savings can tap these markets \ts{21}{4}{0:27}. Lending in won and borrowing in dollars means
+FX risk, hedged with FX swaps or dollar reserves, perhaps by the central bank as counterparty; someone must bear it \ts{21}{4}{1:18}. When
+the money stops there is a banking crisis and probably a currency crisis: the Asian financial crisis, from which ``we learned something'', though it did not turn out
+so well for the Tigers \ts{21}{4}{1:50}.
+
+\paragraph{Shadow banking used the same system for dollar loans.} RMBS tranched, the high tranche held by a shadow bank funded by ABCP, the ABCP held by a money fund:
+borrowing in dollars to lend in dollars, so no FX risk, the risk behind the Asian crisis; credit and duration risk remained, but those existed in Korea too
+\ts{21}{4}{2:20}.
 
 \begin{nfigure}
 \begin{taccts}
@@ -141,12 +141,20 @@ The second way of looking at shadow banking on the slides is as \emph{global ban
 \tacct[1.9cm]{Shadow bank}{Hi tranche}{ABCP}\quad
 \tacct[1.9cm]{MMMF}{ABCP}{``Deposits''}
 \end{taccts}
-\caption{Shadow banking as global banking, from Mehrling's slide 7 \mn{21}{7}.}\label{fig:cbs-global}
+\caption{Shadow banking as global banking: the same dollar funding chain for Korean development lending and for US mortgages \ts{21}{4}{0:35}\mn{21}{7}.}\label{fig:cbs-global}
 \end{nfigure}
 
-Both chains end in the wholesale dollar money market, so the lender of last resort they need is not only domestic: the slide that follows is titled ``From domestic
-to international LOLR'' \mn{21}{8}, the theme of the central bank swap lines of lecture~\ref{ch:intl}. The slides' list of definitions cites, for financial
-globalization (dollar funding, reserve currency holding), H.~S.~Shin (2011), ``Global Banking Glut and Loan Risk Premium'' \mn{21}{11}.
+\begin{keyformulas}
+\textbf{A mature funding system, an immature risk transfer system} \ts{21}{4}{3:08}: shadow banking tapped a mature global
+funding system for a new purpose, while the risk transfer piece (the CDS) was new, ``invented on the fly''. It was easy to borrow, hard to transfer risk.
+\end{keyformulas}
+
+This is why the crisis was global: it hit the global money market at once. The spread between LIBOR (Eurodollar rates) and term Fed funds, which should be about equal
+for the same term, blew out to about 100 basis points before Bear Stearns and 300 or more after Lehman and AIG, with the Fed apparently stabilizing it in between but
+nowhere near zero \ts{21}{4}{3:44}. The shadow banks were in Europe, funded through the Eurodollar market,
+and the crisis touched every major money market, Japan's too \ts{21}{4}{4:36}. The next slide is titled ``From domestic to international
+LOLR'' \mn{21}{8}: the central bank swap lines of lecture~\ref{ch:intl}. For financial globalization the slides cite H.~S.~Shin, ``Global Banking Glut and Loan Risk
+Premium'' \mn{21}{11}.
 
 % ------------------------------------------------------------------
 \section{The evolution of modern finance: risk transfer}\label{sec:cbs-risk}
