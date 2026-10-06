@@ -43,6 +43,14 @@ holdouts are paid in full, Argentina may not pay the restructured bonds, since a
 \ts{18}{1}{1:29}. With a payment on the restructured bonds due the following month, Argentina faces a ``monetary cliff'': pay the
 holdouts too, or default on everything \ts{18}{1}{2:51}. The FT's editorial underlines the importance of collective action clauses: one holdout
 blocking agreement is a social loss, and taking a loss can be in the bondholders' collective interest \ts{18}{1}{3:12}.
+
+The article in the course file (Jude Webber, \emph{FT}, 26 November 2012, p.~6; \file{materials/readings/L18-Financial\_Times\_-\_Presscuttings.pdf}) adds the details:
+\begin{itemize}
+  \item The 2001 default was on nearly \$100bn. The restructurings were in 2005 and 2010.
+  \item Judge Thomas Griesa ordered Argentina to pay \$1.3bn to the holdouts when it paid the restructured bonds on 15 December, and to deposit the money in escrow pending appeal. Third parties helping it evade the order would count as aiders and abettors.
+  \item The dispute turns on the ``pari passu'' (``equal step'') clause.
+  \item Argentina's own law forbade reopening the restructuring. Failing to comply could mean a technical default ``perhaps as early as mid-January''.
+\end{itemize}
 \end{casestudy}
 
 \begin{definition}[New concepts: restructuring, holdout, collective action clause]
@@ -101,6 +109,17 @@ makes sense only if the forward rate exceeds the expected spot rate, each taking
 \textbf{Stylized fact (as stated in class)} \ts{18}{3}{11:14}: \quad $f_{3,6} \;>\; \text{futures rate} \;>\; \E[r_{3,6}]$. The forward--futures gap
 is small compared with the forward--expected spot gap; finance usually attributes it to something other than liquidity.
 \end{keyformulas}
+
+\begin{reading}[Hicks, \emph{Value and Capital} (1939), ch.~XI ``Interest'', pp.~141--152]
+The course reading (\file{materials/readings/L18-Hicks\_Value\_and\_Capital.pdf}) is the classic source of this stylized fact.
+\begin{itemize}
+  \item A loan is a transaction with only one side executed now. Any loan can be reduced to a money loan plus spot and forward transactions. With forward markets, ``own'' rates of interest are implicitly fixed: with money at 5\% and coffee futures 3\% above spot, the coffee rate is about 2\%.
+  \item Long rates are built up from \emph{forward} short rates, determined like commodity futures prices by hedgers and speculators.
+  \item The forward market for loans has a ``constitutional weakness'' on one side: most people prefer to lend short. Only speculators fill the gap, so the forward rate must exceed the rate they expect, by a risk premium which ``corresponds exactly to the `normal backwardation' of the commodity markets'' (p.~147).
+  \item Hence, if short rates are not expected to change, forward rates exceed current short rates by this premium.
+\end{itemize}
+This is the course's mismatched forward book, with the dealer's required compensation as Hicks's premium.
+\end{reading}
 
 \paragraph{The difference is cash flow.} A forward causes no cash flow until maturity; futures are \emph{marked to market} and cause cash flows every day, in or
 out, as prices move. So do most derivatives, through margin and collateral calls, ``and those collateral calls cause people to go out of business'': the survival
@@ -203,6 +222,19 @@ short futures} for the same term. Why should it make any profit? \ts{18}{6}{2:08
 The \emph{implied repo rate} $\rho$ is defined by $F_0 = S_0\,e^{\rho T}$: the rate that would make full carry pricing true. Cash and carry ($\rho>r$) is like
 borrowing at the actual repo rate $r$ and lending at $\rho$: an interest rate spread.
 \end{keyformulas}
+
+\begin{reading}[Stigum's example, \emph{The Money Market}, pp.~718--722]
+Stigum's own numbers (\file{materials/readings/L18-Pages\_from\_Stigum.pdf}) are dated 28 October 1982, ``when liquidity in T-bills was at its peak''.
+\begin{enumerate}
+  \item Buy \$1 million of the 24 March 1983 bill, 147 days to maturity, at a discount rate of 8.26: price \$966{,}271.67.
+  \item Sell the December 1982 bill future, which expires in 56 days, at 91.72 (rate 8.28). Delivering the bill, then a 91-day bill, brings in \$979{,}070.00.
+  \item The holding-period yield over the 56 days, on a 360-day basis, is the \emph{implied repo rate}: 8.51\%.
+  \item With 56-day term repo at 8.25, the trade earns 26\,bp. On \$10 million that is \$3{,}908.03.
+\end{enumerate}
+Stigum lists the ``slips twixt the cup and the lip'': commission, margin calls, convergence-price risk and back-office costs. He judges margin calls a small threat. Even a 100\,bp rally on the first day would cost only 2\textonequarter\,bp of the spread. In Mehrling's reading this cash-flow timing is the whole point: what is left after the price risk is hedged is liquidity risk.
+
+(Table 15.4 dates the futures sale ``March 28, 1982''; the context shows it is 28 October 1982.)
+\end{reading}
 
 \paragraph{Explained as liquidity risk.} Look at the cash flows \ts{18}{7}{0:03}:
 \begin{itemize}
