@@ -357,4 +357,6 @@
 \newcommand{\eqd}{\stackrel{d}{=}}
 
 % ---------- file references ----------
-\DeclareRobustCommand{\file}[1]{\texttt{\small\detokenize{#1}}}
+% file paths: breakable at / . - _ (long reading file names overflowed the right column)
+\DeclareRobustCommand{\file}[1]{{\small\nolinkurl{#1}}}
+\appto\UrlBreaks{\do\-\do\_}
