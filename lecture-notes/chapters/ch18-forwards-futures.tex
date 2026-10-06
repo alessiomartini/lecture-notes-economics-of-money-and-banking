@@ -20,7 +20,7 @@
 \end{tabularx}
 
 \smallskip
-\textbf{Files.} Transcripts \file{materials/transcripts/L18-P*.txt}. (The two segments 4 and 5 carry the same title on the playlist.)
+\textbf{Files.} Transcripts \file{materials/transcripts/L18-P*.txt}. (The two segments 4 and 5 carry the same title on the playlist, but their content differs.) Mehrling's notes \mn{18}{1}.
 \textbf{Reading.} M.~Stigum, \emph{The Money Market}, pp.~718--722 (cash and carry), as cited in class.
 \end{sources}
 
@@ -123,6 +123,17 @@ where $f^{t}_{3,6}$ is the forward rate quoted at time $t$; in general they all 
 IOUs at inception, changes value: a zero-sum game in which, if rates behave as usual, the bank wins, having locked in a lending rate above the expected spot rate;
 the firm pays a premium for peace of mind about a serious survival constraint \ts{18}{4}{3:22}.
 
+\begin{intuition}[Coordinating views of the future]
+In the notes' framing \mn{18}{1}: in finance the future determines the present, but nobody knows the future, so there are many views of it. How is one path chosen and diverse views
+coordinated? By market pricing of the views, and by the effect of prices on behaviour through the survival constraint. At one extreme, if the market changes its mind about your view you
+cannot roll your funding; more subtly, changing ideas about the future change cash flows today, loosening the constraint for some and tightening it for others, as futures prices do.
+\end{intuition}
+
+The classic forward is the wheat farmer, naturally long wheat, and the baker, naturally short: by a forward contract both lock in the price, each hedging a natural exposure; at delivery one
+side ``wins'', but in a forward the winnings are only notional until the end \mn{18}{3}. The forward price is an arbitrage condition: if $K>S_0e^{rT}$, buy the bond spot and sell it forward,
+locking in a return above the borrowing rate $r$; if $K<S_0e^{rT}$, sell spot and buy forward \mn{18}{4}. (The notes follow J.~Hull, \emph{Options, Futures, and Other Derivatives}, 5th ed.,
+equations 3.5 and 3.9.)
+
 \paragraph{Continuous-time version.} In price terms, with $K$ the delivery (forward) price, $S_t$ the spot price of the underlying (here the six-month bill) and $r$
 the interest rate \ts{18}{4}{5:46}:
 \begin{keyformulas}
@@ -153,6 +164,10 @@ contracts by cash netting) or the reverse \ts{18}{4}{12:30}.
 \caption{The same price history, two cash-flow profiles: a forward pays once at maturity, a futures contract pays every day as the value changes
 \ts{18}{4}{11:01}\ts{18}{5}{1:47}. Schematic.}\label{fig:ff-paths}
 \end{nfigure}
+
+\paragraph{Margin.} The payments go through margin accounts at the futures clearinghouse, and both sides post margin, since at inception both are equally likely to lose; the clearinghouse
+accepts liquid securities as margin, repriced every day, so collateral and contract are both marked to market. The cumulative futures payments equal the forward's final payment, but they come
+every day: ``a very concrete way in which views about the future are settled today'' \mn{18}{6}. (The notes' formula abstracts from interest on the fluctuating margin balances \mn{18}{5}.)
 
 \paragraph{Futures cash flows.} Whenever the futures price changes, cash moves from losers to winners: while the forward's value rises, from the shorts to the
 longs; when it falls, back \ts{18}{5}{1:06}. With a forward, who was winning in the middle does
@@ -197,7 +212,10 @@ borrowing at the actual repo rate $r$ and lending at $\rho$: an interest rate sp
 \end{itemize}
 All price risk is gone; what is left is liquidity risk: the inflows will cover the outflows, ``but not at the same time''. The position is risk-free only if one could
 somehow use the certain final inflow to pay the earlier outflows \ts{18}{7}{2:26}. The same banking view that explains the failure
-of EH (an imbalance in the forward market) explains Stigum's confusing pages: forwards and futures do not trade at the same price \ts{18}{7}{3:28}.
+of EH (an imbalance in the forward market) explains Stigum's confusing pages: forwards and futures do not trade at the same price \ts{18}{7}{3:28}. The notes stress that the negative
+flows might all come at once: the volatility of the bill's spot price is what creates liquidity risk, and the two anomalies, the failure of EH and the profit of cash and carry, have the same origin,
+a mismatch in the natural forward interest rate positions of the real economy. A former teaching assistant of the course, Daniel Neilson, showed how forward--futures deviations can serve as
+an observable proxy for the unobservable deviation of forward rates from expected spot rates, a test of the liquidity premium theory of the term structure \mn{18}{8}.
 
 \begin{coursenote}
 Mehrling notes that the standard explanation, reinvestment of daily futures cash flows, ``goes in the wrong direction'' and may even hide the size of the liquidity
