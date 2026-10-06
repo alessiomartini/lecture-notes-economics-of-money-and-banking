@@ -162,6 +162,12 @@ otherwise go long the bond and insure it (if $u<s$), or short the bond and sell 
 liquidity premium anywhere in this picture''. The difference $u-s$ is the \emph{CDS--bond basis}.
 \end{keyformulas}
 
+The notes call the protection seller's IOU a \emph{mirror bond}: it promises LIBOR $+U$ on face value as long as the issuer pays, and the liquidation value on default; the buyer's IOU promises
+LIBOR, and face value on default. On default the buyer recovers $F$ in full: $P_5$ from the bond, $F-P_5$ from the swap. $U$ is the premium that makes the two IOUs equal in value at inception; but
+since any change in the spread $S$ moves its value, ``CDS is not so much insurance against eventual default as it is insurance against change in the credit spread'' \mn{20}{3}\mn{20}{4}. Pooling
+CDS reduces idiosyncratic risk (the less correlated, the better), letting sellers charge less: a flourishing swap market should lower the price of credit risk overall, ``and that is exactly what
+happened''; for subprime the index used for hedging was ABX, the index of top-tranche mortgage CDOs \mn{20}{1}\mn{20}{4}\mn{20}{5}.
+
 \paragraph{Not just insurance.} A CDS is a promise to pay a fixed premium for its life, but its value fluctuates, inversely to the bond, whenever the warranted
 discount rate changes; so CDS are used not only as insurance against default but as a way to get exposure to credit risk, traded and reversed like any liquid
 derivative. Unlike fire insurance, you are not just waiting for the house to burn \ts{20}{6}{8:00}.
@@ -215,6 +221,10 @@ cost $u$ of insuring it against default, at least from AIG \ts{20}{8}{0:45}:
 \caption{The negative basis trade \ts{20}{8}{1:48}.}\label{fig:cds-ubs}
 \end{nfigure}
 
+\paragraph{The numbers.} The notes give them from UBS's report: UBS paid AIG 11 basis points for 100\% protection on a super-senior CDO tranche, financed the tranche in the wholesale money
+market, and netted an apparently riskless 20 basis points; ``because it was apparently riskfree, they did massive amounts of it'' \mn{20}{5}. In the notes' notation, if the CDS premium $U$ is below
+the spread $S$, the buyer of protection swaps out the credit risk and keeps $S-U$ over LIBOR.
+
 \paragraph{Booking 20 years of profit today.} The \emph{negative basis trade} left money over each period for the life of the tranche, 10 or 20 years; UBS booked the
 whole stream as profit today and paid bonuses on it \ts{20}{8}{4:42}.
 
@@ -250,7 +260,8 @@ would post margin; Moody's downgraded AIG, and it had to \emph{pay} the \$30 bil
 \tacct[2.4cm]{Goldman Sachs (dealer)}{CDS bought from AIG\\($+$\$30 bn when in the money: margin received)}{CDS sold to clients\\($+$\$30 bn owed to clients)}\qquad
 \tacct[2.4cm]{AIG}{Capital (bonds)\\($-$cash paid as margin)}{CDS on AAA securities\\($+$\$30 bn contingent liability)}
 \end{taccts}
-\caption{AIG as private backstop of CDS market making; the \$30 billion is illustrative \ts{20}{9}{1:16}.}\label{fig:cds-aig}
+\caption{AIG as private backstop of CDS market making; ``say \$30 billion'' in class; the notes give about \$30 billion of collateral posted to Goldman's segregated account by the
+time AIG failed \ts{20}{9}{1:16}\mn{20}{6}.}\label{fig:cds-aig}
 \end{nfigure}
 
 \begin{intuition}[Liquidity kills you quick]
@@ -267,6 +278,12 @@ class).\par
 \emph{References:} Financial Crisis Inquiry Commission, \emph{Final Report}, 2011, ch.~13; SIGTARP, \emph{Factors Affecting Efforts to Limit Payments to AIG Counterparties},
 November 2009.
 \end{coursenote}
+
+\begin{intuition}[Was Goldman paid at par by the government?]
+The notes correct ``a lot of loose talk'' \mn{20}{6}: since the CDS were marked to market, Goldman already held the collateral, it had already been paid. When AIG could not meet further collateral
+calls the government took over, lending \$85 billion; that money was used to acquire the referenced securities at liquidation value to end the swaps. In the algebra of the pricing example, AIG had
+already paid $F-P_5$; the government lent AIG $P_5$ to buy the bonds, which went onto the Fed's balance sheet as Maiden Lane II and III.
+\end{intuition}
 
 \paragraph{Should the government have clawed it back?} Neil Barofsky (SIGTARP), whose book is on the final-exam reading, wrote a report on AIG: Goldman and, even bigger,
 Soci\'et\'e G\'en\'erale sucked the capital out of AIG, the government took over AIG, and the question was what to do about the money already paid to Goldman
@@ -321,7 +338,8 @@ included Soci\'et\'e G\'en\'erale: the international aspects again \ts{20}{10}{4
 In April 2010 the SEC charged Goldman Sachs with misleading investors in the synthetic CDO Abacus 2007-AC1, whose reference portfolio Paulson \& Co.\ had helped select
 while betting against it; Goldman settled in July 2010 for \$550 million. IKB, an early casualty of the crisis in 2007, was rescued with the support of the state-owned
 KfW.\par
-\emph{References:} SEC press releases 2010-59 (16 April 2010) and 2010-123 (15 July 2010).
+\emph{References:} SEC press releases 2010-59 (16 April 2010) and 2010-123 (15 July 2010); G.~Zuckerman, \emph{The Greatest Trade Ever}, 2009 (cited in Mehrling's notes, which also
+recall, from G.~Tett, \emph{Fool's Gold}, 2009, that the first CDS were built in this synthetic way for J.~P.~Morgan to hedge tail risk on corporate loans) \mn{20}{6}.
 \end{history}
 
 % ------------------------------------------------------------------
