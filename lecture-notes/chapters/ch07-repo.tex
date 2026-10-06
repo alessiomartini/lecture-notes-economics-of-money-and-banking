@@ -22,7 +22,7 @@
 
 \smallskip
 \textbf{Files.} Transcripts \file{materials/transcripts/L07-P*.txt}. Segment~5 has no YouTube captions: its transcript
-\file{L07-P05.txt} is extracted from the original \file{transcript-lecture-7to12.txt}, so its times may be off by a few seconds.
+\file{L07-P05.txt} is extracted from the original \file{transcript-lecture-7to12.txt}, so its times may be off by a few seconds. Mehrling's notes \mn{7}{1}.
 \textbf{Reading.} Stigum, \emph{The Money Market}, chapter on repo (pages 533--534 are quoted in class).
 \end{sources}
 
@@ -130,7 +130,8 @@ Two rules:
 The dealer's ``repo'' and ``reverse'' are the same instrument seen from the two sides; they get different names because the dealer is in the middle,
 where one is a liability and the other an asset \ts{7}{4}{5:40}. To add to the confusion, the Fed uses the words the other way round: when it
 borrows from dealers it calls it a ``reverse repo'', when it lends (open market operations) a ``repo'' \ts{7}{4}{6:21}. Always translate
-into balance sheets: who is borrowing money? \ts{7}{4}{7:23}
+into balance sheets: who is borrowing money? \ts{7}{4}{7:23} (The notes add the reason for the convention: the borrower of money is also lending securities and
+could be said to acquire an asset, but the course does not book it that way, following the money, because of the hierarchy of money and credit \mn{7}{1}.)
 
 \begin{history}[Repo before the Fed]
 Repo is ``very ancient'': in the United States it existed before the Fed, as the way banks traded with each other before the Fed funds market. With a
@@ -189,9 +190,11 @@ only at the fourth decimal, but traders must get them right \ts{7}{6}{6:04}. On 
 is about \$137: the cost of borrowing a million dollars overnight \ts{7}{6}{7:26}.
 
 \begin{coursenote}[Checking the numbers]
-The price of the bond is garbled in the captions (``129 30 seconds''); the other numbers are consistent with a price of about $101\tfrac{8}{32}=101.25$:
-$0.98\times101.253=99.228$. Interest on \$1 million for one day at 4.92\%/360 is \$136.67, the ``137'' of the lecture; on the amount actually lent,
-\$992{,}280, it is \$135.61. Bond prices were quoted in 32nds of a point (one point $=$ 1\% of face value).
+The price of the bond is garbled in the captions (``129 30 seconds''). Mehrling's notes give it: the bond trades at $100\tfrac{29}{32}$ \emph{plus accrued
+interest} (Stigum, p.~533, Figure~13.1) \mn{7}{2}; with the 2\% haircut the borrower gets 99.228, so the full price including accrued interest is
+$99.228/0.98 = 101.253$, about 0.35 of accrued interest. The next day he repays $99.2280\,(1+0.0492/360) = 99.2416$, about \$135 of interest on a loan of roughly
+one million dollars \mn{7}{2}. (``137'' in class is the interest on exactly \$1 million, \$136.67.) Bond prices were quoted in 32nds of a point (one point $=$ 1\% of face
+value).
 \end{coursenote}
 
 \paragraph{Haircuts make collateral homogeneous.} Different securities get different haircuts (2\% for a Treasury, 5, 10 or 50\% for a mortgage-backed
@@ -259,6 +262,18 @@ open market operations \ts{7}{8}{2:10}. Before the crisis the Fed was in the rep
 For a long time the Fed refused to call its borrowing ``reverse repos'' and called them \emph{matched sale--purchases} (MSPs): ``I'm the Fed, I print this stuff,
 why do I need to provide collateral?'' Now it calls them reverses, acting like a bank \ts{7}{8}{4:56}.
 
+\paragraph{Daily elasticity.} Outright purchases of Treasuries happen a couple of times a year, secularly to supply the reserves of a growing economy; on a daily basis
+the Fed provides elasticity, soaking up excess reserves and meeting temporary demand caused by ``operating factors'': changes in the Treasury's balance at the Fed (a rise
+drains reserves from banks) and in the public's cash holdings (a cash drain) \mn{7}{4}. Before the crisis the Desk arranged short-term repos on all but 8 business days of
+2006, large relative to total bank reserves \mn{7}{4}\mn{7}{5}. The reverses that were on the Fed's balance sheet were almost all its repo pool for foreign central banks,
+which thus earned the repo rate on balances at the Fed while ordinary reserves earned nothing \mn{7}{4}. The new reverse repos shift the Fed's liabilities from reserves,
+high-powered money, to repo, less high-powered (especially at term), and shift its counterparty from banks to dealers \mn{7}{5}:
+\begin{taccts}
+\tacct[2.0cm]{Bank}{$-$Reserves}{$-$Deposit of dealer}\quad
+\tacct[2.0cm]{Dealer}{$+$Reverse repo\\$-$Deposit}{}\quad
+\tacct[2.0cm]{Fed}{}{$+$Reverse repo\\$-$Reserves}
+\end{taccts}
+
 \paragraph{One more level.} A Fed repo lends reserves to a dealer against a Treasury bill; the dealer has no account at the Fed, so the reserves end up at the
 dealer's bank, credited to its deposit (or repaying a bank loan); if they are excess, the bank lends them in the Fed funds market. This is how open market
 operations influence the Fed funds rate \ts{7}{8}{6:42}:
@@ -288,12 +303,25 @@ worked the same way: the analogue of bank rate was the Fed funds target, the ana
 \emph{discipline}: repo is the cheapest funding, so dealers repo out all their securities first; if they need more, they must go to more expensive money, borrowing
 from their bank not at the Fed funds rate but at Fed funds plus 50 basis points \ts{7}{9}{4:40}.
 
+\begin{intuition}[The morning auction]
+The notes make the mechanism concrete \mn{7}{5}\mn{7}{6}. Dealers expand on thin capital with almost no cash reserves, relying on repo; if short of collateral, they borrow
+from their clearing bank at about Fed funds $+50$ bp. At the Fed's morning repo auction dealers bid for the money; the Fed, wanting to supply needed reserves but keep them
+scarce, accepts bids at or above the Fed funds target; dealers bid above the market repo rate because any chance of needing the clearing bank's loan makes the Fed's money
+worth it. Result: Fed funds above repo, and overnight money above three-month bills. The premium on the best money gives everyone an incentive to settle at the clearing
+rather than roll over: ``the answer to the otherwise puzzling pattern of interest rates in the money market is nothing more than the natural hierarchy of money and
+credit''. The argument is developed in Mehrling, ``Monetary Policy Implementation: A Microstructure Approach'' (2006), and resembles the 19th-century British system of
+Bagehot and Sayers \mn{7}{5}.
+\end{intuition}
+
 \subsection{After the crisis: repo $>$ Fed funds}
 Since January repo has moved in a band of about 16 to 30 basis points, always above Fed funds effective, sometimes by a lot \ts{7}{10}{0:09}. With the
 same Bagehot logic: a market rate above the official rate means the Fed is trying to be very elastic, to pull the market rate down by pegging Fed funds below it. That
 offers an arbitrage: borrow Fed funds, lend in repo, pick up about 15 basis points, and only banks (mostly) can do it \ts{7}{10}{0:51}. That
 repo \emph{stays} above Fed funds despite the incentive is worrying: there are people who need liquidity and keep bidding for it, and the arbitrage is not enough to meet
-the needs of the dollar funding markets, which are under stress \ts{7}{10}{1:54}. This is what the Fed would have been watching when deciding
+the needs of the dollar funding markets, which are under stress \ts{7}{10}{1:54}. In the notes: with repo $<$ Fed funds the Fed keeps the better money at a premium, for
+discipline; with repo $>$ Fed funds it keeps it at a discount, for elasticity: the market rate is repo, the official rate Fed funds, and the Fed wants banks to borrow at
+the official rate and lend at the market rate, supporting short-term credit markets. A 15 basis point gap suggests this is not working very well, ``a large gap in money
+market terms'' \mn{7}{6}. This is what the Fed would have been watching when deciding
 on another QE: pegging Fed funds low was not enough, so now it buys MBS outright, \$40 billion a month, injecting reserves directly and not temporarily
 \ts{7}{10}{2:36}. Will it work? Keynes said monetary policy is better at slowing the economy than at speeding it up: ``pushing on a string''
 (\cref{sec:nh-managing}) \ts{7}{10}{3:37}.
