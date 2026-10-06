@@ -21,7 +21,7 @@
 \end{tabularx}
 
 \smallskip
-\textbf{Files.} Transcripts \file{materials/transcripts/L06-P*.txt}.
+\textbf{Files.} Transcripts \file{materials/transcripts/L06-P*.txt}; Mehrling's notes \mn{6}{1}.
 \textbf{Reading.} Stigum, \emph{The Money Market}, the chapter on the Fed funds market (quoted in class).
 \end{sources}
 
@@ -97,6 +97,13 @@ Stigum: the primary job of the manager of a bank's Fed funds desk is to ensure
 The survival constraint, in Stigum's words that the bank must settle with the Fed, takes the precise institutional form of a requirement to \emph{end
 the day with a non-negative balance at the Fed} \ts{6}{4}{0:08}. It does not bind \emph{during} the day \ts{6}{4}{0:29}.
 
+\begin{reading}[Stigum on the Fed funds desk]
+Stigum (p.~507) describes the job of a bank's Fed funds desk as ensuring that the bank settles with the Fed and that in doing so it holds no more excess
+reserves than it can carry into the next period. In the course's terms: (1) satisfy the daily survival constraint, and (2) satisfy the legal reserve
+requirement (the special Wednesday settlement). The first is the more interesting, especially now that all banks hold massive excess reserves and the
+requirement does not bind \mn{6}{1}.
+\end{reading}
+
 \paragraph{Daylight overdrafts at the Fed.} Mehrling spent the summer of 1986 at the Board of Governors as a graduate student, when the Fed was worried
 about its credit exposure from daylight overdrafts \ts{6}{4}{0:49}. Bank A must pay bank B but has no reserves: it simply runs an overdraft,
 which is a loan from the Fed; the Fed creates the reserves and credits them to B, which feels paid and knows nothing of the arrangement
@@ -111,6 +118,10 @@ the end of the day; if A does not, the Fed is forced to lend overnight, but at a
 A an incentive to find someone who will lend cheaper. The Fed cannot say ``pay me or you're dead'', because it is protecting the payment system; it says
 ``pay me or you owe me more than you want to''. Sometimes a bank cannot find a counterparty and pays the penalty \ts{6}{4}{3:15}.
 Credit expands during the day and collapses at the end of it: the intraday version of the pattern at every level and every time scale \ts{6}{4}{4:36}.
+The violation of the survival constraint during the day is essential: it lets banks be ``first movers'', paying before they are paid. At its peak the daylight
+expansion of reserves typically exceeds the (rather small) required reserves, so ``it is not stretching the truth much to say that these daylight temporary
+reserves, not the overnight required reserves, are the actual ultimate means of payment'': the payment system is much closer to an ideal credit system than to
+an ideal money system \mn{6}{1}.
 
 \paragraph{CHIPS.} The same happens on the balance sheet of a private clearinghouse, CHIPS, a mutual organisation of banks that collects dues to and from
 during the day and settles at the end of the day on Fedwire \ts{6}{4}{4:57}. Every morning members deposit collateral; during the day
@@ -132,8 +143,10 @@ so a CHIPS credit is money only ``hopefully'', after settlement on Fedwire \ts{6
 \begin{coursenote}[Daylight overdraft policy]
 The Fed and CHIPS have tightened up over time: the size of overdrafts allowed depends on a bank's capital, and the Fed charges for them, on the average
 overdraft during the day, so a trillion-dollar overdraft for a few microseconds costs essentially nothing, but still disciplines the bank, which must know
-where the money is coming from \ts{6}{5}{2:52}. (Fees on daylight overdrafts were introduced in 1994, with caps related to capital.
-The overnight penalty rate quoted in class may have changed since.) Large security and international transactions cluster at the end of the day, when CHIPS
+where the money is coming from \ts{6}{5}{2:52}. (Fees on daylight overdrafts were introduced in 1994, with caps related to capital; the notes give the fee as 36 basis points, and add that banks may
+borrow an amount proportional to capital without paying interest, and that the penalty for overnight borrowing at the discount window, 100 basis points over
+the Fed funds target, had been lowered by Bernanke to 50, ``probably just temporary'' \mn{6}{2}\mn{6}{6}. The source cited there is S.~Coleman, ``The Evolution
+of the Federal Reserve's Intraday Credit Policies'', \emph{Federal Reserve Bulletin}, February 2002.) Large security and international transactions cluster at the end of the day, when CHIPS
 settles through Fedwire \ts{6}{5}{3:53}.
 \end{coursenote}
 
@@ -164,6 +177,12 @@ from B and then uses them to pay B; the reserves go back and forth and what is l
 \begin{proposition}[Paying today by promising tomorrow]
 A Fed funds loan pushes final settlement into the future: ``I'm going to pay you today by promising to pay you tomorrow'' \ts{6}{5}{8:50}.
 \end{proposition}
+
+\paragraph{Natural buyers and sellers.} Stigum notes that some banks are natural sellers of funds and others natural buyers: small banks in isolated areas, with
+little demand for loans, have daily inflows exceeding outflows; large city banks lend out all their deposits and more. So the Fed funds market channels funds from
+country banks to city banks, like the older correspondent banking it replaced, and the flow is still largely intra-regional, as the location of the twelve Reserve
+Banks reflects \mn{6}{3}. Unlike a clearinghouse, a Fed funds trade moves reserves at once, with no netting; once A has bought the money it can sell it again, so by
+the end of the day outstanding Fed funds credit can be several times the deposits at the Fed \mn{6}{3}.
 
 % ------------------------------------------------------------------
 \section{Payment versus funding: an example}\label{sec:ff-example}
@@ -217,7 +236,22 @@ A \emph{broker} puts buyer and seller together and takes a fee, like a real-esta
 trade the loan sits on the balance sheets of A and B only \ts{6}{7}{0:07}. A \emph{dealer} like HSBC stands in between, and the loans sit on
 its balance sheet: Chase and Citibank probably do not even know that they are, in effect, lending to and borrowing from each other \ts{6}{7}{1:08}. The
 dealer is ``the source of liquidity in these markets'', a theme for the rest of the course \ts{6}{7}{1:50}. (Brokers and dealers were defined in
-\cref{def:nh-mm}.)
+\cref{def:nh-mm}.) The notes draw the difference: brokering leaves the broker's balance sheet untouched, dealing expands it \mn{6}{5}:
+\begin{taccts}
+\textit{Brokered:}\quad
+\tacct[1.8cm]{Bank A}{$+$Reserves}{$+$FF loan}\quad
+\tacct[1.8cm]{Broker}{}{}\quad
+\tacct[1.8cm]{Bank B}{$-$Reserves\\$+$FF loan}{}
+
+\medskip
+\textit{Dealt:}\quad
+\tacct[1.8cm]{Bank A}{$+$Reserves}{$+$FF loan}\quad
+\tacct[1.8cm]{Dealer}{$+$FF loan (to A)}{$+$FF loan (from B)}\quad
+\tacct[1.8cm]{Bank B}{$-$Reserves\\$+$FF loan}{}
+\end{taccts}
+Brokers keep sheets of bids and offers and look for matches, fine-tuning quotes for credit lines, since the seller is also the lender (Stigum's ``line problems'');
+the effective rate is discovered at brokers and dealers. Dealers buy funds low and sell high, bridging segments (small and large, unsophisticated and sophisticated,
+domestic and offshore) and time (intraday, across days): arbitrage, ``picking up nickels'', and market making \mn{6}{3}\mn{6}{4}\mn{6}{5}.
 
 % ------------------------------------------------------------------
 \section{Payment imbalances and the Fed funds rate}\label{sec:ff-rate}
@@ -240,6 +274,9 @@ security dealer funding its securities, which ends up with reserves it does not 
 \tacct[2.0cm]{Security dealer}{$+$Reserves, then $-$Reserves\\$+$Fed funds lent}{$+$Repo from Fed}
 \end{taccts}
 The \emph{Fed funds effective} rate is the average of the rates at which funds trade during the day; good borrowers pay less, bad ones more \ts{6}{8}{6:45}.
+When the Fed adds reserves, the daylight expansion of credit on Fedwire need not collapse to zero at the end of the day: the Fed takes some of it onto its own
+balance sheet overnight or longer \mn{6}{5}. As the former New York Fed desk manager Peter Sternlight put it (quoted by Stigum, p.~506), ``if you want to hang your
+hat on something, hang it on the average effective funds rate over the settlement period'' \mn{6}{6}.
 
 \begin{definition}[New concepts: target rate, effective rate]
 The \emph{Fed funds target} is the rate (since 2008 a range) that the Federal Open Market Committee (FOMC) aims at; the \emph{effective} Fed funds rate is the
@@ -284,6 +321,15 @@ reserves, a shortage of reserves limits the expansion of deposits and of bank cr
 \end{itemize}
 It was an attempt to impose discipline on a system that seemed out of control, in a period of double-digit inflation; according to Stigum it did not really work
 \ts{6}{10}{3:36}. Today, with trillions of reserves, requirements are a dead letter, yet the Fed funds market exists for payments \ts{6}{10}{4:17}.
+
+\begin{aside}[The Fed's worry about daylight credit]
+From his summer of 1986 at the Board, Mehrling's notes recall why the Fed worried: Fedwire is real-time gross settlement, so banks made more payments than they had
+reserves, planning to receive payments later, an intraday expansion of reserves out of the Fed's control; the Fed thinks of reserves as money and wants credit to
+happen elsewhere. It set credit limits, then (1994) charged for average overdrafts, which did little to reduce peak overdrafts, late in the day and driven by securities
+transactions. Raising the price might push overdrafts onto other systems that charge less, even zero. CHIPS, where payments are good only after end-of-day net
+settlement, was required on 1 October 1981 to move to same-day settlement, and its collateral requirements were periodically tightened: the idea was to push the credit
+element out of the payment system into the repo market \mn{6}{6}\mn{6}{7}.
+\end{aside}
 
 \begin{coursenote}[Dates]
 The Fed's ``monetarist experiment'' of targeting reserves ran from October 1979 to 1982. Contemporaneous reserve accounting was introduced in February 1984 and
