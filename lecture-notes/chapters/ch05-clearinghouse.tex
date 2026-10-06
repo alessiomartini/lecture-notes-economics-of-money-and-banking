@@ -21,7 +21,7 @@
 \end{tabularx}
 
 \smallskip
-\textbf{Files.} Transcripts \file{materials/transcripts/L05-P*.txt}.
+\textbf{Files.} Transcripts \file{materials/transcripts/L05-P*.txt}; Mehrling's notes \mn{5}{1}.
 \textbf{Reading.} Charles F.~Dunbar, \emph{Chapters on the Theory and History of Banking} (1891; 2nd ed.\ 1901), the chapter on the
 checking system (not among the course files).
 \end{sources}
@@ -98,6 +98,18 @@ The aim of a payment system is that whenever there is a willing buyer and a will
 The credit system can do everything the money system does and more; the actual US domestic payment system has this credit character, and
 the Federal Reserve System is an example of it \ts{5}{2}{7:22}.
 
+\begin{secondary}[What is the quantity of money?]
+In the money version it is natural to call the deposits the quantity of money. With overdrafts the measure becomes ambiguous; the notes list three
+candidates \mn{5}{1}:
+\begin{enumerate}
+  \item deposits, which counts only the positive balances;
+  \item deposits minus overdrafts;
+  \item deposits minus credit limits (the unused borrowing power counts as means of payment too).
+\end{enumerate}
+This ambiguity led Fischer Black to propose not trying to measure money at all, in ``Banking in a World without Money'' (lecture~\ref{ch:threeviews})
+\mn{5}{2}.
+\end{secondary}
+
 \begin{definition}[New concepts: overdraft]
 An \emph{overdraft} is a negative balance on a deposit account, i.e.\ a loan from the bank created automatically when the holder pays more
 than he has (one ``draws over'' the balance). It is an asset of the bank.
@@ -171,7 +183,9 @@ It looks like a free lunch that cannot do anything, but it does: now net payment
 \textit{(2)}\quad\tacct[2.2cm]{Bank A}{}{$-$Deposit $\alpha$ 10\\$+$Deposit of B 10}\quad
 \tacct[2.2cm]{Bank B}{$+$Deposit at A 10}{$+$Deposit $\lambda$ 10}
 \end{taccts}
-Either way it is credit: either the debtor bank's balance sheet shrinks or the creditor bank's expands \ts{5}{5}{8:16}.
+Either way it is credit: either the debtor bank's balance sheet shrinks or the creditor bank's expands \ts{5}{5}{8:16}. In the first case total
+deposits, counting interbank balances, fall; in the second they rise \mn{5}{3}. The invention of correspondent banking moves payments \emph{between
+banks} from a money system to a credit system: they are no longer constrained by the quantity of gold, only by bilateral credit limits \mn{5}{3}.
 
 \begin{definition}[New concepts: correspondent balances]
 A \emph{correspondent balance} (banker's balance) is a deposit that one bank holds at another to settle payments between them. The bank that
@@ -184,7 +198,9 @@ with you; you hold a deposit with me, paid in reserves up front, or I lend it to
 \ts{5}{5}{8:37}. This is discipline for the debtor bank: to join the payment system a country bank must keep balances at an urban
 bank; if it runs out there is no guarantee the city bank will expand to help it, and it may charge extra. ``This is the hierarchy of money
 showing up in the payment system'' \ts{5}{5}{9:17}. Correspondent balances make the system work much more like the ideal one big
-bank on a credit basis; the retail customer sees none of this \ts{5}{5}{9:58}.
+bank on a credit basis; the retail customer sees none of this \ts{5}{5}{9:58}. The notes: the more central bank always takes deposits from the
+less central; in the US country banks held deposits at city banks, and those reserve cities survive as the cities of the twelve Federal Reserve Banks
+\mn{5}{3}.
 
 \paragraph{The network.} Before the central bank, money-centre banks (Cleveland, Chicago, \dots) had correspondent relations with banks in their
 hinterland; payments within a region just moved deposits at the centre bank \ts{5}{6}{0:07}. Payments between regions need a payment
@@ -332,6 +348,15 @@ clearinghouse did, but legally, as monetary policy: it expands both sides of its
 any clearinghouse would: he does not only lend to banks, he buys mortgage-backed securities from whoever holds them, and lends to broker-dealers; the
 clearinghouse was a club, the Fed has more members and in a crisis deals with the whole economy \ts{5}{9}{3:18}.
 Private and public clearinghouse differ in membership, rules and priorities, but the mechanics are very much the same \ts{5}{9}{4:41}.
+
+\begin{intuition}[One step beyond the clearinghouse]
+In the notes, central banking is ``nothing more than one step beyond the clearinghouse'': it regularizes and strengthens the clearinghouse and
+erases the difference between clearinghouse certificates (backed by gold) and clearinghouse \emph{loan} certificates (backed by members' loans), both
+becoming deposits or currency of the central bank \mn{5}{5}. A clearinghouse can be broken by any single member who insists on redeeming its
+certificates in gold; a central bank cannot be broken by internal forces, because its liabilities \emph{are} the member banks' reserves. All payments
+inside the system net out on its books: it makes the system of banks work as if it were a single bank. What remains is managing relations with the
+rest of the world, internal and external drains, and that is the origin of the ``art of central banking'' \mn{5}{5}.
+\end{intuition}
 
 \begin{definition}[New concepts: Fedwire, CHIPS]
 \emph{Fedwire} is the Federal Reserve's real-time gross settlement system, which transfers reserve balances between banks' accounts at the Fed.
