@@ -20,6 +20,11 @@ def decode(path):
 
 
 rows = {r['id']: r for r in csv.DictReader(open(ROOT / 'materials/videos.csv', encoding='utf-8'))}
+# L19.4: the ColumbiaLearn video duplicates L19.5; videos.csv now points to the re-upload
+# eZk9A6Pw10g (see OVERRIDE in tools/transcripts.py); run: python tools/whisper_segments.py eZk9A6Pw10g
+import sys
+if len(sys.argv) > 1:
+    SEGS = set(sys.argv[1:])
 model = WhisperModel('small.en', device='cpu', compute_type='int8')
 for vid in SEGS:
     r = rows[vid]

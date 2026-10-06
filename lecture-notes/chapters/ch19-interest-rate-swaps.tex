@@ -10,7 +10,7 @@
 \seg{19}{1}{L19.1 FT: Sovereign debt crises} & 3:21 & Argentina, Greece, Draghi; pension funds leaving long sovereign debt.\\
 \seg{19}{2}{L19.2 Reading: FOMC Report (1952)} & 7:40 & The Fed's secret 1952 plan: dealers, market liquidity, transmission along the yield curve.\\
 \seg{19}{3}{L19.3 Treasury-swap spread, a puzzle} & 11:04 & Negative swap spreads at the long end; what a swap is; swap lingo.\\
-\seg{19}{4}{L19.4 What is a swap} & 10:35 & Same captions as L19.5.\\
+\seg{19}{4}{L19.4 What is a swap} & 2:59 & A swap as a portfolio of forwards; a natural banking instrument.\\
 \seg{19}{5}{L19.5 Why swap? An example from Stigum} & 10:37 & AA and BBB share 35 basis points; exposure in a swap.\\
 \seg{19}{6}{L19.6 Market making in swaps} & 8:42 & The swap dealer's matched book; where capital market prices come from.\\
 \seg{19}{7}{L19.7 Money market swaps, example} & 5:57 & Stigum's one-year swap through J.P.~Morgan.\\
@@ -21,9 +21,7 @@
 
 \smallskip
 \textbf{Files.} Transcripts \file{materials/transcripts/L19-P*.txt}; L19.2 has no YouTube captions and was transcribed locally from the audio
-(faster-whisper, \file{tools/whisper_segments.py}). Mehrling's notes \mn{19}{1}. The video published as L19.4
-(``What is a swap'') contains the same lecture as L19.5 (the two auto-caption files are independent but match word for word with the same timings): an error in the
-playlist, so L19.5 is cited throughout. The material that title promises is covered at the end of L19.3.
+(faster-whisper, \file{tools/whisper_segments.py}). Mehrling's notes \mn{19}{1}. The video published as L19.4 in the ColumbiaLearn playlist (nCrxDIuCZ2Y) is a copy of L19.5; the right segment (2:59) was found in a re-upload of the Coursera version (eZk9A6Pw10g, channel ``Educational Documentaries'') and transcribed locally; the links point to it.
 \textbf{Reading.} Federal Open Market Committee, report of the Ad Hoc Subcommittee on the Government Securities Market (1952); M.~Stigum, \emph{The Money Market}.
 \end{sources}
 
@@ -137,6 +135,16 @@ A short swap position (receive fixed, pay floating) is like owning a fixed-rate 
 corporate bond is the collateral \ts{19}{3}{9:49}.
 \end{intuition}
 
+\paragraph{A portfolio of forwards.} A second analogy, with last lecture: a forward is like a six-month loan against a three-month deposit, one longer and one shorter term. Stigum ``makes a big deal'' of the point that a swap is a portfolio of forward contracts, one for each payment date, six months, one year, one and a half, two years and so on, each compared with six-month LIBOR \ts{19}{4}{0:00}. So a swap dealer can hedge in the forward market, and therefore in the futures market: the swap market is linked to the plain forward and futures markets, which is why they came first \ts{19}{4}{1:12}. A swap sounds exotic, but it is ``just like things you've seen before'', stripped of principal payments: ``a natural banking instrument'', a kind of long-term repo, locking in forward positions for ten years rather than three months, hence a market of trillions \ts{19}{4}{1:41}.
+
+\begin{intuition}[A swap is a strip of forwards]
+Finance usually analyses a swap as a portfolio of forward interest rate contracts, one for each payment date (forwards, not futures, since payments are periodic, not marked to market): BBB
+locks in future borrowing rates, AA future lending rates. Comparing parallel loans, the first payment of a \emph{short} swap is exactly a \emph{long} forward, the later ones more distant forwards.
+Warning: being long a swap is like being short a portfolio of forwards, so a long swap is hedged with \emph{long} futures, ``rather counterintuitive (to say the least!)'' \mn{19}{2}. The parallel loan
+structure itself would expand both balance sheets, and with them apparent leverage and counterparty exposure; netting the payments, and then the principal too, puts the whole thing off balance
+sheet \mn{19}{1}.
+\end{intuition}
+
 % ------------------------------------------------------------------
 \section{Why swap? An example from Stigum}\label{sec:irs-why}
 
@@ -186,13 +194,6 @@ on an actual parallel loan \ts{19}{5}{8:27}.
 and swaps it to others, breaking down inequalities across markets until the bond market grows up \ts{19}{5}{9:28}. Stigum tells of British capital controls evaded by parallel loans that were
 in effect currency swaps, and dates US interest rate swaps to 1981, in the Volcker tight-money period, when lesser credits were locked out of some markets completely \mn{19}{3}.
 
-\begin{intuition}[A swap is a strip of forwards]
-Finance usually analyses a swap as a portfolio of forward interest rate contracts, one for each payment date (forwards, not futures, since payments are periodic, not marked to market): BBB
-locks in future borrowing rates, AA future lending rates. Comparing parallel loans, the first payment of a \emph{short} swap is exactly a \emph{long} forward, the later ones more distant forwards.
-Warning: being long a swap is like being short a portfolio of forwards, so a long swap is hedged with \emph{long} futures, ``rather counterintuitive (to say the least!)'' \mn{19}{2}. The parallel loan
-structure itself would expand both balance sheets, and with them apparent leverage and counterparty exposure; netting the payments, and then the principal too, puts the whole thing off balance
-sheet \mn{19}{1}.
-\end{intuition}
 
 % ------------------------------------------------------------------
 \section{Market making in swaps}\label{sec:irs-dealers}

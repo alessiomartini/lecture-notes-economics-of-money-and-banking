@@ -64,8 +64,16 @@ def main():
     lec1 = sum(r['duration'] for r in rows if r['lecture'] == 1)
     assert abs(lec1 - (55 * 60 + 16)) <= 5, lec1
 
+    # playlist error: the ColumbiaLearn video for L19.4 is a copy of L19.5; use the re-upload of the
+    # right segment (transcribed by tools/whisper_segments.py, so its transcript is not regenerated here)
+    OVERRIDE = {(19, 4): ('eZk9A6Pw10g', 179)}
+    for r in rows:
+        if (r['lecture'], r['part']) in OVERRIDE:
+            r['id'], r['duration'] = OVERRIDE[(r['lecture'], r['part'])]
+            r['override'] = True
+
     with open(os.path.join(MAT, 'videos.csv'), 'w', newline='', encoding='utf8') as f:
-        w = csv.DictWriter(f, fieldnames=list(rows[0]))
+        w = csv.DictWriter(f, fieldnames=list(rows[0]), extrasaction='ignore')
         w.writeheader()
         w.writerows(rows)
 
@@ -76,6 +84,8 @@ def main():
 
     missing = []
     for r in rows:
+        if r.get('override'):
+            continue
         raw = glob.glob(os.path.join(MAT, 'transcripts', 'raw', f"{r['index']:03d}-*.json3"))
         if not raw:
             missing.append(r['index'])

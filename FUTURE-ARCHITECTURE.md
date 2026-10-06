@@ -30,7 +30,7 @@
   locally with faster-whisper into materials/transcripts/LXX-PYY.txt, then add the sections.
   Oct 2026 attempt: YouTube answered "Sign in to confirm you're not a bot" for every player client
   (IP flagged); needs a retry later or cookies (`--cookies-from-browser`, only with Alessio's OK).
-- Playlist errors: video L19.4 ("What is a swap") contains the same lecture as L19.5; L8.10 duplicates L8.9.
+- Playlist errors: ColumbiaLearn video L19.4 duplicates L19.5; the right segment is the re-upload eZk9A6Pw10g (OVERRIDE in tools/transcripts.py, transcribed with whisper). L8.10 duplicates L8.9.
 - Readings linked from sites.bu.edu/perry lecture pages (Hicks, Mundell, Moulton I-IV, UBS report, SIGTARP, Black's World Without Money...) are not downloaded yet.
 - Possible next: appendix A (materials map).
 
