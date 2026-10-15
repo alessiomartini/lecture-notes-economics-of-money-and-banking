@@ -32,3 +32,5 @@
 - Possible next: appendix A (materials map).
 
 - Mehrling's written notes (sites.bu.edu/perry), one PDF per lecture, in materials/mehrling-notes/ (+ .txt with page markers). Cite with `\mn{L}{page}`. Integrated into all 22 chapters (Oct 2026); page links with \mn{L}{page}.
+
+- Keep the pace (2026-10-15): `recall` box added to the preamble; applied to ch16 (recap of the gold-standard diagrams). Checked all 22 chapters: exercises are short (no pseudo-exam appendix needed) and the text rarely restates earlier lectures. Add RECALL boxes when new chapters recap old ones.

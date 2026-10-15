@@ -25,6 +25,10 @@ without solutions, `mysolution` never edited (comments go in `\feedback`); stand
 - T-accounts: `\tacct[width]{Title}{assets, rows separated by \\}{liabilities}` inside `taccts`;
   `\amt{852}` right-aligns an amount.
 - Use `nfigure` (non-floating) instead of `figure`: floats inside paracol left almost empty pages.
+- Keep the pace (2026-10-15): a repetition of earlier material goes in a right-column `recall` box (cyan) with a
+  `\cref` to the original; long exercises (> ~15-20 min, > 3 parts) would go verbatim to an end-of-book
+  "Pseudo-exam and second reading" appendix (none needed so far: all exercises are short); nothing is deleted
+  (passages taken out of the text go to a `\section*{Set aside}` at the chapter end).
 - Boxes: `intuition`, `finance` ("In the markets"), `casestudy` (FT article of the day), `reading`
   (assigned reading), `keyformulas`, `secondary`, `history`, `aside`, `coursenote`, `example`.
 - A right-column item queued at the end of a section must be flushed with `\flushside` before a
