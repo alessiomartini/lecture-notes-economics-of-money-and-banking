@@ -17,7 +17,7 @@ regenerated with the commands below; Mehrling's notes and the readings can be do
 ## Structure
 
 ```
-├── README.md  CLAUDE.md  FUTURE-ARCHITECTURE.md
+├── README.md  CLAUDE.md  ROADMAP.md
 ├── tools/transcripts.py        # playlist + captions -> videos.csv, per-segment transcripts, videos.tex
 ├── materials/                  # course material as downloaded (sources of the notes)
 │   ├── playlist.json           # yt-dlp metadata of the 192-video playlist
