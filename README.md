@@ -34,17 +34,16 @@ regenerated with the commands below; Mehrling's notes and the readings can be do
 └── lecture-notes/              # the LaTeX book (same setup as the MIT 18.642 notes)
     ├── main.tex  preamble.tex  videos.tex (generated)
     ├── chapters/ch00-requests.tex, ch01-four-prices.tex, ...
-    └── .vscode/                # LaTeX Workshop: save = fast build of the saved chapter
+    ├── build.py                # full build (latexmk) -> build/main.pdf + build/book.pdf
+    └── archive/vscode/         # old VS Code / LaTeX Workshop setup (unused)
 ```
 
 ## Build
 
-Open `lecture-notes/` in VS Code with LaTeX Workshop: saving a chapter rebuilds only that chapter
-(`.vscode/build.py`); the recipe *Whole book (latexmk)* builds everything and copies the result to
-`build/book.pdf`. From a shell:
+Single full build (page layout 16:9, 32x18 cm); the result is also copied to `build/book.pdf`:
 
 ```bash
-cd lecture-notes && python .vscode/build.py full
+cd lecture-notes && python build.py
 ```
 
 Requires a TeX distribution with `latexmk` (MiKTeX/TeX Live) and Python 3.
