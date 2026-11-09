@@ -1,10 +1,6 @@
 # Instructions for Claude — Mehrling lecture notes
 
-Talk to Alessio in Italian; the notes, code and docs are in English.
-Global preferences (`~/.claude/rules/alessio-preferences.md`, section "Lecture notes") apply in full:
-fixed box colours, screen layout with right column, notes/answers/requests system, history boxes,
-"New concepts" definition boxes, etymology of new terms, enumerations one item per line, exercises
-without solutions, `mysolution` never edited (comments go in `\feedback`); standalone exercises (self-contained, practising one section) go in the text right after that section, as early as possible; exercises forming a connected series with a global sense (consecutive problems referring to each other, e.g. "the matrix of the previous exercise") stay together at the end of the chapter in their original order, together with integrative ones needing the whole chapter (2026-10-06, refined 2026-10-07).
+@~/.claude/templates/lecture-notes/RULES.md
 
 ## Sources and how to use them
 - The GitHub repo is **public**. Never commit third-party material: `materials/transcripts/`, `week1/`,
@@ -19,16 +15,12 @@ without solutions, `mysolution` never edited (comments go in `\feedback`); stand
 - Every point gets a video tag `\ts{L}{P}{m:ss}` with the time from the `LXX-PYY.txt` line where it is
   said. `\seg{L}{P}{text}` links a whole segment (Sources box).
 - Numbers quoted in class are reported as said; when they are dubious, say so (e.g. "as said in class").
-- History boxes: fact-checked, with a References line.
 
 ## LaTeX conventions (preamble.tex)
 - T-accounts: `\tacct[width]{Title}{assets, rows separated by \\}{liabilities}` inside `taccts`;
   `\amt{852}` right-aligns an amount.
 - Use `nfigure` (non-floating) instead of `figure`: floats inside paracol left almost empty pages.
-- Keep the pace (2026-10-15): a repetition of earlier material goes in a right-column `recall` box (cyan) with a
-  `\cref` to the original; long exercises (> ~15-20 min, > 3 parts) would go verbatim to an end-of-book
-  "Pseudo-exam and second reading" appendix (none needed so far: all exercises are short); nothing is deleted
-  (passages taken out of the text go to a `\section*{Set aside}` at the chapter end).
+- No end-of-book "Pseudo-exam and second reading" appendix so far (all exercises are short); passages taken out of the text go to a `\section*{Set aside}` at the chapter end.
 - Boxes: `intuition`, `finance` ("In the markets"), `casestudy` (FT article of the day), `reading`
   (assigned reading), `keyformulas`, `secondary`, `history`, `aside`, `coursenote`, `example`.
 - A right-column item queued at the end of a section must be flushed with `\flushside` before a
@@ -36,31 +28,13 @@ without solutions, `mysolution` never edited (comments go in `\feedback`); stand
 - When writing LaTeX through the shell, backslashes get mangled: use the Edit/Write tools.
 
 ## Build and check
-`cd lecture-notes && python build.py` (full build, latexmk, refreshes `build/book.pdf`; the VS Code per-chapter build was archived in `lecture-notes/archive/vscode/`, 2026-11-05). Page is 16:9 (32x18 cm): check figures/tables taller than ~14.5 cm and right-column boxes running off the page. Then grep `build/main.log` for
+`cd lecture-notes && python build.py` (full build, latexmk, refreshes `build/book.pdf`; the VS Code per-chapter build was archived in `lecture-notes/archive/vscode/`, 2026-11-05). Page is 31.5×18 cm: check figures/tables taller than ~15 cm and right-column boxes running off the page. Then grep `build/main.log` for
 `\.tex:[0-9]+:`, `undefined`, `Overfull`; look at the rendered pages (Read tool on `build/main.pdf`).
-Commit and push after each verified chapter, on main (no branch/PR).
 
-- Video links: never put consecutive `	s` links to the same video; keep only the earliest. Run `python tools/dedup_ts.py` after writing a chapter.
+- Video links: never put consecutive `\ts` links to the same video; keep only the earliest. Run `python tools/dedup_ts.py` after writing a chapter.
 
 - Mehrling's written notes per lecture: `materials/mehrling-notes/` (PDF + text with `=== pN` markers); cite with `\mn{L}{page}` (links to the PDF page on sites.bu.edu).
 
-## Roadmap, idee e progressi
+## Scroll book
 
-`ROADMAP.md` nella root è l'**unico** file per todo, idee, decisioni e diario del progetto
-(niente `FUTURE-ARCHITECTURE.md`, `IDEE.md`, `TODO.md`). È letto da https://alessiomartini.github.io/projects-overview/.
-Sezioni: `## <fase>` (checkbox, contano nella percentuale), `## Idee` (checkbox, non contano),
-`## Decisioni e cose provate` (prosa: scartato/rimandato e perché, provato e annullato, limiti e bug noti), `## Log`.
-
-- Alla fine di ogni sessione di lavoro (prima del commit finale), aggiorna `ROADMAP.md`:
-  - spunta (`- [x]`) i punti completati in questa sessione;
-  - aggiungi come `- [ ]` i nuovi compiti nella fase giusta, e le idee non decise in `## Idee`;
-  - annota in `## Decisioni e cose provate` ciò che è stato scartato, rimandato o annullato, col perché;
-  - aggiungi in cima a `## Log` una riga `- AAAA-MM-GG: <cosa è stato fatto, in una frase>`
-    (se esiste già una riga con la data di oggi, estendila invece di crearne un'altra).
-- Non riscrivere né riordinare le voci esistenti senza motivo; non cancellare le voci completate.
-- Se `ROADMAP.md` non esiste, crealo da `templates/ROADMAP.md` di projects-overview.
-- Includi l'aggiornamento di `ROADMAP.md` nello stesso commit del lavoro.
-
-## Scroll book (2026-11-05)
-
-`build/book.pdf` is a **continuous-scroll** book: one long page per chapter (no page breaks inside a chapter), bookmarks per chapter; chapter PDFs are in `lecture-notes/build/scroll/`. `python build.py` recompiles only the chapters whose .tex changed and reassembles (a few seconds to a minute); `python build.py ch05` forces a chapter; `python build.py all` = full latexmk build + all chapters; `python build.py pages` = old paged book (`build/book-pages.pdf`, use it to check Overfull boxes). Mechanism: `scroll.py` + `\ifdefined\scrollmode` in `preamble.tex` (100 cm tall header-free pages, cut to the inked part and stacked; PDF viewers stop around 508 cm, longer chapters are split). Links between chapters are not kept.
+`build/book.pdf` is the continuous-scroll book; chapter PDFs are in `lecture-notes/build/scroll/`. `python build.py` recompiles only the chapters whose .tex changed and reassembles; `python build.py ch05` forces a chapter; `python build.py all` = full latexmk build + all chapters; `python build.py pages` = paged book (`build/book-pages.pdf`, use it to check Overfull boxes). Longer chapters are split into several PDF pages. Links between chapters are not kept.
