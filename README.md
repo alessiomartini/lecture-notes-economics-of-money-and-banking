@@ -40,7 +40,7 @@ regenerated with the commands below; Mehrling's notes and the readings can be do
 
 ## Build
 
-Single full build (page layout 16:9, 32x18 cm); the result is also copied to `build/book.pdf`:
+Single full build (page layout 16:9, 31.5x18 cm); the result is also copied to `build/book.pdf`:
 
 ```bash
 cd lecture-notes && python build.py
