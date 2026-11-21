@@ -1,30 +1,25 @@
 # Roadmap
 
-<!--
-Unico file per todo, idee, decisioni e diario, letto da Projects Overview
-(https://alessiomartini.github.io/projects-overview/). Protocollo: templates/ROADMAP.md di projects-overview.
--->
+<!-- Single file for todo, ideas, decisions and log, read by Projects Overview (https://alessiomartini.github.io/projects-overview/). Protocol: templates/ROADMAP.md in projects-overview. -->
 
-## Da fare
-- [x] Capitoli 1–22 scritti e compilati
-- [x] Letture e note di Mehrling integrate
-- [x] Ritmo: box RECALL (ch16); esercizi controllati, tutti brevi
+## To do
+- [x] Chapters 1-22 written and built
+- [x] Mehrling's readings and notes integrated
+- [x] Pace: RECALL box (ch16); exercises checked, all short
 
-## Idee
+## Ideas
 
-- [ ] Appendice A: mappa lezioni → segmenti → video → letture
-
-- [ ] Mehrling's own lecture notes exist for every lecture (Coursera module 1, "Lecture Notes (for
-  download)"); only Lec 1–2 are here. With the others, each chapter could be checked against them.
 - [ ] Appendix A: map lecture -> segments -> videos -> readings (generate from `materials/videos.csv`).
+- [ ] Mehrling's own lecture notes exist for every lecture (Coursera module 1, "Lecture Notes (for
+  download)"); only Lec 1-2 are here. With the others, each chapter could be checked against them.
 - [ ] Coursera midterm-review module (10 videos: Q&A on standard/subordinate coin, war finance,
   forward parity, CHIPS/Fedwire, Fed balance sheet) is not in the YouTube playlist.
 
-## Decisioni e cose provate
+## Decisions and things tried
 
-### Status (6 Oct 2026)
+### Initial status (6 Oct 2026, historical)
 
-- Chapter 1 (lecture 1) written and checked; chapters 2–22 to do, in order.
+- Chapter 1 (lecture 1) written and checked; chapters 2-22 were still to do at that date (all written since, see the status of Oct 2026 below).
 - Transcripts: auto-captions downloaded per segment with yt-dlp (some segments may have failed:
   `python tools/transcripts.py` lists the missing ones; rerun yt-dlp with `--playlist-items`).
 - `main.tex`: Part II (`\part{Advanced...}`) is commented out until chapter 13 exists.
@@ -40,22 +35,19 @@ Unico file per todo, idee, decisioni e diario, letto da Projects Overview
 ### Status (Oct 2026)
 
 - Chapters 1-22 written, built, committed (one chapter per lecture).
-- L19.2, L20.1, L21.4 had no YouTube captions: transcribed locally (tools/whisper_segments.py, audio in materials/audio, gitignored) and written up.
-  L21.4 (global dimension) have no YouTube captions. Plan: download audio (yt-dlp -x) and transcribe
-  locally with faster-whisper into materials/transcripts/LXX-PYY.txt, then add the sections.
-  Oct 2026 attempt: YouTube answered "Sign in to confirm you're not a bot" for every player client
-  (IP flagged); needs a retry later or cookies (`--cookies-from-browser`, only with Alessio's OK).
+- L19.2, L20.1, L21.4 had no YouTube captions: transcribed locally (tools/whisper_segments.py, audio in materials/audio, gitignored) and written up (L21.4 is section 21.4 "Global dimension" of ch21). The earlier plan for L21.4 (download audio with yt-dlp, transcribe with faster-whisper) is therefore done; the Oct 2026 yt-dlp "Sign in to confirm you're not a bot" block (IP flagged; `--cookies-from-browser` only with Alessio's OK) no longer matters for it.
 - Playlist errors: ColumbiaLearn video L19.4 duplicates L19.5; the right segment is the re-upload eZk9A6Pw10g (OVERRIDE in tools/transcripts.py, transcribed with whisper). L8.9 and L8.10 are the same recording; the continuous 7-12 recording shows no segment is missing (note in ch08).
 - Readings linked from sites.bu.edu/perry lecture pages: downloaded (materials/readings/) and integrated as `reading`/`coursenote` boxes in ch3, 7, 9, 10, 12-22. L07 deal.pdf is the 2015 release of the weekly NY Fed dealer report (only copy recovered): noted in ch07 with its Treasury repo figures. Corrections found: AIG collateral $30-35bn was to all counterparties (Goldman $8.4bn, SIGTARP Table 2); UBS report names monolines, not AIG, as NegBasis protection sellers. Bagehot, Minsky, Dunbar, Kindleberger, Gurley-Shaw, Treynor still summarised from the lectures only.
-- Possible next: appendix A (materials map).
+- Possible next: appendix A (materials map; same item as in Ideas).
 
 - Mehrling's written notes (sites.bu.edu/perry), one PDF per lecture, in materials/mehrling-notes/ (+ .txt with page markers). Cite with `\mn{L}{page}`. Integrated into all 22 chapters (Oct 2026); page links with \mn{L}{page}.
 
 - Keep the pace (2026-10-15): `recall` box added to the preamble; applied to ch16 (recap of the gold-standard diagrams). Checked all 22 chapters: exercises are short (no pseudo-exam appendix needed) and the text rarely restates earlier lectures. Add RECALL boxes when new chapters recap old ones.
 
 ## Log
+- 2026-11-21: 🤖 Docs cleanup: ROADMAP translated to English, stale status and duplicate items merged, README page size fixed to 31.5x18 cm (matches preamble.tex), CLAUDE.md condensed.
 - 2026-11-05: tight margins and 12pt: geometry 31.5x18 cm with 0.9 left, 0.4+header top, 1.5 bottom, columns 18.8 + 10 cm, page number in the one-line header (no footer). Rebuilt; content that ran below the page edge fixed (history boxes moved or `\Needspace`, `\clearpage`, `\allowdisplaybreaks`).
 - 2026-11-05: layout 16:9 (32x18 cm, PC screen), VS Code setup archived in `lecture-notes/archive/vscode/`, single build `python build.py`. Annotations read with `pdf-annotations.py` before the rebuild: none open in the current PDFs. Checked the full build: no content running off the page; four tall history boxes (right column) fixed with `\Needspace`/page break.
-- 2026-10-18: FUTURE-ARCHITECTURE.md unito in ROADMAP.md (protocollo unico)
-- 2026-10-16: box RECALL nel preambolo e nel ch16; esercizi controllati (tutti brevi, nessuna appendice)
-- 2026-10-15: creata la roadmap per Projects Overview
+- 2026-10-18: FUTURE-ARCHITECTURE.md merged into ROADMAP.md (single protocol)
+- 2026-10-16: RECALL box in the preamble and ch16; exercises checked (all short, no appendix)
+- 2026-10-15: created the roadmap for Projects Overview
